@@ -2,11 +2,11 @@
 # 1. Project Paraemeters
 ###################################################################
 
-set STUDENT_NUMBER    "123456"
-set CLK_PERIOD        0.0
+set STUDENT_NUMBER    "2510213"
+set CLK_PERIOD        13
 set MCLK_PERIOD       54.25347222
-set FILTER_TAPS       0.0
-set AUDIO_FIFO_SIZE   0.0
+set FILTER_TAPS       51
+set AUDIO_FIFO_SIZE   56
 
 ###################################################################
 # 2. Top-module selection (uncomment only one!)

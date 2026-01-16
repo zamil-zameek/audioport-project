@@ -8,12 +8,12 @@ package audioport_pkg;
    //////////////////////////////////////////////////////////////////
 
 `ifndef SYNTHESIS
-   string student_number                = "123456";
-   localparam realtime CLK_PERIOD       = 0.0ns;        
+   string student_number                = "2510213";
+   localparam realtime CLK_PERIOD       = 13ns;        
    localparam realtime MCLK_PERIOD      = 54.25347222ns; // Same for all students
 `endif
-   localparam int FILTER_TAPS          = 0; 
-   localparam int AUDIO_FIFO_SIZE      = 0; 
+   localparam int FILTER_TAPS          = 51; 
+   localparam int AUDIO_FIFO_SIZE      = 56; 
 
    //////////////////////////////////////////////////////////////////
    // 2. Register counts for address computation
@@ -30,28 +30,28 @@ package audioport_pkg;
    //////////////////////////////////////////////////////////////////
 
    localparam int CMD_REG_INDEX        = 0;
-   localparam int STATUS_REG_INDEX     = 0;
-   localparam int LEVEL_REG_INDEX      = 0;
-   localparam int CFG_REG_INDEX        = 0;
-   localparam int DSP_REGS_START_INDEX = 0;
-   localparam int DSP_REGS_END_INDEX   = 0;
-   localparam int LEFT_FIFO_INDEX      = 0;
-   localparam int RIGHT_FIFO_INDEX     = 0;
+   localparam int STATUS_REG_INDEX     = 1;
+   localparam int LEVEL_REG_INDEX      = 2;
+   localparam int CFG_REG_INDEX        = 3;
+   localparam int DSP_REGS_START_INDEX = 4;
+   localparam int DSP_REGS_END_INDEX   = 105;
+   localparam int LEFT_FIFO_INDEX      = 106;
+   localparam int RIGHT_FIFO_INDEX     = 107;
    
    //////////////////////////////////////////////////////////////////
    // 4. Register addresses in APB address space
    //////////////////////////////////////////////////////////////////   
 
    localparam logic [31:0]  AUDIOPORT_START_ADDRESS  = 32'h8c000000;   
-   localparam logic [31:0]  AUDIOPORT_END_ADDRESS    = 32'h8c000000;   
+   localparam logic [31:0]  AUDIOPORT_END_ADDRESS    = 32'h8c0001AC;   
    localparam logic [31:0]  CMD_REG_ADDRESS          = 32'h8c000000;   
-   localparam logic [31:0]  STATUS_REG_ADDRESS       = 32'h8c000000;   
-   localparam logic [31:0]  LEVEL_REG_ADDRESS        = 32'h8c000000;   
-   localparam logic [31:0]  CFG_REG_ADDRESS          = 32'h8c000000;   
-   localparam logic [31:0]  DSP_REGS_START_ADDRESS   = 32'h8c000000;   
-   localparam logic [31:0]  DSP_REGS_END_ADDRESS     = 32'h8c000000;   
-   localparam logic [31:0]  LEFT_FIFO_ADDRESS        = 32'h8c000000;   
-   localparam logic [31:0]  RIGHT_FIFO_ADDRESS       = 32'h8c000000;   
+   localparam logic [31:0]  STATUS_REG_ADDRESS       = 32'h8c000004;   
+   localparam logic [31:0]  LEVEL_REG_ADDRESS        = 32'h8c000008;   
+   localparam logic [31:0]  CFG_REG_ADDRESS          = 32'h8c00000C;   
+   localparam logic [31:0]  DSP_REGS_START_ADDRESS   = 32'h8c000010;   
+   localparam logic [31:0]  DSP_REGS_END_ADDRESS     = 32'h8c0001A4;   
+   localparam logic [31:0]  LEFT_FIFO_ADDRESS        = 32'h8c0001A8;   
+   localparam logic [31:0]  RIGHT_FIFO_ADDRESS       = 32'h8c0001AC;   
    
    //////////////////////////////////////////////////////////////////
    // 5. Useful Constants

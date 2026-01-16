@@ -7,46 +7,46 @@
 // 1. Project parameters
 //////////////////////////////////////////////////////////////////
 
-#define student_number      "123456"
-#define CLK_PERIOD          0.0
+#define student_number      "2510213"
+#define CLK_PERIOD          13
 #define MCLK_PERIOD         54.25347222
-#define FILTER_TAPS         0
-#define AUDIO_FIFO_SIZE     0
+#define FILTER_TAPS         51
+#define AUDIO_FIFO_SIZE     56
 
 //////////////////////////////////////////////////////////////////
 // 2. Register counts for address computation
 //////////////////////////////////////////////////////////////////
 
-#define DSP_REGISTERS       0
-#define AUDIOPORT_REGISTERS 0
+#define DSP_REGISTERS       102
+#define AUDIOPORT_REGISTERS 108
 
 //////////////////////////////////////////////////////////////////
 // 3. Register indicec
 //////////////////////////////////////////////////////////////////
 
 #define CMD_REG_INDEX         0
-#define STATUS_REG_INDEX      0
-#define LEVEL_REG_INDEX       0
-#define CFG_REG_INDEX         0
-#define DSP_REGS_START_INDEX  0
-#define DSP_REGS_END_INDEX    0
-#define LEFT_FIFO_INDEX       0
-#define RIGHT_FIFO_INDEX      0
+#define STATUS_REG_INDEX      1
+#define LEVEL_REG_INDEX       2
+#define CFG_REG_INDEX         3
+#define DSP_REGS_START_INDEX  4
+#define DSP_REGS_END_INDEX    105
+#define LEFT_FIFO_INDEX       106
+#define RIGHT_FIFO_INDEX      107
 
 //////////////////////////////////////////////////////////////////
 // 4. Register addresses in APB address spaces
 //////////////////////////////////////////////////////////////////   
 
 #define AUDIOPORT_START_ADDRESS  0x8c000000   
-#define AUDIOPORT_END_ADDRESS    0x8c000000   
+#define AUDIOPORT_END_ADDRESS    0x8c0001AC   
 #define CMD_REG_ADDRESS          0x8c000000   
-#define STATUS_REG_ADDRESS       0x8c000000   
-#define LEVEL_REG_ADDRESS        0x8c000000   
-#define CFG_REG_ADDRESS          0x8c000000   
-#define DSP_REGS_START_ADDRESS   0x8c000000   
-#define DSP_REGS_END_ADDRESS     0x8c000000   
-#define LEFT_FIFO_ADDRESS        0x8c000000   
-#define RIGHT_FIFO_ADDRESS       0x8c000000   
+#define STATUS_REG_ADDRESS       0x8c000004   
+#define LEVEL_REG_ADDRESS        0x8c000008   
+#define CFG_REG_ADDRESS          0x8c00000C   
+#define DSP_REGS_START_ADDRESS   0x8c000010   
+#define DSP_REGS_END_ADDRESS     0x8c0001A4   
+#define LEFT_FIFO_ADDRESS        0x8c0001A8   
+#define RIGHT_FIFO_ADDRESS       0x8c0001AC   
 
 //////////////////////////////////////////////////////////////////
 // 5. Useful Constants
