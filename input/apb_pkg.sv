@@ -22,7 +22,7 @@ package apb_pkg;
    // Input delay of APB signal with respect to clock for clocking block.
 
 `ifndef SYNTHESIS
-   localparam realtime APB_INPUT_DELAY = 1.625ns;
+   localparam realtime APB_INPUT_DELAY = 1625ps;
 `endif
    
 endpackage

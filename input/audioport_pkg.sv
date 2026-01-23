@@ -20,10 +20,10 @@ package audioport_pkg;
    //////////////////////////////////////////////////////////////////
 
    // Number of coefficient registers for two FIR filters (2 * FILTER_TAPS)
-   localparam int DSP_REGISTERS       = 0; 
+   localparam int DSP_REGISTERS       = 102; 
 
    // Total number of registers excluding FIFOs
-   localparam int AUDIOPORT_REGISTERS = 0; 
+   localparam int AUDIOPORT_REGISTERS = 106; 
 
    //////////////////////////////////////////////////////////////////
    // 3. Register indices (rindex)

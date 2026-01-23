@@ -51,21 +51,21 @@ program control_unit_test
 
 	      reset_test;
 	      apb_test;
-//              address_decoding_test;
-//	        register_test;
-//	        fifo_bus_test;
-//	        prdata_off_test;
+              address_decoding_test;
+	        register_test;
+	        fifo_bus_test;
+	        prdata_off_test;
 //	        cmd_start_stop_test;
 //	        status_test;	      
-//	        cmd_clr_test;
-//	        cmd_cfg_test;
-//	        cmd_level_test;
+	        cmd_clr_test;
+	        cmd_cfg_test;
+	        cmd_level_test;
 //	        clr_error_test;	      
-//	        req_tick_test;
+	        req_tick_test;
 //	        fifo_test;
 //	        irq_up_test;
 //	        irq_down_test;
-//	        performance_test;
+	        performance_test;
 
  	   end
 	   begin
@@ -86,3 +86,6 @@ program control_unit_test
      end
 	
 endprogram
+
+
+   
