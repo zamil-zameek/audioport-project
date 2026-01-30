@@ -1,141 +1,93 @@
-// assertion_tb.sv: Simple testbench for debugging assertions 
-//
-// Usage:
-//      1. Create a scenario where an assertion a_X based on property X should
-//         PASS and FAIL in the initial proceudre below
-//      2. Run the script to verify that the waveforms look OK
-//         vsim -do scripts/assertion_tb.tcl
-//      3. Declare the property and assertions below the initial process
-//      4. Run the script again. The script puts all assertions in the Wave window.
-//         Expand an assertion (+) and its ActiveCount (+) to view evaluation details
-//      5. To get a detailed view of assertion evaluation, do the following:
-//         a) Activate the Assertions tab
-//         b) Select an assertion
-//         c) Using the right button, execure View ATV.. and select a specific
-//            passing or failure of the assertion (ATV = assertion thread view)
-//         d) You can now follow the evaluation of property expressions in time
-// 
+// input/assertion_tb.sv
+module assertion_tb;
 
-import audioport_pkg::*;
+   // Clock and reset
+   logic clk = '0, rst_n = 0;
+   always #10ns clk = ~clk;
+   initial @(negedge clk) rst_n = '1;
 
-module assertion_tb; 
+   // ------------------------------------------------------------------
+   // Constants & Parameters
+   // ------------------------------------------------------------------
+   localparam [31:0] CMD_REG_ADDRESS = 32'h8000_0000; 
+   localparam [31:0] CMD_CFG   = 32'h0000_0002; 
+
+   // ------------------------------------------------------------------
+   // Signal Declarations
+   // ------------------------------------------------------------------
+   logic        cfg_out;    // Signal under test
+   logic        PSEL, PENABLE, PWRITE, PREADY;
+   logic [31:0] PADDR, PWDATA;
    
-   // Clock and reset 
-   logic clk = '0, rst_n = 0; 
-   always #10ns clk = ~clk; 
-   initial @(negedge clk) rst_n = '1; 
+   // Auxiliary for cleaner code
+   logic apb_write_access;
+   assign apb_write_access = PSEL && PENABLE && PWRITE && PREADY;
 
-   logic        PSEL;
-   logic        PENABLE;
-   logic        PWRITE;
-   logic [31:0] PADDR;
-   logic [31:0] PWDATA;
-   logic 	PREADY;
-   logic [31:0] cfg_reg_out;
-   
    ///////////////////////////////////////////////////////////////////
-   // Test data generation process 
+   // Test data generation process
    ///////////////////////////////////////////////////////////////////
+   initial begin
+      // Initialize
+      rst_n   = '0;
+      cfg_out = '0;
+      PSEL=0; PENABLE=0; PWRITE=0; PREADY=1; PADDR=0; PWDATA=0;
+      @(negedge clk);
+      rst_n   = '1;
+      @(negedge clk);
 
-   initial 
-     begin
+      // --------------------------------------------------------
+      // TEST: f_cfg_out_valid_high
+      // --------------------------------------------------------
+      $info("Test f_cfg_out_valid_high");
 
-	$info("a_cfg_reg_write OK");
-	PSEL = '0;
-	PENABLE = '0;
-	PWRITE = '0;
-	PREADY = '0;
-	PADDR = CFG_REG_ADDRESS;
-	PWDATA = $urandom;
-	cfg_reg_out = '0;
-	@(negedge clk);
-	
-	PSEL = '1;
-	PWRITE = '1;
-	PREADY = '1;
-	@(negedge clk);
-	
-	PENABLE = '1;
-	@(negedge clk);
-	
-	PSEL = '0;
-	PENABLE = '0;
-	PWRITE = '0;
-	PREADY = '0;
-	cfg_reg_out = PWDATA;
-	@(negedge clk);
+      // CASE 1: PASS
+      // Scenario: cfg_out is High, AND we are writing the CFG command.
+      PSEL=1; PENABLE=1; PWRITE=1; PREADY=1;
+      PADDR  = CMD_REG_ADDRESS;
+      PWDATA = CMD_CFG;
+      
+      cfg_out = '1; // Signal goes high validly
+      @(negedge clk);
 
-	#1us;
-	
-	$info("a_cfg_reg_write FAIL1");
-	PSEL = '0;
-	PENABLE = '0;
-	PWRITE = '0;
-	PREADY = '0;
-	PADDR = CFG_REG_ADDRESS;
-	PWDATA = $urandom;
-	@(negedge clk); 
+      // Clear everything
+      cfg_out = '0; 
+      PSEL=0; PENABLE=0;
+      @(negedge clk);
 
-	PSEL = '1;
-	PWRITE = '1;
-	PREADY = '1;
-	@(negedge clk); 	
+      // CASE 2: FAIL ("Ghost Pulse")
+      // Scenario: cfg_out goes High, BUT nobody wrote the command.
+      $info("Test f_cfg_out_valid_high: FAIL Case");
+      PSEL=0; // No APB access
+      
+      cfg_out = '1; // Error! Signal appeared without cause
+      @(negedge clk);
+      
+      // Cleanup
+      cfg_out = '0;
+      @(negedge clk);
+      
+      #100ns;
+      $finish;
+   end
 
-	PENABLE = '1;
-	@(negedge clk); 	
-
-	PSEL = '0;
-	PENABLE = '0;
-	PWRITE = '0;
-	PREADY = '0;
-	@(negedge clk); 
-
-	cfg_reg_out = PWDATA; // One cycle too late	
-	@(negedge clk);
-
-	#1us;
-	
-	$info("a_cfg_reg_write FAIL2");
-	PSEL = '0;
-	PENABLE = '0;
-	PWRITE = '0;
-	PREADY = '0;
-	PADDR = CFG_REG_ADDRESS;
-	PWDATA = $urandom;
-	@(negedge clk);
-	
-	PSEL = '1;
-	PWRITE = '1;
-	PREADY = '1;
-	@(negedge clk);
-	
-	PENABLE = '1;	
-       @(negedge clk); 	
-
-	PSEL = '0;
-	PENABLE = '0;
-	PWRITE = '0;
-	PREADY = '0;
-	cfg_reg_out = PWDATA ^ 32'h00000001; // Wrong data
-	@(negedge clk);
-
-	#1us;
-	
-	$finish;
-	
-     end 
-   
    ///////////////////////////////////////////////////////////////////
    // Properties and assertions
    ///////////////////////////////////////////////////////////////////
-
-   property cfg_reg_write;
+   
+   // Requirement: If cfg_out is high... then we MUST be writing CMD_CFG to CMD_REG.
+   property f_cfg_out_valid_high;
       @(posedge clk) disable iff (rst_n == '0)
-        PSEL && PENABLE && PREADY && PWRITE && (PADDR == CFG_REG_ADDRESS) |=> cfg_reg_out == $past(PWDATA);
+      cfg_out |-> 
+      (
+         apb_write_access && 
+         (PADDR == CMD_REG_ADDRESS) && 
+         (PWDATA == CMD_CFG)
+      );
    endproperty
-      
-   a_cfg_reg_write: assert property(cfg_reg_write)
-     else $error("cfg_reg_out value differs from value written to CFG_REG");
-   c_cfg_reg_write: cover property(cfg_reg_write);
 
-endmodule 
+   a_f_cfg_out_valid_high: assert property(f_cfg_out_valid_high)
+      else $error("Assertion f_cfg_out_valid_high FAILED (Ghost Pulse detected)");
+      
+   c_f_cfg_out_valid_high: cover property(f_cfg_out_valid_high);
+
+endmodule

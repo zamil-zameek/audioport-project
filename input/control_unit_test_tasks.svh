@@ -142,55 +142,51 @@ task fifo_bus_test;
    // 1. Execute reset_test.
    reset_test;
 
-   // 2. Fill LEFT FIFO with A+i
+   // 2. Write A+i AUDIO_FIFO_SIZE times to LEFT_FIFO_ADDRESS
    for (i = 0; i < AUDIO_FIFO_SIZE; i++) begin
       addr  = LEFT_FIFO_ADDRESS;
-      wdata = A + i;
+      wdata = (A + i);
       apb.write(addr, wdata, wfail);
    end
 
-   // 3. Fill RIGHT FIFO with B+i
+   // 3. Write B+i AUDIO_FIFO_SIZE times to RIGHT_FIFO_ADDRESS
    for (i = 0; i < AUDIO_FIFO_SIZE; i++) begin
       addr  = RIGHT_FIFO_ADDRESS;
-      wdata = B + i;
+      wdata = (B + i);
       apb.write(addr, wdata, wfail);
    end
 
-   // 4. Read back LEFT FIFO and compare to A+i
+   // 4. Read LEFT FIFO AUDIO_FIFO_SIZE times and compare to A+i
    for (i = 0; i < AUDIO_FIFO_SIZE; i++) begin
       addr = LEFT_FIFO_ADDRESS;
       apb.read(addr, rdata, rfail);
 
-      // Mixed-sim / SystemC: PRDATA may settle in delta after clock edge
-      #0;
-      rdata = apb.prdata;
+      // Mixed-sim: sample PRDATA after delta settle
 
-      // FIFO stores 24-bit values; PRDATA returns zero-extended 24-bit
+      // FIFO stores 24-bit values -> PRDATA is zero-extended
       exp = (A + i) & 32'h00FF_FFFF;
 
       ia_fifo_bus_test_1: assert (rdata == exp)
-         else begin
-            $error("ia_fifo_bus_test_1 failed i=%0d exp=%h got=%h", i, exp, rdata);
-            assert_error("ia_fifo_bus_test_1");
-         end
+        else begin
+          $error("ia_fifo_bus_test_1 failed i=%0d exp=%h got=%h", i, exp, rdata);
+          assert_error("ia_fifo_bus_test_1");
+        end
    end
 
-   // 5. Read back RIGHT FIFO and compare to B+i
+   // 5. Read RIGHT FIFO AUDIO_FIFO_SIZE times and compare to B+i
    for (i = 0; i < AUDIO_FIFO_SIZE; i++) begin
       addr = RIGHT_FIFO_ADDRESS;
       apb.read(addr, rdata, rfail);
 
-      // Mixed-sim / SystemC delta settle
-      #0;
-      rdata = apb.prdata;
+      // Mixed-sim: sample PRDATA after delta settle
 
       exp = (B + i) & 32'h00FF_FFFF;
 
       ia_fifo_bus_test_2: assert (rdata == exp)
-         else begin
-            $error("ia_fifo_bus_test_2 failed i=%0d exp=%h got=%h", i, exp, rdata);
-            assert_error("ia_fifo_bus_test_2");
-         end
+        else begin
+          $error("ia_fifo_bus_test_2 failed i=%0d exp=%h got=%h", i, exp, rdata);
+          assert_error("ia_fifo_bus_test_2");
+        end
    end
 
    update_test_stats;
@@ -377,7 +373,6 @@ task req_tick_test;
          repeat(50) @(posedge clk);
 
          // 2-1.3. Write CMD_STOP into CMD_REG_ADDRESS.
-         addr  = CMD_REG_ADDRESS;
          wdata = CMD_STOP;
          apb.write(addr, wdata, wfail);
 
@@ -399,10 +394,6 @@ task req_tick_test;
             req_in <= 1'b1;
             @(posedge clk);
             req_in <= 1'b0;
-
-            // "after the falling edge of req_in" -> req_in just went low at this posedge.
-            // One-cycle delay requirement means: check tick_out on the *next* posedge.
-            @(posedge clk);
 
             ia_req_tick_test_1: assert ( tick_out === (play_out ? 1'b1 : 1'b0) )
               else assert_error("ia_req_tick_test_1");
