@@ -112,8 +112,10 @@ endfunction
    assign PREADY  = 1'b1;  // zero wait states
 
    assign play_out  = play_r;
-   assign tick_out  = req_r;     // req_in delayed by 1 cycle in play mode
+// tick_out is req_in delayed by 1 cycle, but must be forced low when not in play mode
+   assign tick_out  = play_r & req_r;
    assign irq_out   = irq_r;
+
 
    // Register output ports
    assign cfg_reg_out   = rbank_r[CFG_REG_INDEX];
@@ -135,7 +137,7 @@ endfunction
    assign cfg_out   = cfg;
    assign level_out = level;
    // CMD_CLR only acts in standby
-   assign clr_out   = (clr && !play_r);
+   assign clr_out   = clr;
 
    // =========================================================================
    // Combinational Logic: APB Decoder (Ex1)
@@ -166,7 +168,7 @@ endfunction
 
       if (apbwrite && (rindex == CMD_REG_INDEX)) begin
          unique case (PWDATA)
-            CMD_CLR:    clr    = 1'b1;
+	   CMD_CLR: clr = (!play_r);
             CMD_CFG:    cfg    = 1'b1;
             CMD_START:  start  = 1'b1;
             CMD_STOP:   stop   = 1'b1;
@@ -189,6 +191,7 @@ endfunction
          play_r <= 1'b0;
       end
    end
+   
 
    // =========================================================================
    // Sequential Logic: req register (Ex1)
@@ -392,20 +395,24 @@ end
    // =========================================================================
    // PRDATA mux + FIFO read side-effects handled in FIFO next-state
    // =========================================================================
-   always_comb begin : prdata_mux
-      PRDATA = 32'd0;
+  always_comb begin : prdata_mux
+   // Default when not selected (matches ar_prdata_off)
+   PRDATA = 32'd0;
 
-      if (apbread) begin
-         if (rindex < AUDIOPORT_REGISTERS) begin
-            PRDATA = rbank_r[rindex];
-         end else if (rindex == LEFT_FIFO_INDEX) begin
-            PRDATA = {8'd0, lfifo};
-         end else if (rindex == RIGHT_FIFO_INDEX) begin
-            PRDATA = {8'd0, rfifo};
-         end else begin
-            PRDATA = 32'd0;
-         end
+   // PRDATA is driven whenever the peripheral is selected (PSEL),
+   // independent of read/write phase (matches ar_prdata_* properties).
+   if (PSEL) begin
+      if (rindex < AUDIOPORT_REGISTERS) begin
+         PRDATA = rbank_r[rindex];
+      end else if (rindex == LEFT_FIFO_INDEX) begin
+         PRDATA = {8'd0, lfifo};
+      end else if (rindex == RIGHT_FIFO_INDEX) begin
+         PRDATA = {8'd0, rfifo};
+      end else begin
+         PRDATA = 32'd0;
       end
    end
+end
+
 
 endmodule

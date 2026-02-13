@@ -438,6 +438,51 @@ endproperty
 
 `ifndef SYSTEMC_DUT
 
+   // ------------------------------------------------------------
+   // cg_rbreads
+   // ------------------------------------------------------------
+   // Collect coverage of audioport's register bank reads (excluding FIFO banks).
+   // Sampling: last cycle of APB ACCESS phase (PSEL && PENABLE && PREADY && !PWRITE).
+   // Note: Coverpoint uses PADDR[31:2] to match 32-bit word addressing.
+   covergroup cg_rbreads @(posedge clk iff (PSEL && PENABLE && PREADY && !PWRITE &&
+                                           (PADDR >= AUDIOPORT_START_ADDRESS) &&
+                                           (PADDR <= DSP_REGS_END_ADDRESS)));
+      addresses: coverpoint PADDR[31:2]
+        {
+          // One bin per register address in the range [AUDIOPORT_START_ADDRESS, DSP_REGS_END_ADDRESS]
+          bins addr[] = {[AUDIOPORT_START_ADDRESS[31:2] : DSP_REGS_END_ADDRESS[31:2]]};
+        }
+   endgroup
+   cg_rbreads cg_rbreads_inst = new;
+
+
+   // ------------------------------------------------------------
+   // cg_commands
+   // ------------------------------------------------------------
+   // Collect coverage on command codes written to CMD_REG in standby and play modes.
+   // Sampling: last cycle of APB ACCESS phase of a write to CMD_REG.
+   covergroup cg_commands @(posedge clk iff (PSEL && PENABLE && PREADY && PWRITE && (PADDR == CMD_REG_ADDRESS)));
+      commands: coverpoint PWDATA
+        {
+          bins cmd_nop    = {CMD_NOP};
+          bins cmd_clr    = {CMD_CLR};
+          bins cmd_cfg    = {CMD_CFG};
+          bins cmd_start  = {CMD_START};
+          bins cmd_stop   = {CMD_STOP};
+          bins cmd_level  = {CMD_LEVEL};
+          bins cmd_irqack = {CMD_IRQACK};
+          bins cmd_illegal = default;
+        }
+
+      modes: coverpoint play_out
+        {
+          bins standby = {'0};
+          bins play    = {'1};
+        }
+
+      command_modes: cross commands, modes;
+   endgroup
+   cg_commands cg_commands_inst = new;
 
    
 `endif //  `ifndef SYSTEMC_DUT
