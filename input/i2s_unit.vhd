@@ -37,6 +37,45 @@ end i2s_unit;
 
 architecture RTL of i2s_unit is
 
+  -----------------------------------------------------------------------------
+  -- Sequential state (registers) allocated in Step 1
+  -----------------------------------------------------------------------------
+  signal play_active_r  : std_logic;                     -- reg (1)
+  signal stop_pending_r : std_logic;                     -- reg (1)
+
+  signal div_cnt_r      : unsigned(2 downto 0);          -- reg (3) 0..7
+  signal sck_r          : std_logic;                     -- reg (1)
+
+  signal bit_cnt_r      : unsigned(5 downto 0);          -- reg (6) 0..47
+
+  signal in_reg_r       : std_logic_vector(47 downto 0); -- reg (48)
+  signal shreg_r        : std_logic_vector(47 downto 0); -- reg (48)
+
+  signal ws_r           : std_logic;                     -- reg (1)
+  signal req_out_r      : std_logic;                     -- reg (1)
+
+  -----------------------------------------------------------------------------
+  -- Combinational decode/control signals allocated in Step 1
+  -----------------------------------------------------------------------------
+  signal start_req      : std_logic;                     -- comb
+  signal stop_req       : std_logic;                     -- comb
+  signal exit_play      : std_logic;                     -- comb
+
+  signal div_wrap       : std_logic;                     -- comb
+  signal sck_fall_pulse : std_logic;                     -- comb (1-cycle event)
+
+  signal last_bit       : std_logic;                     -- comb
+  signal frame_end_pulse: std_logic;                     -- comb
+
+  signal in_reg_load_en : std_logic;                     -- comb
+  signal in_reg_d       : std_logic_vector(47 downto 0); -- comb
+
+  signal load_shreg     : std_logic;                     -- comb
+  signal shift_shreg    : std_logic;                     -- comb
+
+  signal ws_next        : std_logic;                     -- comb
+  signal req_pulse      : std_logic;                     -- comb
+
 begin
 
       
