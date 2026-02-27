@@ -29,9 +29,29 @@ module i2s_unit_svamod
    input logic 	      ws_out,
    input logic 	      sdo_out
 `ifndef SYSTEMC_DUT
-   // To add ports for internal signals of DUT, uncomment the comma on the next line 
-   // and add the signal names
-   //		      ,
+   , input logic        play_active_r
+   , input logic        stop_pending_r
+   , input logic [2:0]  div_cnt_r
+   , input logic        sck_r
+   , input logic [5:0]  bit_cnt_r
+   , input logic [47:0] in_reg_r
+   , input logic [47:0] shreg_r
+   , input logic        ws_r
+   , input logic        req_out_r
+
+   , input logic        start_req
+   , input logic        stop_req
+   , input logic        exit_play
+   , input logic        div_wrap
+   , input logic        sck_fall_pulse
+   , input logic        last_bit
+   , input logic        frame_end_pulse
+   , input logic        in_reg_load_en
+   , input logic [47:0] in_reg_d
+   , input logic        load_shreg
+   , input logic        shift_shreg
+   , input logic        ws_next
+   , input logic        req_pulse
 `endif
    );
 
@@ -48,7 +68,34 @@ module i2s_unit_svamod
    `xcheck(ws_out);
    `xcheck(sdo_out);
 `ifndef SYSTEMC_DUT
+// -------------------------------------------------------------------------
+   // X-check internal DUT signals added as ports
+   // -------------------------------------------------------------------------
+   // Registers (reg)
+   `xcheck(play_active_r);
+   `xcheck(stop_pending_r);
+   `xcheck(div_cnt_r);
+   `xcheck(sck_r);
+   `xcheck(bit_cnt_r);
+   `xcheck(in_reg_r);
+   `xcheck(shreg_r);
+   `xcheck(ws_r);
+   `xcheck(req_out_r);
 
+   // Combinational signals (comb)
+   `xcheck(start_req);
+   `xcheck(stop_req);
+   `xcheck(exit_play);
+   `xcheck(div_wrap);
+   `xcheck(sck_fall_pulse);
+   `xcheck(last_bit);
+   `xcheck(frame_end_pulse);
+   `xcheck(in_reg_load_en);
+   `xcheck(in_reg_d);
+   `xcheck(load_shreg);
+   `xcheck(shift_shreg);
+   `xcheck(ws_next);
+   `xcheck(req_pulse);
 `endif   
    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
    // 2. Blackbox (functional) assumptions and assertions
@@ -180,7 +227,256 @@ module i2s_unit_svamod
    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
  `ifndef SYSTEMC_DUT
+// ------------------------------------------------------------------------------------------------
+   // Mode/control internal consistency
+   // ------------------------------------------------------------------------------------------------
 
+   // start_req = play_in & ~play_active_r
+   property w_start_req_def;
+      @(posedge clk) disable iff (rst_n == '0)
+        start_req == (play_in && !play_active_r);
+   endproperty
+   aw_start_req_def: assert property(w_start_req_def) else assert_error("aw_start_req_def");
+
+   // stop_req = ~play_in & play_active_r
+   property w_stop_req_def;
+      @(posedge clk) disable iff (rst_n == '0)
+        stop_req == (!play_in && play_active_r);
+   endproperty
+   aw_stop_req_def: assert property(w_stop_req_def) else assert_error("aw_stop_req_def");
+
+   // exit_play = stop_pending_r & frame_end_pulse
+   property w_exit_play_def;
+      @(posedge clk) disable iff (rst_n == '0)
+        exit_play == (stop_pending_r && frame_end_pulse);
+   endproperty
+   aw_exit_play_def: assert property(w_exit_play_def) else assert_error("aw_exit_play_def");
+
+   // stop_pending_r must set when stop_req and stay set until exit_play
+   property w_stop_pending_set;
+      @(posedge clk) disable iff (rst_n == '0)
+        stop_req |=> stop_pending_r;
+   endproperty
+   aw_stop_pending_set: assert property(w_stop_pending_set) else assert_error("aw_stop_pending_set");
+
+   property w_stop_pending_hold;
+      @(posedge clk) disable iff (rst_n == '0)
+        (stop_pending_r && !exit_play) |=> stop_pending_r;
+   endproperty
+   aw_stop_pending_hold: assert property(w_stop_pending_hold) else assert_error("aw_stop_pending_hold");
+
+   property w_stop_pending_clear;
+      @(posedge clk) disable iff (rst_n == '0)
+        exit_play |=> !stop_pending_r;
+   endproperty
+   aw_stop_pending_clear: assert property(w_stop_pending_clear) else assert_error("aw_stop_pending_clear");
+
+
+   // ------------------------------------------------------------------------------------------------
+   // Divider / SCK internal consistency
+   // ------------------------------------------------------------------------------------------------
+
+   // div_wrap is true exactly when div_cnt_r == 7
+   property w_div_wrap_def;
+      @(posedge clk) disable iff (rst_n == '0)
+        div_wrap == (div_cnt_r == 3'd7);
+   endproperty
+   aw_div_wrap_def: assert property(w_div_wrap_def) else assert_error("aw_div_wrap_def");
+
+   // sck_out must mirror sck_r in play, and be 0 in standby
+   property w_sck_out_mirror;
+      @(posedge clk) disable iff (rst_n == '0)
+        play_active_r |-> (sck_out == sck_r);
+   endproperty
+   aw_sck_out_mirror: assert property(w_sck_out_mirror) else assert_error("aw_sck_out_mirror");
+
+   property w_sck_out_standby0;
+      @(posedge clk) disable iff (rst_n == '0)
+        !play_active_r |-> (sck_out == 1'b0);
+   endproperty
+   aw_sck_out_standby0: assert property(w_sck_out_standby0) else assert_error("aw_sck_out_standby0");
+
+   // sck_fall_pulse can only occur in play mode
+   property w_sck_fall_play_only;
+      @(posedge clk) disable iff (rst_n == '0)
+        sck_fall_pulse |-> play_active_r;
+   endproperty
+   aw_sck_fall_play_only: assert property(w_sck_fall_play_only) else assert_error("aw_sck_fall_play_only");
+
+
+   // ------------------------------------------------------------------------------------------------
+   // Bit counter / frame boundary logic
+   // ------------------------------------------------------------------------------------------------
+
+   // last_bit definition
+   property w_last_bit_def;
+      @(posedge clk) disable iff (rst_n == '0)
+        last_bit == (bit_cnt_r == 6'd47);
+   endproperty
+   aw_last_bit_def: assert property(w_last_bit_def) else assert_error("aw_last_bit_def");
+
+   // frame_end_pulse definition
+   property w_frame_end_def;
+      @(posedge clk) disable iff (rst_n == '0)
+        frame_end_pulse == (play_active_r && sck_fall_pulse && last_bit);
+   endproperty
+   aw_frame_end_def: assert property(w_frame_end_def) else assert_error("aw_frame_end_def");
+
+   // bit counter advances only on sck_fall_pulse when playing
+   property w_bit_cnt_hold_no_fall;
+      @(posedge clk) disable iff (rst_n == '0)
+        (play_active_r && !sck_fall_pulse) |=> (bit_cnt_r == $past(bit_cnt_r));
+   endproperty
+   aw_bit_cnt_hold_no_fall: assert property(w_bit_cnt_hold_no_fall) else assert_error("aw_bit_cnt_hold_no_fall");
+
+   property w_bit_cnt_inc;
+      @(posedge clk) disable iff (rst_n == '0)
+        (play_active_r && sck_fall_pulse && !$past(last_bit)) |-> (bit_cnt_r == ($past(bit_cnt_r) + 6'd1));
+   endproperty
+   aw_bit_cnt_inc: assert property(w_bit_cnt_inc) else assert_error("aw_bit_cnt_inc");
+
+   property w_bit_cnt_wrap;
+      @(posedge clk) disable iff (rst_n == '0)
+        (play_active_r && sck_fall_pulse && $past(last_bit)) |-> (bit_cnt_r == 6'd0);
+   endproperty
+   aw_bit_cnt_wrap: assert property(w_bit_cnt_wrap) else assert_error("aw_bit_cnt_wrap");
+
+
+   // ------------------------------------------------------------------------------------------------
+   // Input register logic
+   // ------------------------------------------------------------------------------------------------
+
+   // in_reg_d definition: concat of audio0_in and audio1_in
+   property w_in_reg_d_def;
+      @(posedge clk) disable iff (rst_n == '0)
+        in_reg_d == {audio0_in, audio1_in};
+   endproperty
+   aw_in_reg_d_def: assert property(w_in_reg_d_def) else assert_error("aw_in_reg_d_def");
+
+   // in_reg_load_en definition
+   property w_in_reg_load_en_def;
+      @(posedge clk) disable iff (rst_n == '0)
+        in_reg_load_en == (tick_in && play_active_r);
+   endproperty
+   aw_in_reg_load_en_def: assert property(w_in_reg_load_en_def) else assert_error("aw_in_reg_load_en_def");
+
+
+   // ------------------------------------------------------------------------------------------------
+   // Request pulse logic (internal) and output mapping
+   // ------------------------------------------------------------------------------------------------
+
+   // req_pulse should be generated at the same boundary as frame_end_pulse
+   property w_req_pulse_def;
+      @(posedge clk) disable iff (rst_n == '0)
+        req_pulse == (play_active_r && sck_fall_pulse && last_bit);
+   endproperty
+   aw_req_pulse_def: assert property(w_req_pulse_def) else assert_error("aw_req_pulse_def");
+
+   // req_out must mirror req_out_r (design choice in our architecture)
+   property w_req_out_mirror;
+      @(posedge clk) disable iff (rst_n == '0)
+        req_out == req_out_r;
+   endproperty
+   aw_req_out_mirror: assert property(w_req_out_mirror) else assert_error("aw_req_out_mirror");
+
+   // req_out_r is a 1-cycle pulse corresponding to req_pulse (registered pulse)
+   property w_req_out_r_pulse;
+      @(posedge clk) disable iff (rst_n == '0)
+        req_pulse |-> req_out_r;
+   endproperty
+   aw_req_out_r_pulse: assert property(w_req_out_r_pulse) else assert_error("aw_req_out_r_pulse");
+
+   property w_req_out_r_single_cycle;
+      @(posedge clk) disable iff (rst_n == '0)
+        $rose(req_out_r) |=> $fell(req_out_r);
+   endproperty
+   aw_req_out_r_single_cycle: assert property(w_req_out_r_single_cycle) else assert_error("aw_req_out_r_single_cycle");
+
+
+   // ------------------------------------------------------------------------------------------------
+   // Shift register control signals and data-path behavior
+   // ------------------------------------------------------------------------------------------------
+
+   // load_shreg and shift_shreg are mutually exclusive
+   property w_load_shift_mutex;
+      @(posedge clk) disable iff (rst_n == '0)
+        !(load_shreg && shift_shreg);
+   endproperty
+   aw_load_shift_mutex: assert property(w_load_shift_mutex) else assert_error("aw_load_shift_mutex");
+
+   // load_shreg occurs exactly at the req/frame boundary
+   property w_load_shreg_def;
+      @(posedge clk) disable iff (rst_n == '0)
+        load_shreg == (play_active_r && sck_fall_pulse && last_bit);
+   endproperty
+   aw_load_shreg_def: assert property(w_load_shreg_def) else assert_error("aw_load_shreg_def");
+
+   // shift_shreg occurs on sck falling edge when not last bit
+   property w_shift_shreg_def;
+      @(posedge clk) disable iff (rst_n == '0)
+        shift_shreg == (play_active_r && sck_fall_pulse && !last_bit);
+   endproperty
+   aw_shift_shreg_def: assert property(w_shift_shreg_def) else assert_error("aw_shift_shreg_def");
+
+   // When loading, shift register takes input register
+   property w_shreg_load;
+      @(posedge clk) disable iff (rst_n == '0)
+        load_shreg |=> (shreg_r == $past(in_reg_r));
+   endproperty
+   aw_shreg_load: assert property(w_shreg_load) else assert_error("aw_shreg_load");
+
+   // When shifting, shift register shifts left
+   property w_shreg_shift;
+      @(posedge clk) disable iff (rst_n == '0)
+        shift_shreg |=> (shreg_r == {$past(shreg_r[46:0]), 1'b0});
+   endproperty
+   aw_shreg_shift: assert property(w_shreg_shift) else assert_error("aw_shreg_shift");
+
+
+   // ------------------------------------------------------------------------------------------------
+   // Serial data / WS internal mapping
+   // ------------------------------------------------------------------------------------------------
+
+   // sdo_out should be the MSB of the shift register in play mode
+   property w_sdo_mirror;
+      @(posedge clk) disable iff (rst_n == '0)
+        play_active_r |-> (sdo_out == shreg_r[47]);
+   endproperty
+   aw_sdo_mirror: assert property(w_sdo_mirror) else assert_error("aw_sdo_mirror");
+
+   // in standby, sdo_out must be 0 (as per spec)
+   property w_sdo_standby0;
+      @(posedge clk) disable iff (rst_n == '0)
+        !play_active_r |-> (sdo_out == 1'b0);
+   endproperty
+   aw_sdo_standby0: assert property(w_sdo_standby0) else assert_error("aw_sdo_standby0");
+
+   // ws_out must mirror ws_r (design choice in our architecture)
+   property w_ws_out_mirror;
+      @(posedge clk) disable iff (rst_n == '0)
+        ws_out == ws_r;
+   endproperty
+   aw_ws_out_mirror: assert property(w_ws_out_mirror) else assert_error("aw_ws_out_mirror");
+
+   // ws_next decode from bit_cnt_r: right channel when bit_cnt_r >= 24
+   property w_ws_next_def;
+      @(posedge clk) disable iff (rst_n == '0)
+        ws_next == (bit_cnt_r >= 6'd24);
+   endproperty
+   aw_ws_next_def: assert property(w_ws_next_def) else assert_error("aw_ws_next_def");
+
+   // ws_r updates only on sck_fall_pulse while in play mode
+   property w_ws_hold_no_fall;
+      @(posedge clk) disable iff (rst_n == '0)
+        (play_active_r && !sck_fall_pulse) |=> (ws_r == $past(ws_r));
+   endproperty
+   aw_ws_hold_no_fall: assert property(w_ws_hold_no_fall) else assert_error("aw_ws_hold_no_fall");
+
+   property w_ws_update_on_fall;
+      @(posedge clk) disable iff (rst_n == '0)
+        (play_active_r && sck_fall_pulse) |-> (ws_r == ws_next);
+   endproperty
+   aw_ws_update_on_fall: assert property(w_ws_update_on_fall) else assert_error("aw_ws_update_on_fall");
 
 
 
