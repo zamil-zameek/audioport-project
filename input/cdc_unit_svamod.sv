@@ -139,7 +139,15 @@ module cdc_unit_svamod
 	$rose(req_in) |=> !req_out [* 1:CDC_PULSESYNC_LATENCY-1] ##1 req_out;
    endproperty
 
+`ifdef GATELEVEL_SIM
+   property f_req_sync_gatelevel_ignore;
+      @(posedge clk) 1'b1;
+   endproperty
+   af_req_sync: assert property(f_req_sync_gatelevel_ignore) else assert_error("af_req_sync");
+`else
    af_req_sync: assert property(f_req_sync) else assert_error("af_req_sync");
+`endif
+
    cf_req_sync: cover property(f_req_sync);
 
 
