@@ -50,25 +50,77 @@ void dsp_unit::dsp_proc()
 	// 4.
 	if (clr_in_v)
 	  {
-	    // To do: Reset data registers and outputs to 0
-	  }      
+	  for (int i = 0; i < FILTER_TAPS; ++i)
+	      {
+		data0_r[i] = 0;
+		data1_r[i] = 0;
+	      }
+
+	    audio0_out_v = 0;
+	    audio1_out_v = 0;
+	  }     
 	else if (tick_in_v)
 	  {
 	    if (filter_cfg_v == DSP_FILTER_OFF)	  
 	      {
-		// To do: Bypass filters	      
+		// To do: Bypass filters	
+
+	for (int i= FILTER_TAPS - 1; i > 0; --i) {
+	    data0_r[i] = data0_r[i - 1];
+	    data1_r[i] = data1_r[i - 1];
+	}
+
+	data0_r[0] = audio0_in_v;
+	data1_r[0] = audio1_in_v;
+
+	audio0_out_v = audio0_in_v;
+	audio1_out_v = audio1_in_v;    
+      
 	      }
 	    else
 	      {
 		// To do: Execute filters
-	      }
+
+	// Shift input samples 
+	for (int i = FILTER_TAPS - 1; i > 0; --i) {
+	    data0_r[i] = data0_r[i - 1];
+	    data1_r[i] = data1_r[i - 1];
+	}
+	data0_r[0] = audio0_in_v;
+	data1_r[0] = audio1_in_v;
+
+	// FIR0 filter for left channel
+	sc_bigint<128> left_channel_accumulator_r = 0;
+	for (int i = 0; i < FILTER_TAPS; ++i) {
+	    left_channel_accumulator_r += data0_r[i] * dsp_regs_r[i].read();
+	}
+
+	// FIR1 filter for right channel
+	sc_bigint<128> right_channel_accumulator_r = 0;
+	for (int i = 0; i < FILTER_TAPS; ++i) {
+	    right_channel_accumulator_r += data1_r[i] * dsp_regs_r[i + FILTER_TAPS].read();
+	}
+
+	// Convert accumulators to 24-bit 
+	audio0_out_v = left_channel_accumulator_r.range(62, 31).to_int();
+	audio1_out_v = right_channel_accumulator_r.range(62, 31).to_int();
+
+
+	}
 	    
 	    // To do: Scale outputs
+            const sc_uint<16> MAX_OUT = 0x8000; 
+	    if (level0_v > MAX_OUT) level0_v = MAX_OUT;
+            if (level1_v > MAX_OUT) level1_v = MAX_OUT;
+
+            sc_bigint<64> sc0 = (sc_bigint<64>)(audio0_out_v * level0_v) ;
+            sc_bigint<64> sc1 = (sc_bigint<64>)(audio1_out_v * level1_v) ;
+
+		audio0_out_v = sc0 >> 15;
+		audio1_out_v = sc1 >> 15;
+
 	  }
-	
-	// NOTICE! Delete the next two lines when your code is done!
-	audio0_out_v = audio0_in_v;
-	audio1_out_v = audio1_in_v;      
+	// NOTICE! Delete the next two lines when your code is done!      
       }
       
       // 5.
