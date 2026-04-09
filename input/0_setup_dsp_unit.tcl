@@ -50,7 +50,7 @@ set RESET_STYLES          { async }
 set CATAPULT_DIRECTIVE_FILE   "${LAUNCH_DIR}/input/dsp_unit_catapult_directives.tcl"
 set CATAPULT_PROJECT_DIR      "${LAUNCH_DIR}/results"
 set CATAPULT_SUPPRESS_WARNINGS { OPT-4 CIN-108 CLUSTER-24 LIB-142}
-set CATAPULT_REMOVE_PROJECT    0
+set CATAPULT_REMOVE_PROJECT    1
 
 set STRATUS_MODULE_CONFIG_FILE "${LAUNCH_DIR}/input/dsp_unit_stratus_cfg.tcl"
 
