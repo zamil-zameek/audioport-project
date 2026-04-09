@@ -1,0 +1,256 @@
+-------------------------------------------------------------------------------
+Questa AutoCheck Version 2024.3_2 5905218 linux_x86_64 04-Dec-2024
+-------------------------------------------------------------------------------
+Report Generated               : Fri Mar 13 01:54:16 2026
+-------------------------------------------------------------------------------
+
+Executing Command : autocheck verify -timeout 2m -jobs 4 
+-------------------------------------------------------------------------------
+
+Clock Relationships
+-------------------------------------------------------------------------------
+clk (default)            : PP-P
+mclk                     : P-N-
+\$global_clock           : TTTT
+
+
+Using user-specified initialization sequence:
+
+---------------- BEGIN RESET SEQUENCE --------------
+$default_input_value 0
+rst_n = 0
+##
+## 2
+rst_n = 1
+
+---------------- END RESET SEQUENCE ----------------
+
+
+Port Constraints
+------------------------------------------------------------------------------------
+Category            Value                      Directive                  Port      
+------------------------------------------------------------------------------------
+Clock               period 17(PE@0,NE@8)       netlist clock              clk       
+Clock               period 52(PE@0,NE@26)      netlist clock              mclk      
+------------------------------------------------------------------------------------
+Reset               active_low(init_seq,1'b1)  netlist reset,formal init  rst_n     
+------------------------------------------------------------------------------------
+Constant            1'b0                       netlist constant           test_mode_in
+------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------
+Assumptions (4)
+-------------------------------------------------------------------------------
+CHECKER_MODULE.mf_play_length
+CHECKER_MODULE.mf_req_pulse
+CHECKER_MODULE.mf_tick_interval
+CHECKER_MODULE.mf_tick_pulse
+-------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------
+X Registers at Completion of Initialization Sequence
+-------------------------------------------------------------------------------
+  0 registers (0.0% of 18 in DUT)
+-------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------
+Z Registers at Completion of Initialization Sequence
+-------------------------------------------------------------------------------
+  0 registers (0.0% of 18 in DUT)
+-------------------------------------------------------------------------------
+
+
+---------------------------------------
+Formal Netlist Statistics         Count
+---------------------------------------
+Control Point Bits                   52
+  DUT Input Bits                     52
+  Cut Point Bits                      0
+  Black Box Output Bits               0
+  Undriven Wire Bits                  0
+  Modeling Bits                       0
+State Bits                          157
+  Counter State Bits                  0
+  RAM State Bits                      0
+  Register State Bits               112
+  Property State Bits                45
+Logic Gates                        1098
+  Design Gates                      677
+  Property Gates                    421
+---------------------------------------
+
+
+AutoCheck Compile Summary
+-------------------------------------------------------------------------------
+Check                     Evaluations         Found        Waived
+-------------------------------------------------------------------------------
+ASSIGN_IMPLICIT_CONSTANT           14             0             0
+CASE_DUPLICATE                      2             0             0
+CLK_DELAY                          18             0             0
+CLK_IN_DATA                       144             0             0
+COMBO_LOOP                         32             0             0
+DECLARATION_UNDRIVEN               25             0             0
+DECLARATION_UNUSED                 25             0             0
+DECLARATION_UNUSED_UNDRIVEN         0             0             0
+FUNCTION_INCOMPLETE_ASSIGN          0             0             0
+INDEX_UNREACHABLE                   0             0             0
+LATCH_INFERRED                      0             0             0
+LOGIC_UNDRIVEN                     25             0             0
+LOGIC_UNUSED                        0             0             0
+PORT_UNDRIVEN                      33             0             0
+PORT_UNUSED                        33             0             0
+REG_MIXED_ASSIGNS                  18             0             0
+REG_NO_RESET                       18             0             0
+REG_RACE                            0             0             0
+REG_VARIABLE_ARESET                36             0             0
+RESET_HIGH_LOW                      1             0             0
+RESET_SYNC_ASYNC                    1             0             0
+SLIST_INCOMPLETE                    0             0             0
+X_ASSIGN_REACHABLE                  0             0             0
+-------------------------------------------------------------------------------
+AC Total                          425             0             0
+-------------------------------------------------------------------------------
+
+
+AutoCheck Verify Summary
+-------------------------------------------------------------------------------
+Check                     Evaluations         Found        Waived
+-------------------------------------------------------------------------------
+ARITH_OVERFLOW_SUB                  0             0             0
+ARITH_OVERFLOW_VAL                  0             0             0
+ARITH_ZERO_DIV                      0             0             0
+ARITH_ZERO_MOD                      0             0             0
+BLOCK_UNREACHABLE                  22             0             0
+BUS_MULTIPLY_DRIVEN                 0             0             0
+BUS_UNDRIVEN                        0             0             0
+BUS_VALUE_CONFLICT                  0             0             0
+CASE_DEFAULT                      OFF           OFF           OFF
+CASE_FULL                           0             0             0
+CASE_PARALLEL                       0             0             0
+FSM_DEADLOCK_STATE                  4             0             0
+FSM_LOCKOUT_STATE                   4             0             0
+FSM_STUCK_BIT                       4             0             0
+FSM_UNREACHABLE_STATE               4             0             0
+FSM_UNREACHABLE_TRANS               4             0             0
+INDEX_ILLEGAL                       0             0             0
+INIT_X_PESSIMISM                    0             0             0
+INIT_X_UNRESOLVED                   0             0             0
+INIT_X_UNRESOLVED_MEM               0             0             0
+ONE_COLD                            0             0             0
+ONE_HOT                             0             0             0
+REG_MULTIPLY_DRIVEN                 0             0             0
+REG_STUCK_AT                       16             0             0
+REG_TOGGLE_VIOLATION               12             2             0
+-------------------------------------------------------------------------------
+AC Total                           70             2             0
+-------------------------------------------------------------------------------
+
+
+-----------------------------------------------------------
+AutoCheck Details
+-----------------------------------------------------------
+
+Type      : REG_TOGGLE_VIOLATION
+Severity  : Caution
+Status    : Uninspected
+Module    : cdc_unit
+Signal    : rsync_ff1_r
+Toggle    : 1'b1 -> 1'b0
+Location  : /homedir04/mmohamed25/DT3_2026/project/workdir/input/cdc_unit.sv:32
+
+Type      : REG_TOGGLE_VIOLATION
+Severity  : Caution
+Status    : Uninspected
+Module    : cdc_unit
+Signal    : rsync_ff2_r
+Toggle    : 1'b1 -> 1'b0
+Location  : /homedir04/mmohamed25/DT3_2026/project/workdir/input/cdc_unit.sv:33
+
+-----------------------------------------------------------
+
+-------------------------------------------------------------------------------
+CPU Time per Check Type
+-------------------------------------------------------------------------------
+ %   Seconds    Check
+-------------------------------------------------------------------------------
+ 0.0%      0    ARITH_OVERFLOW_SUB
+ 0.0%      0    ARITH_OVERFLOW_VAL
+ 0.0%      0    ARITH_ZERO_DIV
+ 0.0%      0    ARITH_ZERO_MOD
+ 0.1%      0    BLOCK_UNREACHABLE
+ 0.0%      0    BUS_MULTIPLY_DRIVEN
+ 0.0%      0    BUS_UNDRIVEN
+ 0.0%      0    BUS_VALUE_CONFLICT
+ 0.0%      0    CASE_DEFAULT
+ 0.0%      0    CASE_FULL
+ 0.0%      0    CASE_PARALLEL
+49.5%     35    FSM_DEADLOCK_STATE
+49.5%     35    FSM_LOCKOUT_STATE
+ 0.0%      0    FSM_STUCK_BIT
+ 0.0%      0    FSM_UNREACHABLE_STATE
+ 0.0%      0    FSM_UNREACHABLE_TRANS
+ 0.0%      0    INDEX_ILLEGAL
+ 0.0%      0    INIT_X_PESSIMISM
+ 0.0%      0    INIT_X_UNRESOLVED
+ 0.0%      0    INIT_X_UNRESOLVED_MEM
+ 0.0%      0    ONE_COLD
+ 0.0%      0    ONE_HOT
+ 0.0%      0    REG_MULTIPLY_DRIVEN
+ 0.7%      0    REG_STUCK_AT
+ 0.1%      0    REG_TOGGLE_VIOLATION
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+Unused autocheck_report Directives
+-------------------------------------------------------------------------------
+<none>
+-------------------------------------------------------------------------------
+
+
+
+--------- Process Statistics ----------
+Elapsed Time                      48 s
+Total CPU Time                    72 s
+Total Peak Memory                1.6 GB
+---------- Engine Processes -----------
+Average CPU Time                  18 s
+Minimum CPU Utilization            0 %
+Average Peak Memory              0.3 GB
+Maximum Peak Memory              0.5 GB
+Peak Cores                         4
+Distinct Machines                  1
+Launch Failures                    0
+Unexpected Process Terminations    0
+Successful Re-connections          0
+---------------------------------------
+
+
+
+----- Detailed Process Statistics -----
+Elapsed Time                      48 s 
+-------- Orchestration Process --------
+------ lehmus-cn2.oulu.fi:424365 ------
+CPU Time                           0 s 
+Peak Memory                      0.3 GB
+---------- Engine Processes -----------
+------ lehmus-cn2.oulu.fi:424390 ------
+CPU Time                           0 s 
+Peak Memory                      0.2 GB
+CPU Utilization                    0 % 
+------ lehmus-cn2.oulu.fi:424401 ------
+CPU Time                           0 s 
+Peak Memory                      0.2 GB
+CPU Utilization                    0 % 
+------ lehmus-cn2.oulu.fi:424388 ------
+CPU Time                          24 s 
+Peak Memory                      0.5 GB
+CPU Utilization                  100 % 
+------ lehmus-cn2.oulu.fi:424396 ------
+CPU Time                          48 s 
+Peak Memory                      0.4 GB
+CPU Utilization                  100 % 
+---------------------------------------
+

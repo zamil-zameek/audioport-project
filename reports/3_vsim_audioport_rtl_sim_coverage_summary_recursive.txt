@@ -1,0 +1,45 @@
+Recursive Coverage Report Summary Data by instance
+
+=================================================================================
+=== Instance: /audioport_tb/DUT_INSTANCE/control_unit_1
+=== Design Unit: work.control_unit
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                       1060       137       923    12.92%
+
+=================================================================================
+=== Instance: /audioport_tb/DUT_INSTANCE/dsp_unit_1
+=== Design Unit: work.dsp_unit
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        998         3       995     0.30%
+
+=================================================================================
+=== Instance: /audioport_tb/DUT_INSTANCE/cdc_unit_1
+=== Design Unit: work.cdc_unit
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        664         6       658     0.90%
+
+=================================================================================
+=== Instance: /audioport_tb/DUT_INSTANCE/i2s_unit_1
+=== Design Unit: work.i2s_unit(rtl)
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        336         0       336     0.00%
+
+=================================================================================
+=== Instance: /audioport_tb/DUT_INSTANCE
+=== Design Unit: work.audioport
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                       4596       141      4455     3.06%
+
+
+Total Coverage By Instance (filtered view): 3.06%
+

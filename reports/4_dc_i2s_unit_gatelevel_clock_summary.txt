@@ -1,0 +1,39 @@
+ 
+****************************************
+Report : clock timing
+        -type summary
+Design : i2s_unit
+Version: T-2022.03-SP5-1
+Date   : Fri Mar  6 11:30:30 2026
+****************************************
+
+  Clock: clk
+----------------------------------------------------------------------------
+  Maximum setup launch latency:
+      counter_r_reg[1]/CK                                    0.00      wr-+
+
+  Minimum setup capture latency:
+      counter_r_reg[1]/CK                                    0.00      wr-+
+
+  Minimum hold launch latency:
+      counter_r_reg[1]/CK                                    0.00      br-+
+
+  Maximum hold capture latency:
+      counter_r_reg[1]/CK                                    0.00      br-+
+
+  Maximum active transition:
+      counter_r_reg[1]/CK                                    0.00      wr-+
+
+  Minimum active transition:
+      counter_r_reg[1]/CK                                    0.00      wr-+
+
+  Maximum setup skew:
+      counter_r_reg[0]/CK                                              wr-+
+      counter_r_reg[0]/CK                                    0.00      wr-+
+
+  Maximum hold skew:
+      counter_r_reg[0]/CK                                              br-+
+      counter_r_reg[0]/CK                                    0.00      br-+
+----------------------------------------------------------------------------
+
+1

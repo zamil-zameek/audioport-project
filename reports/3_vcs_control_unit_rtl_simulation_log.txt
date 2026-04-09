@@ -1,0 +1,690 @@
+Start time:  Fri Feb 13 13:41:03 EET 2026
+                         Chronologic VCS (TM)
+       Version T-2022.06-SP2_Full64 -- Fri Feb 13 13:41:03 2026
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file 'input/apb_pkg.sv'
+Parsing included file 'input/audioport.svh'.
+Back to file 'input/apb_pkg.sv'.
+CPU time: .130 seconds to compile
+                         Chronologic VCS (TM)
+       Version T-2022.06-SP2_Full64 -- Fri Feb 13 13:41:03 2026
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file 'input/audioport_pkg.sv'
+Parsing included file 'input/audioport.svh'.
+Back to file 'input/audioport_pkg.sv'.
+CPU time: .134 seconds to compile
+                         Chronologic VCS (TM)
+       Version T-2022.06-SP2_Full64 -- Fri Feb 13 13:41:04 2026
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file 'input/audioport_util_pkg.sv'
+Parsing included file 'input/audioport.svh'.
+Back to file 'input/audioport_util_pkg.sv'.
+CPU time: .137 seconds to compile
+                         Chronologic VCS (TM)
+       Version T-2022.06-SP2_Full64 -- Fri Feb 13 13:41:04 2026
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file 'input/control_unit.sv'
+Parsing included file 'input/audioport.svh'.
+Back to file 'input/control_unit.sv'.
+CPU time: .137 seconds to compile
+                         Chronologic VCS (TM)
+       Version T-2022.06-SP2_Full64 -- Fri Feb 13 13:41:04 2026
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file 'input/control_unit_svamod.sv'
+Parsing included file 'input/audioport.svh'.
+Back to file 'input/control_unit_svamod.sv'.
+Parsing included file 'input/apb_assumes.svh'.
+Back to file 'input/control_unit_svamod.sv'.
+Parsing included file 'input/control_unit_wba.svh'.
+Back to file 'input/control_unit_svamod.sv'.
+CPU time: .171 seconds to compile
+                         Chronologic VCS (TM)
+       Version T-2022.06-SP2_Full64 -- Fri Feb 13 13:41:05 2026
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file 'input/apb_if.sv'
+Parsing included file 'input/audioport.svh'.
+Back to file 'input/apb_if.sv'.
+CPU time: .136 seconds to compile
+                         Chronologic VCS (TM)
+       Version T-2022.06-SP2_Full64 -- Fri Feb 13 13:41:05 2026
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file 'input/irq_out_if.sv'
+Parsing included file 'input/audioport.svh'.
+Back to file 'input/irq_out_if.sv'.
+CPU time: .129 seconds to compile
+                         Chronologic VCS (TM)
+       Version T-2022.06-SP2_Full64 -- Fri Feb 13 13:41:05 2026
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file 'input/control_unit_test.sv'
+Parsing included file 'input/audioport.svh'.
+Back to file 'input/control_unit_test.sv'.
+Parsing included file 'input/control_unit_test_tasks.svh'.
+Back to file 'input/control_unit_test.sv'.
+CPU time: .144 seconds to compile
+                         Chronologic VCS (TM)
+       Version T-2022.06-SP2_Full64 -- Fri Feb 13 13:41:05 2026
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file 'input/control_unit_tb.sv'
+Parsing included file 'input/audioport.svh'.
+Back to file 'input/control_unit_tb.sv'.
+Parsing included file 'input/sva_bindings.svh'.
+Back to file 'input/control_unit_tb.sv'.
+CPU time: .134 seconds to compile
+
+Warning-[LCA_FEATURES_ENABLED] Usage warning
+  LCA features enabled by '-lca' argument on the command line.  For more 
+  information regarding list of LCA features please refer to Chapter "LCA 
+  features" in the VCS Release Notes
+
+Doing common elaboration 
+                         Chronologic VCS (TM)
+       Version T-2022.06-SP2_Full64 -- Fri Feb 13 13:41:07 2026
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Top Level Modules:
+       control_unit_tb
+TimeScale is 1 ns / 1 ps
+VCS Coverage Metrics Release T-2022.06-SP2_Full64 Copyright (c) 1991-2022 by Synopsys Inc.
+Starting vcs inline pass...
+9 modules and 0 UDP read.
+recompiling package apb_pkg
+recompiling package audioport_pkg
+recompiling package audioport_util_pkg
+recompiling module control_unit_tb
+recompiling module apb_if
+recompiling module irq_out_if
+recompiling module control_unit
+recompiling module control_unit_test
+recompiling module control_unit_svamod
+All of 9 modules done
+/sw/rhel7/synopsys/vcs/T-2022.06-SP2//bin/vcs: line 34541: 3925552 Segmentation fault      (core dumped) ${TOOL_HOME}/bin/cfs_ident_exec -f ${XML_INPUT_EXE} -o "${fsearchDir}/idents_tapi.xml" -o_SrcFile "${dirSrcFiles}/src_files_c" ${all_dyn_libs} > tapi_xml_writer.log
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x /homedir04/mmohamed25/DT3_2026/project/workdir/output/control_unit_simv_rtl ]; then chmod a-x /homedir04/mmohamed25/DT3_2026/project/workdir/output/control_unit_simv_rtl; fi
+g++  -o /homedir04/mmohamed25/DT3_2026/project/workdir/output/control_unit_simv_rtl      -rdynamic -Wl,-rpath='$ORIGIN'/control_unit_simv_rtl.daidir -Wl,-rpath=./control_unit_simv_rtl.daidir -Wl,-rpath=/sw/rhel7/synopsys/vcs/T-2022.06-SP2/linux64/lib -L/sw/rhel7/synopsys/vcs/T-2022.06-SP2/linux64/lib -Wl,-rpath-link=./  /usr/lib64/libnuma.so.1   objs/amcQw_d.o   _3925365_archive_1.so  SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o            -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -lvirsim -lreader_common /sw/rhel7/synopsys/vcs/T-2022.06-SP2/linux64/lib/libBA.a -luclinative /sw/rhel7/synopsys/vcs/T-2022.06-SP2/linux64/lib/vcs_tls.o   -Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive        _vcs_pli_stub_.o   /sw/rhel7/synopsys/vcs/T-2022.06-SP2/linux64/lib/vcs_save_restore_new.o /sw/rhel7/synopsys/verdi/T-2022.06-SP2//share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm -lpthread -ldl 
+/homedir04/mmohamed25/DT3_2026/project/workdir/output/control_unit_simv_rtl up to date
+CPU time: 1.099 seconds to compile + .280 seconds to elab + .266 seconds to link
+Verdi KDB elaboration done and the database successfully generated: 0 error(s), 0 warning(s)
+Verdi (R)
+
+Release Verdi_T-2022.06-SP2 for (RH Linux x86_64/64bit) -- Tue Nov 22 02:43:12 PDT 2022
+
+Copyright (c) 1999 - 2022 Synopsys, Inc.
+This software and the associated documentation are proprietary to Synopsys, Inc. 
+This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc. 
+All other use, reproduction, or distribution of this software is strictly prohibited.
+
+
+Info: Running in interactive mode.
+Info: Running in interactive mode.
+Invoking simulator...
+Verdi>/homedir04/mmohamed25/DT3_2026/project/workdir/output/control_unit_simv_rtl -cm line+cond+fsm+branch+assert -assert dbgopt -sml=verdi +fsdb+gate=off -ucli2Proc -ucli
+*Verdi* Loading libsscore_vcs202206.so
+FSDB Dumper for VCS, Release Verdi_T-2022.06-SP2, Linux x86_64/64bit, 11/22/2022
+(C) 1996 - 2022 by Synopsys, Inc.
+*Verdi* : Create FSDB file '/homedir04/mmohamed25/DT3_2026/project/workdir/inter.fsdb'
+*Verdi* : Flush all FSDB Files at 0 ps.
+*Verdi* : Enable RPC Server(3925912)
+Warning-[RA-UAA] Invalid run time argument
+  Invalid run time argument "dbgopt" specified with -assert. Argument will be 
+  ignored.
+  
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06-SP2_Full64; Runtime version T-2022.06-SP2_Full64;  Feb 13 13:41 2026
+ VCS Coverage Metrics Release T-2022.06-SP2_Full64 Copyright (c) 1991-2022 by Synopsys Inc.
+Verdi>config endofsim noexit
+noexit
+Verdi>set wid 1b279850
+1b279850
+Verdi>verdiSetActWin -win 1b279850
+1
+Verdi>power -gate_level rtl_on sv
+Verdi>power control_unit_tb.DUT_INSTANCE
+Verdi>power -enable
+Verdi>run 0
+control_unit_test.sv, 72 : 	      #(WATCHDOG_TIME);
+Verdi>scope control_unit_tb.DUT_INSTANCE
+control_unit_tb.DUT_INSTANCE
+Verdi>search -in -depth 1
+{control_unit_tb.DUT_INSTANCE.clk}
+{control_unit_tb.DUT_INSTANCE.PADDR}
+{control_unit_tb.DUT_INSTANCE.PENABLE}
+{control_unit_tb.DUT_INSTANCE.PSEL}
+{control_unit_tb.DUT_INSTANCE.PWDATA}
+{control_unit_tb.DUT_INSTANCE.PWRITE}
+{control_unit_tb.DUT_INSTANCE.req_in}
+{control_unit_tb.DUT_INSTANCE.rst_n}
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.clk"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.clk).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.PADDR"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.PADDR).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.PENABLE"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.PENABLE).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.PSEL"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.PSEL).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.PWDATA"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.PWDATA).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.PWRITE"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.PWRITE).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.req_in"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.req_in).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.rst_n"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.rst_n).
+Verdi>scope control_unit_tb.DUT_INSTANCE
+control_unit_tb.DUT_INSTANCE
+Verdi>search -out -depth 1
+{control_unit_tb.DUT_INSTANCE.audio0_out}
+{control_unit_tb.DUT_INSTANCE.audio1_out}
+{control_unit_tb.DUT_INSTANCE.cfg_out}
+{control_unit_tb.DUT_INSTANCE.cfg_reg_out}
+{control_unit_tb.DUT_INSTANCE.clr_out}
+{control_unit_tb.DUT_INSTANCE.dsp_regs_out}
+{control_unit_tb.DUT_INSTANCE.irq_out}
+{control_unit_tb.DUT_INSTANCE.level_out}
+{control_unit_tb.DUT_INSTANCE.level_reg_out}
+{control_unit_tb.DUT_INSTANCE.play_out}
+{control_unit_tb.DUT_INSTANCE.PRDATA}
+{control_unit_tb.DUT_INSTANCE.PREADY}
+{control_unit_tb.DUT_INSTANCE.PSLVERR}
+{control_unit_tb.DUT_INSTANCE.tick_out}
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.audio0_out"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.audio0_out).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.audio1_out"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.audio1_out).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.cfg_out"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.cfg_out).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.cfg_reg_out"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.cfg_reg_out).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.clr_out"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.clr_out).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.dsp_regs_out"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.dsp_regs_out).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.irq_out"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.irq_out).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.level_out"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.level_out).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.level_reg_out"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.level_reg_out).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.play_out"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.play_out).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.PRDATA"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.PRDATA).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.PREADY"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.PREADY).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.PSLVERR"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.PSLVERR).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.tick_out"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.tick_out).
+Verdi>scope control_unit_tb.DUT_INSTANCE
+control_unit_tb.DUT_INSTANCE
+Verdi>search -variables -depth 1
+{control_unit_tb.DUT_INSTANCE.apbread}
+{control_unit_tb.DUT_INSTANCE.apbwrite}
+{control_unit_tb.DUT_INSTANCE.cfg}
+{control_unit_tb.DUT_INSTANCE.clr}
+{control_unit_tb.DUT_INSTANCE.irq_r}
+{control_unit_tb.DUT_INSTANCE.irqack}
+{control_unit_tb.DUT_INSTANCE.ldata_ns}
+{control_unit_tb.DUT_INSTANCE.ldata_r}
+{control_unit_tb.DUT_INSTANCE.lempty}
+{control_unit_tb.DUT_INSTANCE.level}
+{control_unit_tb.DUT_INSTANCE.lfifo}
+{control_unit_tb.DUT_INSTANCE.lfull}
+{control_unit_tb.DUT_INSTANCE.lhead_ns}
+{control_unit_tb.DUT_INSTANCE.lhead_r}
+{control_unit_tb.DUT_INSTANCE.llooped_ns}
+{control_unit_tb.DUT_INSTANCE.llooped_r}
+{control_unit_tb.DUT_INSTANCE.ltail_ns}
+{control_unit_tb.DUT_INSTANCE.ltail_r}
+{control_unit_tb.DUT_INSTANCE.play_r}
+{control_unit_tb.DUT_INSTANCE.rbank_r}
+{control_unit_tb.DUT_INSTANCE.rdata_ns}
+{control_unit_tb.DUT_INSTANCE.rdata_r}
+{control_unit_tb.DUT_INSTANCE.rempty}
+{control_unit_tb.DUT_INSTANCE.req_r}
+{control_unit_tb.DUT_INSTANCE.rfifo}
+{control_unit_tb.DUT_INSTANCE.rfull}
+{control_unit_tb.DUT_INSTANCE.rhead_ns}
+{control_unit_tb.DUT_INSTANCE.rhead_r}
+{control_unit_tb.DUT_INSTANCE.rindex}
+{control_unit_tb.DUT_INSTANCE.rlooped_ns}
+{control_unit_tb.DUT_INSTANCE.rlooped_r}
+{control_unit_tb.DUT_INSTANCE.rtail_ns}
+{control_unit_tb.DUT_INSTANCE.rtail_r}
+{control_unit_tb.DUT_INSTANCE.start}
+{control_unit_tb.DUT_INSTANCE.stop}
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.apbread"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.apbread).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.apbwrite"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.apbwrite).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.cfg"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.cfg).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.clr"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.clr).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.irq_r"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.irq_r).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.irqack"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.irqack).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.ldata_ns"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.ldata_ns).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.ldata_r"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.ldata_r).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.lempty"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.lempty).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.level"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.level).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.lfifo"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.lfifo).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.lfull"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.lfull).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.lhead_ns"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.lhead_ns).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.lhead_r"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.lhead_r).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.llooped_ns"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.llooped_ns).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.llooped_r"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.llooped_r).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.ltail_ns"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.ltail_ns).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.ltail_r"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.ltail_r).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.play_r"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.play_r).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.rbank_r"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.rbank_r).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.rdata_ns"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.rdata_ns).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.rdata_r"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.rdata_r).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.rempty"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.rempty).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.req_r"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.req_r).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.rfifo"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.rfifo).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.rfull"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.rfull).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.rhead_ns"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.rhead_ns).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.rhead_r"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.rhead_r).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.rindex"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.rindex).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.rlooped_ns"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.rlooped_ns).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.rlooped_r"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.rlooped_r).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.rtail_ns"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.rtail_ns).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.rtail_r"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.rtail_r).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.start"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.start).
+Verdi>fsdbDumpvars 0 "control_unit_tb.DUT_INSTANCE.stop"  +all +trace_process
+*Verdi* : Dumping the signal (control_unit_tb.DUT_INSTANCE.stop).
+Verdi>scope control_unit_tb.DUT_INSTANCE
+control_unit_tb.DUT_INSTANCE
+Verdi>search -signals -depth 1
+Verdi>run
+Info: "input/control_unit_test_tasks.svh", 21: control_unit_tb.TEST.apb_test: at time 65000 ps
+apb_test
+Info: "input/control_unit_test_tasks.svh", 54: control_unit_tb.TEST.address_decoding_test: at time 396500 ps
+address_decoding_test
+Info: Read executed outside range at 8bfffffc (Logic checked by whitebox assertion)
+Info: "input/control_unit_test_tasks.svh", 94: control_unit_tb.TEST.register_test: at time 4686500 ps
+register_test
+Info: "input/control_unit_test_tasks.svh", 140: control_unit_tb.TEST.fifo_bus_test: at time 13149500 ps
+fifo_bus_test
+Info: "input/control_unit_test_tasks.svh", 202: control_unit_tb.TEST.prdata_off_test: at time 21924500 ps
+prdata_off_test
+Info: "input/control_unit_test_tasks.svh", 264: control_unit_tb.TEST.cmd_clr_test: at time 22119500 ps
+cmd_clr_test
+Info: "input/control_unit_test_tasks.svh", 308: control_unit_tb.TEST.cmd_cfg_test: at time 24381500 ps
+cmd_cfg_test
+Info: CMD_CFG written to 8c000000. Monitor cfg_out in waveform.
+Info: "input/control_unit_test_tasks.svh", 329: control_unit_tb.TEST.cmd_level_test: at time 24459500 ps
+cmd_level_test
+Info: CMD_LEVEL written to 8c000000. Monitor level_out in waveform.
+Info: "input/control_unit_test_tasks.svh", 357: control_unit_tb.TEST.req_tick_test: at time 24537500 ps
+req_tick_test
+Info: "input/control_unit_test_tasks.svh", 443: control_unit_tb.TEST.performance_test: at time 25954500 ps
+performance_test
+#####################################################################################################
+control_unit_test results: PASSED:          10 / FAILED:           0
+#####################################################################################################
+$finish called from file "input/control_unit_test.sv", line 84.
+$finish at simulation time           3535837500
+"input/apb_assumes.svh", 58: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.mf_penable_fall: started at 3535837500ps not finished
+"input/apb_assumes.svh", 69: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.mf_penable_hold: Antecedent of the implication never satisfied.
+"input/apb_assumes.svh", 101: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.mf_apb_access: started at 3535824500ps not finished
+"input/control_unit_wba.svh", 98: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.ar_rbank_r_write: started at 3535837500ps not finished
+"input/control_unit_wba.svh", 99: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_rbank_r_write: started at 3535837500ps not finished
+"input/control_unit_wba.svh", 118: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.ar_status_reg_standby: started at 3535837500ps not finished
+"input/control_unit_wba.svh", 119: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_status_reg_standby: started at 3535837500ps not finished
+"input/control_unit_wba.svh", 179: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.ar_ldata_r_failed_write: Antecedent of the implication never satisfied.
+"input/control_unit_wba.svh", 180: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_ldata_r_failed_write: Antecedent of the implication never satisfied.
+"input/control_unit_wba.svh", 189: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.ar_ldata_r_stable: started at 3535837500ps not finished
+"input/control_unit_wba.svh", 190: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_ldata_r_stable: started at 3535837500ps not finished
+"input/control_unit_wba.svh", 219: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.ar_lhead_r_stable: started at 3535837500ps not finished
+"input/control_unit_wba.svh", 220: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_lhead_r_stable: started at 3535837500ps not finished
+"input/control_unit_wba.svh", 259: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.ar_llooped_r_stable: started at 3535837500ps not finished
+"input/control_unit_wba.svh", 260: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_llooped_r_stable: started at 3535837500ps not finished
+"input/control_unit_wba.svh", 310: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.ar_ltail_r_stable: started at 3535837500ps not finished
+"input/control_unit_wba.svh", 311: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_ltail_r_stable: started at 3535837500ps not finished
+"input/control_unit_wba.svh", 392: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.ar_rdata_r_failed_write: Antecedent of the implication never satisfied.
+"input/control_unit_wba.svh", 393: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_rdata_r_failed_write: Antecedent of the implication never satisfied.
+"input/control_unit_wba.svh", 402: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.ar_rdata_r_stable: started at 3535837500ps not finished
+"input/control_unit_wba.svh", 403: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_rdata_r_stable: started at 3535837500ps not finished
+"input/control_unit_wba.svh", 432: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.ar_rhead_r_stable: started at 3535837500ps not finished
+"input/control_unit_wba.svh", 433: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_rhead_r_stable: started at 3535837500ps not finished
+"input/control_unit_wba.svh", 472: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.ar_rlooped_r_stable: started at 3535837500ps not finished
+"input/control_unit_wba.svh", 473: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_rlooped_r_stable: started at 3535837500ps not finished
+"input/control_unit_wba.svh", 523: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.ar_rtail_r_stable: started at 3535837500ps not finished
+"input/control_unit_wba.svh", 524: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_rtail_r_stable: started at 3535837500ps not finished
+"input/control_unit_wba.svh", 646: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.ar_play_r_fall: started at 3535837500ps not finished
+"input/control_unit_wba.svh", 647: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_play_r_fall: started at 3535837500ps not finished
+"input/control_unit_wba.svh", 826: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.ar_req_r_on: started at 3535837500ps not finished
+"input/control_unit_wba.svh", 827: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_req_r_on: started at 3535837500ps not finished
+"input/control_unit_wba.svh", 856: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.ar_irq_r_fall_stop: started at 3535837500ps not finished
+"input/control_unit_wba.svh", 857: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_irq_r_fall_stop: started at 3535837500ps not finished
+"input/apb_if.sv", 231: control_unit_tb.apb.penable_deassert_ok: started at 3535837500ps not finished
+"input/apb_if.sv", 232: control_unit_tb.apb.penable_deassert_cov: started at 3535837500ps not finished
+"input/control_unit_svamod.sv", 167: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cf_pready_on, 271988 attempts, 271965 match
+"input/control_unit_svamod.sv", 177: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cf_pslverr_off, 271988 attempts, 271965 match
+"input/control_unit_svamod.sv", 197: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cf_clr_out_pulse, 271988 attempts, 271965 match
+"input/control_unit_svamod.sv", 207: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cf_clr_out_valid_high, 271988 attempts, 271965 match
+"input/control_unit_svamod.sv", 242: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cf_start_play, 271988 attempts, 271965 match
+"input/control_unit_svamod.sv", 252: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cf_valid_start_play, 271988 attempts, 271965 match
+"input/control_unit_svamod.sv", 262: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cf_stop_play, 271988 attempts, 271965 match
+"input/control_unit_svamod.sv", 272: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cf_valid_stop_play, 271988 attempts, 271965 match
+"input/control_unit_svamod.sv", 282: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cf_level_out_pulse, 271988 attempts, 271965 match
+"input/control_unit_svamod.sv", 292: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cf_level_out_valid_high, 271988 attempts, 271965 match
+"input/control_unit_svamod.sv", 350: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cf_irq_out_rise_first, 271988 attempts, 271965 match
+"input/control_unit_svamod.sv", 389: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cf_irq_out_down, 271988 attempts, 271965 match
+"input/control_unit_wba.svh", 9: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_pslverr, 271988 attempts, 271965 match
+"input/control_unit_wba.svh", 19: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_pready, 271988 attempts, 271965 match
+"input/control_unit_wba.svh", 49: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_index_range, 271988 attempts, 271965 match
+"input/control_unit_wba.svh", 139: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_cfg_reg_out, 271988 attempts, 271965 match
+"input/control_unit_wba.svh", 149: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_level_reg_out, 271988 attempts, 271965 match
+"input/control_unit_wba.svh", 159: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_dsp_regs_out, 271988 attempts, 271965 match
+"input/control_unit_wba.svh", 667: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_play_out_state, 271988 attempts, 271965 match
+"input/control_unit_wba.svh", 697: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_clr_out, 271988 attempts, 271965 match
+"input/control_unit_wba.svh", 887: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_irq_out, 271988 attempts, 271965 match
+"input/control_unit_svamod.sv", 187: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cf_prdata_off, 271988 attempts, 269831 match
+"input/control_unit_svamod.sv", 217: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cf_cfg_out_pulse, 271988 attempts, 1 match
+"input/control_unit_svamod.sv", 232: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cf_cfg_out_valid_high, 271988 attempts, 1 match
+"input/control_unit_svamod.sv", 302: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cf_tick_standby, 271988 attempts, 2263 match
+"input/control_unit_svamod.sv", 312: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cf_tick_out_high, 271988 attempts, 172 match
+"input/control_unit_svamod.sv", 322: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cf_tick_out_low, 271988 attempts, 271793 match
+"input/control_unit_svamod.sv", 340: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cf_fifo_drain, 271988 attempts, 3 match
+"input/control_unit_svamod.sv", 369: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cf_irq_out_high, 271988 attempts, 1068 match
+"input/control_unit_svamod.sv", 379: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cf_irq_out_standby, 271988 attempts, 2263 match
+"input/control_unit_svamod.sv", 399: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cf_cfg_reg_drv, 271988 attempts, 2 match
+"input/control_unit_svamod.sv", 409: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cf_level_reg_drv, 271988 attempts, 1 match
+"input/control_unit_svamod.sv", 420: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cf_dsp_regs_drv, 271988 attempts, 101 match
+"input/control_unit_wba.svh", 29: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_rindex_on, 271988 attempts, 2134 match
+"input/control_unit_wba.svh", 39: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_rindex_off, 271988 attempts, 269831 match
+"input/control_unit_wba.svh", 59: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_apbwrite_on, 271988 attempts, 708 match
+"input/control_unit_wba.svh", 69: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_apbwrite_off, 271988 attempts, 271257 match
+"input/control_unit_wba.svh", 79: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_apbread_on, 271988 attempts, 359 match
+"input/control_unit_wba.svh", 89: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_apbread_off, 271988 attempts, 271606 match
+"input/control_unit_wba.svh", 99: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_rbank_r_write, 271988 attempts, 117 match
+"input/control_unit_wba.svh", 109: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_status_reg_play, 271988 attempts, 2 match
+"input/control_unit_wba.svh", 119: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_status_reg_standby, 271988 attempts, 1 match
+"input/control_unit_wba.svh", 129: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_rbank_r_stable, 271988 attempts, 271836 match
+"input/control_unit_wba.svh", 170: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_ldata_r_write, 271988 attempts, 295 match
+"input/control_unit_wba.svh", 180: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_ldata_r_failed_write, 271988 attempts, 0 match
+"input/control_unit_wba.svh", 190: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_ldata_r_stable, 271988 attempts, 271657 match
+"input/control_unit_wba.svh", 200: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_lhead_r_inc, 271988 attempts, 290 match
+"input/control_unit_wba.svh", 210: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_lhead_r_loop, 271988 attempts, 5 match
+"input/control_unit_wba.svh", 220: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_lhead_r_stable, 271988 attempts, 271657 match
+"input/control_unit_wba.svh", 230: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_llooped_r_on, 271988 attempts, 5 match
+"input/control_unit_wba.svh", 240: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_llooped_r_off_1, 271988 attempts, 1 match
+"input/control_unit_wba.svh", 250: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_llooped_r_off_2, 271988 attempts, 3 match
+"input/control_unit_wba.svh", 260: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_llooped_r_stable, 271988 attempts, 271432 match
+"input/control_unit_wba.svh", 270: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_ltail_r_inc_1, 271988 attempts, 56 match
+"input/control_unit_wba.svh", 280: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_ltail_r_inc_2, 271988 attempts, 165 match
+"input/control_unit_wba.svh", 290: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_ltail_r_loop_1, 271988 attempts, 1 match
+"input/control_unit_wba.svh", 300: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_ltail_r_loop_2, 271988 attempts, 3 match
+"input/control_unit_wba.svh", 311: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_ltail_r_stable, 271988 attempts, 271727 match
+"input/control_unit_wba.svh", 321: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_lempty_on, 271988 attempts, 1407 match
+"input/control_unit_wba.svh", 331: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_lempty_of, 271988 attempts, 270558 match
+"input/control_unit_wba.svh", 341: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_lfull_on, 271988 attempts, 4326 match
+"input/control_unit_wba.svh", 351: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_lfull_off, 271988 attempts, 267639 match
+"input/control_unit_wba.svh", 361: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_lfifo_output_on, 271988 attempts, 270558 match
+"input/control_unit_wba.svh", 371: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_lfifo_output_off, 271988 attempts, 1407 match
+"input/control_unit_wba.svh", 383: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_rdata_r_write, 271988 attempts, 295 match
+"input/control_unit_wba.svh", 393: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_rdata_r_failed_write, 271988 attempts, 0 match
+"input/control_unit_wba.svh", 403: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_rdata_r_stable, 271988 attempts, 271657 match
+"input/control_unit_wba.svh", 413: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_rhead_r_inc, 271988 attempts, 290 match
+"input/control_unit_wba.svh", 423: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_rhead_r_loop, 271988 attempts, 5 match
+"input/control_unit_wba.svh", 433: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_rhead_r_stable, 271988 attempts, 271657 match
+"input/control_unit_wba.svh", 443: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_rlooped_r_on, 271988 attempts, 5 match
+"input/control_unit_wba.svh", 453: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_rlooped_r_off_1, 271988 attempts, 1 match
+"input/control_unit_wba.svh", 463: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_rlooped_r_off_2, 271988 attempts, 3 match
+"input/control_unit_wba.svh", 473: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_rlooped_r_stable, 271988 attempts, 271432 match
+"input/control_unit_wba.svh", 483: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_rtail_r_inc_1, 271988 attempts, 56 match
+"input/control_unit_wba.svh", 493: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_rtail_r_inc_2, 271988 attempts, 165 match
+"input/control_unit_wba.svh", 503: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_rtail_r_loop_1, 271988 attempts, 1 match
+"input/control_unit_wba.svh", 513: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_rtail_r_loop_2, 271988 attempts, 3 match
+"input/control_unit_wba.svh", 524: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_rtail_r_stable, 271988 attempts, 271727 match
+"input/control_unit_wba.svh", 534: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_rempty_on, 271988 attempts, 1422 match
+"input/control_unit_wba.svh", 544: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_rempty_of, 271988 attempts, 270543 match
+"input/control_unit_wba.svh", 554: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_rfull_on, 271988 attempts, 4314 match
+"input/control_unit_wba.svh", 564: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_rfull_off, 271988 attempts, 267651 match
+"input/control_unit_wba.svh", 574: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_rfifo_output_on, 271988 attempts, 270543 match
+"input/control_unit_wba.svh", 584: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_rfifo_output_off, 271988 attempts, 1422 match
+"input/control_unit_wba.svh", 597: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_prdata_rbank, 271988 attempts, 666 match
+"input/control_unit_wba.svh", 607: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_prdata_lfifo, 271988 attempts, 734 match
+"input/control_unit_wba.svh", 617: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_prdata_rfifo, 271988 attempts, 734 match
+"input/control_unit_wba.svh", 627: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_prdata_off, 271988 attempts, 269831 match
+"input/control_unit_wba.svh", 637: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_play_r_rise, 271988 attempts, 2 match
+"input/control_unit_wba.svh", 647: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_play_r_fall, 271988 attempts, 1 match
+"input/control_unit_wba.svh", 657: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_play_r_stable, 271988 attempts, 271950 match
+"input/control_unit_wba.svh", 677: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_clr_on, 271988 attempts, 1 match
+"input/control_unit_wba.svh", 687: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_clr_off, 271988 attempts, 271964 match
+"input/control_unit_wba.svh", 707: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_cfg_out_on, 271988 attempts, 1 match
+"input/control_unit_wba.svh", 717: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_cfg_out_off, 271988 attempts, 271964 match
+"input/control_unit_wba.svh", 727: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_start_on, 271988 attempts, 2 match
+"input/control_unit_wba.svh", 737: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_start_off, 271988 attempts, 271963 match
+"input/control_unit_wba.svh", 747: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_stop_on, 271988 attempts, 2 match
+"input/control_unit_wba.svh", 757: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_stop_off, 271988 attempts, 271963 match
+"input/control_unit_wba.svh", 767: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_level_out_on, 271988 attempts, 1 match
+"input/control_unit_wba.svh", 777: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_level_out_off, 271988 attempts, 271964 match
+"input/control_unit_wba.svh", 787: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_irqack_on, 271988 attempts, 3 match
+"input/control_unit_wba.svh", 797: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_irqack_off, 271988 attempts, 271962 match
+"input/control_unit_wba.svh", 807: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_tick_out_on, 271988 attempts, 2263 match
+"input/control_unit_wba.svh", 817: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_tick_out_of, 271988 attempts, 269702 match
+"input/control_unit_wba.svh", 827: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_req_r_on, 271988 attempts, 269701 match
+"input/control_unit_wba.svh", 837: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_req_r_off, 271988 attempts, 2252 match
+"input/control_unit_wba.svh", 847: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_irq_r_rise, 271988 attempts, 67 match
+"input/control_unit_wba.svh", 857: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_irq_r_fall_stop, 271988 attempts, 1 match
+"input/control_unit_wba.svh", 867: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_irq_r_fall_irqack, 271988 attempts, 3 match
+"input/control_unit_wba.svh", 877: control_unit_tb.DUT_INSTANCE.CHECKER_MODULE.cr_irq_r_stable, 271988 attempts, 271882 match
+"input/apb_if.sv", 217: control_unit_tb.apb.psel_to_penable_cov, 271988 attempts, 1067 match
+"input/apb_if.sv", 232: control_unit_tb.apb.penable_deassert_cov, 271988 attempts, 1070 match
+Simulation complete, time is 3535837500 ps.
+control_unit_test.sv, 84 : 	$finish;
+Verdi>power -disable
+Verdi>power -report results/control_unit_rtl.saif 1e-9 control_unit_tb.DUT_INSTANCE
+Verdi>set chan file50
+file50
+Verdi>assertion count -fails -r /
+0
+Verdi>close file50
+
+Verdi>wvZoomAll -win 1b279850
+1
+Verdi>verdiSetActWin -win 1b279850
+1
+---------------------------------------------------------------------------
+VCS Coverage Metrics: during simulation line, cond, FSM, branch was monitored
+---------------------------------------------------------------------------
+
+ Coverage status: End of All Coverages ...
+
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 3535837500 ps
+CPU Time:      6.450 seconds;       Data structure size:   0.1Mb
+Fri Feb 13 13:45:32 2026
+debExit

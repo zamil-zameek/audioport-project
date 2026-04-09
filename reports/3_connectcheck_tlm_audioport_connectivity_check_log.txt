@@ -1,0 +1,64 @@
+# 
+# Questa Static Verification System
+# Version 2024.3_2 5905218 linux_x86_64 04-Dec-2024
+# 
+# This material contains trade secrets or otherwise
+# confidential information owned by
+# Siemens Industry Software Inc. or its affiliates
+# (collectively, "SISW"), or its licensors. Access
+# to and use of this information is strictly limited
+# as set forth in the customer's applicable
+# agreements with SISW.
+# 
+# Unpublished work. Copyright 2024 Siemens
+# 
+# do scripts/connectcheck.tcl
+# Command : vlib connectcheck_work
+# Command : vmap work connectcheck_work
+# QuestaSim-64 vmap 2024.3_2 Lib Mapping Utility 2024.11 Nov 25 2024
+# vmap work connectcheck_work 
+# Modifying modelsim.ini
+# Command : connectcheck elaborate -d tlm_audioport
+# Command : netlist create -d tlm_audioport -tool propcheck
+# 
+# Questa Static Verification System
+# Version 2024.3_2 5905218 linux_x86_64 04-Dec-2024
+# log created Wed Jan 21 14:40:00 2026 by mmohamed25 on lehmus-cn7.oulu.fi
+# 
+# Executing Command : netlist create -d tlm_audioport -tool propcheck
+# File: /homedir04/mmohamed25/DT3_2026/project/workdir/scripts/connectcheck.tcl, Line: 63
+# 
+### Starting Step: netlist elaborate ### 
+# 
+## Elaborating Design...
+# Reading MTI mapping for library mapping
+# Writing all MTI mappings to vmap output ...
+# 
+# Top level modules:
+# Fatal   : Vopt error.  (vopt-11) Could not find work.tlm_audioport.  [parser-341]
+#         : Elaboration will abort.
+# Optimization failed
+# Fatal   : Design elaboration failed.  [command-188]
+#         : Processing will abort.
+# 
+# Message Summary
+# ---------------------------------------------------------------------------
+# Count  Type     Message ID         Summary
+# ---------------------------------------------------------------------------
+#     1  Fatal    command-188        Design elaboration failed.
+#     1  Fatal    parser-341         Vopt error.
+# 
+# Summary: 2 Fatals, 0 Errors, 0 Warnings in processing "netlist elaborate"
+# 
+# End of log Wed Jan 21 14:40:01 2026
+# 
+# Error   : Error encountered executing Tcl command.  Command: netlist create, File: /homedir04/mmohamed25/DT3_2026/project/workdir/scripts/connectcheck.tcl, Line: 63.  [cli-7]
+# ERROR: File path does not exist.
+#        Command is ignored.
+# Command : connectcheck compile
+# ERROR: 'connectcheck compile' requires 'connectcheck elaborate' or 'formal load db formal_netlist.db' before proceeding.
+#        Command is ignored.
+# Command : connectcheck verify -exclude_cover
+# ERROR: 'connectcheck verify' requires 'connectcheck compile' at least once before proceeding.
+#        Command is ignored.
+# 

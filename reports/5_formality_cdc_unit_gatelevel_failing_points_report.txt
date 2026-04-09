@@ -1,0 +1,12 @@
+**************************************************
+Report         : failing_points
+
+Reference      : r:/WORK/cdc_unit
+Implementation : i:/WORK/cdc_unit
+Version        : U-2022.12
+Date           : Thu Mar 19 14:16:40 2026
+**************************************************
+
+No failing compare points.
+
+1

@@ -1,0 +1,32 @@
+Coverage Report Summary Data by instance
+
+=================================================================================
+=== Instance: /cdc_unit_tb/DUT_INSTANCE/CHECKER_MODULE
+=== Design Unit: work.cdc_unit_svamod
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Assertions                      21        21         0   100.00%
+    Directives                       6         6         0   100.00%
+    Toggles                        218       218         0   100.00%
+
+=================================================================================
+=== Instance: /cdc_unit_tb/DUT_INSTANCE
+=== Design Unit: work.cdc_unit
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        34        32         2    94.11%
+    Expressions                     16        15         1    93.75%
+    FSM States                       4         4         0   100.00%
+    FSM Transitions                  8         8         0   100.00%
+    Statements                      59        52         7    88.13%
+    Toggles                        362       362         0   100.00%
+
+
+TOTAL DIRECTIVE COVERAGE: 100.00%  COVERS: 6
+
+TOTAL ASSERTION COVERAGE: 100.00%  ASSERTIONS: 21
+
+Total Coverage By Instance (filtered view): 97.00%
+

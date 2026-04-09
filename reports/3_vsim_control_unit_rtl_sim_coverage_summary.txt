@@ -1,0 +1,37 @@
+Coverage Report Summary Data by instance
+
+=================================================================================
+=== Instance: /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE
+=== Design Unit: work.control_unit_svamod
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Assertions                     168       165         3    98.21%
+    Covergroups                      2        na        na    91.66%
+        Coverpoints/Crosses          4        na        na        na
+            Covergroup Bins        129       122         7    94.57%
+    Directives                     112       110         2    98.21%
+    Statements                       2         2         0   100.00%
+    Toggles                       1208       344       864    28.47%
+
+=================================================================================
+=== Instance: /control_unit_tb/DUT_INSTANCE
+=== Design Unit: work.control_unit
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        72        71         1    98.61%
+    Conditions                      42        38         4    90.47%
+    Expressions                     18        13         5    72.22%
+    Statements                     215       214         1    99.53%
+    Toggles                       1264       400       864    31.64%
+
+
+TOTAL COVERGROUP COVERAGE: 91.66%  COVERGROUP TYPES: 2
+
+TOTAL DIRECTIVE COVERAGE: 98.21%  COVERS: 112
+
+TOTAL ASSERTION COVERAGE: 98.21%  ASSERTIONS: 168
+
+Total Coverage By Instance (filtered view): 84.62%
+

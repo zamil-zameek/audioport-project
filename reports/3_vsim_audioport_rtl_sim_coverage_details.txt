@@ -1,0 +1,250 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /audioport_tb/DUT_INSTANCE/control_unit_1
+=== Design Unit: work.control_unit
+=================================================================================
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                       1060       137       923    12.92%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /audioport_tb/DUT_INSTANCE/control_unit_1 --
+
+                                              Node      1H->0L      0L->1H       0L->Z       Z->0L       1H->Z       Z->H1     ExtMode  "Coverage"
+                                              ---------------------------------------------------------------------------------------------------
+                                      PRDATA[0-31]           0           0           0           0           0           0           3        0.00 
+                                            PREADY           0           0           0           0           0           0           3        0.00 
+                                           PSLVERR           0           0           0           0           0           0           3        0.00 
+                                  audio0_out[0-23]           0           0           0           0           0           0           3        0.00 
+                                  audio1_out[0-23]           0           0           0           0           0           0           3        0.00 
+                                           cfg_out           0           0           0           0           0           0           3        0.00 
+                                 cfg_reg_out[0-31]           0           0           0           0           0           0           3        0.00 
+                                           clr_out           0           0           0           0           0           0           3        0.00 
+                                           irq_out           0           0           0           0           0           0           3        0.00 
+                                         level_out           0           0           0           0           0           0           3        0.00 
+                               level_reg_out[0-31]           0           0           0           0           0           0           3        0.00 
+                                          play_out           0           0           0           0           0           0           3        0.00 
+                                            req_in           0           0           0           0           0           0           3        0.00 
+                                             rst_n           0           1           0           0           0           0           3       16.66 
+                                          tick_out           0           0           0           0           0           0           3        0.00 
+
+========
+(n*) - Number was not used in coverage calculations performed by extended toggle algorithms.
+
+Extended Toggle Coverage Calculation Criteria:
+-----------------------------------------------
+	ExtMode 1: 0L->1H & 1H->0L & any one 'Z' transition (to/from 'Z').
+	ExtMode 2: 0L->1H & 1H->0L & one transition to 'Z' & one transition from 'Z'.
+	ExtMode 3: 0L->1H & 1H->0L & all 'Z' transitions.
+========
+
+Total Node Count     =        222 
+Toggled Node Count   =         68 
+Untoggled Node Count =        154 
+
+Toggle Coverage      =      12.92% (137 of 1060 bins)
+
+=================================================================================
+=== Instance: /audioport_tb/DUT_INSTANCE/dsp_unit_1
+=== Design Unit: work.dsp_unit
+=================================================================================
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        998         3       995     0.30%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /audioport_tb/DUT_INSTANCE/dsp_unit_1 --
+
+                                              Node      1H->0L      0L->1H       0L->Z       Z->0L       1H->Z       Z->H1     ExtMode  "Coverage"
+                                              ---------------------------------------------------------------------------------------------------
+                                   audio0_in[0-23]           0           0           0           0           0           0           3        0.00 
+                                  audio0_out[0-23]           0           0           0           0           0           0           3        0.00 
+                                   audio1_in[0-23]           0           0           0           0           0           0           3        0.00 
+                                  audio1_out[0-23]           0           0           0           0           0           0           3        0.00 
+                                            cfg_in           0           0           0           0           0           0           3        0.00 
+                                  cfg_reg_in[0-31]           0           0           0           0           0           0           3        0.00 
+                                            clr_in           0           0           0           0           0           0           3        0.00 
+                                          level_in           0           0           0           0           0           0           3        0.00 
+                                level_reg_in[0-31]           0           0           0           0           0           0           3        0.00 
+                                             rst_n           0           1           0           0           0           0           3       16.66 
+                                           tick_in           0           0           0           0           0           0           3        0.00 
+                                          tick_out           0           0           0           0           0           0           3        0.00 
+
+========
+(n*) - Number was not used in coverage calculations performed by extended toggle algorithms.
+
+Extended Toggle Coverage Calculation Criteria:
+-----------------------------------------------
+	ExtMode 1: 0L->1H & 1H->0L & any one 'Z' transition (to/from 'Z').
+	ExtMode 2: 0L->1H & 1H->0L & one transition to 'Z' & one transition from 'Z'.
+	ExtMode 3: 0L->1H & 1H->0L & all 'Z' transitions.
+========
+
+Total Node Count     =        167 
+Toggled Node Count   =          1 
+Untoggled Node Count =        166 
+
+Toggle Coverage      =       0.30% (3 of 998 bins)
+
+=================================================================================
+=== Instance: /audioport_tb/DUT_INSTANCE/cdc_unit_1
+=== Design Unit: work.cdc_unit
+=================================================================================
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        664         6       658     0.90%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /audioport_tb/DUT_INSTANCE/cdc_unit_1 --
+
+                                              Node      1H->0L      0L->1H       0L->Z       Z->0L       1H->Z       Z->H1     ExtMode  "Coverage"
+                                              ---------------------------------------------------------------------------------------------------
+                                   audio0_in[0-23]           0           0           0           0           0           0           3        0.00 
+                                  audio0_out[0-23]           0           0           0           0           0           0           3        0.00 
+                                   audio1_in[0-23]           0           0           0           0           0           0           3        0.00 
+                                  audio1_out[0-23]           0           0           0           0           0           0           3        0.00 
+                                            mrst_n           0           0           0           0           0           0           3        0.00 
+                                            muxclk           0           0           0           0           0           0           3        0.00 
+                                        muxclk_out           0           0           0           0           0           0           3        0.00 
+                                          muxrst_n           0           0           0           0           0           0           3        0.00 
+                                      muxrst_n_out           0           0           0           0           0           0           3        0.00 
+                                           play_in           0           0           0           0           0           0           3        0.00 
+                                          play_out           0           0           0           0           0           0           3        0.00 
+                                            req_in           0           0           0           0           0           0           3        0.00 
+                                           req_out           0           0           0           0           0           0           3        0.00 
+                                             rst_n           0           1           0           0           0           0           3       16.66 
+                                         rsync_clk           0           0           0           0           0           0           3        0.00 
+                                      test_mode_in           0           1           0           0           0           0           3       16.66 
+                                           tick_in           0           0           0           0           0           0           3        0.00 
+                                          tick_out           0           0           0           0           0           0           3        0.00 
+
+========
+(n*) - Number was not used in coverage calculations performed by extended toggle algorithms.
+
+Extended Toggle Coverage Calculation Criteria:
+-----------------------------------------------
+	ExtMode 1: 0L->1H & 1H->0L & any one 'Z' transition (to/from 'Z').
+	ExtMode 2: 0L->1H & 1H->0L & one transition to 'Z' & one transition from 'Z'.
+	ExtMode 3: 0L->1H & 1H->0L & all 'Z' transitions.
+========
+
+Total Node Count     =        112 
+Toggled Node Count   =          2 
+Untoggled Node Count =        110 
+
+Toggle Coverage      =       0.90% (6 of 664 bins)
+
+=================================================================================
+=== Instance: /audioport_tb/DUT_INSTANCE/i2s_unit_1
+=== Design Unit: work.i2s_unit(rtl)
+=================================================================================
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        336         0       336     0.00%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /audioport_tb/DUT_INSTANCE/i2s_unit_1 --
+
+                                              Node      1H->0L      0L->1H       0L->Z       Z->0L       1H->Z       Z->H1     ExtMode  "Coverage"
+                                              ---------------------------------------------------------------------------------------------------
+                                   audio0_in(0-23)           0           0           0           0           0           0           3        0.00 
+                                   audio1_in(0-23)           0           0           0           0           0           0           3        0.00 
+                                               clk           0           0           0           0           0           0           3        0.00 
+                                           play_in           0           0           0           0           0           0           3        0.00 
+                                           req_out           0           0           0           0           0           0           3        0.00 
+                                             rst_n           0           0           0           0           0           0           3        0.00 
+                                           sck_out           0           0           0           0           0           0           3        0.00 
+                                           sdo_out           0           0           0           0           0           0           3        0.00 
+                                           tick_in           0           0           0           0           0           0           3        0.00 
+                                            ws_out           0           0           0           0           0           0           3        0.00 
+
+========
+(n*) - Number was not used in coverage calculations performed by extended toggle algorithms.
+
+Extended Toggle Coverage Calculation Criteria:
+-----------------------------------------------
+	ExtMode 1: 0L->1H & 1H->0L & any one 'Z' transition (to/from 'Z').
+	ExtMode 2: 0L->1H & 1H->0L & one transition to 'Z' & one transition from 'Z'.
+	ExtMode 3: 0L->1H & 1H->0L & all 'Z' transitions.
+========
+
+Total Node Count     =         56 
+Toggled Node Count   =          0 
+Untoggled Node Count =         56 
+
+Toggle Coverage      =       0.00% (0 of 336 bins)
+
+=================================================================================
+=== Instance: /audioport_tb/DUT_INSTANCE
+=== Design Unit: work.audioport
+=================================================================================
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                       1704       141      1563     8.27%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /audioport_tb/DUT_INSTANCE --
+
+                                              Node      1H->0L      0L->1H       0L->Z       Z->0L       1H->Z       Z->H1     ExtMode  "Coverage"
+                                              ---------------------------------------------------------------------------------------------------
+                                      PRDATA[0-31]           0           0           0           0           0           0           3        0.00 
+                                            PREADY           0           0           0           0           0           0           3        0.00 
+                                           PSLVERR           0           0           0           0           0           0           3        0.00 
+                                      audio0[0-23]           0           0           0           0           0           0           3        0.00 
+                                      audio1[0-23]           0           0           0           0           0           0           3        0.00 
+                                               cfg           0           0           0           0           0           0           3        0.00 
+                                     cfg_reg[0-31]           0           0           0           0           0           0           3        0.00 
+                                               clr           0           0           0           0           0           0           3        0.00 
+                                     daudio0[0-23]           0           0           0           0           0           0           3        0.00 
+                                     daudio1[0-23]           0           0           0           0           0           0           3        0.00 
+                                             dtick           0           0           0           0           0           0           3        0.00 
+                                           irq_out           0           0           0           0           0           0           3        0.00 
+                                             level           0           0           0           0           0           0           3        0.00 
+                                   level_reg[0-31]           0           0           0           0           0           0           3        0.00 
+                                     maudio0[0-23]           0           0           0           0           0           0           3        0.00 
+                                     maudio1[0-23]           0           0           0           0           0           0           3        0.00 
+                                             mplay           0           0           0           0           0           0           3        0.00 
+                                              mreq           0           0           0           0           0           0           3        0.00 
+                                             mtick           0           0           0           0           0           0           3        0.00 
+                                            muxclk           0           0           0           0           0           0           3        0.00 
+                                          muxrst_n           0           0           0           0           0           0           3        0.00 
+                                              play           0           0           0           0           0           0           3        0.00 
+                                               req           0           0           0           0           0           0           3        0.00 
+                                             rst_n           0           1           0           0           0           0           3       16.66 
+                                        scan_en_in           0           1           0           0           0           0           3       16.66 
+                                           sck_out           0           0           0           0           0           0           3        0.00 
+                                           sdo_out           0           0           0           0           0           0           3        0.00 
+                                      test_mode_in           0           1           0           0           0           0           3       16.66 
+                                              tick           0           0           0           0           0           0           3        0.00 
+                                            ws_out           0           0           0           0           0           0           3        0.00 
+
+========
+(n*) - Number was not used in coverage calculations performed by extended toggle algorithms.
+
+Extended Toggle Coverage Calculation Criteria:
+-----------------------------------------------
+	ExtMode 1: 0L->1H & 1H->0L & any one 'Z' transition (to/from 'Z').
+	ExtMode 2: 0L->1H & 1H->0L & one transition to 'Z' & one transition from 'Z'.
+	ExtMode 3: 0L->1H & 1H->0L & all 'Z' transitions.
+========
+
+Total Node Count     =        330 
+Toggled Node Count   =         69 
+Untoggled Node Count =        261 
+
+Toggle Coverage      =       8.27% (141 of 1704 bins)
+
+
+Total Coverage By Instance (filtered view): 3.06%
+

@@ -1,0 +1,376 @@
+# //  Questa Sim-64
+# //  Version 2024.3_2 linux_x86_64 Nov 25 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do scripts/vsim_mixedsim.tcl
+# 0
+# 1
+# 0
+# -all
+# QuestaSim
+# 0
+# 1
+# output/audioport_rtl.dbg
+# output/audioport_rtl.bin
+# output/audioport_rtl.db
+# audioport_rtl_vopt
+# output/audioport_questasim_work
+#  -g -I input -work output/audioport_questasim_work -verbose
+#  +define+design_top_is_audioport +define+DESIGN_NAME_MACRO=audioport +incdir+input -work work -sv
+#  -mixedsvvh -work work
+#  -assertdebug -msgmode both -classdebug -uvmcontrol=all -debugDB=output/audioport_rtl.dbg -sclib output/audioport_questasim_work -L output/audioport_questasim_work
+#  +acc -suppress 10587 -debugdb -noincr -sclib output/audioport_questasim_work -L output/audioport_questasim_work
+# -suppress 13314 -suppress 13233 +define+RTL_SIM +define+SYSTEMC_DUT +define+design_top_is_audioport +define+DESIGN_NAME_MACRO=audioport +incdir+input -work work -sv
+# -mixedsvvh -work work
+# -assertdebug -msgmode both -classdebug -uvmcontrol=all -debugDB=output/audioport_rtl.dbg -sclib output/audioport_questasim_work -L output/audioport_questasim_work
+# 1
+# QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
+# Start time: 14:50:36 on Jan 21,2026
+# vlog -reportprogress 300 -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+SYSTEMC_DUT" "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -work work -sv input/apb_pkg.sv 
+# -- Compiling package apb_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 14:50:36 on Jan 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
+# Start time: 14:50:36 on Jan 21,2026
+# vlog -reportprogress 300 -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+SYSTEMC_DUT" "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -work work -sv input/audioport_pkg.sv 
+# -- Compiling package audioport_pkg
+# -- Importing package apb_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 14:50:36 on Jan 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
+# Start time: 14:50:36 on Jan 21,2026
+# vlog -reportprogress 300 -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+SYSTEMC_DUT" "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -work work -sv input/audioport_util_pkg.sv 
+# -- Compiling package audioport_util_pkg
+# -- Importing package apb_pkg
+# -- Importing package audioport_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 14:50:36 on Jan 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
+# Start time: 14:50:36 on Jan 21,2026
+# vlog -reportprogress 300 -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+SYSTEMC_DUT" "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -work work -sv input/control_unit_svamod.sv 
+# -- Compiling package control_unit_svamod_sv_unit
+# -- Importing package audioport_pkg
+# -- Importing package apb_pkg
+# -- Importing package audioport_util_pkg
+# -- Compiling module control_unit_svamod
+# 
+# Top level modules:
+# 	control_unit_svamod
+# End time: 14:50:36 on Jan 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
+# Start time: 14:50:36 on Jan 21,2026
+# vlog -reportprogress 300 -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+SYSTEMC_DUT" "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -work work -sv input/dsp_unit_svamod.sv 
+# -- Compiling package dsp_unit_svamod_sv_unit
+# -- Importing package audioport_pkg
+# -- Importing package apb_pkg
+# -- Importing package audioport_util_pkg
+# -- Compiling module dsp_unit_svamod
+# 
+# Top level modules:
+# 	dsp_unit_svamod
+# End time: 14:50:37 on Jan 21,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
+# Start time: 14:50:37 on Jan 21,2026
+# vlog -reportprogress 300 -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+SYSTEMC_DUT" "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -work work -sv input/cdc_unit_svamod.sv 
+# -- Compiling package cdc_unit_svamod_sv_unit
+# -- Importing package audioport_pkg
+# -- Importing package apb_pkg
+# -- Importing package audioport_util_pkg
+# -- Compiling module cdc_unit_svamod
+# 
+# Top level modules:
+# 	cdc_unit_svamod
+# End time: 14:50:37 on Jan 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
+# Start time: 14:50:37 on Jan 21,2026
+# vlog -reportprogress 300 -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+SYSTEMC_DUT" "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -work work -sv input/i2s_unit_svamod.sv 
+# -- Compiling package i2s_unit_svamod_sv_unit
+# -- Importing package audioport_pkg
+# -- Importing package apb_pkg
+# -- Importing package audioport_util_pkg
+# -- Compiling module i2s_unit_svamod
+# 
+# Top level modules:
+# 	i2s_unit_svamod
+# End time: 14:50:37 on Jan 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
+# Start time: 14:50:37 on Jan 21,2026
+# vlog -reportprogress 300 -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+SYSTEMC_DUT" "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -work work -sv input/audioport_svamod.sv 
+# -- Compiling package audioport_svamod_sv_unit
+# -- Importing package audioport_pkg
+# -- Importing package apb_pkg
+# -- Importing package audioport_util_pkg
+# -- Compiling module audioport_svamod
+# 
+# Top level modules:
+# 	audioport_svamod
+# End time: 14:50:37 on Jan 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
+# Start time: 14:50:37 on Jan 21,2026
+# vlog -reportprogress 300 -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+SYSTEMC_DUT" "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -work work -sv input/apb_if.sv 
+# -- Compiling package apb_if_sv_unit
+# -- Importing package audioport_pkg
+# -- Importing package apb_pkg
+# -- Compiling interface apb_if
+# 
+# Top level modules:
+# 	--none--
+# End time: 14:50:37 on Jan 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
+# Start time: 14:50:37 on Jan 21,2026
+# vlog -reportprogress 300 -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+SYSTEMC_DUT" "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -work work -sv input/irq_out_if.sv 
+# -- Compiling package irq_out_if_sv_unit
+# -- Importing package audioport_pkg
+# -- Importing package apb_pkg
+# -- Compiling interface irq_out_if
+# 
+# Top level modules:
+# 	--none--
+# End time: 14:50:37 on Jan 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
+# Start time: 14:50:37 on Jan 21,2026
+# vlog -reportprogress 300 -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+SYSTEMC_DUT" "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -work work -sv input/i2s_if.sv 
+# -- Compiling package i2s_if_sv_unit
+# -- Importing package audioport_pkg
+# -- Importing package apb_pkg
+# -- Compiling interface i2s_if
+# -- Compiling module i2s_if_tb
+# 
+# Top level modules:
+# 	i2s_if_tb
+# End time: 14:50:37 on Jan 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
+# Start time: 14:50:37 on Jan 21,2026
+# vlog -reportprogress 300 -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+SYSTEMC_DUT" "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -work work -sv input/audioport_test.sv 
+# -- Compiling package audioport_test_sv_unit
+# -- Importing package audioport_pkg
+# -- Importing package apb_pkg
+# -- Importing package audioport_util_pkg
+# -- Compiling program audioport_test
+# 
+# Top level modules:
+# 	audioport_test
+# End time: 14:50:37 on Jan 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
+# Start time: 14:50:37 on Jan 21,2026
+# vlog -reportprogress 300 -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+SYSTEMC_DUT" "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -work work -sv input/audioport_tb.sv 
+# -- Compiling package audioport_tb_sv_unit
+# -- Importing package apb_pkg
+# -- Importing package audioport_pkg
+# -- Importing package audioport_util_pkg
+# -- Compiling module audioport_tb
+# 
+# Top level modules:
+# 	audioport_tb
+# End time: 14:50:37 on Jan 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# sccom -reportprogress -verbose -g -I input -work output/audioport_questasim_work -verbose input/control_unit.cpp 
+# Start time: 14:50:37 on Jan 21,2026
+# 
+# QuestaSim-64 sccom 2024.3_2 compiler 2024.11 Nov 25 2024
+# 
+# -- Compiling module control_unit
+# Exported modules:
+# 	control_unit
+# End time: 14:50:41 on Jan 21,2026, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0
+# sccom -reportprogress -verbose -g -I input -work output/audioport_questasim_work -verbose input/dsp_unit.cpp 
+# Start time: 14:50:41 on Jan 21,2026
+# 
+# QuestaSim-64 sccom 2024.3_2 compiler 2024.11 Nov 25 2024
+# 
+# -- Compiling module dsp_unit
+# Exported modules:
+# 	dsp_unit
+# End time: 14:50:45 on Jan 21,2026, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0
+# sccom -reportprogress -verbose -g -I input -work output/audioport_questasim_work -verbose input/cdc_testmux.cpp 
+# Start time: 14:50:45 on Jan 21,2026
+# 
+# QuestaSim-64 sccom 2024.3_2 compiler 2024.11 Nov 25 2024
+# 
+# -- Compiling module cdc_testmux
+# End time: 14:50:48 on Jan 21,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0
+# sccom -reportprogress -verbose -g -I input -work output/audioport_questasim_work -verbose input/cdc_reset_sync.cpp 
+# Start time: 14:50:48 on Jan 21,2026
+# 
+# QuestaSim-64 sccom 2024.3_2 compiler 2024.11 Nov 25 2024
+# 
+# -- Compiling module cdc_reset_sync
+# End time: 14:50:51 on Jan 21,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0
+# sccom -reportprogress -verbose -g -I input -work output/audioport_questasim_work -verbose input/cdc_2ff_sync.cpp 
+# Start time: 14:50:51 on Jan 21,2026
+# 
+# QuestaSim-64 sccom 2024.3_2 compiler 2024.11 Nov 25 2024
+# 
+# -- Compiling module cdc_2ff_sync
+# Exported modules:
+# 	cdc_2ff_sync
+# End time: 14:50:55 on Jan 21,2026, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0
+# sccom -reportprogress -verbose -g -I input -work output/audioport_questasim_work -verbose input/cdc_pulse_sync.cpp 
+# Start time: 14:50:55 on Jan 21,2026
+# 
+# QuestaSim-64 sccom 2024.3_2 compiler 2024.11 Nov 25 2024
+# 
+# -- Compiling module cdc_pulse_sync
+# Exported modules:
+# 	cdc_pulse_sync
+# End time: 14:50:58 on Jan 21,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0
+# sccom -reportprogress -verbose -g -I input -work output/audioport_questasim_work -verbose input/cdc_handshake.cpp 
+# Start time: 14:50:58 on Jan 21,2026
+# 
+# QuestaSim-64 sccom 2024.3_2 compiler 2024.11 Nov 25 2024
+# 
+# -- Compiling module cdc_handshake
+# End time: 14:51:01 on Jan 21,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0
+# sccom -reportprogress -verbose -g -I input -work output/audioport_questasim_work -verbose input/cdc_unit.cpp 
+# Start time: 14:51:01 on Jan 21,2026
+# 
+# QuestaSim-64 sccom 2024.3_2 compiler 2024.11 Nov 25 2024
+# 
+# -- Compiling module cdc_testmux
+# -- Compiling module cdc_reset_sync
+# -- Compiling module cdc_2ff_sync
+# -- Compiling module cdc_pulse_sync
+# -- Compiling module cdc_handshake
+# -- Compiling module cdc_unit
+# Exported modules:
+# 	cdc_unit
+# End time: 14:51:05 on Jan 21,2026, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0
+# sccom -reportprogress -verbose -g -I input -work output/audioport_questasim_work -verbose input/i2s_unit.cpp 
+# Start time: 14:51:05 on Jan 21,2026
+# 
+# QuestaSim-64 sccom 2024.3_2 compiler 2024.11 Nov 25 2024
+# 
+# -- Compiling module i2s_unit
+# Exported modules:
+# 	i2s_unit
+# End time: 14:51:09 on Jan 21,2026, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0
+# sccom -reportprogress -verbose -g -I input -work output/audioport_questasim_work -verbose input/audioport.cpp 
+# Start time: 14:51:09 on Jan 21,2026
+# 
+# QuestaSim-64 sccom 2024.3_2 compiler 2024.11 Nov 25 2024
+# 
+# -- Compiling module control_unit
+# -- Compiling module dsp_unit
+# -- Compiling module cdc_testmux
+# -- Compiling module cdc_reset_sync
+# -- Compiling module cdc_2ff_sync
+# -- Compiling module cdc_pulse_sync
+# -- Compiling module cdc_handshake
+# -- Compiling module cdc_unit
+# -- Compiling module i2s_unit
+# -- Compiling module audioport
+# Exported modules:
+# 	audioport
+# End time: 14:51:13 on Jan 21,2026, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0
+# sccom -reportprogress -g -I input -work output/audioport_questasim_work -verbose -link 
+# Start time: 14:51:13 on Jan 21,2026
+# 
+# QuestaSim-64 sccom 2024.3_2 compiler 2024.11 Nov 25 2024
+# End time: 14:51:13 on Jan 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vopt 2024.3_2 Compiler 2024.11 Nov 25 2024
+# Start time: 14:51:13 on Jan 21,2026
+# vopt -reportprogress 300 "+acc" -suppress 10587 -debugdb -noincr -sclib output/audioport_questasim_work -L output/audioport_questasim_work work.audioport_tb -o audioport_rtl_vopt 
+# 
+# Top level modules:
+# 	audioport_tb
+# 
+# Analyzing design...
+# -- Loading module audioport_tb
+# -- Loading interface apb_if
+# -- Loading interface irq_out_if
+# -- Loading interface i2s_if
+# -- Loading program audioport_test
+# -- Loading shared library /homedir04/mmohamed25/DT3_2026/project/workdir/output/audioport_questasim_work/_sc/linux_x86_64_gcc-10.3.0/systemc.so
+# -- Loading systemc module /homedir04/mmohamed25/DT3_2026/project/workdir/output/audioport_questasim_work.audioport
+# Optimizing 16 design-units (inlining 0/5 module instances, 0/10 systemc instances):
+# -- Optimizing package apb_pkg(fast)
+# -- Optimizing package audioport_pkg(fast)
+# -- Optimizing package audioport_util_pkg(fast)
+# -- Optimizing package audioport_tb_sv_unit(fast)
+# -- Optimizing package apb_if_sv_unit(fast)
+# -- Optimizing package irq_out_if_sv_unit(fast)
+# -- Optimizing package i2s_if_sv_unit(fast)
+# -- Optimizing package audioport_test_sv_unit(fast)
+# -- Optimizing interface apb_if(fast__1)
+# -- Optimizing module audioport_tb(fast)
+# -- Processing module audioport_tb(fast) for debug
+# -- Optimizing program audioport_test(fast)
+# -- Optimizing interface i2s_if(fast__1)
+# -- Optimizing interface irq_out_if(fast__1)
+# -- Optimizing interface i2s_if(fast)
+# -- Optimizing interface irq_out_if(fast)
+# -- Optimizing interface apb_if(fast)
+# Optimized design name is audioport_rtl_vopt
+# End time: 14:51:14 on Jan 21,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0, Suppressed Warnings: 1
+# vsim audioport_rtl_vopt -assertdebug -msgmode both -classdebug -uvmcontrol=all -debugDB=output/audioport_rtl.dbg -sclib output/audioport_questasim_work -L output/audioport_questasim_work 
+# Start time: 14:51:14 on Jan 21,2026
+# Loading sv_std.std
+# Loading work.apb_pkg(fast)
+# Loading work.audioport_pkg(fast)
+# Loading work.audioport_util_pkg(fast)
+# Loading work.audioport_tb_sv_unit(fast)
+# Loading work.audioport_tb(fast)
+# Loading work.apb_if_sv_unit(fast)
+# Loading work.apb_if(fast__1)
+# Loading work.irq_out_if_sv_unit(fast)
+# Loading work.irq_out_if(fast__1)
+# Loading work.i2s_if_sv_unit(fast)
+# Loading work.i2s_if(fast__1)
+# Loading work.audioport_test_sv_unit(fast)
+# Loading work.audioport_test(fast)
+# Loading /homedir04/mmohamed25/DT3_2026/project/workdir/output/audioport_questasim_work/_sc/linux_x86_64_gcc-10.3.0/systemc.so
+# Loading /homedir04/mmohamed25/DT3_2026/project/workdir/output/audioport_questasim_work.audioport
+# ** Note: (vsim-8900) Creating design debug database output/audioport_rtl.dbg.
+# sim_coverage
+# ** Note: $finish    : input/audioport_test.sv(88)
+#    Time: 49725 ns  Iteration: 3  Instance: /audioport_tb/TEST
+# 1
+# Break in NamedBeginStat test_program at input/audioport_test.sv line 88
+# ** Note: (vsim-17388) No matching coverage data found.
+# ** Note: (vsim-17388) No matching coverage data found.
+# ** Note: (vsim-17388) No matching coverage data found.
+# ** Note: (vsim-17388) No matching coverage data found.
+# .main_pane.msgviewer.interior.cs.body.tree
+# Saving coverage database on exit...
+# End time: 14:52:22 on Jan 21,2026, Elapsed time: 0:01:08
+# Errors: 0, Warnings: 0

@@ -1,0 +1,61 @@
+Information: Updating design information... (UID-85)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: The derived toggle rate value (0.153846) for the clock net 'clk' conflicts with the annotated value (0.036862). Using the annotated value. (PWR-12)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : i2s_unit
+Version: T-2022.03-SP5-1
+Date   : Fri Mar  6 11:30:30 2026
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /research/cas/public/DT3_2026/lib/logic_lib/NangateOpenCellLibrary_typical.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+i2s_unit               5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  =  11.4354 uW   (81%)
+  Net Switching Power  =   2.6104 uW   (19%)
+                         ---------
+Total Dynamic Power    =  14.0457 uW  (100%)
+
+Cell Leakage Power     =  15.5021 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      9.8761            0.0000            0.0000            9.8761  (  33.42%)  i
+register           0.6020            0.1323        9.2141e+03            9.9484  (  33.67%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.9573            2.4781        6.2880e+03            9.7234  (  32.91%)
+--------------------------------------------------------------------------------------------------
+Total             11.4354 uW         2.6104 uW     1.5502e+04 nW        29.5479 uW
+1

@@ -1,0 +1,324 @@
+# 
+# Questa Static Verification System
+# Version 2024.3_2 5905218 linux_x86_64 04-Dec-2024
+# 
+# This material contains trade secrets or otherwise
+# confidential information owned by
+# Siemens Industry Software Inc. or its affiliates
+# (collectively, "SISW"), or its licensors. Access
+# to and use of this information is strictly limited
+# as set forth in the customer's applicable
+# agreements with SISW.
+# 
+# Unpublished work. Copyright 2024 Siemens
+# 
+# do scripts/qautocheck.tcl
+# Command : vlib output/cdc_unit_qautocheck_work
+# Command : vmap work output/cdc_unit_qautocheck_work
+# QuestaSim-64 vmap 2024.3_2 Lib Mapping Utility 2024.11 Nov 25 2024
+# vmap work output/cdc_unit_qautocheck_work 
+# Modifying modelsim.ini
+# Command : vlog +define+design_top_is_cdc_unit +define+RTL_VERIF +incdir+input -cuname cdc_unit_sva_bind_pkg -mfcu input/apb_pkg.sv input/audioport_pkg.sv input/audioport_util_pkg.sv input/cdc_unit.sv input/cdc_unit_svamod.sv input/sva_bindings.svh
+# QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
+# Start time: 01:54:13 on Mar 13,2026
+# vlog "+define+design_top_is_cdc_unit" "+define+RTL_VERIF" "+incdir+input" -cuname cdc_unit_sva_bind_pkg -mfcu input/apb_pkg.sv input/audioport_pkg.sv input/audioport_util_pkg.sv input/cdc_unit.sv input/cdc_unit_svamod.sv input/sva_bindings.svh 
+# -- Compiling package apb_pkg
+# -- Compiling package audioport_pkg
+# -- Importing package apb_pkg
+# -- Compiling package audioport_util_pkg
+# -- Importing package audioport_pkg
+# -- Compiling package cdc_unit_sva_bind_pkg
+# -- Importing package audioport_pkg
+# -- Importing package apb_pkg
+# -- Importing package audioport_util_pkg
+# -- Compiling module cdc_unit
+# -- Compiling module cdc_unit_svamod
+# 
+# Top level modules:
+# 	cdc_unit
+# End time: 01:54:13 on Mar 13,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Command : autocheck compile -d cdc_unit {}
+# 
+# Questa Static Verification System
+# Version 2024.3_2 5905218 linux_x86_64 04-Dec-2024
+# log created Fri Mar 13 01:54:13 2026 by mmohamed25 on lehmus-cn2.oulu.fi
+# 
+# Executing Command : autocheck compile -d cdc_unit {}
+# File: /homedir04/mmohamed25/DT3_2026/project/workdir/scripts/qautocheck.tcl, Line: 103
+# 
+### Starting Step: netlist elaborate ### 
+# 
+## Elaborating Design...
+# Reading MTI mapping for library mapping
+# Writing all MTI mappings to vmap output ...
+# 
+# Top level modules:
+# 	cdc_unit
+# 
+# Analyzing design...
+# -- Loading module z0in_work.cdc_unit
+# -- Loading module z0in_work.cdc_unit_svamod
+# Optimizing 6 design-units (inlining 0/2 module instances):
+# -- Optimizing package z0in_work.apb_pkg(fast)
+# -- Optimizing package z0in_work.audioport_pkg(fast)
+# -- Optimizing package z0in_work.audioport_util_pkg(fast)
+# -- Optimizing package z0in_work.cdc_unit_sva_bind_pkg(fast)
+# -- Optimizing module z0in_work.cdc_unit_svamod(fast)
+# -- Optimizing module z0in_work.cdc_unit(fast)
+# Optimized design name is zi_opt_af0_413306254_1
+# 
+### Starting Step: netlist create ### 
+# 
+## Synthesizing netlist...
+# Warning : Clock period or waveform specification has precision exceeding 3 digits past decimal point.  Clock 'mclk', File '/homedir04/mmohamed25/DT3_2026/project/workdir/input/cdc_unit.questa_dir.tcl', Line 11.  [directive-114]
+#         : Absolute numbers for clock specification are not necessary. Respecify the clocks with relative numbers.
+# Processing module 'cdc_unit_svamod'
+# Elaborating module 'cdc_unit_svamod'.
+# Processing module 'cdc_unit'
+# Elaborating module 'cdc_unit'.
+# 
+##Time Taken (Synthesis) = 549187.000000 ticks = 0.549187 secs
+# Summary: 1 Warnings in processing "netlist create"
+# 
+### Starting Step: autocheck compile ### 
+# 
+## Processing Formal Logic...
+# Processing module 'cdc_unit_svamod'
+# Restoring module 'cdc_unit_svamod'.
+# Processing module 'cdc_unit'
+# Restoring module 'cdc_unit'.
+# Flattening design 'cdc_unit_svamod'.
+# Flattening design 'cdc_unit'.
+# 
+# Signals replaced by netlist constant
+# -------------------------------------------------------------------------------
+# Signal                         Value
+# -------------------------------------------------------------------------------
+# test_mode_in                   1'b0
+# -------------------------------------------------------------------------------
+# 
+# Info    : Detected clock.  Clock: mclk.  [netlist-11]
+# Info    : Detected clock.  Clock: clk.  [netlist-11]
+# Warning : Adjusted clock period.  Clock 'mclk', specified: 54.253, adjusted: 52.5.  [attributes-57]
+#         : Processing will continue.
+# Warning : Reduced number of significant clock edges.  Number dropped by more than 3333X.  [attributes-58]
+#         : Processing will continue.
+# Info    : Detected asynchronous reset.  Signal: rst_n, active low.  [netlist-106]
+# Warning : Signal specified in directive is not an input or control point.  Directive will be ignored.  [formal-380]
+#         : Signal 'mrst_n', File '/homedir04/mmohamed25/DT3_2026/project/workdir/input/cdc_unit.questa_dir.tcl', Line '15'.
+#         : Use netlist cutpoint on signal to apply reset.
+# 
+# Clocks (***automatically adjusted***)
+# ------------------------------------------------------------------------------
+# Port                                   Period         Waveform
+# ------------------------------------------------------------------------------
+# clk                                      17.5           0 8.75 
+# mclk                                     52.5          0 26.25 
+# ------------------------------------------------------------------------------
+# 
+# Blackboxes
+# ------------------------------------------------------------------------------
+# Module name                                                Reason
+# ------------------------------------------------------------------------------
+# <no blackboxed modules>
+# ------------------------------------------------------------------------------
+# 
+# Inferred directives
+# ------------------------------------------------------------------------------
+# <no inferred directives>
+# ------------------------------------------------------------------------------
+# 
+# Formal model has been created.  Design 'cdc_unit'.
+# 
+# Property Summary
+# -------------------------------------------------------------------------------
+# Total  Directives :4
+# Assert Directives :0
+# Assume Directives :4
+# Cover  Directives :0
+# 
+# SVA Summary
+# -------------------------------------------------------------------------------
+# SVA Directive Type        Directives           Checkers
+# -------------------------------------------------------------------------------
+# Assert                         0                   0
+# Assume                         4                   4
+# Cover                          0                   0
+# -------------------------------------------------------------------------------
+# 
+# AutoCheck Compile Summary
+# -------------------------------------------------------------------------------
+# Check                     Evaluations         Found        Waived
+# -------------------------------------------------------------------------------
+# ASSIGN_IMPLICIT_CONSTANT           14             0             0
+# CASE_DUPLICATE                      2             0             0
+# CLK_DELAY                          18             0             0
+# CLK_IN_DATA                       144             0             0
+# COMBO_LOOP                         32             0             0
+# DECLARATION_UNDRIVEN               25             0             0
+# DECLARATION_UNUSED                 25             0             0
+# DECLARATION_UNUSED_UNDRIVEN         0             0             0
+# FUNCTION_INCOMPLETE_ASSIGN          0             0             0
+# INDEX_UNREACHABLE                   0             0             0
+# LATCH_INFERRED                      0             0             0
+# LOGIC_UNDRIVEN                     25             0             0
+# LOGIC_UNUSED                        0             0             0
+# PORT_UNDRIVEN                      33             0             0
+# PORT_UNUSED                        33             0             0
+# REG_MIXED_ASSIGNS                  18             0             0
+# REG_NO_RESET                       18             0             0
+# REG_RACE                            0             0             0
+# REG_VARIABLE_ARESET                36             0             0
+# RESET_HIGH_LOW                      1             0             0
+# RESET_SYNC_ASYNC                    1             0             0
+# SLIST_INCOMPLETE                    0             0             0
+# X_ASSIGN_REACHABLE                  0             0             0
+# -------------------------------------------------------------------------------
+# AC Total                          425             0             0
+# -------------------------------------------------------------------------------
+# 
+# 
+# To see results in the GUI run:
+# qverify /homedir04/mmohamed25/DT3_2026/project/workdir/output/cdc_unit_qautocheck_run_log/autocheck.db
+# 
+# 
+# Message Summary
+# ---------------------------------------------------------------------------
+# Count  Type     Message ID         Summary
+# ---------------------------------------------------------------------------
+#     1  Warning  attributes-57      Adjusted clock period.
+#     1  Warning  attributes-58      Reduced number of significant clock edges.
+#     1  Warning  directive-114      Clock period or waveform specification has precision exceeding 3 digits past decimal point.
+#     1  Warning  formal-380         Signal specified in directive is not an input or control point.
+#     1  Info     netlist-106        Detected asynchronous reset.
+#     2  Info     netlist-11         Detected clock.
+# 
+# Summary: 4 Warnings in processing "autocheck compile"
+# Final Process Statistics: Max memory 674MB, CPU time 2s, Total time 3s
+# 
+# End of log Fri Mar 13 01:54:16 2026
+# 
+# Command : autocheck verify -timeout 2m -jobs 4
+# 
+# Questa Static Verification System
+# Version 2024.3_2 5905218 linux_x86_64 04-Dec-2024
+# log created Fri Mar 13 01:54:16 2026 by mmohamed25 on lehmus-cn2.oulu.fi
+# 
+# Executing Command : autocheck verify -timeout 2m -jobs 4 
+# File: /homedir04/mmohamed25/DT3_2026/project/workdir/scripts/qautocheck.tcl, Line: 109
+# 
+# Info    : Using initialization sequence file to initialize design state.  File '/homedir04/mmohamed25/DT3_2026/project/workdir/input/rst.questa_init'.  [formal-205]
+# Info    : Automatically constraining reset signal to de-assert after initialization sequence (use -auto_constraint_off option to disable).  Signal 'rst_n', Value '1'.  [formal-285]
+# Info	: Warning(line 4): no $default_clock declared, using clk
+# Applying synthesis semantics to design: cdc_unit
+# Info    : The number of engine jobs set is less than the available compute resources.  Remove the '-jobs 4' option to improve performance. Up to 16 engine jobs can be simultaneously run per license.  [formal-477]
+# [00:00:00] Status: Done 0/70, 0 issues, Mem=0GB
+# Info    : Established connection with engine process.  Hostname 'lehmus-cn2.oulu.fi', PID 424388, Id 3, Time [00:00:00].  [formal-385]
+# Info    : Established connection with engine process.  Hostname 'lehmus-cn2.oulu.fi', PID 424390, Id 1, Time [00:00:00].  [formal-385]
+# Info    : Established connection with engine process.  Hostname 'lehmus-cn2.oulu.fi', PID 424396, Id 4, Time [00:00:00].  [formal-385]
+# Info    : Established connection with engine process.  Hostname 'lehmus-cn2.oulu.fi', PID 424401, Id 2, Time [00:00:00].  [formal-385]
+# [00:00:00] REG_TOGGLE_VIOLATION: 'rsync_ff1_r', 1'b1 -> 1'b0
+# [00:00:00] Parallel execution of engine 7 activated
+# [00:00:00] REG_TOGGLE_VIOLATION: 'rsync_ff2_r', 1'b1 -> 1'b0
+# [00:00:48] Status: Done 70/70, 2 issues, Mem=2GB
+# 
+# AutoCheck Compile Summary
+# -------------------------------------------------------------------------------
+# Check                     Evaluations         Found        Waived
+# -------------------------------------------------------------------------------
+# ASSIGN_IMPLICIT_CONSTANT           14             0             0
+# CASE_DUPLICATE                      2             0             0
+# CLK_DELAY                          18             0             0
+# CLK_IN_DATA                       144             0             0
+# COMBO_LOOP                         32             0             0
+# DECLARATION_UNDRIVEN               25             0             0
+# DECLARATION_UNUSED                 25             0             0
+# DECLARATION_UNUSED_UNDRIVEN         0             0             0
+# FUNCTION_INCOMPLETE_ASSIGN          0             0             0
+# INDEX_UNREACHABLE                   0             0             0
+# LATCH_INFERRED                      0             0             0
+# LOGIC_UNDRIVEN                     25             0             0
+# LOGIC_UNUSED                        0             0             0
+# PORT_UNDRIVEN                      33             0             0
+# PORT_UNUSED                        33             0             0
+# REG_MIXED_ASSIGNS                  18             0             0
+# REG_NO_RESET                       18             0             0
+# REG_RACE                            0             0             0
+# REG_VARIABLE_ARESET                36             0             0
+# RESET_HIGH_LOW                      1             0             0
+# RESET_SYNC_ASYNC                    1             0             0
+# SLIST_INCOMPLETE                    0             0             0
+# X_ASSIGN_REACHABLE                  0             0             0
+# -------------------------------------------------------------------------------
+# AC Total                          425             0             0
+# -------------------------------------------------------------------------------
+# 
+# 
+# AutoCheck Verify Summary
+# -------------------------------------------------------------------------------
+# Check                     Evaluations         Found        Waived
+# -------------------------------------------------------------------------------
+# ARITH_OVERFLOW_SUB                  0             0             0
+# ARITH_OVERFLOW_VAL                  0             0             0
+# ARITH_ZERO_DIV                      0             0             0
+# ARITH_ZERO_MOD                      0             0             0
+# BLOCK_UNREACHABLE                  22             0             0
+# BUS_MULTIPLY_DRIVEN                 0             0             0
+# BUS_UNDRIVEN                        0             0             0
+# BUS_VALUE_CONFLICT                  0             0             0
+# CASE_DEFAULT                      OFF           OFF           OFF
+# CASE_FULL                           0             0             0
+# CASE_PARALLEL                       0             0             0
+# FSM_DEADLOCK_STATE                  4             0             0
+# FSM_LOCKOUT_STATE                   4             0             0
+# FSM_STUCK_BIT                       4             0             0
+# FSM_UNREACHABLE_STATE               4             0             0
+# FSM_UNREACHABLE_TRANS               4             0             0
+# INDEX_ILLEGAL                       0             0             0
+# INIT_X_PESSIMISM                    0             0             0
+# INIT_X_UNRESOLVED                   0             0             0
+# INIT_X_UNRESOLVED_MEM               0             0             0
+# ONE_COLD                            0             0             0
+# ONE_HOT                             0             0             0
+# REG_MULTIPLY_DRIVEN                 0             0             0
+# REG_STUCK_AT                       16             0             0
+# REG_TOGGLE_VIOLATION               12             2             0
+# -------------------------------------------------------------------------------
+# AC Total                           70             2             0
+# -------------------------------------------------------------------------------
+# 
+# 
+# 
+# --------- Process Statistics ----------
+# Elapsed Time                      48 s
+# Total CPU Time                    72 s
+# Total Peak Memory                1.6 GB
+# ---------- Engine Processes -----------
+# Average CPU Time                  18 s
+# Minimum CPU Utilization            0 %
+# Average Peak Memory              0.3 GB
+# Maximum Peak Memory              0.5 GB
+# Peak Cores                         4
+# Distinct Machines                  1
+# Launch Failures                    0
+# Unexpected Process Terminations    0
+# Successful Re-connections          0
+# ---------------------------------------
+# 
+# 
+# Message Summary
+# ---------------------------------------------------------------------------
+# Count  Type     Message ID         Summary
+# ---------------------------------------------------------------------------
+#     1  Info     formal-205         Using initialization sequence file to initialize design state.
+#     1  Info     formal-285         Automatically constraining reset signal to de-assert after initialization sequence (use -auto_constraint_off option to disable).
+#     4  Info     formal-385         Established connection with engine process.
+#     1  Info     formal-477         The number of engine jobs set is less than the available compute resources.
+# 
+# Final Process Statistics: Peak Memory 0.54GB, Cumulative CPU Time 72s, Elapsed Time 48s
+# 
+# To see results in the GUI run:
+# qverify /homedir04/mmohamed25/DT3_2026/project/workdir/output/cdc_unit_qautocheck_run_log/autocheck.db
+# 
+# 

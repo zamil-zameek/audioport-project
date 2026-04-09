@@ -1,0 +1,360 @@
+
+Questa CDC Version 2024.3_2 5905218 linux_x86_64 04-Dec-2024
+
+-----------------------------------------------------------------
+Clock Domain Crossing Analysis Report.
+
+Created Thu Mar 19 05:42:20 2026
+-----------------------------------------------------------------
+
+
+=================================================================
+Section 1  : Clock Information
+Section 2  : Reset Information
+Section 3  : CDC Results
+Section 4  : Custom Synchronization
+Section 5  : Custom Synchronizers without External Crossings
+Section 6  : Modal Analysis Information
+Section 7  : Modal Design Information
+Section 8  : Constant Information
+Section 9  : Design Information
+Section 10 : Port Domain Information
+=================================================================
+
+
+=================================================================
+Section 1 : Clock Information
+=================================================================
+
+Clock Group Summary for 'cdc_unit' 
+==================================
+Total Number of Clock Groups         : 2
+ 1. User-Specified                   :(2)
+ 2. Inferred                         :(0)
+    2.1 Primary                      : 0
+    2.2 Undriven                     : 0
+    2.3 Blackbox                     : 0
+    2.4 Gated Mux                    : 0
+    2.5 Gated Combo                  : 0
+ 3. Ignored                          :(0)
+
+
+=================================================================
+1. User-Specified (2)
+=================================================================
+Group     0(55 Register Bits, 0 Latch Bits)
+-----------
+clk 
+
+Group     1(57 Register Bits, 0 Latch Bits)
+-----------
+mclk 
+  mclkn 
+    rsync_clk 
+  muxclk_out 
+
+
+=================================================================
+2. Inferred (0)
+=================================================================
+
+2.1 Primary (0)
+-----------------------------------------------------------------
+None
+
+2.2 Undriven (0)
+-----------------------------------------------------------------
+None
+
+2.3 Blackbox (0)
+-----------------------------------------------------------------
+None
+
+2.4 Gated Mux (0)
+-----------------------------------------------------------------
+None
+
+2.5 Gated Combo (0)
+-----------------------------------------------------------------
+None
+
+=================================================================
+3. Ignored(0)
+=================================================================
+None
+
+
+=================================================================
+Section 2 : Reset Information
+=================================================================
+
+Reset Tree Summary for 'cdc_unit' 
+==================================
+Total Number of Resets               : 2
+ 1. User-Specified                   :(2)
+ 2. Inferred                         :(0)
+   2.1 Asynchronous                  :(0)
+   2.2 Asynchronous & Synchronous    :(0)
+   2.3 Synchronous                   :(0)
+ 3. Ignored                          :(0)
+
+
+
+Reset Tree Notations: 
+    A  --> Asynchronous Reset
+    H  --> Active High Reset
+    I  --> Ignored 
+    L  --> Active Low Reset
+    P  --> Inferred from Reset Port
+    PD --> Power Domain
+    S  --> Synchronous Reset
+    Se --> Set 
+    U  --> User Specified 
+    V  --> Virtual Reset 
+
+=================================================================
+1. User-Specified (2)
+=================================================================
+Group       1: rst_n
+---------------------
+rst_n <rst_n:U,Se,A,L><rst_n:U,A,L> (57 Register Bits, 0 Latch Bits)
+  rsync_ff2_r 
+
+Group       2: mrst_n
+----------------------
+mrst_n <mrst_n:U,Se,A,L><mrst_n:U,A,L> (55 Register Bits, 0 Latch Bits)
+  muxrst_n_out 
+
+
+=================================================================
+2. Inferred (0)
+=================================================================
+
+-----------------------------------------------------------------
+2.1 Asynchronous (0)
+-----------------------------------------------------------------
+None
+
+-----------------------------------------------------------------
+2.2 Asynchronous & Synchronous (0)
+-----------------------------------------------------------------
+None
+
+-----------------------------------------------------------------
+2.3 Synchronous (0)
+-----------------------------------------------------------------
+None
+
+=================================================================
+3. Ignored (0)
+=================================================================
+None
+
+=================================================================
+Section 3 : CDC Results
+=================================================================
+CDC Summary
+=================================================================
+-----------------------------------------------------------------
+Total number of checks                                       (7)
+-----------------------------------------------------------------
+
+Violations (0)
+-----------------------------------------------------------------
+<None>
+
+Cautions (0)
+-----------------------------------------------------------------
+<None>
+
+Evaluations (5)
+-----------------------------------------------------------------
+Single-bit signal synchronized by DFF synchronizer.          (2)
+Asynchronous reset synchronization.                          (1)
+Handshake synchronization.                                   (2)
+
+Resolved - Waived or Verified Status (0)
+-----------------------------------------------------------------
+<None>
+
+Proven (2)
+-----------------------------------------------------------------
+Single-bit signal synchronized by DFF synchronizer.          (1)
+Pulse Synchronization.                                       (1)
+
+Filtered (0)
+-----------------------------------------------------------------
+<None>
+
+
+Violations
+=================================================================
+<none>
+
+Cautions
+=================================================================
+<none>
+
+Evaluations
+=================================================================
+Single-bit signal synchronized by DFF synchronizer. (two_dff)
+-----------------------------------------------------------------
+clk : start : play_in (/homedir04/mmohamed25/DT3_2026/project/workdir/input/cdc_unit.sv : 12)
+	mclk : end : play_sff1_r (/homedir04/mmohamed25/DT3_2026/project/workdir/input/cdc_unit.sv : 122) (ID:two_dff_33361) (Status : uninspected)
+	Synchronizer length : 2
+
+clk : start : tx_state_r[1] (/homedir04/mmohamed25/DT3_2026/project/workdir/input/cdc_unit.sv : 196)
+	mclk : end : hreq_sff1_r (/homedir04/mmohamed25/DT3_2026/project/workdir/input/cdc_unit.sv : 228) (ID:two_dff_96689) (Status : uninspected)
+	Synchronizer length : 2
+
+
+Asynchronous reset synchronization. (async_reset)
+-----------------------------------------------------------------
+clk : start : rst_n (/homedir04/mmohamed25/DT3_2026/project/workdir/input/cdc_unit.sv : 8)
+	mclk : end : rsync_ff1_r (/homedir04/mmohamed25/DT3_2026/project/workdir/input/cdc_unit.sv : 102) (ID:async_reset_92494) (Status : uninspected)
+	Base Type : TWO DFF SYNCHRONIZER
+	Synchronizer length : 2
+
+
+Handshake synchronization. (handshake)
+-----------------------------------------------------------------
+clk : start : audio0_tx_r (/homedir04/mmohamed25/DT3_2026/project/workdir/input/cdc_unit.sv : 197)
+	mclk : end : audio0_out (/homedir04/mmohamed25/DT3_2026/project/workdir/input/cdc_unit.sv : 254) (ID:handshake_92525) (Status : uninspected)
+	Request Signal: tx_state_r ( Synchronizer ID : two_dff_96689 )
+	Acknowledge Signal: rx_state_r ( Synchronizer ID : two_dff_77835 )
+
+clk : start : audio1_tx_r (/homedir04/mmohamed25/DT3_2026/project/workdir/input/cdc_unit.sv : 198)
+	mclk : end : audio1_out (/homedir04/mmohamed25/DT3_2026/project/workdir/input/cdc_unit.sv : 255) (ID:handshake_58733) (Status : uninspected)
+	Request Signal: tx_state_r ( Synchronizer ID : two_dff_96689 )
+	Acknowledge Signal: rx_state_r ( Synchronizer ID : two_dff_77835 )
+
+
+
+Resolved - Waived or Verified Status
+=================================================================
+<none>
+
+Proven
+=================================================================
+Single-bit signal synchronized by DFF synchronizer. (two_dff)
+-----------------------------------------------------------------
+mclk : start : rx_state_r[1] (/homedir04/mmohamed25/DT3_2026/project/workdir/input/cdc_unit.sv : 253)
+	clk : end : hack_sff1_r (/homedir04/mmohamed25/DT3_2026/project/workdir/input/cdc_unit.sv : 287) (ID:two_dff_77835) (Status : uninspected)
+	Synchronizer length : 2
+
+
+Pulse Synchronization. (pulse_sync)
+-----------------------------------------------------------------
+mclk : start : req_in (/homedir04/mmohamed25/DT3_2026/project/workdir/input/cdc_unit.sv : 23)
+	clk : end : reqin_sff1_r (/homedir04/mmohamed25/DT3_2026/project/workdir/input/cdc_unit.sv : 144) (ID:pulse_sync_31782) (Status : uninspected)
+	Base Type : TWO DFF SYNCHRONIZER
+
+
+
+Filtered
+=================================================================
+<none>
+
+
+
+
+=================================================================
+Section 4 : Custom Synchronization
+=================================================================
+
+
+Module                Instance            
+------------------------------------
+None
+
+
+
+=================================================================
+Section 5 : Custom Synchronizers without External Crossings
+=================================================================
+
+Module                Instance            
+------------------------------------
+None
+
+
+=================================================================
+Section 6 : Modal Analysis Information
+=================================================================
+
+Mode information
+================
+
+None
+
+User Modes
+==========
+
+None
+
+Inferred Modes
+==============
+
+None
+
+
+=================================================================
+Section 7 : Modal Design Information
+=================================================================
+
+
+=================================================================
+Section 8 : Constant Information
+=================================================================
+
+Signal                         value                         
+-----------------------------------------------------------------
+test_mode_in                   1'b0                          
+
+
+=================================================================
+Section 9  : Design Information
+=================================================================
+
+Design Information
+--------------------------
+Design Complexity Number          = 165
+Number of CDC Signals             = 7
+Number of blackboxes              = 0
+Number of Register bits           = 112
+Number of Latch bits              = 0
+Number of RAMs                    = 0
+Number of Empty Modules           = 0
+Number of Unresolved Modules      = 0
+Number of Gate-Level Modules      = 0
+Number of Dead-end Registers      = 0
+Number of Unclocked Registers     = 0
+Number of Unclocked Latches       = 0
+
+Detail Design Information
+=========================
+
+
+
+=================================================================
+Section 10 : Port Domain Information
+=================================================================
+Port                Direction     Constraints    Clock Domain             Type      
+-----------------------------------------------------------------------------------
+clk                   input         Clock          { clk }                 User    
+rst_n                 input         Reset          { clk }                 User    
+test_mode_in          input         Constant       { <constant> }          User    
+audio0_in             input                        { clk }                 User    
+audio1_in             input                        { clk }                 User    
+play_in               input                        { clk }                 User    
+tick_in               input                        { clk }                 User    
+mclk                  input         Clock          { mclk }                User    
+req_in                input                        { mclk }                User    
+req_out               output                       { clk }                 User    
+muxclk_out            output        Clock          { mclk }              Questa CDC
+muxrst_n_out          output        Reset          { mclk }                User    
+audio0_out            output                       { mclk }                User    
+audio1_out            output                       { mclk }                User    
+play_out              output                       { mclk }                User    
+tick_out              output                       { mclk }                User    
+

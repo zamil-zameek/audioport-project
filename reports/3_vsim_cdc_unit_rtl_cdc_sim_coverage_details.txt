@@ -1,0 +1,811 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /cdc_unit_tb/DUT_INSTANCE/cdc_protocol/handshake_58733
+=== Design Unit: work.assert_cdc_handshake
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       4         4         0   100.00%
+--------------------------------------------------------------------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass     Vacuous    Disable    Attempt     Active Peak Active ATV
+                                                  Count        Count    Count      Count      Count       Count  Count          
+--------------------------------------------------------------------------------------------------------------------------------
+/cdc_unit_tb/DUT_INSTANCE/cdc_protocol/handshake_58733/cdc_handshake_rx_data_stable_check/assert_rx_data_stable
+                     /sw/rhel8/siemens/questa_static_2024.3_2/questa_static_formal/linux_x86_64/share/CDC_PROTOCOL/cdc_protocol_handshake.sv(140)
+                                                        0        208       2319        178       2705          0           2 off
+/cdc_unit_tb/DUT_INSTANCE/cdc_protocol/handshake_58733/cdc_handshake_req_stable_check/assert_req_stable
+                     /sw/rhel8/siemens/questa_static_2024.3_2/questa_static_formal/linux_x86_64/share/CDC_PROTOCOL/cdc_protocol_handshake.sv(167)
+                                                        0        100       2414        190       2704          0           3 off
+/cdc_unit_tb/DUT_INSTANCE/cdc_protocol/handshake_58733/cdc_handshake_req_assert_until_ack_assert_check/assert_req_until_ack_assert
+                     /sw/rhel8/siemens/questa_static_2024.3_2/questa_static_formal/linux_x86_64/share/CDC_PROTOCOL/cdc_protocol_handshake.sv(219)
+                                                        0        650       1877        178       2705          0          15 off
+/cdc_unit_tb/DUT_INSTANCE/cdc_protocol/handshake_58733/cdc_handshake_ack_assert_until_req_deassert_check/assert_ack_until_req_deassert
+                     /sw/rhel8/siemens/questa_static_2024.3_2/questa_static_formal/linux_x86_64/share/CDC_PROTOCOL/cdc_protocol_handshake.sv(236)
+                                                        0        626       1901        178       2705          0           2 off
+
+Directive Coverage:
+    Directives                       4         4         0   100.00%
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/cdc_unit_tb/DUT_INSTANCE/cdc_protocol/handshake_58733/cdc_handshake_rx_data_stable_check/cdc_handshake_rx_data_stable_cover/cover_rx_data_stable 
+                                         assert_cdc_handshake Verilog  SVA  /sw/rhel8/siemens/questa_static_2024.3_2/questa_static_formal/linux_x86_64/share/CDC_PROTOCOL/cdc_protocol_handshake.sv(159)
+                                                                               208 Covered   
+/cdc_unit_tb/DUT_INSTANCE/cdc_protocol/handshake_58733/cdc_handshake_req_stable_check/cdc_handshake_req_stable_cover/cover_req_stable 
+                                         assert_cdc_handshake Verilog  SVA  /sw/rhel8/siemens/questa_static_2024.3_2/questa_static_formal/linux_x86_64/share/CDC_PROTOCOL/cdc_protocol_handshake.sv(185)
+                                                                               100 Covered   
+/cdc_unit_tb/DUT_INSTANCE/cdc_protocol/handshake_58733/cdc_handshake_req_assert_until_ack_assert_check/cdc_handshake_req_assert_until_ack_assert_cover/cover_assert_req_until_ack_assert 
+                                         assert_cdc_handshake Verilog  SVA  /sw/rhel8/siemens/questa_static_2024.3_2/questa_static_formal/linux_x86_64/share/CDC_PROTOCOL/cdc_protocol_handshake.sv(228)
+                                                                               650 Covered   
+/cdc_unit_tb/DUT_INSTANCE/cdc_protocol/handshake_58733/cdc_handshake_ack_assert_until_req_deassert_check/cdc_handshake_ack_assert_until_req_deassert_cover/cover_assert_ack_until_req_deassert 
+                                         assert_cdc_handshake Verilog  SVA  /sw/rhel8/siemens/questa_static_2024.3_2/questa_static_formal/linux_x86_64/share/CDC_PROTOCOL/cdc_protocol_handshake.sv(245)
+                                                                               626 Covered   
+
+=================================================================================
+=== Instance: /cdc_unit_tb/DUT_INSTANCE/cdc_protocol/handshake_92525
+=== Design Unit: work.assert_cdc_handshake
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       4         4         0   100.00%
+--------------------------------------------------------------------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass     Vacuous    Disable    Attempt     Active Peak Active ATV
+                                                  Count        Count    Count      Count      Count       Count  Count          
+--------------------------------------------------------------------------------------------------------------------------------
+/cdc_unit_tb/DUT_INSTANCE/cdc_protocol/handshake_92525/cdc_handshake_rx_data_stable_check/assert_rx_data_stable
+                     /sw/rhel8/siemens/questa_static_2024.3_2/questa_static_formal/linux_x86_64/share/CDC_PROTOCOL/cdc_protocol_handshake.sv(140)
+                                                        0        208       2319        178       2705          0           2 off
+/cdc_unit_tb/DUT_INSTANCE/cdc_protocol/handshake_92525/cdc_handshake_req_stable_check/assert_req_stable
+                     /sw/rhel8/siemens/questa_static_2024.3_2/questa_static_formal/linux_x86_64/share/CDC_PROTOCOL/cdc_protocol_handshake.sv(167)
+                                                        0        100       2414        190       2704          0           3 off
+/cdc_unit_tb/DUT_INSTANCE/cdc_protocol/handshake_92525/cdc_handshake_req_assert_until_ack_assert_check/assert_req_until_ack_assert
+                     /sw/rhel8/siemens/questa_static_2024.3_2/questa_static_formal/linux_x86_64/share/CDC_PROTOCOL/cdc_protocol_handshake.sv(219)
+                                                        0        650       1877        178       2705          0          15 off
+/cdc_unit_tb/DUT_INSTANCE/cdc_protocol/handshake_92525/cdc_handshake_ack_assert_until_req_deassert_check/assert_ack_until_req_deassert
+                     /sw/rhel8/siemens/questa_static_2024.3_2/questa_static_formal/linux_x86_64/share/CDC_PROTOCOL/cdc_protocol_handshake.sv(236)
+                                                        0        626       1901        178       2705          0           2 off
+
+Directive Coverage:
+    Directives                       4         4         0   100.00%
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/cdc_unit_tb/DUT_INSTANCE/cdc_protocol/handshake_92525/cdc_handshake_rx_data_stable_check/cdc_handshake_rx_data_stable_cover/cover_rx_data_stable 
+                                         assert_cdc_handshake Verilog  SVA  /sw/rhel8/siemens/questa_static_2024.3_2/questa_static_formal/linux_x86_64/share/CDC_PROTOCOL/cdc_protocol_handshake.sv(159)
+                                                                               208 Covered   
+/cdc_unit_tb/DUT_INSTANCE/cdc_protocol/handshake_92525/cdc_handshake_req_stable_check/cdc_handshake_req_stable_cover/cover_req_stable 
+                                         assert_cdc_handshake Verilog  SVA  /sw/rhel8/siemens/questa_static_2024.3_2/questa_static_formal/linux_x86_64/share/CDC_PROTOCOL/cdc_protocol_handshake.sv(185)
+                                                                               100 Covered   
+/cdc_unit_tb/DUT_INSTANCE/cdc_protocol/handshake_92525/cdc_handshake_req_assert_until_ack_assert_check/cdc_handshake_req_assert_until_ack_assert_cover/cover_assert_req_until_ack_assert 
+                                         assert_cdc_handshake Verilog  SVA  /sw/rhel8/siemens/questa_static_2024.3_2/questa_static_formal/linux_x86_64/share/CDC_PROTOCOL/cdc_protocol_handshake.sv(228)
+                                                                               650 Covered   
+/cdc_unit_tb/DUT_INSTANCE/cdc_protocol/handshake_92525/cdc_handshake_ack_assert_until_req_deassert_check/cdc_handshake_ack_assert_until_req_deassert_cover/cover_assert_ack_until_req_deassert 
+                                         assert_cdc_handshake Verilog  SVA  /sw/rhel8/siemens/questa_static_2024.3_2/questa_static_formal/linux_x86_64/share/CDC_PROTOCOL/cdc_protocol_handshake.sv(245)
+                                                                               626 Covered   
+
+=================================================================================
+=== Instance: /cdc_unit_tb/DUT_INSTANCE/cdc_protocol/async_reset_92494
+=== Design Unit: work.assert_cdc_sync
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       1         1         0   100.00%
+--------------------------------------------------------------------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass     Vacuous    Disable    Attempt     Active Peak Active ATV
+                                                  Count        Count    Count      Count      Count       Count  Count          
+--------------------------------------------------------------------------------------------------------------------------------
+/cdc_unit_tb/DUT_INSTANCE/cdc_protocol/async_reset_92494/cdc_sync_tx_stable_check/assert_stable
+                     /sw/rhel8/siemens/questa_static_2024.3_2/questa_static_formal/linux_x86_64/share/CDC_PROTOCOL/cdc_protocol_sync.sv(65)
+                                                        0         25       2679          0       2704          0           3 off
+
+Covergroup Coverage:
+    Covergroups                      1        na        na    50.00%
+        Coverpoints/Crosses          2        na        na        na
+            Covergroup Bins          2         1         1    50.00%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /cdc_unit_tb/DUT_INSTANCE/cdc_protocol/async_reset_92494/cg_cdc_sync 
+                                                       50.00%        100          -    Uncovered            
+    covered/total bins:                                     1          2          -                      
+    missing/total bins:                                     1          2          -                      
+    % Hit:                                             50.00%        100          -                      
+    Coverpoint cp_values_checked                      100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint cp_value_change_at_tx_min                0.00%        100          -    ZERO                 
+        covered/total bins:                                 0          1          -                      
+        missing/total bins:                                 1          1          -                      
+        % Hit:                                          0.00%        100          -                      
+ Covergroup instance \/cdc_unit_tb/DUT_INSTANCE/cdc_protocol/async_reset_92494/cg_i_cdc_sync  
+                                                       50.00%        100          -    Uncovered            
+    covered/total bins:                                     1          2          -                      
+    missing/total bins:                                     1          2          -                      
+    % Hit:                                             50.00%        100          -                      
+    Coverpoint cp_values_checked                      100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin cpb_values_checked                             26          1          -    Covered              
+    Coverpoint cp_value_change_at_tx_min                0.00%        100          -    ZERO                 
+        covered/total bins:                                 0          1          -                      
+        missing/total bins:                                 1          1          -                      
+        % Hit:                                          0.00%        100          -                      
+        bin cpb_value_change_at_tx_min                      0          1          -    ZERO                 
+
+Directive Coverage:
+    Directives                       1         1         0   100.00%
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/cdc_unit_tb/DUT_INSTANCE/cdc_protocol/async_reset_92494/cdc_sync_tx_stable_check/cdc_sync_tx_stable_cover/cover_stable 
+                                         assert_cdc_sync Verilog  SVA  /sw/rhel8/siemens/questa_static_2024.3_2/questa_static_formal/linux_x86_64/share/CDC_PROTOCOL/cdc_protocol_sync.sv(83)
+                                                                                25 Covered   
+
+=================================================================================
+=== Instance: /cdc_unit_tb/DUT_INSTANCE/cdc_protocol/two_dff_33361
+=== Design Unit: work.assert_cdc_sync
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       1         1         0   100.00%
+--------------------------------------------------------------------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass     Vacuous    Disable    Attempt     Active Peak Active ATV
+                                                  Count        Count    Count      Count      Count       Count  Count          
+--------------------------------------------------------------------------------------------------------------------------------
+/cdc_unit_tb/DUT_INSTANCE/cdc_protocol/two_dff_33361/cdc_sync_tx_stable_check/assert_stable
+                     /sw/rhel8/siemens/questa_static_2024.3_2/questa_static_formal/linux_x86_64/share/CDC_PROTOCOL/cdc_protocol_sync.sv(65)
+                                                        0         14       2690          0       2704          0           3 off
+
+Covergroup Coverage:
+    Covergroups                      1        na        na    50.00%
+        Coverpoints/Crosses          2        na        na        na
+            Covergroup Bins          2         1         1    50.00%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /cdc_unit_tb/DUT_INSTANCE/cdc_protocol/two_dff_33361/cg_cdc_sync 
+                                                       50.00%        100          -    Uncovered            
+    covered/total bins:                                     1          2          -                      
+    missing/total bins:                                     1          2          -                      
+    % Hit:                                             50.00%        100          -                      
+    Coverpoint cp_values_checked                      100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint cp_value_change_at_tx_min                0.00%        100          -    ZERO                 
+        covered/total bins:                                 0          1          -                      
+        missing/total bins:                                 1          1          -                      
+        % Hit:                                          0.00%        100          -                      
+ Covergroup instance \/cdc_unit_tb/DUT_INSTANCE/cdc_protocol/two_dff_33361/cg_i_cdc_sync  
+                                                       50.00%        100          -    Uncovered            
+    covered/total bins:                                     1          2          -                      
+    missing/total bins:                                     1          2          -                      
+    % Hit:                                             50.00%        100          -                      
+    Coverpoint cp_values_checked                      100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin cpb_values_checked                             15          1          -    Covered              
+    Coverpoint cp_value_change_at_tx_min                0.00%        100          -    ZERO                 
+        covered/total bins:                                 0          1          -                      
+        missing/total bins:                                 1          1          -                      
+        % Hit:                                          0.00%        100          -                      
+        bin cpb_value_change_at_tx_min                      0          1          -    ZERO                 
+
+Directive Coverage:
+    Directives                       1         1         0   100.00%
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/cdc_unit_tb/DUT_INSTANCE/cdc_protocol/two_dff_33361/cdc_sync_tx_stable_check/cdc_sync_tx_stable_cover/cover_stable 
+                                         assert_cdc_sync Verilog  SVA  /sw/rhel8/siemens/questa_static_2024.3_2/questa_static_formal/linux_x86_64/share/CDC_PROTOCOL/cdc_protocol_sync.sv(83)
+                                                                                14 Covered   
+
+=================================================================================
+=== Instance: /cdc_unit_tb/DUT_INSTANCE/cdc_protocol/two_dff_96689
+=== Design Unit: work.assert_cdc_sync
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       1         1         0   100.00%
+--------------------------------------------------------------------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass     Vacuous    Disable    Attempt     Active Peak Active ATV
+                                                  Count        Count    Count      Count      Count       Count  Count          
+--------------------------------------------------------------------------------------------------------------------------------
+/cdc_unit_tb/DUT_INSTANCE/cdc_protocol/two_dff_96689/cdc_sync_tx_stable_check/assert_stable
+                     /sw/rhel8/siemens/questa_static_2024.3_2/questa_static_formal/linux_x86_64/share/CDC_PROTOCOL/cdc_protocol_sync.sv(65)
+                                                        0        100       2480        124       2704          0           3 off
+
+Covergroup Coverage:
+    Covergroups                      1        na        na    50.00%
+        Coverpoints/Crosses          2        na        na        na
+            Covergroup Bins          2         1         1    50.00%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /cdc_unit_tb/DUT_INSTANCE/cdc_protocol/two_dff_96689/cg_cdc_sync 
+                                                       50.00%        100          -    Uncovered            
+    covered/total bins:                                     1          2          -                      
+    missing/total bins:                                     1          2          -                      
+    % Hit:                                             50.00%        100          -                      
+    Coverpoint cp_values_checked                      100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint cp_value_change_at_tx_min                0.00%        100          -    ZERO                 
+        covered/total bins:                                 0          1          -                      
+        missing/total bins:                                 1          1          -                      
+        % Hit:                                          0.00%        100          -                      
+ Covergroup instance \/cdc_unit_tb/DUT_INSTANCE/cdc_protocol/two_dff_96689/cg_i_cdc_sync  
+                                                       50.00%        100          -    Uncovered            
+    covered/total bins:                                     1          2          -                      
+    missing/total bins:                                     1          2          -                      
+    % Hit:                                             50.00%        100          -                      
+    Coverpoint cp_values_checked                      100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin cpb_values_checked                            101          1          -    Covered              
+    Coverpoint cp_value_change_at_tx_min                0.00%        100          -    ZERO                 
+        covered/total bins:                                 0          1          -                      
+        missing/total bins:                                 1          1          -                      
+        % Hit:                                          0.00%        100          -                      
+        bin cpb_value_change_at_tx_min                      0          1          -    ZERO                 
+
+Directive Coverage:
+    Directives                       1         1         0   100.00%
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/cdc_unit_tb/DUT_INSTANCE/cdc_protocol/two_dff_96689/cdc_sync_tx_stable_check/cdc_sync_tx_stable_cover/cover_stable 
+                                         assert_cdc_sync Verilog  SVA  /sw/rhel8/siemens/questa_static_2024.3_2/questa_static_formal/linux_x86_64/share/CDC_PROTOCOL/cdc_protocol_sync.sv(83)
+                                                                               100 Covered   
+
+=================================================================================
+=== Instance: /cdc_unit_tb/DUT_INSTANCE/CHECKER_MODULE
+=== Design Unit: work.cdc_unit_svamod
+=================================================================================
+
+Assertion Coverage:
+    Assertions                      21        21         0   100.00%
+--------------------------------------------------------------------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass     Vacuous    Disable    Attempt     Active Peak Active ATV
+                                                  Count        Count    Count      Count      Count       Count  Count          
+--------------------------------------------------------------------------------------------------------------------------------
+/cdc_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_test_mode_in
+                     input/cdc_unit_svamod.sv(47)
+                                                        0       2593          0        112       2705          0           1 off
+/cdc_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_audio0_in
+                     input/cdc_unit_svamod.sv(48)
+                                                        0       2593          0        112       2705          0           1 off
+/cdc_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_audio1_in
+                     input/cdc_unit_svamod.sv(49)
+                                                        0       2593          0        112       2705          0           1 off
+/cdc_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_tick_in
+                     input/cdc_unit_svamod.sv(50)
+                                                        0       2593          0        112       2705          0           1 off
+/cdc_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_play_in
+                     input/cdc_unit_svamod.sv(51)
+                                                        0       2593          0        112       2705          0           1 off
+/cdc_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_req_in
+                     input/cdc_unit_svamod.sv(52)
+                                                        0       2593          0        112       2705          0           1 off
+/cdc_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_audio0_out
+                     input/cdc_unit_svamod.sv(53)
+                                                        0       1872          1          1       1874          0           1 off
+/cdc_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_audio1_out
+                     input/cdc_unit_svamod.sv(54)
+                                                        0       1872          1          1       1874          0           1 off
+/cdc_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_tick_out
+                     input/cdc_unit_svamod.sv(55)
+                                                        0       1872          1          1       1874          0           1 off
+/cdc_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_play_out
+                     input/cdc_unit_svamod.sv(56)
+                                                        0       2394          1          1       2396          0           1 off
+/cdc_unit_tb/DUT_INSTANCE/CHECKER_MODULE/X_req_out
+                     input/cdc_unit_svamod.sv(57)
+                                                        0       2299          1          1       2301          0           1 off
+/cdc_unit_tb/DUT_INSTANCE/CHECKER_MODULE/mf_tick_pulse
+                     input/cdc_unit_svamod.sv(70)
+                                                        0         50       2543        112       2705          0           1 off
+/cdc_unit_tb/DUT_INSTANCE/CHECKER_MODULE/mf_tick_interval
+                     input/cdc_unit_svamod.sv(80)
+                                                        0         50       2543        112       2705          0           1 off
+/cdc_unit_tb/DUT_INSTANCE/CHECKER_MODULE/mf_play_length
+                     input/cdc_unit_svamod.sv(90)
+                                                        0         14       2579        112       2705          0           1 off
+/cdc_unit_tb/DUT_INSTANCE/CHECKER_MODULE/mf_req_pulse
+                     input/cdc_unit_svamod.sv(99)
+                                                        0         50        565         45        660          0           1 off
+/cdc_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_reset_sync_01
+                     input/cdc_unit_svamod.sv(111)
+                                                        0         10        624          0        634          0           1 off
+/cdc_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_reset_sync_10
+                     input/cdc_unit_svamod.sv(121)
+                                                        0         10       2636          0       2646          0           1 off
+/cdc_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_play_sync
+                     input/cdc_unit_svamod.sv(132)
+                                                        0       2391          0          0       2391          0          10 off
+/cdc_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_req_sync
+                     input/cdc_unit_svamod.sv(142)
+                                                        0         50       2249          0       2299          0           1 off
+/cdc_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_req_out_pulse
+                     input/cdc_unit_svamod.sv(153)
+                                                        0         50       2249          0       2299          0           1 off
+/cdc_unit_tb/DUT_INSTANCE/CHECKER_MODULE/af_audio_sync
+                     input/cdc_unit_svamod.sv(165)
+                                                        0         50       1822          0       1872          0           1 off
+
+Directive Coverage:
+    Directives                       6         6         0   100.00%
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/cdc_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_reset_sync_01 
+                                         cdc_unit_svamod Verilog  SVA  input/cdc_unit_svamod.sv(112)
+                                                                                10 Covered   
+/cdc_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_reset_sync_10 
+                                         cdc_unit_svamod Verilog  SVA  input/cdc_unit_svamod.sv(122)
+                                                                                10 Covered   
+/cdc_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_play_sync 
+                                         cdc_unit_svamod Verilog  SVA  input/cdc_unit_svamod.sv(133)
+                                                                              2391 Covered   
+/cdc_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_req_sync 
+                                         cdc_unit_svamod Verilog  SVA  input/cdc_unit_svamod.sv(143)
+                                                                                50 Covered   
+/cdc_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_req_out_pulse 
+                                         cdc_unit_svamod Verilog  SVA  input/cdc_unit_svamod.sv(154)
+                                                                                50 Covered   
+/cdc_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_audio_sync 
+                                         cdc_unit_svamod Verilog  SVA  input/cdc_unit_svamod.sv(166)
+                                                                                50 Covered   
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        218       218         0   100.00%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /cdc_unit_tb/DUT_INSTANCE/CHECKER_MODULE --
+
+                                              Node      1H->0L      0L->1H       0L->Z       Z->0L       1H->Z       Z->H1     ExtMode  "Coverage"
+                                              ---------------------------------------------------------------------------------------------------
+
+========
+(n*) - Number was not used in coverage calculations performed by extended toggle algorithms.
+
+Extended Toggle Coverage Calculation Criteria:
+-----------------------------------------------
+	ExtMode 1: 0L->1H & 1H->0L & any one 'Z' transition (to/from 'Z').
+	ExtMode 2: 0L->1H & 1H->0L & one transition to 'Z' & one transition from 'Z'.
+	ExtMode 3: 0L->1H & 1H->0L & all 'Z' transitions.
+========
+
+Total Node Count     =        109 
+Toggled Node Count   =        109 
+Untoggled Node Count =          0 
+
+Toggle Coverage      =     100.00% (218 of 218 bins)
+
+=================================================================================
+=== Instance: /cdc_unit_tb/DUT_INSTANCE
+=== Design Unit: work.cdc_unit
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        34        32         2    94.11%
+
+================================Branch Details================================
+
+Branch Coverage for instance /cdc_unit_tb/DUT_INSTANCE
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File input/cdc_unit.sv
+------------------------------------IF Branch------------------------------------
+    84                                      6708     Count coming in to IF
+    84              1                         39     
+    84              2                       6669     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    85                                      6708     Count coming in to IF
+    85              1                         39     
+    85              2                       6669     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    86                                        55     Count coming in to IF
+    86              1                          5     
+    86              2                         50     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    95                                        64     Count coming in to IF
+    95              1                         25     
+    100             1                         39     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    115                                       60     Count coming in to IF
+    115             1                         26     
+    120             1                         34     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    136                                      439     Count coming in to IF
+    136             1                         26     
+    142             1                        413     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    183                                      289     Count coming in to IF
+    183             1                         26     
+    189             1                        263     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------CASE Branch------------------------------------
+    191                                      263     Count coming in to CASE
+    192             1                        163     
+    202             1                        100     
+    208             1                    ***0***     
+Branch totals: 2 hits of 3 branches = 66.66%
+
+------------------------------------IF Branch------------------------------------
+    194                                      163     Count coming in to IF
+    194             1                         50     
+                                             113     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    204                                      100     Count coming in to IF
+    204             1                         50     
+                                              50     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    221                                      339     Count coming in to IF
+    221             1                         26     
+    226             1                        313     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    236                                      339     Count coming in to IF
+    236             1                         26     
+    243             1                        313     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------CASE Branch------------------------------------
+    248                                      313     Count coming in to CASE
+    249             1                        163     
+    260             1                        150     
+    266             1                    ***0***     
+Branch totals: 2 hits of 3 branches = 66.66%
+
+------------------------------------IF Branch------------------------------------
+    251                                      163     Count coming in to IF
+    251             1                         50     
+                                             113     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    262                                      150     Count coming in to IF
+    262             1                         50     
+                                             100     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    280                                      339     Count coming in to IF
+    280             1                         26     
+    285             1                        313     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+Expression Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Expressions                     16        15         1    93.75%
+
+================================Expression Details================================
+
+Expression Coverage for instance /cdc_unit_tb/DUT_INSTANCE --
+
+  File input/cdc_unit.sv
+-----------Focused Expression View (Bimodal)------------
+Line       84 Item    1  (test_mode_in? clk: mclk)
+Expression totals: 3 of 3 input terms covered = 100.00%
+
+-----------Focused Expression View (Bimodal)------------
+Line       85 Item    1  (test_mode_in? clk: mclkn)
+Expression totals: 3 of 3 input terms covered = 100.00%
+
+-----------Focused Expression View (Bimodal)------------
+Line       86 Item    1  (test_mode_in? rst_n: mrst_n)
+Expression totals: 3 of 3 input terms covered = 100.00%
+
+----------------Focused Expression View-----------------
+Line       150 Item    1  (reqin_sff2_r & ~reqin_sff2_dly_r)
+Expression totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Expression View-----------------
+Line       175 Item    1  (((tx_state_r == 1) && tick_in) && ~sack)
+Expression totals: 2 of 3 input terms covered = 66.66%
+
+         Input Term   Covered  Reason for no coverage   Hint
+        -----------  --------  -----------------------  --------------
+  (tx_state_r == 1)         Y
+            tick_in         Y
+               sack         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (tx_state_r == 1)_0   -                             
+  Row   2:          1  (tx_state_r == 1)_1   (~sack && tick_in)            
+  Row   3:          1  tick_in_0             (tx_state_r == 1)             
+  Row   4:          1  tick_in_1             (~sack && (tx_state_r == 1))  
+  Row   5:          1  sack_0                ((tx_state_r == 1) && tick_in)
+  Row   6:    ***0***  sack_1                ((tx_state_r == 1) && tick_in)
+
+----------------Focused Expression View-----------------
+Line       178 Item    1  ((rx_state_r == 1) && sreq)
+Expression totals: 2 of 2 input terms covered = 100.00%
+
+
+FSM Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    FSM States                       4         4         0   100.00%
+    FSM Transitions                  8         8         0   100.00%
+
+================================FSM Details================================
+
+FSM Coverage for instance /cdc_unit_tb/DUT_INSTANCE --
+
+FSM_ID: tx_state_r
+    Current State Object : tx_state_r
+    ----------------------
+    State Value MapInfo :
+    ---------------------
+Line          State Name               Value
+----          ----------               -----
+ 192             TX_IDLE                   1
+ 202              TX_REQ                   2
+    Covered States :
+    ----------------
+                   State           Hit_count
+                   -----           ---------
+                 TX_IDLE                  76          
+                  TX_REQ                  50          
+    Covered Transitions :
+    ---------------------
+Line            Trans_ID           Hit_count          Transition          
+----            --------           ---------          ----------          
+ 196                   0                  50          TX_IDLE -> TX_REQ             
+ 205                   1                  50          TX_REQ -> TX_IDLE             
+ 205                   2                  50          TX_IDLE -> TX_REQ -> TX_IDLE          
+ 196                   3                  49          TX_REQ -> TX_IDLE -> TX_REQ          
+
+
+    Summary                       Bins      Hits    Misses  Coverage
+    -------                       ----      ----    ------  --------
+        FSM States                   2         2         0   100.00%
+        FSM Transitions              4         4         0   100.00%
+FSM_ID: rx_state_r
+    Current State Object : rx_state_r
+    ----------------------
+    State Value MapInfo :
+    ---------------------
+Line          State Name               Value
+----          ----------               -----
+ 249             RX_IDLE                   1
+ 260              RX_ACK                   2
+    Covered States :
+    ----------------
+                   State           Hit_count
+                   -----           ---------
+                 RX_IDLE                  76          
+                  RX_ACK                  50          
+    Covered Transitions :
+    ---------------------
+Line            Trans_ID           Hit_count          Transition          
+----            --------           ---------          ----------          
+ 253                   0                  50          RX_IDLE -> RX_ACK             
+ 263                   1                  50          RX_ACK -> RX_IDLE             
+ 263                   2                  50          RX_IDLE -> RX_ACK -> RX_IDLE          
+ 253                   3                  49          RX_ACK -> RX_IDLE -> RX_ACK          
+
+
+    Summary                       Bins      Hits    Misses  Coverage
+    -------                       ----      ----    ------  --------
+        FSM States                   2         2         0   100.00%
+        FSM Transitions              4         4         0   100.00%
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      59        52         7    88.13%
+
+================================Statement Details================================
+
+Statement Coverage for instance /cdc_unit_tb/DUT_INSTANCE --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File input/cdc_unit.sv
+    84              1                       6710     
+    85              1                       6710     
+    86              1                         56     
+    93              1                         64     
+    97              1                         25     
+    98              1                         25     
+    102             1                         39     
+    103             1                         39     
+    113             1                         60     
+    117             1                         26     
+    118             1                         26     
+    122             1                         34     
+    123             1                         34     
+    134             1                        439     
+    138             1                         26     
+    139             1                         26     
+    140             1                         26     
+    144             1                        413     
+    145             1                        413     
+    146             1                        413     
+    150             1                        202     
+    175             1                        303     
+    178             1                        203     
+    181             1                        289     
+    185             1                         26     
+    186             1                         26     
+    187             1                         26     
+    196             1                         50     
+    197             1                         50     
+    198             1                         50     
+    205             1                         50     
+    210             1                    ***0***     
+    211             1                    ***0***     
+    212             1                    ***0***     
+    219             1                        339     
+    223             1                         26     
+    224             1                         26     
+    228             1                        313     
+    229             1                        313     
+    234             1                        339     
+    238             1                         26     
+    239             1                         26     
+    240             1                         26     
+    241             1                         26     
+    246             1                        313     
+    253             1                         50     
+    254             1                         50     
+    255             1                         50     
+    256             1                         50     
+    263             1                         50     
+    268             1                    ***0***     
+    269             1                    ***0***     
+    270             1                    ***0***     
+    271             1                    ***0***     
+    278             1                        339     
+    282             1                         26     
+    283             1                         26     
+    287             1                        313     
+    288             1                        313     
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        362       362         0   100.00%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /cdc_unit_tb/DUT_INSTANCE --
+
+                                              Node      1H->0L      0L->1H       0L->Z       Z->0L       1H->Z       Z->H1     ExtMode  "Coverage"
+                                              ---------------------------------------------------------------------------------------------------
+
+========
+(n*) - Number was not used in coverage calculations performed by extended toggle algorithms.
+
+Extended Toggle Coverage Calculation Criteria:
+-----------------------------------------------
+	ExtMode 1: 0L->1H & 1H->0L & any one 'Z' transition (to/from 'Z').
+	ExtMode 2: 0L->1H & 1H->0L & one transition to 'Z' & one transition from 'Z'.
+	ExtMode 3: 0L->1H & 1H->0L & all 'Z' transitions.
+========
+
+Total Node Count     =        181 
+Toggled Node Count   =        181 
+Untoggled Node Count =          0 
+
+Toggle Coverage      =     100.00% (362 of 362 bins)
+
+
+TOTAL COVERGROUP COVERAGE: 50.00%  COVERGROUP TYPES: 3
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/cdc_unit_tb/DUT_INSTANCE/cdc_protocol/handshake_58733/cdc_handshake_rx_data_stable_check/cdc_handshake_rx_data_stable_cover/cover_rx_data_stable 
+                                         assert_cdc_handshake Verilog  SVA  /sw/rhel8/siemens/questa_static_2024.3_2/questa_static_formal/linux_x86_64/share/CDC_PROTOCOL/cdc_protocol_handshake.sv(159)
+                                                                               208 Covered   
+/cdc_unit_tb/DUT_INSTANCE/cdc_protocol/handshake_58733/cdc_handshake_req_stable_check/cdc_handshake_req_stable_cover/cover_req_stable 
+                                         assert_cdc_handshake Verilog  SVA  /sw/rhel8/siemens/questa_static_2024.3_2/questa_static_formal/linux_x86_64/share/CDC_PROTOCOL/cdc_protocol_handshake.sv(185)
+                                                                               100 Covered   
+/cdc_unit_tb/DUT_INSTANCE/cdc_protocol/handshake_58733/cdc_handshake_req_assert_until_ack_assert_check/cdc_handshake_req_assert_until_ack_assert_cover/cover_assert_req_until_ack_assert 
+                                         assert_cdc_handshake Verilog  SVA  /sw/rhel8/siemens/questa_static_2024.3_2/questa_static_formal/linux_x86_64/share/CDC_PROTOCOL/cdc_protocol_handshake.sv(228)
+                                                                               650 Covered   
+/cdc_unit_tb/DUT_INSTANCE/cdc_protocol/handshake_58733/cdc_handshake_ack_assert_until_req_deassert_check/cdc_handshake_ack_assert_until_req_deassert_cover/cover_assert_ack_until_req_deassert 
+                                         assert_cdc_handshake Verilog  SVA  /sw/rhel8/siemens/questa_static_2024.3_2/questa_static_formal/linux_x86_64/share/CDC_PROTOCOL/cdc_protocol_handshake.sv(245)
+                                                                               626 Covered   
+/cdc_unit_tb/DUT_INSTANCE/cdc_protocol/handshake_92525/cdc_handshake_rx_data_stable_check/cdc_handshake_rx_data_stable_cover/cover_rx_data_stable 
+                                         assert_cdc_handshake Verilog  SVA  /sw/rhel8/siemens/questa_static_2024.3_2/questa_static_formal/linux_x86_64/share/CDC_PROTOCOL/cdc_protocol_handshake.sv(159)
+                                                                               208 Covered   
+/cdc_unit_tb/DUT_INSTANCE/cdc_protocol/handshake_92525/cdc_handshake_req_stable_check/cdc_handshake_req_stable_cover/cover_req_stable 
+                                         assert_cdc_handshake Verilog  SVA  /sw/rhel8/siemens/questa_static_2024.3_2/questa_static_formal/linux_x86_64/share/CDC_PROTOCOL/cdc_protocol_handshake.sv(185)
+                                                                               100 Covered   
+/cdc_unit_tb/DUT_INSTANCE/cdc_protocol/handshake_92525/cdc_handshake_req_assert_until_ack_assert_check/cdc_handshake_req_assert_until_ack_assert_cover/cover_assert_req_until_ack_assert 
+                                         assert_cdc_handshake Verilog  SVA  /sw/rhel8/siemens/questa_static_2024.3_2/questa_static_formal/linux_x86_64/share/CDC_PROTOCOL/cdc_protocol_handshake.sv(228)
+                                                                               650 Covered   
+/cdc_unit_tb/DUT_INSTANCE/cdc_protocol/handshake_92525/cdc_handshake_ack_assert_until_req_deassert_check/cdc_handshake_ack_assert_until_req_deassert_cover/cover_assert_ack_until_req_deassert 
+                                         assert_cdc_handshake Verilog  SVA  /sw/rhel8/siemens/questa_static_2024.3_2/questa_static_formal/linux_x86_64/share/CDC_PROTOCOL/cdc_protocol_handshake.sv(245)
+                                                                               626 Covered   
+/cdc_unit_tb/DUT_INSTANCE/cdc_protocol/async_reset_92494/cdc_sync_tx_stable_check/cdc_sync_tx_stable_cover/cover_stable 
+                                         assert_cdc_sync Verilog  SVA  /sw/rhel8/siemens/questa_static_2024.3_2/questa_static_formal/linux_x86_64/share/CDC_PROTOCOL/cdc_protocol_sync.sv(83)
+                                                                                25 Covered   
+/cdc_unit_tb/DUT_INSTANCE/cdc_protocol/two_dff_33361/cdc_sync_tx_stable_check/cdc_sync_tx_stable_cover/cover_stable 
+                                         assert_cdc_sync Verilog  SVA  /sw/rhel8/siemens/questa_static_2024.3_2/questa_static_formal/linux_x86_64/share/CDC_PROTOCOL/cdc_protocol_sync.sv(83)
+                                                                                14 Covered   
+/cdc_unit_tb/DUT_INSTANCE/cdc_protocol/two_dff_96689/cdc_sync_tx_stable_check/cdc_sync_tx_stable_cover/cover_stable 
+                                         assert_cdc_sync Verilog  SVA  /sw/rhel8/siemens/questa_static_2024.3_2/questa_static_formal/linux_x86_64/share/CDC_PROTOCOL/cdc_protocol_sync.sv(83)
+                                                                               100 Covered   
+/cdc_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_reset_sync_01 
+                                         cdc_unit_svamod Verilog  SVA  input/cdc_unit_svamod.sv(112)
+                                                                                10 Covered   
+/cdc_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_reset_sync_10 
+                                         cdc_unit_svamod Verilog  SVA  input/cdc_unit_svamod.sv(122)
+                                                                                10 Covered   
+/cdc_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_play_sync 
+                                         cdc_unit_svamod Verilog  SVA  input/cdc_unit_svamod.sv(133)
+                                                                              2391 Covered   
+/cdc_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_req_sync 
+                                         cdc_unit_svamod Verilog  SVA  input/cdc_unit_svamod.sv(143)
+                                                                                50 Covered   
+/cdc_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_req_out_pulse 
+                                         cdc_unit_svamod Verilog  SVA  input/cdc_unit_svamod.sv(154)
+                                                                                50 Covered   
+/cdc_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_audio_sync 
+                                         cdc_unit_svamod Verilog  SVA  input/cdc_unit_svamod.sv(166)
+                                                                                50 Covered   
+
+TOTAL DIRECTIVE COVERAGE: 100.00%  COVERS: 17
+
+TOTAL ASSERTION COVERAGE: 100.00%  ASSERTIONS: 32
+
+Total Coverage By Instance (filtered view): 91.77%
+

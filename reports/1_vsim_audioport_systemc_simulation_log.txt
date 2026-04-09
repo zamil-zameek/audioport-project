@@ -1,0 +1,233 @@
+# //  Questa Sim-64
+# //  Version 2024.3_2 linux_x86_64 Nov 25 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do scripts/vsim_scsim.tcl
+#  -DSC_GUI_SIMULATION
+# -sc_arg "-run" -sc_arg "vsim_systemc"
+# -all
+# 10000
+# QuestaSim
+# 0
+# 1
+# transcript file ${REPORTS_DIR}/1_vsim_${DESIGN_NAME}_systemc_simulation_log.txt
+# transcript sizelimit $VSIM_TRANSCRIPT_SIZE
+# 
+# set VSIM_DEBUGDB     ${OUTPUT_DIR}/${DESIGN_NAME}_systemc.dbg
+# output/audioport_systemc.dbg
+# set VSIM_DESIGNFILE  ${OUTPUT_DIR}/${DESIGN_NAME}_systemc.bin
+# output/audioport_systemc.bin
+# set VSIM_QWAVEDB     ${OUTPUT_DIR}/${DESIGN_NAME}_systemc.db
+# output/audioport_systemc.db
+# set VSIM_VOPTDIR     ${DESIGN_NAME}_systemc_vopt
+# audioport_systemc_vopt
+# set VSIM_WORKDIR     ${OUTPUT_DIR}/${DESIGN_NAME}_questasim_work
+# output/audioport_questasim_work
+# set VSIM_SCLIBDIR    ${OUTPUT_DIR}/${DESIGN_NAME}_questasim_sclib
+# output/audioport_questasim_sclib
+# 
+# if { [info exists vsim_libs_created ] == 0 } {
+#     file delete -force $VSIM_DEBUGDB
+#     file delete -force $VSIM_DESIGNFILE
+#     file delete -force $VSIM_QWAVEDB
+#     file delete -force $VSIM_WORKDIR
+#     file delete -force $VSIM_SCLIBDIR
+# }
+# 
+# set SCCOM_SETTINGS " -g -I ${INPUT_DIR} -work $VSIM_SCLIBDIR -verbose"
+#  -g -I input -work output/audioport_questasim_sclib -verbose
+# set VLOG_SETTINGS " +define+design_top_is_${DESIGN_NAME} +define+DESIGN_NAME_MACRO=${DESIGN_NAME} +incdir+${INPUT_DIR} -mfcu -sv -work work"
+#  +define+design_top_is_audioport +define+DESIGN_NAME_MACRO=audioport +incdir+input -mfcu -sv -work work
+#set VSIM_SETTINGS " -displaymsgmode both -voptargs=+acc -classdebug -debugDB=${VSIM_DEBUGDB} -sclib ${VSIM_SCLIBDIR} -L ${VSIM_SCLIBDIR}"
+# set VSIM_SETTINGS " -note 6599 -msgmode both -displaymsgmode both -classdebug -debugDB=${VSIM_DEBUGDB} -sclib ${VSIM_SCLIBDIR} -L ${VSIM_SCLIBDIR}"
+#  -note 6599 -msgmode both -displaymsgmode both -classdebug -debugDB=output/audioport_systemc.dbg -sclib output/audioport_questasim_sclib -L output/audioport_questasim_sclib
+# set VOPT_SETTINGS " -suppress 10587 +acc -noincr -designfile ${VSIM_DESIGNFILE} -sclib ${VSIM_SCLIBDIR} -L ${VSIM_SCLIBDIR}"
+#  -suppress 10587 +acc -noincr -designfile output/audioport_systemc.bin -sclib output/audioport_questasim_sclib -L output/audioport_questasim_sclib
+# 
+#################################################################
+# Merge user settings
+#################################################################
+# 
+# set VLOG_SETTINGS [concat $VLOG_SYSTEMC_OPTIONS $VLOG_SETTINGS ]
+# -suppress 13314 -suppress 13233 +define+RTL_SIM +define+design_top_is_audioport +define+DESIGN_NAME_MACRO=audioport +incdir+input -mfcu -sv -work work
+# set VSIM_SETTINGS [concat $VSIM_SYSTEMC_OPTIONS $VSIM_SETTINGS ]
+# -sc_arg "-run" -sc_arg "vsim_systemc" -sc_arg "-output" -sc_arg "results" -note 6599 -msgmode both -displaymsgmode both -classdebug -debugDB=output/audioport_systemc.dbg -sclib output/audioport_questasim_sclib -L output/audioport_questasim_sclib
+# set SCCOM_SETTINGS [concat $VSIM_SCCOM_OPTIONS $SCCOM_SETTINGS ]
+# -DSC_GUI_SIMULATION -g -I input -work output/audioport_questasim_sclib -verbose
+# 
+#################################################################
+# Create libraries
+#################################################################
+# 
+# if { [info exists vsim_libs_created ] == 0 } {
+#     vlib ${VSIM_WORKDIR}
+#     vmap work ${VSIM_WORKDIR}
+#     vlib ${VSIM_SCLIBDIR}
+#     vmap systemc_lib ${VSIM_SCLIBDIR}
+#     set vsim_libs_created 1
+# }
+# 1
+# 
+#################################################################
+# Compilation
+#################################################################
+# 
+# SystemC
+# foreach filename [concat ${SYSTEMC_SOURCE_FILES} ${SYSTEMC_TESTBENCH_FILES} ] {
+#     eval "sccom $SCCOM_SETTINGS ${filename}"
+# }
+# sccom -reportprogress -DSC_GUI_SIMULATION -g -I input -work output/audioport_questasim_sclib -verbose input/control_unit.cpp 
+# Start time: 16:51:57 on Jan 16,2026
+# 
+# QuestaSim-64 sccom 2024.3_2 compiler 2024.11 Nov 25 2024
+# 
+# -- Compiling module control_unit
+# Exported modules:
+# 	control_unit
+# End time: 16:52:00 on Jan 16,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0
+# sccom -reportprogress -DSC_GUI_SIMULATION -g -I input -work output/audioport_questasim_sclib -verbose input/dsp_unit.cpp 
+# Start time: 16:52:00 on Jan 16,2026
+# 
+# QuestaSim-64 sccom 2024.3_2 compiler 2024.11 Nov 25 2024
+# 
+# -- Compiling module dsp_unit
+# Exported modules:
+# 	dsp_unit
+# End time: 16:52:04 on Jan 16,2026, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0
+# sccom -reportprogress -DSC_GUI_SIMULATION -g -I input -work output/audioport_questasim_sclib -verbose input/cdc_testmux.cpp 
+# Start time: 16:52:04 on Jan 16,2026
+# 
+# QuestaSim-64 sccom 2024.3_2 compiler 2024.11 Nov 25 2024
+# 
+# -- Compiling module cdc_testmux
+# End time: 16:52:06 on Jan 16,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# sccom -reportprogress -DSC_GUI_SIMULATION -g -I input -work output/audioport_questasim_sclib -verbose input/cdc_reset_sync.cpp 
+# Start time: 16:52:06 on Jan 16,2026
+# 
+# QuestaSim-64 sccom 2024.3_2 compiler 2024.11 Nov 25 2024
+# 
+# -- Compiling module cdc_reset_sync
+# End time: 16:52:09 on Jan 16,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0
+# sccom -reportprogress -DSC_GUI_SIMULATION -g -I input -work output/audioport_questasim_sclib -verbose input/cdc_2ff_sync.cpp 
+# Start time: 16:52:09 on Jan 16,2026
+# 
+# QuestaSim-64 sccom 2024.3_2 compiler 2024.11 Nov 25 2024
+# 
+# -- Compiling module cdc_2ff_sync
+# Exported modules:
+# 	cdc_2ff_sync
+# End time: 16:52:12 on Jan 16,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0
+# sccom -reportprogress -DSC_GUI_SIMULATION -g -I input -work output/audioport_questasim_sclib -verbose input/cdc_pulse_sync.cpp 
+# Start time: 16:52:12 on Jan 16,2026
+# 
+# QuestaSim-64 sccom 2024.3_2 compiler 2024.11 Nov 25 2024
+# 
+# -- Compiling module cdc_pulse_sync
+# Exported modules:
+# 	cdc_pulse_sync
+# End time: 16:52:15 on Jan 16,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0
+# sccom -reportprogress -DSC_GUI_SIMULATION -g -I input -work output/audioport_questasim_sclib -verbose input/cdc_handshake.cpp 
+# Start time: 16:52:15 on Jan 16,2026
+# 
+# QuestaSim-64 sccom 2024.3_2 compiler 2024.11 Nov 25 2024
+# 
+# -- Compiling module cdc_handshake
+# End time: 16:52:18 on Jan 16,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0
+# sccom -reportprogress -DSC_GUI_SIMULATION -g -I input -work output/audioport_questasim_sclib -verbose input/cdc_unit.cpp 
+# Start time: 16:52:18 on Jan 16,2026
+# 
+# QuestaSim-64 sccom 2024.3_2 compiler 2024.11 Nov 25 2024
+# 
+# -- Compiling module cdc_testmux
+# -- Compiling module cdc_reset_sync
+# -- Compiling module cdc_2ff_sync
+# -- Compiling module cdc_pulse_sync
+# -- Compiling module cdc_handshake
+# -- Compiling module cdc_unit
+# Exported modules:
+# 	cdc_unit
+# End time: 16:52:21 on Jan 16,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0
+# sccom -reportprogress -DSC_GUI_SIMULATION -g -I input -work output/audioport_questasim_sclib -verbose input/i2s_unit.cpp 
+# Start time: 16:52:21 on Jan 16,2026
+# 
+# QuestaSim-64 sccom 2024.3_2 compiler 2024.11 Nov 25 2024
+# 
+# -- Compiling module i2s_unit
+# Exported modules:
+# 	i2s_unit
+# End time: 16:52:24 on Jan 16,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0
+# sccom -reportprogress -DSC_GUI_SIMULATION -g -I input -work output/audioport_questasim_sclib -verbose input/audioport.cpp 
+# Start time: 16:52:24 on Jan 16,2026
+# 
+# QuestaSim-64 sccom 2024.3_2 compiler 2024.11 Nov 25 2024
+# 
+# -- Compiling module control_unit
+# -- Compiling module dsp_unit
+# -- Compiling module cdc_testmux
+# -- Compiling module cdc_reset_sync
+# -- Compiling module cdc_2ff_sync
+# -- Compiling module cdc_pulse_sync
+# -- Compiling module cdc_handshake
+# -- Compiling module cdc_unit
+# -- Compiling module i2s_unit
+# -- Compiling module audioport
+# Exported modules:
+# 	audioport
+# End time: 16:52:28 on Jan 16,2026, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0
+# eval "sccom ${SCCOM_SETTINGS} -link"
+# sccom -reportprogress -DSC_GUI_SIMULATION -g -I input -work output/audioport_questasim_sclib -verbose -link 
+# Start time: 16:52:28 on Jan 16,2026
+# 
+# QuestaSim-64 sccom 2024.3_2 compiler 2024.11 Nov 25 2024
+# End time: 16:52:28 on Jan 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+#################################################################
+# Optimization
+#################################################################
+# 
+# eval "vopt $VOPT_SETTINGS systemc_lib.sc_main -o ${VSIM_VOPTDIR}"
+# QuestaSim-64 vopt 2024.3_2 Compiler 2024.11 Nov 25 2024
+# Start time: 16:52:28 on Jan 16,2026
+# vopt -reportprogress 300 -suppress 10587 "+acc" -noincr -designfile output/audioport_systemc.bin -sclib output/audioport_questasim_sclib -L output/audioport_questasim_sclib systemc_lib.sc_main -o audioport_systemc_vopt 
+# 
+# Top level modules:
+# ** Error: (vopt-11) Could not find systemc_lib.sc_main.
+# Optimization failed
+# End time: 16:52:28 on Jan 16,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0, Suppressed Warnings: 1
+# ** Error: /sw/rhel8/siemens/questa_sim-2024.3_2/questasim/linux_x86_64/vopt failed.
+# Error in macro ./scripts/vsim_scsim.tcl line 98
+# Return status = 2
+#     (procedure "compile" line 1)
+#     invoked from within
+# "compile NoFilter vopt -suppress 10587 +acc -noincr -designfile output/audioport_systemc.bin -sclib output/audioport_questasim_sclib -L output/audiopor..."
+#     ("eval" body line 1)
+#     invoked from within
+# "eval compile NoFilter vopt $flow $args"
+#     (procedure "vopt" line 24)
+#     invoked from within
+# "vopt  -suppress 10587 +acc -noincr -designfile output/audioport_systemc.bin -sclib output/audioport_questasim_sclib -L output/audioport_questasim_scli..."
+#     ("eval" body line 1)
+#     invoked from within
+# "eval "vopt $VOPT_SETTINGS systemc_lib.sc_main -o ${VSIM_VOPTDIR}""

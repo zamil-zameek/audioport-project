@@ -1,0 +1,123 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /i2s_unit_tb/DUT_INSTANCE/CHECKER_MODULE
+=== Design Unit: work.i2s_unit_svamod
+=================================================================================
+
+Directive Coverage:
+    Directives                      16        16         0   100.00%
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/i2s_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_play_in_stable 
+                                         i2s_unit_svamod Verilog  SVA  input/i2s_unit_svamod.sv(81)
+                                                                                 5 Covered   
+/i2s_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_tick_in_pulse 
+                                         i2s_unit_svamod Verilog  SVA  input/i2s_unit_svamod.sv(90)
+                                                                                14 Covered   
+/i2s_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_tick_in_play_only 
+                                         i2s_unit_svamod Verilog  SVA  input/i2s_unit_svamod.sv(99)
+                                                                              2522 Covered   
+/i2s_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_req_out_pulse 
+                                         i2s_unit_svamod Verilog  SVA  input/i2s_unit_svamod.sv(114)
+                                                                                15 Covered   
+/i2s_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_sck_start 
+                                         i2s_unit_svamod Verilog  SVA  input/i2s_unit_svamod.sv(123)
+                                                                                 3 Covered   
+/i2s_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_req_sck_align 
+                                         i2s_unit_svamod Verilog  SVA  input/i2s_unit_svamod.sv(132)
+                                                                                15 Covered   
+/i2s_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_req_out_seen 
+                                         i2s_unit_svamod Verilog  SVA  input/i2s_unit_svamod.sv(142)
+                                                                                14 Covered   
+/i2s_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_sck_wave 
+                                         i2s_unit_svamod Verilog  SVA  input/i2s_unit_svamod.sv(151)
+                                                                               579 Covered   
+/i2s_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_ws_change 
+                                         i2s_unit_svamod Verilog  SVA  input/i2s_unit_svamod.sv(160)
+                                                                                24 Covered   
+/i2s_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_ws_wave 
+                                         i2s_unit_svamod Verilog  SVA  input/i2s_unit_svamod.sv(170)
+                                                                              2216 Covered   
+/i2s_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_sdo_change 
+                                         i2s_unit_svamod Verilog  SVA  input/i2s_unit_svamod.sv(179)
+                                                                               111 Covered   
+/i2s_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_sck_last 
+                                         i2s_unit_svamod Verilog  SVA  input/i2s_unit_svamod.sv(188)
+                                                                                12 Covered   
+/i2s_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_counter_r_cycle_restart 
+                                         i2s_unit_svamod Verilog  SVA  input/i2s_unit_svamod.sv(203)
+                                                                                12 Covered   
+/i2s_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_mode_r_enable_logic 
+                                         i2s_unit_svamod Verilog  SVA  input/i2s_unit_svamod.sv(212)
+                                                                              4436 Covered   
+/i2s_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_shift_r_zero_on_reset 
+                                         i2s_unit_svamod Verilog  SVA  input/i2s_unit_svamod.sv(221)
+                                                                              2324 Covered   
+/i2s_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_shift_activity_check 
+                                         i2s_unit_svamod Verilog  SVA  input/i2s_unit_svamod.sv(230)
+                                                                               564 Covered   
+
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/i2s_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_play_in_stable 
+                                         i2s_unit_svamod Verilog  SVA  input/i2s_unit_svamod.sv(81)
+                                                                                 5 Covered   
+/i2s_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_tick_in_pulse 
+                                         i2s_unit_svamod Verilog  SVA  input/i2s_unit_svamod.sv(90)
+                                                                                14 Covered   
+/i2s_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_tick_in_play_only 
+                                         i2s_unit_svamod Verilog  SVA  input/i2s_unit_svamod.sv(99)
+                                                                              2522 Covered   
+/i2s_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_req_out_pulse 
+                                         i2s_unit_svamod Verilog  SVA  input/i2s_unit_svamod.sv(114)
+                                                                                15 Covered   
+/i2s_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_sck_start 
+                                         i2s_unit_svamod Verilog  SVA  input/i2s_unit_svamod.sv(123)
+                                                                                 3 Covered   
+/i2s_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_req_sck_align 
+                                         i2s_unit_svamod Verilog  SVA  input/i2s_unit_svamod.sv(132)
+                                                                                15 Covered   
+/i2s_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_req_out_seen 
+                                         i2s_unit_svamod Verilog  SVA  input/i2s_unit_svamod.sv(142)
+                                                                                14 Covered   
+/i2s_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_sck_wave 
+                                         i2s_unit_svamod Verilog  SVA  input/i2s_unit_svamod.sv(151)
+                                                                               579 Covered   
+/i2s_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_ws_change 
+                                         i2s_unit_svamod Verilog  SVA  input/i2s_unit_svamod.sv(160)
+                                                                                24 Covered   
+/i2s_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_ws_wave 
+                                         i2s_unit_svamod Verilog  SVA  input/i2s_unit_svamod.sv(170)
+                                                                              2216 Covered   
+/i2s_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_sdo_change 
+                                         i2s_unit_svamod Verilog  SVA  input/i2s_unit_svamod.sv(179)
+                                                                               111 Covered   
+/i2s_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_sck_last 
+                                         i2s_unit_svamod Verilog  SVA  input/i2s_unit_svamod.sv(188)
+                                                                                12 Covered   
+/i2s_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_counter_r_cycle_restart 
+                                         i2s_unit_svamod Verilog  SVA  input/i2s_unit_svamod.sv(203)
+                                                                                12 Covered   
+/i2s_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_mode_r_enable_logic 
+                                         i2s_unit_svamod Verilog  SVA  input/i2s_unit_svamod.sv(212)
+                                                                              4436 Covered   
+/i2s_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_shift_r_zero_on_reset 
+                                         i2s_unit_svamod Verilog  SVA  input/i2s_unit_svamod.sv(221)
+                                                                              2324 Covered   
+/i2s_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cf_shift_activity_check 
+                                         i2s_unit_svamod Verilog  SVA  input/i2s_unit_svamod.sv(230)
+                                                                               564 Covered   
+
+TOTAL DIRECTIVE COVERAGE: 100.00%  COVERS: 16
+
+Total Coverage By Instance (filtered view): 100.00%
+

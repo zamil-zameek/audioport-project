@@ -1,0 +1,135 @@
+ 
+****************************************
+Report : qor
+Design : cdc_unit
+Version: T-2022.03-SP5-1
+Date   : Thu Mar 19 14:16:32 2026
+****************************************
+
+
+  Timing Path Group 'clk_in2reg'
+  -----------------------------------
+  Levels of Logic:               5.00
+  Critical Path Length:          0.48
+  Critical Path Slack:          10.87
+  Critical Path Clk Period:     13.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'clk_reg2out'
+  -----------------------------------
+  Levels of Logic:               1.00
+  Critical Path Length:          0.12
+  Critical Path Slack:          11.25
+  Critical Path Clk Period:     13.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'clk_reg2reg'
+  -----------------------------------
+  Levels of Logic:               7.00
+  Critical Path Length:          0.57
+  Critical Path Slack:          12.38
+  Critical Path Clk Period:     13.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'mclk_reg2out'
+  -----------------------------------
+  Levels of Logic:               0.00
+  Critical Path Length:          0.10
+  Critical Path Slack:          47.32
+  Critical Path Clk Period:     54.20
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'mclk_reg2reg'
+  -----------------------------------
+  Levels of Logic:               5.00
+  Critical Path Length:          0.63
+  Critical Path Slack:          53.54
+  Critical Path Clk Period:     54.20
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          0
+  Hierarchical Port Count:          0
+  Leaf Cell Count:                332
+  Buf/Inv Cell Count:             109
+  Buf Cell Count:                   7
+  Inv Cell Count:                 102
+  CT Buf/Inv Cell Count:            1
+  Combinational Cell Count:       220
+  Sequential Cell Count:          112
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:      205.086004
+  Noncombinational Area:   595.840019
+  Buf/Inv Area:             60.382000
+  Total Buffer Area:             6.12
+  Total Inverter Area:          54.26
+  Macro/Black Box Area:      0.000000
+  Net Area:                  0.000000
+  -----------------------------------
+  Cell Area:               800.926024
+  Design Area:             800.926024
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:           393
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: lehmus-cn2.oulu.fi
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    0.00
+  Logic Optimization:                  0.00
+  Mapping Optimization:                0.00
+  -----------------------------------------
+  Overall Compile Time:                0.78
+  Overall Compile Wall Clock Time:     1.01
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1

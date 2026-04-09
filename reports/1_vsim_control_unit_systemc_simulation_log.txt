@@ -1,0 +1,135 @@
+# //  Questa Sim-64
+# //  Version 2024.3_2 linux_x86_64 Nov 25 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do scripts/vsim_scsim.tcl
+#  -DSC_GUI_SIMULATION
+# -sc_arg "-run" -sc_arg "vsim_systemc"
+# -all
+# 10000
+# QuestaSim
+# 0
+# 1
+# transcript file ${REPORTS_DIR}/1_vsim_${DESIGN_NAME}_systemc_simulation_log.txt
+# transcript sizelimit $VSIM_TRANSCRIPT_SIZE
+# 
+# set VSIM_DEBUGDB     ${OUTPUT_DIR}/${DESIGN_NAME}_systemc.dbg
+# output/control_unit_systemc.dbg
+# set VSIM_DESIGNFILE  ${OUTPUT_DIR}/${DESIGN_NAME}_systemc.bin
+# output/control_unit_systemc.bin
+# set VSIM_QWAVEDB     ${OUTPUT_DIR}/${DESIGN_NAME}_systemc.db
+# output/control_unit_systemc.db
+# set VSIM_VOPTDIR     ${DESIGN_NAME}_systemc_vopt
+# control_unit_systemc_vopt
+# set VSIM_WORKDIR     ${OUTPUT_DIR}/${DESIGN_NAME}_questasim_work
+# output/control_unit_questasim_work
+# set VSIM_SCLIBDIR    ${OUTPUT_DIR}/${DESIGN_NAME}_questasim_sclib
+# output/control_unit_questasim_sclib
+# 
+# if { [info exists vsim_libs_created ] == 0 } {
+#     file delete -force $VSIM_DEBUGDB
+#     file delete -force $VSIM_DESIGNFILE
+#     file delete -force $VSIM_QWAVEDB
+#     file delete -force $VSIM_WORKDIR
+#     file delete -force $VSIM_SCLIBDIR
+# }
+# 
+# set SCCOM_SETTINGS " -g -I ${INPUT_DIR} -work $VSIM_SCLIBDIR -verbose"
+#  -g -I input -work output/control_unit_questasim_sclib -verbose
+# set VLOG_SETTINGS " +define+design_top_is_${DESIGN_NAME} +define+DESIGN_NAME_MACRO=${DESIGN_NAME} +incdir+${INPUT_DIR} -mfcu -sv -work work"
+#  +define+design_top_is_control_unit +define+DESIGN_NAME_MACRO=control_unit +incdir+input -mfcu -sv -work work
+#set VSIM_SETTINGS " -displaymsgmode both -voptargs=+acc -classdebug -debugDB=${VSIM_DEBUGDB} -sclib ${VSIM_SCLIBDIR} -L ${VSIM_SCLIBDIR}"
+# set VSIM_SETTINGS " -note 6599 -msgmode both -displaymsgmode both -classdebug -debugDB=${VSIM_DEBUGDB} -sclib ${VSIM_SCLIBDIR} -L ${VSIM_SCLIBDIR}"
+#  -note 6599 -msgmode both -displaymsgmode both -classdebug -debugDB=output/control_unit_systemc.dbg -sclib output/control_unit_questasim_sclib -L output/control_unit_questasim_sclib
+# set VOPT_SETTINGS " -suppress 10587 +acc -noincr -designfile ${VSIM_DESIGNFILE} -sclib ${VSIM_SCLIBDIR} -L ${VSIM_SCLIBDIR}"
+#  -suppress 10587 +acc -noincr -designfile output/control_unit_systemc.bin -sclib output/control_unit_questasim_sclib -L output/control_unit_questasim_sclib
+# 
+#################################################################
+# Merge user settings
+#################################################################
+# 
+# set VLOG_SETTINGS [concat $VLOG_SYSTEMC_OPTIONS $VLOG_SETTINGS ]
+# -suppress 13314 -suppress 13233 +define+RTL_SIM +define+design_top_is_control_unit +define+DESIGN_NAME_MACRO=control_unit +incdir+input -mfcu -sv -work work
+# set VSIM_SETTINGS [concat $VSIM_SYSTEMC_OPTIONS $VSIM_SETTINGS ]
+# -sc_arg "-run" -sc_arg "vsim_systemc" -note 6599 -msgmode both -displaymsgmode both -classdebug -debugDB=output/control_unit_systemc.dbg -sclib output/control_unit_questasim_sclib -L output/control_unit_questasim_sclib
+# set SCCOM_SETTINGS [concat $VSIM_SCCOM_OPTIONS $SCCOM_SETTINGS ]
+# -DSC_GUI_SIMULATION -g -I input -work output/control_unit_questasim_sclib -verbose
+# 
+#################################################################
+# Create libraries
+#################################################################
+# 
+# if { [info exists vsim_libs_created ] == 0 } {
+#     vlib ${VSIM_WORKDIR}
+#     vmap work ${VSIM_WORKDIR}
+#     vlib ${VSIM_SCLIBDIR}
+#     vmap systemc_lib ${VSIM_SCLIBDIR}
+#     set vsim_libs_created 1
+# }
+# 1
+# 
+#################################################################
+# Compilation
+#################################################################
+# 
+# SystemC
+# foreach filename [concat ${SYSTEMC_SOURCE_FILES} ${SYSTEMC_TESTBENCH_FILES} ] {
+#     eval "sccom $SCCOM_SETTINGS ${filename}"
+# }
+# sccom -reportprogress -DSC_GUI_SIMULATION -g -I input -work output/control_unit_questasim_sclib -verbose input/control_unit.cpp 
+# Start time: 14:50:57 on Jan 23,2026
+# 
+# QuestaSim-64 sccom 2024.3_2 compiler 2024.11 Nov 25 2024
+# 
+# -- Compiling module control_unit
+# Exported modules:
+# 	control_unit
+# End time: 14:51:00 on Jan 23,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0
+# eval "sccom ${SCCOM_SETTINGS} -link"
+# sccom -reportprogress -DSC_GUI_SIMULATION -g -I input -work output/control_unit_questasim_sclib -verbose -link 
+# Start time: 14:51:00 on Jan 23,2026
+# 
+# QuestaSim-64 sccom 2024.3_2 compiler 2024.11 Nov 25 2024
+# End time: 14:51:00 on Jan 23,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+#################################################################
+# Optimization
+#################################################################
+# 
+# eval "vopt $VOPT_SETTINGS systemc_lib.sc_main -o ${VSIM_VOPTDIR}"
+# QuestaSim-64 vopt 2024.3_2 Compiler 2024.11 Nov 25 2024
+# Start time: 14:51:00 on Jan 23,2026
+# vopt -reportprogress 300 -suppress 10587 "+acc" -noincr -designfile output/control_unit_systemc.bin -sclib output/control_unit_questasim_sclib -L output/control_unit_questasim_sclib systemc_lib.sc_main -o control_unit_systemc_vopt 
+# 
+# Top level modules:
+# ** Error: (vopt-11) Could not find systemc_lib.sc_main.
+# Optimization failed
+# End time: 14:51:00 on Jan 23,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0, Suppressed Warnings: 1
+# ** Error: /sw/rhel8/siemens/questa_sim-2024.3_2/questasim/linux_x86_64/vopt failed.
+# Error in macro ./scripts/vsim_scsim.tcl line 98
+# Return status = 2
+#     (procedure "compile" line 1)
+#     invoked from within
+# "compile NoFilter vopt -suppress 10587 +acc -noincr -designfile output/control_unit_systemc.bin -sclib output/control_unit_questasim_sclib -L output/co..."
+#     ("eval" body line 1)
+#     invoked from within
+# "eval compile NoFilter vopt $flow $args"
+#     (procedure "vopt" line 24)
+#     invoked from within
+# "vopt  -suppress 10587 +acc -noincr -designfile output/control_unit_systemc.bin -sclib output/control_unit_questasim_sclib -L output/control_unit_quest..."
+#     ("eval" body line 1)
+#     invoked from within
+# "eval "vopt $VOPT_SETTINGS systemc_lib.sc_main -o ${VSIM_VOPTDIR}""

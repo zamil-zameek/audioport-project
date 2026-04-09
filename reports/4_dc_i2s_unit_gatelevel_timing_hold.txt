@@ -1,0 +1,111 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : i2s_unit
+Version: T-2022.03-SP5-1
+Date   : Fri Mar  6 11:30:30 2026
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: play_in (input port clocked by clk)
+  Endpoint: mode_r_reg (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk_in2reg
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  i2s_unit           5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.62       1.62 r
+  play_in (in)                             0.00       1.62 r
+  U522/ZN (INV_X1)                         0.02       1.65 f
+  U523/ZN (OAI21_X1)                       0.03       1.67 r
+  mode_r_reg/D (DFFR_X1)                   0.01       1.68 r
+  data arrival time                                   1.68
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  mode_r_reg/CK (DFFR_X1)                  0.00       0.00 r
+  library hold time                        0.01       0.01
+  data required time                                  0.01
+  -----------------------------------------------------------
+  data required time                                  0.01
+  data arrival time                                  -1.68
+  -----------------------------------------------------------
+  slack (MET)                                         1.68
+
+
+  Startpoint: counter_r_reg[8]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: ws_out (output port clocked by clk)
+  Path Group: clk_reg2out
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  i2s_unit           5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  counter_r_reg[8]/CK (DFFR_X1)            0.00       0.00 r
+  counter_r_reg[8]/QN (DFFR_X1)            0.07       0.07 r
+  U315/ZN (OAI33_X1)                       0.03       0.10 f
+  ws_out (out)                             0.00       0.10 f
+  data arrival time                                   0.10
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -1.62      -1.62
+  data required time                                 -1.62
+  -----------------------------------------------------------
+  data required time                                 -1.62
+  data arrival time                                  -0.10
+  -----------------------------------------------------------
+  slack (MET)                                         1.73
+
+
+  Startpoint: shift_r_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: shift_r_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk_reg2reg
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  i2s_unit           5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  shift_r_reg[0]/CK (DFFR_X1)              0.00       0.00 r
+  shift_r_reg[0]/QN (DFFR_X1)              0.07       0.07 r
+  U424/ZN (OAI22_X1)                       0.03       0.09 f
+  shift_r_reg[0]/D (DFFR_X1)               0.01       0.10 f
+  data arrival time                                   0.10
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  shift_r_reg[0]/CK (DFFR_X1)              0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                  -0.10
+  -----------------------------------------------------------
+  slack (MET)                                         0.10
+
+
+1
