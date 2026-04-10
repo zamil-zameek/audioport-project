@@ -45,5 +45,5 @@ REGISTER APB ADDRESSES (HEX):
         CDC_PULSESYNC_INTERVAL          1
         CDC_PULSESYNC_LATENCY           7
  dsp_unit PARAREMETERS:
-        DSP_UNIT_MAX_LATENCY          101
+        DSP_UNIT_MAX_LATENCY           53
 -----------------------------------------------------------------------------------------------

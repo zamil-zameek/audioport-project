@@ -1,0 +1,292 @@
+Recursive Coverage Report Summary Data by instance
+
+=================================================================================
+=== Instance: /sc_main/dsp_unit_top_inst/dsp_unit_inst/dsp_unit_rtl_1/dsp_unit_dsp_proc_inst/dsp_unit_dsp_proc_read_inputs_mioi_inst/read_inputs_mioi/dsp_unit_read_inputs_core_inst/tick_rsci
+=== Design Unit: /homedir04/mmohamed25/DT3_2026/project/workdir/output/dsp_unit_questasim_work.mgc_out_dreg_v2
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                          4         4         0   100.00%
+
+=================================================================================
+=== Instance: /sc_main/dsp_unit_top_inst/dsp_unit_inst/dsp_unit_rtl_1/dsp_unit_dsp_proc_inst/dsp_unit_dsp_proc_read_inputs_mioi_inst/read_inputs_mioi/dsp_unit_read_inputs_core_inst/clr_rsci
+=== Design Unit: /homedir04/mmohamed25/DT3_2026/project/workdir/output/dsp_unit_questasim_work.mgc_out_dreg_v2
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                          4         4         0   100.00%
+
+=================================================================================
+=== Instance: /sc_main/dsp_unit_top_inst/dsp_unit_inst/dsp_unit_rtl_1/dsp_unit_dsp_proc_inst/dsp_unit_dsp_proc_read_inputs_mioi_inst/read_inputs_mioi/dsp_unit_read_inputs_core_inst/filter_rsci
+=== Design Unit: /homedir04/mmohamed25/DT3_2026/project/workdir/output/dsp_unit_questasim_work.mgc_out_dreg_v2
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                          4         4         0   100.00%
+
+=================================================================================
+=== Instance: /sc_main/dsp_unit_top_inst/dsp_unit_inst/dsp_unit_rtl_1/dsp_unit_dsp_proc_inst/dsp_unit_dsp_proc_read_inputs_mioi_inst/read_inputs_mioi/dsp_unit_read_inputs_core_inst/level0_rsci
+=== Design Unit: /homedir04/mmohamed25/DT3_2026/project/workdir/output/dsp_unit_questasim_work.mgc_out_dreg_v2
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                         64        64         0   100.00%
+
+=================================================================================
+=== Instance: /sc_main/dsp_unit_top_inst/dsp_unit_inst/dsp_unit_rtl_1/dsp_unit_dsp_proc_inst/dsp_unit_dsp_proc_read_inputs_mioi_inst/read_inputs_mioi/dsp_unit_read_inputs_core_inst/level1_rsci
+=== Design Unit: /homedir04/mmohamed25/DT3_2026/project/workdir/output/dsp_unit_questasim_work.mgc_out_dreg_v2
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                         64        64         0   100.00%
+
+=================================================================================
+=== Instance: /sc_main/dsp_unit_top_inst/dsp_unit_inst/dsp_unit_rtl_1/dsp_unit_dsp_proc_inst/dsp_unit_dsp_proc_read_inputs_mioi_inst/read_inputs_mioi/dsp_unit_read_inputs_core_inst/audio0_rsci
+=== Design Unit: /homedir04/mmohamed25/DT3_2026/project/workdir/output/dsp_unit_questasim_work.mgc_out_dreg_v2
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                         96        96         0   100.00%
+
+=================================================================================
+=== Instance: /sc_main/dsp_unit_top_inst/dsp_unit_inst/dsp_unit_rtl_1/dsp_unit_dsp_proc_inst/dsp_unit_dsp_proc_read_inputs_mioi_inst/read_inputs_mioi/dsp_unit_read_inputs_core_inst/audio1_rsci
+=== Design Unit: /homedir04/mmohamed25/DT3_2026/project/workdir/output/dsp_unit_questasim_work.mgc_out_dreg_v2
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                         96        96         0   100.00%
+
+=================================================================================
+=== Instance: /sc_main/dsp_unit_top_inst/dsp_unit_inst/dsp_unit_rtl_1/dsp_unit_dsp_proc_inst/dsp_unit_dsp_proc_read_inputs_mioi_inst/read_inputs_mioi/dsp_unit_read_inputs_core_inst/ccs_ccore_start_rsci
+=== Design Unit: /homedir04/mmohamed25/DT3_2026/project/workdir/output/dsp_unit_questasim_work.ccs_in_v1
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                          4         4         0   100.00%
+
+=================================================================================
+=== Instance: /sc_main/dsp_unit_top_inst/dsp_unit_inst/dsp_unit_rtl_1/dsp_unit_dsp_proc_inst/dsp_unit_dsp_proc_read_inputs_mioi_inst/read_inputs_mioi/dsp_unit_read_inputs_core_inst/ccs_ccore_done_synci
+=== Design Unit: /homedir04/mmohamed25/DT3_2026/project/workdir/output/dsp_unit_questasim_work.ccs_sync_out_vld_v1
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                          4         4         0   100.00%
+
+=================================================================================
+=== Instance: /sc_main/dsp_unit_top_inst/dsp_unit_inst/dsp_unit_rtl_1/dsp_unit_dsp_proc_inst/dsp_unit_dsp_proc_read_inputs_mioi_inst/read_inputs_mioi/dsp_unit_read_inputs_core_inst
+=== Design Unit: /homedir04/mmohamed25/DT3_2026/project/workdir/output/dsp_unit_questasim_work.dsp_unit_read_inputs_core
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         2         2         0   100.00%
+    Expressions                      7         6         1    85.71%
+    Statements                       5         5         0   100.00%
+    Toggles                        352       347         5    98.57%
+
+=================================================================================
+=== Instance: /sc_main/dsp_unit_top_inst/dsp_unit_inst/dsp_unit_rtl_1/dsp_unit_dsp_proc_inst/dsp_unit_dsp_proc_read_inputs_mioi_inst/read_inputs_mioi
+=== Design Unit: /homedir04/mmohamed25/DT3_2026/project/workdir/output/dsp_unit_questasim_work.dsp_unit_read_inputs
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         2         2         0   100.00%
+    Expressions                      7         6         1    85.71%
+    Statements                       5         5         0   100.00%
+    Toggles                        352       347         5    98.57%
+
+=================================================================================
+=== Instance: /sc_main/dsp_unit_top_inst/dsp_unit_inst/dsp_unit_rtl_1/dsp_unit_dsp_proc_inst/dsp_unit_dsp_proc_read_inputs_mioi_inst/dsp_unit_dsp_proc_read_inputs_mioi_read_inputs_mio_wait_ctrl_inst
+=== Design Unit: /homedir04/mmohamed25/DT3_2026/project/workdir/output/dsp_unit_questasim_work.dsp_unit_dsp_proc_read_inputs_mioi_read_inputs_mio_wait_ctrl
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Expressions                      4         3         1    75.00%
+    Statements                       2         2         0   100.00%
+    Toggles                         12        12         0   100.00%
+
+=================================================================================
+=== Instance: /sc_main/dsp_unit_top_inst/dsp_unit_inst/dsp_unit_rtl_1/dsp_unit_dsp_proc_inst/dsp_unit_dsp_proc_read_inputs_mioi_inst
+=== Design Unit: /homedir04/mmohamed25/DT3_2026/project/workdir/output/dsp_unit_questasim_work.dsp_unit_dsp_proc_read_inputs_mioi
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         2         2         0   100.00%
+    Expressions                     13        11         2    84.61%
+    Statements                       8         8         0   100.00%
+    Toggles                        362       357         5    98.61%
+
+=================================================================================
+=== Instance: /sc_main/dsp_unit_top_inst/dsp_unit_inst/dsp_unit_rtl_1/dsp_unit_dsp_proc_inst/dsp_unit_dsp_proc_write_outputs_mioi_inst/write_outputs_mioi/dsp_unit_write_outputs_core_inst/dsp0_rsci
+=== Design Unit: /homedir04/mmohamed25/DT3_2026/project/workdir/output/dsp_unit_questasim_work.ccs_in_v1
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                         96        96         0   100.00%
+
+=================================================================================
+=== Instance: /sc_main/dsp_unit_top_inst/dsp_unit_inst/dsp_unit_rtl_1/dsp_unit_dsp_proc_inst/dsp_unit_dsp_proc_write_outputs_mioi_inst/write_outputs_mioi/dsp_unit_write_outputs_core_inst/dsp1_rsci
+=== Design Unit: /homedir04/mmohamed25/DT3_2026/project/workdir/output/dsp_unit_questasim_work.ccs_in_v1
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                         96        96         0   100.00%
+
+=================================================================================
+=== Instance: /sc_main/dsp_unit_top_inst/dsp_unit_inst/dsp_unit_rtl_1/dsp_unit_dsp_proc_inst/dsp_unit_dsp_proc_write_outputs_mioi_inst/write_outputs_mioi/dsp_unit_write_outputs_core_inst/ccs_ccore_start_rsci
+=== Design Unit: /homedir04/mmohamed25/DT3_2026/project/workdir/output/dsp_unit_questasim_work.ccs_in_v1
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                          4         4         0   100.00%
+
+=================================================================================
+=== Instance: /sc_main/dsp_unit_top_inst/dsp_unit_inst/dsp_unit_rtl_1/dsp_unit_dsp_proc_inst/dsp_unit_dsp_proc_write_outputs_mioi_inst/write_outputs_mioi/dsp_unit_write_outputs_core_inst
+=== Design Unit: /homedir04/mmohamed25/DT3_2026/project/workdir/output/dsp_unit_questasim_work.dsp_unit_write_outputs_core
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         5         5         0   100.00%
+    Statements                       8         8         0   100.00%
+    Toggles                        302       297         5    98.34%
+
+=================================================================================
+=== Instance: /sc_main/dsp_unit_top_inst/dsp_unit_inst/dsp_unit_rtl_1/dsp_unit_dsp_proc_inst/dsp_unit_dsp_proc_write_outputs_mioi_inst/write_outputs_mioi
+=== Design Unit: /homedir04/mmohamed25/DT3_2026/project/workdir/output/dsp_unit_questasim_work.dsp_unit_write_outputs
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         5         5         0   100.00%
+    Statements                       8         8         0   100.00%
+    Toggles                        400       395         5    98.75%
+
+=================================================================================
+=== Instance: /sc_main/dsp_unit_top_inst/dsp_unit_inst/dsp_unit_rtl_1/dsp_unit_dsp_proc_inst/dsp_unit_dsp_proc_write_outputs_mioi_inst/dsp_unit_dsp_proc_write_outputs_mioi_write_outputs_mio_wait_ctrl_inst
+=== Design Unit: /homedir04/mmohamed25/DT3_2026/project/workdir/output/dsp_unit_questasim_work.dsp_unit_dsp_proc_write_outputs_mioi_write_outputs_mio_wait_ctrl
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Expressions                      2         1         1    50.00%
+    Statements                       1         1         0   100.00%
+    Toggles                          6         6         0   100.00%
+
+=================================================================================
+=== Instance: /sc_main/dsp_unit_top_inst/dsp_unit_inst/dsp_unit_rtl_1/dsp_unit_dsp_proc_inst/dsp_unit_dsp_proc_write_outputs_mioi_inst
+=== Design Unit: /homedir04/mmohamed25/DT3_2026/project/workdir/output/dsp_unit_questasim_work.dsp_unit_dsp_proc_write_outputs_mioi
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         5         5         0   100.00%
+    Expressions                      2         1         1    50.00%
+    Statements                       9         9         0   100.00%
+    Toggles                        404       399         5    98.76%
+
+=================================================================================
+=== Instance: /sc_main/dsp_unit_top_inst/dsp_unit_inst/dsp_unit_rtl_1/dsp_unit_dsp_proc_inst/dsp_unit_dsp_proc_staller_inst
+=== Design Unit: /homedir04/mmohamed25/DT3_2026/project/workdir/output/dsp_unit_questasim_work.dsp_unit_dsp_proc_staller
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                          4         4         0   100.00%
+
+=================================================================================
+=== Instance: /sc_main/dsp_unit_top_inst/dsp_unit_inst/dsp_unit_rtl_1/dsp_unit_dsp_proc_inst/dsp_unit_dsp_proc_dsp_proc_fsm_inst
+=== Design Unit: /homedir04/mmohamed25/DT3_2026/project/workdir/output/dsp_unit_questasim_work.dsp_unit_dsp_proc_dsp_proc_fsm
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        13        13         0   100.00%
+    FSM States                       6         6         0   100.00%
+    FSM Transitions                 70        22        48    31.42%
+    Statements                      18        18         0   100.00%
+    Toggles                         42        32        10    76.19%
+
+=================================================================================
+=== Instance: /sc_main/dsp_unit_top_inst/dsp_unit_inst/dsp_unit_rtl_1/dsp_unit_dsp_proc_inst
+=== Design Unit: /homedir04/mmohamed25/DT3_2026/project/workdir/output/dsp_unit_questasim_work.dsp_unit_dsp_proc
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                       146       146         0   100.00%
+    Expressions                    162        84        78    51.85%
+    FSM States                       6         6         0   100.00%
+    FSM Transitions                 70        22        48    31.42%
+    Statements                     633       633         0   100.00%
+    Toggles                      28170      9400     18770    33.36%
+
+=================================================================================
+=== Instance: /sc_main/dsp_unit_top_inst/dsp_unit_inst/dsp_unit_rtl_1/dsp_unit_regs_proc_inst
+=== Design Unit: /homedir04/mmohamed25/DT3_2026/project/workdir/output/dsp_unit_questasim_work.dsp_unit_regs_proc
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         9         9         0   100.00%
+    Expressions                      2         1         1    50.00%
+    Statements                     214       214         0   100.00%
+    Toggles                      19792      1373     18419     6.93%
+
+=================================================================================
+=== Instance: /sc_main/dsp_unit_top_inst/dsp_unit_inst/dsp_unit_rtl_1
+=== Design Unit: /homedir04/mmohamed25/DT3_2026/project/workdir/output/dsp_unit_questasim_work.dsp_unit_rtl
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                       155       155         0   100.00%
+    Expressions                    164        85        79    51.82%
+    FSM States                       6         6         0   100.00%
+    FSM Transitions                 70        22        48    31.42%
+    Statements                     847       847         0   100.00%
+    Toggles                      47954     10770     37184    22.45%
+
+=================================================================================
+=== Instance: /sc_main/dsp_unit_top_inst/dsp_unit_inst/CHECKER_MODULE
+=== Design Unit: /homedir04/mmohamed25/DT3_2026/project/workdir/output/dsp_unit_questasim_work.dsp_unit_svamod
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Assertions                      19        19         0   100.00%
+    Covergroups                      1        na        na   100.00%
+        Coverpoints/Crosses          1        na        na        na
+            Covergroup Bins          2         2         0   100.00%
+    Directives                       3         3         0   100.00%
+    Statements                       1         1         0   100.00%
+    Toggles                        338       333         5    98.52%
+
+=================================================================================
+=== Instance: /sc_main/dsp_unit_top_inst/dsp_unit_inst
+=== Design Unit: /homedir04/mmohamed25/DT3_2026/project/workdir/output/dsp_unit_questasim_work.dsp_unit
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Assertions                      19        19         0   100.00%
+    Branches                       155       155         0   100.00%
+    Covergroups                      1        na        na   100.00%
+        Coverpoints/Crosses          1        na        na        na
+            Covergroup Bins          2         2         0   100.00%
+    Directives                       3         3         0   100.00%
+    Expressions                    164        85        79    51.82%
+    FSM States                       6         6         0   100.00%
+    FSM Transitions                 70        22        48    31.42%
+    Statements                     848       848         0   100.00%
+    Toggles                      48150     10966     37184    22.77%
+
+=================================================================================
+=== Instance: /sc_main/dsp_unit_top_inst
+=== Design Unit: systemc_lib.dsp_unit_top
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Assertions                      19        19         0   100.00%
+    Branches                       155       155         0   100.00%
+    Covergroups                      1        na        na   100.00%
+        Coverpoints/Crosses          1        na        na        na
+            Covergroup Bins          2         2         0   100.00%
+    Directives                       3         3         0   100.00%
+    Expressions                    164        85        79    51.82%
+    FSM States                       6         6         0   100.00%
+    FSM Transitions                 70        22        48    31.42%
+    Statements                     848       848         0   100.00%
+    Toggles                      48150     10966     37184    22.77%
+
+
+Total Coverage By Instance (filtered view): 78.44%
+

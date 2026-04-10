@@ -1,0 +1,66 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /sc_main/dsp_unit_top_inst/dsp_unit_inst/CHECKER_MODULE
+=== Design Unit: /homedir04/mmohamed25/DT3_2026/project/workdir/output/dsp_unit_questasim_work.dsp_unit_svamod
+=================================================================================
+
+Covergroup Coverage:
+    Covergroups                      1        na        na   100.00%
+        Coverpoints/Crosses          1        na        na        na
+            Covergroup Bins          2         2         0   100.00%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /sc_main/dsp_unit_top_inst/dsp_unit_inst/CHECKER_MODULE/cg_dsp_modes 
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                     2          2          -                      
+    missing/total bins:                                     0          2          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cfgbit                                 100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+ Covergroup instance \/sc_main/dsp_unit_top_inst/dsp_unit_inst/CHECKER_MODULE/cg_dsp_modes_inst  
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                     2          2          -                      
+    missing/total bins:                                     0          2          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cfgbit                                 100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin modes[0]                                        1          1          -    Covered              
+        bin modes[1]                                        4          1          -    Covered              
+
+COVERGROUP COVERAGE:
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /sc_main/dsp_unit_top_inst/dsp_unit_inst/CHECKER_MODULE/cg_dsp_modes 
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                     2          2          -                      
+    missing/total bins:                                     0          2          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cfgbit                                 100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+ Covergroup instance \/sc_main/dsp_unit_top_inst/dsp_unit_inst/CHECKER_MODULE/cg_dsp_modes_inst  
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                     2          2          -                      
+    missing/total bins:                                     0          2          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cfgbit                                 100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin modes[0]                                        1          1          -    Covered              
+        bin modes[1]                                        4          1          -    Covered              
+
+TOTAL COVERGROUP COVERAGE: 100.00%  COVERGROUP TYPES: 1
+
+Total Coverage By Instance (filtered view): 100.00%
+

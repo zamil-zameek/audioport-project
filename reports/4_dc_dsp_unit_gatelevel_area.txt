@@ -1,0 +1,67 @@
+ 
+****************************************
+Report : area
+Design : dsp_unit
+Version: T-2022.03-SP5-1
+Date   : Fri Apr 10 02:28:50 2026
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /research/cas/public/DT3_2026/lib/logic_lib/NangateOpenCellLibrary_typical.db)
+
+Number of ports:                         6829
+Number of nets:                         30463
+Number of cells:                        20770
+Number of combinational cells:          14805
+Number of sequential cells:              5964
+Number of macros/black boxes:               0
+Number of buf/inv:                        904
+Number of references:                       6
+
+Combinational area:              21530.306241
+Buf/Inv area:                      570.836000
+Noncombinational area:           31728.481024
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 53258.787265
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  -----------------
+dsp_unit                          53258.7873    100.0   6185.5640  17540.0406  0.0000  dsp_unit
+dsp_unit_rtl_1/dsp_unit_dsp_proc_inst 29533.1827    55.5 15344.7423 14188.4405 0.0000  dsp_unit_dsp_proc
+--------------------------------  ----------  -------  ----------  ----------  ------  -----------------
+Total                                                  21530.3062  31728.4810  0.0000
+
+
+Area of detected synthetic parts
+--------------------------------
+  No DW parts to report!
+
+Estimated area of ungrouped synthetic parts
+-------------------------------------------
+                                       Estimated  Perc. of
+  Module               Implem.  Count       Area cell area
+  -------------------- -------  ----- ---------- ---------
+  DP_OP_199J1_122_1827     str      1  2712.7590      5.1%
+  DP_OP_200J1_123_1827     str      1  2712.7590      5.1%
+  DW01_add             apparch      4    39.9000      0.1%
+  DW01_inc             apparch      3    15.6293      0.0%
+  DW01_sub             apparch      6    30.2176      0.1%
+  DW_cmp               apparch     51    32.7180      0.1%
+  -------------------- -------  ----- ---------- ---------
+  DP_OP Subtotal:                   2  5425.5179     10.2%
+  Total:                           66  5543.9828     10.4%
+
+Subtotal of datapath(DP_OP) cell area:  5425.5179  10.2%  (estimated)
+Total synthetic cell area:              5543.9828  10.4%  (estimated)
+
+1

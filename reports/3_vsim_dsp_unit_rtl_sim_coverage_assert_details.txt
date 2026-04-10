@@ -1,0 +1,137 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /sc_main/dsp_unit_top_inst/dsp_unit_inst/CHECKER_MODULE
+=== Design Unit: /homedir04/mmohamed25/DT3_2026/project/workdir/output/dsp_unit_questasim_work.dsp_unit_svamod
+=================================================================================
+
+Assertion Coverage:
+    Assertions                      19        19         0   100.00%
+--------------------------------------------------------------------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass     Vacuous    Disable    Attempt     Active Peak Active ATV
+                                                  Count        Count    Count      Count      Count       Count  Count          
+--------------------------------------------------------------------------------------------------------------------------------
+/sc_main/dsp_unit_top_inst/dsp_unit_inst/CHECKER_MODULE/X_tick_in
+                     input/dsp_unit_svamod.sv(40)
+                                                        0    5562407          0          1    5562408          0           1 off
+/sc_main/dsp_unit_top_inst/dsp_unit_inst/CHECKER_MODULE/X_cfg_in
+                     input/dsp_unit_svamod.sv(41)
+                                                        0    5562407          0          1    5562408          0           1 off
+/sc_main/dsp_unit_top_inst/dsp_unit_inst/CHECKER_MODULE/X_level_in
+                     input/dsp_unit_svamod.sv(42)
+                                                        0    5562407          0          1    5562408          0           1 off
+/sc_main/dsp_unit_top_inst/dsp_unit_inst/CHECKER_MODULE/X_clr_in
+                     input/dsp_unit_svamod.sv(43)
+                                                        0    5562407          0          1    5562408          0           1 off
+/sc_main/dsp_unit_top_inst/dsp_unit_inst/CHECKER_MODULE/X_audio0_in
+                     input/dsp_unit_svamod.sv(44)
+                                                        0    5562407          0          1    5562408          0           1 off
+/sc_main/dsp_unit_top_inst/dsp_unit_inst/CHECKER_MODULE/X_audio1_in
+                     input/dsp_unit_svamod.sv(45)
+                                                        0    5562407          0          1    5562408          0           1 off
+/sc_main/dsp_unit_top_inst/dsp_unit_inst/CHECKER_MODULE/X_dsp_regs_in
+                     input/dsp_unit_svamod.sv(46)
+                                                        0    5562407          0          1    5562408          0           1 off
+/sc_main/dsp_unit_top_inst/dsp_unit_inst/CHECKER_MODULE/X_level_reg_in
+                     input/dsp_unit_svamod.sv(47)
+                                                        0    5562407          0          1    5562408          0           1 off
+/sc_main/dsp_unit_top_inst/dsp_unit_inst/CHECKER_MODULE/X_cfg_reg_in
+                     input/dsp_unit_svamod.sv(48)
+                                                        0    5562407          0          1    5562408          0           1 off
+/sc_main/dsp_unit_top_inst/dsp_unit_inst/CHECKER_MODULE/X_audio0_out
+                     input/dsp_unit_svamod.sv(49)
+                                                        0    5562407          0          1    5562408          0           1 off
+/sc_main/dsp_unit_top_inst/dsp_unit_inst/CHECKER_MODULE/X_audio1_out
+                     input/dsp_unit_svamod.sv(50)
+                                                        0    5562407          0          1    5562408          0           1 off
+/sc_main/dsp_unit_top_inst/dsp_unit_inst/CHECKER_MODULE/X_tick_out
+                     input/dsp_unit_svamod.sv(51)
+                                                        0    5562407          0          1    5562408          0           1 off
+/sc_main/dsp_unit_top_inst/dsp_unit_inst/CHECKER_MODULE/mf_tick_clr_mutex
+                     input/dsp_unit_svamod.sv(73)
+                                                        0    5562407          0          1    5562408          0           1 off
+/sc_main/dsp_unit_top_inst/dsp_unit_inst/CHECKER_MODULE/mf_tick_in_pulse
+                     input/dsp_unit_svamod.sv(83)
+                                                        0       3455    5558952          1    5562408          0           1 off
+/sc_main/dsp_unit_top_inst/dsp_unit_inst/CHECKER_MODULE/mf_cfg_in_pulse
+                     input/dsp_unit_svamod.sv(93)
+                                                        0          8    5562399          1    5562408          0           1 off
+/sc_main/dsp_unit_top_inst/dsp_unit_inst/CHECKER_MODULE/mf_clr_in_pulse
+                     input/dsp_unit_svamod.sv(103)
+                                                        0          5    5562402          1    5562408          0           1 off
+/sc_main/dsp_unit_top_inst/dsp_unit_inst/CHECKER_MODULE/mf_level_in_pulse
+                     input/dsp_unit_svamod.sv(113)
+                                                        0        807    5561600          1    5562408          0           1 off
+/sc_main/dsp_unit_top_inst/dsp_unit_inst/CHECKER_MODULE/af_tick_out_pulse
+                     input/dsp_unit_svamod.sv(125)
+                                                        0       3460    5558947          1    5562408          0           1 off
+/sc_main/dsp_unit_top_inst/dsp_unit_inst/CHECKER_MODULE/af_max_latency
+                     input/dsp_unit_svamod.sv(135)
+                                                        0       3455    5558952          1    5562408          0           1 off
+
+
+ASSERTION RESULTS:
+--------------------------------------------------------------------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass     Vacuous    Disable    Attempt     Active Peak Active ATV
+                                                  Count        Count    Count      Count      Count       Count  Count          
+--------------------------------------------------------------------------------------------------------------------------------
+/sc_main/dsp_unit_top_inst/dsp_unit_inst/CHECKER_MODULE/X_tick_in
+                     input/dsp_unit_svamod.sv(40)
+                                                        0    5562407          0          1    5562408          0           1 off
+/sc_main/dsp_unit_top_inst/dsp_unit_inst/CHECKER_MODULE/X_cfg_in
+                     input/dsp_unit_svamod.sv(41)
+                                                        0    5562407          0          1    5562408          0           1 off
+/sc_main/dsp_unit_top_inst/dsp_unit_inst/CHECKER_MODULE/X_level_in
+                     input/dsp_unit_svamod.sv(42)
+                                                        0    5562407          0          1    5562408          0           1 off
+/sc_main/dsp_unit_top_inst/dsp_unit_inst/CHECKER_MODULE/X_clr_in
+                     input/dsp_unit_svamod.sv(43)
+                                                        0    5562407          0          1    5562408          0           1 off
+/sc_main/dsp_unit_top_inst/dsp_unit_inst/CHECKER_MODULE/X_audio0_in
+                     input/dsp_unit_svamod.sv(44)
+                                                        0    5562407          0          1    5562408          0           1 off
+/sc_main/dsp_unit_top_inst/dsp_unit_inst/CHECKER_MODULE/X_audio1_in
+                     input/dsp_unit_svamod.sv(45)
+                                                        0    5562407          0          1    5562408          0           1 off
+/sc_main/dsp_unit_top_inst/dsp_unit_inst/CHECKER_MODULE/X_dsp_regs_in
+                     input/dsp_unit_svamod.sv(46)
+                                                        0    5562407          0          1    5562408          0           1 off
+/sc_main/dsp_unit_top_inst/dsp_unit_inst/CHECKER_MODULE/X_level_reg_in
+                     input/dsp_unit_svamod.sv(47)
+                                                        0    5562407          0          1    5562408          0           1 off
+/sc_main/dsp_unit_top_inst/dsp_unit_inst/CHECKER_MODULE/X_cfg_reg_in
+                     input/dsp_unit_svamod.sv(48)
+                                                        0    5562407          0          1    5562408          0           1 off
+/sc_main/dsp_unit_top_inst/dsp_unit_inst/CHECKER_MODULE/X_audio0_out
+                     input/dsp_unit_svamod.sv(49)
+                                                        0    5562407          0          1    5562408          0           1 off
+/sc_main/dsp_unit_top_inst/dsp_unit_inst/CHECKER_MODULE/X_audio1_out
+                     input/dsp_unit_svamod.sv(50)
+                                                        0    5562407          0          1    5562408          0           1 off
+/sc_main/dsp_unit_top_inst/dsp_unit_inst/CHECKER_MODULE/X_tick_out
+                     input/dsp_unit_svamod.sv(51)
+                                                        0    5562407          0          1    5562408          0           1 off
+/sc_main/dsp_unit_top_inst/dsp_unit_inst/CHECKER_MODULE/mf_tick_clr_mutex
+                     input/dsp_unit_svamod.sv(73)
+                                                        0    5562407          0          1    5562408          0           1 off
+/sc_main/dsp_unit_top_inst/dsp_unit_inst/CHECKER_MODULE/mf_tick_in_pulse
+                     input/dsp_unit_svamod.sv(83)
+                                                        0       3455    5558952          1    5562408          0           1 off
+/sc_main/dsp_unit_top_inst/dsp_unit_inst/CHECKER_MODULE/mf_cfg_in_pulse
+                     input/dsp_unit_svamod.sv(93)
+                                                        0          8    5562399          1    5562408          0           1 off
+/sc_main/dsp_unit_top_inst/dsp_unit_inst/CHECKER_MODULE/mf_clr_in_pulse
+                     input/dsp_unit_svamod.sv(103)
+                                                        0          5    5562402          1    5562408          0           1 off
+/sc_main/dsp_unit_top_inst/dsp_unit_inst/CHECKER_MODULE/mf_level_in_pulse
+                     input/dsp_unit_svamod.sv(113)
+                                                        0        807    5561600          1    5562408          0           1 off
+/sc_main/dsp_unit_top_inst/dsp_unit_inst/CHECKER_MODULE/af_tick_out_pulse
+                     input/dsp_unit_svamod.sv(125)
+                                                        0       3460    5558947          1    5562408          0           1 off
+/sc_main/dsp_unit_top_inst/dsp_unit_inst/CHECKER_MODULE/af_max_latency
+                     input/dsp_unit_svamod.sv(135)
+                                                        0       3455    5558952          1    5562408          0           1 off
+
+Total Coverage By Instance (filtered view): 100.00%
+
