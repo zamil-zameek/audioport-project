@@ -3,7 +3,6 @@
 // Class: apb_transaction
 //
 ///////////////////////////////////////////////////////////
-
 class apb_transaction extends uvm_sequence_item;
    `uvm_object_utils(apb_transaction)
   
@@ -17,6 +16,8 @@ class apb_transaction extends uvm_sequence_item;
    endfunction
    
    constraint c_addr { addr >= APB_START_ADDRESS; addr < APB_END_ADDRESS; }
+   constraint c_align { addr[1:0] == 2'b00; }
+   constraint c_regs { addr != CMD_REG_ADDRESS; addr != LEFT_FIFO_ADDRESS; addr != RIGHT_FIFO_ADDRESS; }
    
    function void do_copy(uvm_object rhs);
       apb_transaction rhs_;
@@ -24,7 +25,6 @@ class apb_transaction extends uvm_sequence_item;
 	 uvm_report_error("apb_transaction.do_copy:", "Cast failed");
 	 return;
       end
-
       super.do_copy(rhs); 
       addr = rhs_.addr;
       data = rhs_.data;
@@ -32,7 +32,6 @@ class apb_transaction extends uvm_sequence_item;
       fail = rhs_.fail;
       
    endfunction
-
 
   function void do_record(uvm_recorder recorder);
    super.do_record(recorder);
@@ -43,4 +42,3 @@ class apb_transaction extends uvm_sequence_item;
    endfunction
 
 endclass: apb_transaction
-
