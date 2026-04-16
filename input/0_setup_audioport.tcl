@@ -2,8 +2,8 @@
 # UVM test selection
 ####################################################################################
 
-set UVM_TESTNAME             "apb_test"
-#set UVM_TESTNAME             "control_unit_uvm_test"
+#set UVM_TESTNAME             "apb_test"
+set UVM_TESTNAME             "control_unit_uvm_test"
 #set UVM_TESTNAME             "audioport_uvm_test"
 #set UVM_TESTNAME             "my_uvm_test"
 
