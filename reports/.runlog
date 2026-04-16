@@ -1361,3 +1361,16 @@ S dsp_unit dc_rtlsyn   1775777185
 S audioport vsim_rtlsim   1775778711
 E audioport vsim_rtlsim   1775778768
 S audioport snapshot   1775778792
+S audioport jg_cc   1775813881
+E audioport jg_cc   1775813952
+S audioport qautocheck   1775813959
+E audioport qautocheck   1775814542
+S audioport vsim_rtlsim   1775814900
+E audioport vsim_rtlsim   1775815244
+S audioport vsim_rtlsim   1775815351
+E audioport vsim_rtlsim   1775815699
+S audioport vsim_rtlsim   1775815948
+E audioport vsim_rtlsim   1775816330
+S audioport viz_rtlsim   1775816336
+E audioport viz_rtlsim   1775816998
+S audioport snapshot   1775823394

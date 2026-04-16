@@ -21,11 +21,11 @@ class apb_analyzer extends uvm_subscriber #(apb_transaction);
    apb_transaction tx;
    
    covergroup dut_write_coverage;
-      write_cov: coverpoint tx.addr[6:2] iff (tx.write_mode == '1);
+      write_cov: coverpoint tx.addr[8:2] iff (tx.write_mode == '1);
    endgroup 
 
    covergroup dut_read_coverage;
-      read_cov: coverpoint tx.addr[6:2] iff (tx.write_mode == '0);
+      read_cov: coverpoint tx.addr[8:2] iff (tx.write_mode == '0);
    endgroup 
 
    function new(string name, uvm_component parent);
