@@ -1,0 +1,336 @@
+# 
+# Questa Static Verification System
+# Version 2024.3_2 5905218 linux_x86_64 04-Dec-2024
+# 
+# This material contains trade secrets or otherwise
+# confidential information owned by
+# Siemens Industry Software Inc. or its affiliates
+# (collectively, "SISW"), or its licensors. Access
+# to and use of this information is strictly limited
+# as set forth in the customer's applicable
+# agreements with SISW.
+# 
+# Unpublished work. Copyright 2024 Siemens
+# 
+# do scripts/qformal.tcl
+# Command : vlib output/i2s_unit_qformal_work
+# Command : vmap work output/i2s_unit_qformal_work
+# QuestaSim-64 vmap 2024.3_2 Lib Mapping Utility 2024.11 Nov 25 2024
+# vmap work output/i2s_unit_qformal_work 
+# Modifying modelsim.ini
+# Command : configure output directory output/i2s_unit_qformal
+# Command : vcom -2008 -mixedsvvh -work work input/i2s_unit.vhd
+# QuestaSim-64 vcom 2024.3_2 Compiler 2024.11 Nov 25 2024
+# Start time: 10:58:42 on Mar 06,2026
+# vcom -2008 -mixedsvvh -work work input/i2s_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity i2s_unit
+# -- Compiling architecture RTL of i2s_unit
+# End time: 10:58:42 on Mar 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Command : vlog -suppress 13314 +define+design_top_is_i2s_unit +define+RTL_VERIF +incdir+input -cuname i2s_unit_sva_bind_pkg -mfcu input/apb_pkg.sv input/audioport_pkg.sv input/audioport_util_pkg.sv input/i2s_unit_svamod.sv input/sva_bindings.svh
+# QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
+# Start time: 10:58:42 on Mar 06,2026
+# vlog -suppress 13314 "+define+design_top_is_i2s_unit" "+define+RTL_VERIF" "+incdir+input" -cuname i2s_unit_sva_bind_pkg -mfcu input/apb_pkg.sv input/audioport_pkg.sv input/audioport_util_pkg.sv input/i2s_unit_svamod.sv input/sva_bindings.svh 
+# -- Compiling package apb_pkg
+# -- Compiling package audioport_pkg
+# -- Importing package apb_pkg
+# -- Compiling package audioport_util_pkg
+# -- Importing package audioport_pkg
+# -- Compiling package i2s_unit_sva_bind_pkg
+# -- Importing package audioport_pkg
+# -- Importing package apb_pkg
+# -- Importing package audioport_util_pkg
+# -- Compiling module i2s_unit_svamod
+# 
+# Top level modules:
+# 	--none--
+# End time: 10:58:43 on Mar 06,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Command : formal compile -d i2s_unit -cuname i2s_unit_sva_bind_pkg
+# 
+# Questa Static Verification System
+# Version 2024.3_2 5905218 linux_x86_64 04-Dec-2024
+# log created Fri Mar  6 10:58:43 2026 by mmohamed25 on lehmus-cn8.oulu.fi
+# 
+# Executing Command : formal compile -d i2s_unit -cuname i2s_unit_sva_bind_pkg
+# File: /homedir04/mmohamed25/DT3_2026/project/workdir/scripts/qformal.tcl, Line: 166
+# 
+### Starting Step: netlist elaborate ### 
+# 
+## Elaborating Design...
+# Reading MTI mapping for library mapping
+# Writing all MTI mappings to vmap output ...
+# 
+# Top level modules:
+# 	i2s_unit
+# 	i2s_unit_sva_bind_pkg
+# 
+# Analyzing design...
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading entity i2s_unit
+# -- Loading architecture RTL of i2s_unit
+# -- Loading package z0in_work.i2s_unit_sva_bind_pkg
+# -- Importing package z0in_work.audioport_pkg
+# -- Importing package z0in_work.apb_pkg
+# -- Importing package z0in_work.audioport_util_pkg
+# -- Loading module z0in_work.i2s_unit_svamod
+# -- Loading package vl_types
+# Optimizing 8 design-units (inlining 0/3 module instances, 0/1 architecture instances):
+# -- Optimizing package z0in_work.apb_pkg(fast)
+# -- Optimizing package z0in_work.audioport_pkg(fast)
+# -- Optimizing package z0in_work.audioport_util_pkg(fast)
+# -- Optimizing package z0in_work.i2s_unit_sva_bind_pkg(fast)
+# -- Optimizing module z0in_work.i2s_unit_svamod(fast)
+# -- Optimizing architecture RTL of i2s_unit
+# Optimized design name is zi_opt_csl_2105250445_1
+# Identified prefix 'i2s_unit'.
+# 
+### Starting Step: netlist create ### 
+# 
+## Synthesizing netlist...
+# Warning : Clock period or waveform specification has precision exceeding 3 digits past decimal point.  Clock 'clk', File '/homedir04/mmohamed25/DT3_2026/project/workdir/scripts/qformal.tcl', Line 108.  [directive-114]
+#         : Absolute numbers for clock specification are not necessary. Respecify the clocks with relative numbers.
+# Processing module 'i2s_unit_svamod'
+# Elaborating module 'i2s_unit_svamod'.
+# Processing module 'i2s_unit(rtl)'
+# Elaborating module 'i2s_unit(rtl)'.
+# 
+##Time Taken (Synthesis) = 38215630.000000 ticks = 38.215630 secs
+# Summary: 1 Warnings in processing "netlist create"
+# 
+### Starting Step: formal compile ### 
+# 
+## Processing Formal Logic...
+# Processing module 'i2s_unit_svamod'
+# Restoring module 'i2s_unit_svamod'.
+# Processing module 'i2s_unit(rtl)'
+# Restoring module 'i2s_unit(rtl)'.
+# Flattening design 'i2s_unit_svamod'.
+# Flattening design 'i2s_unit(rtl)'.
+# Info    : Detected clock.  Clock: clk.  [netlist-11]
+# Info    : Detected asynchronous reset.  Signal: rst_n, active low.  [netlist-106]
+# 
+# Clocks
+# ------------------------------------------------------------------------------
+# Port                                   Period         Waveform
+# ------------------------------------------------------------------------------
+# clk                                    54.253         0 27.126 
+# ------------------------------------------------------------------------------
+# 
+# Blackboxes
+# ------------------------------------------------------------------------------
+# Module name                                                Reason
+# ------------------------------------------------------------------------------
+# <no blackboxed modules>
+# ------------------------------------------------------------------------------
+# 
+# Inferred directives
+# ------------------------------------------------------------------------------
+# <no inferred directives>
+# ------------------------------------------------------------------------------
+# 
+# Formal model has been created.  Design 'i2s_unit'.
+# 
+# Property Summary
+# -------------------------------------------------------------------------------
+# Total  Directives :48
+# Assert Directives :29
+# Assume Directives :3
+# Cover  Directives :16
+# 
+# SVA Summary
+# -------------------------------------------------------------------------------
+# SVA Directive Type        Directives           Checkers
+# -------------------------------------------------------------------------------
+# Assert                        29                  29
+# Assume                         3                   3
+# Cover                         16                  16
+# -------------------------------------------------------------------------------
+# 
+# To see results in the GUI run:
+# qverify /homedir04/mmohamed25/DT3_2026/project/workdir/output/i2s_unit_qformal/propcheck.db
+# 
+# 
+# Message Summary
+# ---------------------------------------------------------------------------
+# Count  Type     Message ID         Summary
+# ---------------------------------------------------------------------------
+#     1  Warning  directive-114      Clock period or waveform specification has precision exceeding 3 digits past decimal point.
+#     1  Info     netlist-106        Detected asynchronous reset.
+#     1  Info     netlist-11         Detected clock.
+# 
+# Summary: 1 Warnings in formal compile
+# Final Process Statistics: Max memory 858MB, CPU time 38s, Total time 41s
+# 
+# End of log Fri Mar  6 10:59:24 2026
+# 
+# Command : formal verify -timeout 120m
+# 
+# Questa Static Verification System
+# Version 2024.3_2 5905218 linux_x86_64 04-Dec-2024
+# log created Fri Mar  6 10:59:24 2026 by mmohamed25 on lehmus-cn8.oulu.fi
+# 
+# Executing Command : formal verify -timeout 120m 
+# File: /homedir04/mmohamed25/DT3_2026/project/workdir/scripts/qformal.tcl, Line: 178
+# 
+# Info    : Using initialization sequence file to initialize design state.  File '/homedir04/mmohamed25/DT3_2026/project/workdir/input/rst.questa_init'.  [formal-205]
+# Info    : Automatically constraining reset signal to de-assert after initialization sequence (use -auto_constraint_off option to disable).  Signal 'rst_n', Value '1'.  [formal-285]
+# Info	: Warning(line 4): no $default_clock declared, using clk
+# Applying synthesis semantics to design: i2s_unit
+# [00:00:00] Target Status: Done 0/45, Update 0/45, Proof radius min=0, avg=0.00
+# [00:00:00] Check Status: Vacuity 0/29
+# [00:00:00] Engine Process Status: 0 running, 0 pending, 0 terminated, Mem=0GB
+# Info    : Established connection with engine process.  Hostname 'lehmus-cn8.oulu.fi', PID 4188023, Id 2, Time [00:00:00].  [formal-385]
+# Info    : Established connection with engine process.  Hostname 'lehmus-cn8.oulu.fi', PID 4188020, Id 1, Time [00:00:00].  [formal-385]
+# Info    : Established connection with engine process.  Hostname 'lehmus-cn8.oulu.fi', PID 4188010, Id 3, Time [00:00:00].  [formal-385]
+# Info    : Established connection with engine process.  Hostname 'lehmus-cn8.oulu.fi', PID 4188022, Id 4, Time [00:00:00].  [formal-385]
+# Info    : Established connection with engine process.  Hostname 'lehmus-cn8.oulu.fi', PID 4188021, Id 5, Time [00:00:00].  [formal-385]
+# Info    : Established connection with engine process.  Hostname 'lehmus-cn8.oulu.fi', PID 4188031, Id 7, Time [00:00:00].  [formal-385]
+# Info    : Established connection with engine process.  Hostname 'lehmus-cn8.oulu.fi', PID 4188034, Id 8, Time [00:00:00].  [formal-385]
+# Info    : Established connection with engine process.  Hostname 'lehmus-cn8.oulu.fi', PID 4188033, Id 6, Time [00:00:00].  [formal-385]
+# [00:00:00] Proven: CHECKER_MODULE.X_play_in (engine:0, vacuity check:inconclusive)
+# [00:00:00] Vacuity Check Passed: CHECKER_MODULE.X_play_in (engine:7, radius:1)
+# [00:00:00] Vacuity Check Passed: CHECKER_MODULE.X_audio0_in (engine:7, radius:1)
+# [00:00:00] Vacuity Check Passed: CHECKER_MODULE.X_audio1_in (engine:7, radius:1)
+# [00:00:00] Vacuity Check Passed: CHECKER_MODULE.X_tick_in (engine:7, radius:1)
+# [00:00:00] Vacuity Check Passed: CHECKER_MODULE.X_req_out (engine:7, radius:1)
+# [00:00:00] Vacuity Check Passed: CHECKER_MODULE.X_sck_out (engine:7, radius:1)
+# [00:00:00] Vacuity Check Passed: CHECKER_MODULE.X_ws_out (engine:7, radius:1)
+# [00:00:00] Vacuity Check Passed: CHECKER_MODULE.X_sdo_out (engine:7, radius:1)
+# [00:00:00] Vacuity Check Passed: CHECKER_MODULE.X_input_r (engine:7, radius:1)
+# [00:00:00] Vacuity Check Passed: CHECKER_MODULE.X_shift_r (engine:7, radius:1)
+# [00:00:00] Vacuity Check Passed: CHECKER_MODULE.X_mode_r (engine:7, radius:1)
+# [00:00:00] Vacuity Check Passed: CHECKER_MODULE.X_counter_r (engine:7, radius:1)
+# [00:00:00] Vacuity Check Passed: CHECKER_MODULE.X_sck_out_sig (engine:7, radius:1)
+# [00:00:00] Vacuity Check Passed: CHECKER_MODULE.X_load (engine:7, radius:1)
+# [00:00:00] Vacuity Check Passed: CHECKER_MODULE.X_shift (engine:7, radius:1)
+# [00:00:00] Vacuity Check Passed: CHECKER_MODULE.X_end_s (engine:7, radius:1)
+# [00:00:00] Vacuity Check Passed: CHECKER_MODULE.af_sck_start (engine:7, radius:1)
+# [00:00:00] Vacuity Check Passed: CHECKER_MODULE.af_mode_r_enable_logic (engine:7, radius:1)
+# [00:00:00] Vacuity Check Passed: CHECKER_MODULE.af_shift_r_zero_on_reset (engine:7, radius:1)
+# [00:00:00] Vacuity Check Passed: CHECKER_MODULE.af_sck_wave (engine:7, radius:2)
+# [00:00:00] Vacuity Check Passed: CHECKER_MODULE.af_req_out_pulse (engine:7, radius:5)
+# [00:00:00] Vacuity Check Passed: CHECKER_MODULE.af_req_out_seen (engine:7, radius:6)
+# [00:00:00] Vacuity Check Passed: CHECKER_MODULE.af_req_sck_align (engine:7, radius:6)
+# [00:00:00] Covered: CHECKER_MODULE.cf_mode_r_enable_logic (engine:7, radius:2)
+# [00:00:00] Covered: CHECKER_MODULE.cf_sck_start (engine:7, radius:2)
+# [00:00:00] Covered: CHECKER_MODULE.cf_shift_r_zero_on_reset (engine:7, radius:3)
+# [00:00:00] Covered: CHECKER_MODULE.cf_req_out_seen (engine:7, radius:6)
+# [00:00:00] Covered: CHECKER_MODULE.cf_req_sck_align (engine:7, radius:6)
+# [00:00:00] Covered: CHECKER_MODULE.cf_req_out_pulse (engine:7, radius:6)
+# [00:00:00] Proven: CHECKER_MODULE.X_audio0_in (engine:0, vacuity check:passed)
+# [00:00:00] Proven: CHECKER_MODULE.X_audio1_in (engine:0, vacuity check:passed)
+# [00:00:00] Proven: CHECKER_MODULE.X_tick_in (engine:0, vacuity check:passed)
+# [00:00:00] Proven: CHECKER_MODULE.X_req_out (engine:0, vacuity check:passed)
+# [00:00:00] Proven: CHECKER_MODULE.X_sck_out (engine:0, vacuity check:passed)
+# [00:00:00] Proven: CHECKER_MODULE.X_ws_out (engine:0, vacuity check:passed)
+# [00:00:00] Proven: CHECKER_MODULE.X_sdo_out (engine:0, vacuity check:passed)
+# [00:00:00] Proven: CHECKER_MODULE.X_shift (engine:0, vacuity check:passed)
+# [00:00:00] Proven: CHECKER_MODULE.X_input_r (engine:7, vacuity check:passed)
+# [00:00:00] Proven: CHECKER_MODULE.X_shift_r (engine:7, vacuity check:passed)
+# [00:00:00] Proven: CHECKER_MODULE.X_mode_r (engine:7, vacuity check:passed)
+# [00:00:00] Proven: CHECKER_MODULE.X_counter_r (engine:7, vacuity check:passed)
+# [00:00:00] Proven: CHECKER_MODULE.X_sck_out_sig (engine:7, vacuity check:passed)
+# [00:00:00] Proven: CHECKER_MODULE.X_load (engine:7, vacuity check:passed)
+# [00:00:00] Proven: CHECKER_MODULE.X_end_s (engine:0, vacuity check:passed)
+# [00:00:00] Vacuity Check Passed: CHECKER_MODULE.af_sdo_change (engine:7, radius:6)
+# [00:00:00] Covered: CHECKER_MODULE.cf_tick_in_pulse (engine:7, radius:2)
+# [00:00:00] Covered: CHECKER_MODULE.cf_sdo_change (engine:7, radius:6)
+# [00:00:00] Proven: CHECKER_MODULE.af_req_sck_align (engine:7, vacuity check:passed)
+# [00:00:00] Proven: CHECKER_MODULE.af_req_out_pulse (engine:7, vacuity check:passed)
+# [00:00:00] Covered: CHECKER_MODULE.cf_tick_in_play_only (engine:7, radius:1)
+# [00:00:00] Proven: CHECKER_MODULE.af_sck_last (engine:7, vacuity check:inconclusive)
+# [00:00:00] Covered: CHECKER_MODULE.cf_sck_wave (engine:7, radius:9)
+# [00:00:01] Proven: CHECKER_MODULE.af_ws_change (engine:7, vacuity check:inconclusive)
+# [00:00:01] Proven: CHECKER_MODULE.af_sck_wave (engine:10, vacuity check:passed)
+# [00:00:01] Proven: CHECKER_MODULE.af_counter_r_cycle_restart (engine:7, vacuity check:inconclusive)
+# [00:00:01] Proven: CHECKER_MODULE.af_mode_r_enable_logic (engine:7, vacuity check:passed)
+# [00:00:01] Proven: CHECKER_MODULE.af_shift_r_zero_on_reset (engine:7, vacuity check:passed)
+# [00:00:01] Proven: CHECKER_MODULE.af_shift_activity_check (engine:7, vacuity check:inconclusive)
+# [00:00:01] Vacuity Check Passed: CHECKER_MODULE.af_shift_activity_check (engine:7, radius:13)
+# [00:00:01] Covered: CHECKER_MODULE.cf_shift_activity_check (engine:7, radius:14)
+# [00:00:01] Proven: CHECKER_MODULE.af_sdo_change (engine:7, vacuity check:passed)
+# [00:00:06] Vacuity Check Passed: CHECKER_MODULE.af_ws_wave (engine:7, radius:186)
+# [00:00:06] Vacuity Check Passed: CHECKER_MODULE.af_ws_change (engine:7, radius:190)
+# [00:00:06] Vacuity Check Passed: CHECKER_MODULE.af_sck_last (engine:7, radius:382)
+# [00:00:06] Vacuity Check Passed: CHECKER_MODULE.af_counter_r_cycle_restart (engine:7, radius:385)
+# [00:00:08] Covered: CHECKER_MODULE.cf_ws_change (engine:7, radius:190)
+# [00:00:08] Covered: CHECKER_MODULE.cf_play_in_stable (engine:7, radius:385)
+# Info    : Established connection with client process.  Hostname 'lehmus-cn8.oulu.fi', PID 4188098, Time [00:00:10], Client Process GUI.  [formal-386]
+# [00:00:26] Covered: CHECKER_MODULE.cf_counter_r_cycle_restart (engine:7, radius:386)
+# [00:00:31] Proven: CHECKER_MODULE.af_ws_wave (engine:17, vacuity check:passed)
+# [00:01:27] Covered: CHECKER_MODULE.cf_sck_last (engine:7, radius:390)
+# Info    : Engine process killed.  Hostname 'lehmus-cn8.oulu.fi', PID 4188020, Id 1, Time [00:02:11].  [formal-387]
+#         : Analysis will continue using other remaining engine processes.
+# Info    : Engine process killed.  Hostname 'lehmus-cn8.oulu.fi', PID 4188023, Id 2, Time [00:04:34].  [formal-387]
+#         : Analysis will continue using other remaining engine processes.
+# [00:05:00] Target Status: Done 42/45, Update 45/45, Proof radius min=377, avg=519.0
+# [00:05:00] Check Status: Vacuity 29/29
+# [00:05:00] Engine Process Status: 6 running, 0 pending, 2 terminated, Mem=5GB
+# Info    : Signal handled.  Signal: '15' ('SIGTERM').  [formal-248]
+#         : Stopping analysis; process will terminate once results are written out.
+# [00:05:46] Target Status: Done 42/45, Update 0/3, Proof radius min=377, avg=519.0
+# [00:05:46] Check Status: Vacuity 29/29
+# [00:05:46] Engine Process Status: 0 running, 0 pending, 8 terminated, Mem=5GB
+# 
+# 
+# --------- Process Statistics ----------
+# Elapsed Time                     346 s
+# Total CPU Time                  1320 s
+# Total Peak Memory                5.3 GB
+# ---------- Engine Processes -----------
+# Average CPU Time                 164 s
+# Minimum CPU Utilization           37 %
+# Average Peak Memory              0.6 GB
+# Maximum Peak Memory              1.6 GB
+# Peak Cores                         8
+# Distinct Machines                  1
+# Launch Failures                    0
+# Unexpected Process Terminations    2
+# Successful Re-connections          0
+# ---------------------------------------
+# 
+# 
+# ========================================
+# Property Summary                   Count
+# ========================================
+# Assumes                                3
+# ========================================
+# Asserts                               29
+# ----------------------------------------
+# Proven                                27
+# Inconclusive                           2
+# ========================================
+# Covers                                16
+# ----------------------------------------
+# Covered                               15
+# Inconclusive                           1
+# ========================================
+# 
+# Message Summary
+# ---------------------------------------------------------------------------
+# Count  Type     Message ID         Summary
+# ---------------------------------------------------------------------------
+#     1  Info     formal-205         Using initialization sequence file to initialize design state.
+#     1  Info     formal-248         Signal handled.
+#     1  Info     formal-285         Automatically constraining reset signal to de-assert after initialization sequence (use -auto_constraint_off option to disable).
+#     8  Info     formal-385         Established connection with engine process.
+#     1  Info     formal-386         Established connection with client process.
+#     2  Info     formal-387         Engine process killed.
+# 
+# Final Process Statistics: Peak Memory 1.63GB, Cumulative CPU Time 1320s, Elapsed Time 346s
+# 
+# To see results in the GUI run:
+# qverify /homedir04/mmohamed25/DT3_2026/project/workdir/output/i2s_unit_qformal/propcheck.db
+# 
+# Error   : Error encountered executing Tcl command.  Command: formal verify, File: /homedir04/mmohamed25/DT3_2026/project/workdir/scripts/qformal.tcl, Line: 178.  [cli-7]
+# Command : formal load db output/i2s_unit_qformal/propcheck.db/formal_verify.db
+# Command : formal generate ucdb formal_coverage.ucdb
+# Fatal   : Issues exist in previous Tcl shell commands.  Exiting before running command: 'formal generate ucdb', Number of issues: 1, refer to 'output/i2s_unit_qformal/qverify.log' for more information.  [cli-11]

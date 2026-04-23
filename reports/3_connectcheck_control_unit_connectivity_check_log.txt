@@ -1,0 +1,220 @@
+# 
+# Questa Static Verification System
+# Version 2024.3_2 5905218 linux_x86_64 04-Dec-2024
+# 
+# This material contains trade secrets or otherwise
+# confidential information owned by
+# Siemens Industry Software Inc. or its affiliates
+# (collectively, "SISW"), or its licensors. Access
+# to and use of this information is strictly limited
+# as set forth in the customer's applicable
+# agreements with SISW.
+# 
+# Unpublished work. Copyright 2024 Siemens
+# 
+# do scripts/connectcheck.tcl
+# Command : vlib connectcheck_work
+# Command : vmap work connectcheck_work
+# QuestaSim-64 vmap 2024.3_2 Lib Mapping Utility 2024.11 Nov 25 2024
+# vmap work connectcheck_work 
+# Modifying modelsim.ini
+# Command : vlog +define+design_top_is_control_unit +define+RTL_VERIF +incdir+input -cuname control_unit_sva_bind_pkg -mfcu input/apb_pkg.sv input/audioport_pkg.sv input/audioport_util_pkg.sv input/control_unit.sv
+# QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
+# Start time: 14:36:13 on Jan 21,2026
+# vlog "+define+design_top_is_control_unit" "+define+RTL_VERIF" "+incdir+input" -cuname control_unit_sva_bind_pkg -mfcu input/apb_pkg.sv input/audioport_pkg.sv input/audioport_util_pkg.sv input/control_unit.sv 
+# -- Compiling package apb_pkg
+# -- Compiling package audioport_pkg
+# -- Importing package apb_pkg
+# -- Compiling package audioport_util_pkg
+# -- Importing package audioport_pkg
+# -- Compiling package control_unit_sva_bind_pkg
+# -- Importing package audioport_pkg
+# -- Importing package apb_pkg
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# End time: 14:36:14 on Jan 21,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Command : connectcheck elaborate -d control_unit
+# Command : netlist create -d control_unit -tool propcheck
+# 
+# Questa Static Verification System
+# Version 2024.3_2 5905218 linux_x86_64 04-Dec-2024
+# log created Wed Jan 21 14:36:14 2026 by mmohamed25 on lehmus-cn7.oulu.fi
+# 
+# Executing Command : netlist create -d control_unit -tool propcheck
+# File: /homedir04/mmohamed25/DT3_2026/project/workdir/scripts/connectcheck.tcl, Line: 63
+# 
+### Starting Step: netlist elaborate ### 
+# 
+## Elaborating Design...
+# Reading MTI mapping for library mapping
+# Writing all MTI mappings to vmap output ...
+# 
+# Top level modules:
+# 	control_unit
+# 
+# Analyzing design...
+# -- Loading module z0in_work.control_unit
+# Optimizing 4 design-units (inlining 0/1 module instances):
+# -- Optimizing package z0in_work.apb_pkg(fast)
+# -- Optimizing package z0in_work.audioport_pkg(fast)
+# -- Optimizing package z0in_work.control_unit_sva_bind_pkg(fast)
+# -- Optimizing module z0in_work.control_unit(fast)
+# Optimized design name is zi_opt_csl_1820249967_1
+# 
+### Starting Step: netlist create ### 
+# 
+## Synthesizing netlist...
+# Processing module 'control_unit'
+# Elaborating module 'control_unit'.
+# 
+##Time Taken (Synthesis) = 28869.000000 ticks = 0.028869 secs
+# Final Process Statistics: Max memory 434MB, CPU time 0s, Total time 1s
+# 
+# End of log Wed Jan 21 14:36:15 2026
+# 
+# ERROR: File path does not exist.
+#        Command is ignored.
+# Command : connectcheck compile
+# Reading design database from /homedir04/mmohamed25/DT3_2026/project/workdir/output/control_unit_connectcheck/propcheck.db/FORMAL/CACHE...completed (0.001121 (s)).
+# Command : formal compile
+# 
+# Questa Static Verification System
+# Version 2024.3_2 5905218 linux_x86_64 04-Dec-2024
+# log created Wed Jan 21 14:36:16 2026 by mmohamed25 on lehmus-cn7.oulu.fi
+# 
+# Executing Command : formal compile
+# File: /homedir04/mmohamed25/DT3_2026/project/workdir/scripts/connectcheck.tcl, Line: 70
+# 
+### Starting Step: formal compile ### 
+# 
+## Processing Formal Logic...
+# Processing module 'control_unit'
+# Restoring module 'control_unit'.
+# Flattening design 'control_unit'.
+# 
+# Clocks
+# ------------------------------------------------------------------------------
+# Port                                   Period         Waveform
+# ------------------------------------------------------------------------------
+# \$global_clock           [inferred]       100             0 50 
+# ------------------------------------------------------------------------------
+# 
+# Blackboxes
+# ------------------------------------------------------------------------------
+# Module name                                                Reason
+# ------------------------------------------------------------------------------
+# <no blackboxed modules>
+# ------------------------------------------------------------------------------
+# 
+# Inferred directives
+# ------------------------------------------------------------------------------
+# netlist clock \$global_clock  -period 100 -waveform 0 50
+# ------------------------------------------------------------------------------
+# 
+# Formal model has been created.  Design 'control_unit'.
+# 
+# Property Summary
+# -------------------------------------------------------------------------------
+# Total  Directives :0
+# Assert Directives :0
+# Assume Directives :0
+# Cover  Directives :0
+# -------------------------------------------------------------------------------
+# 
+# Design Checks Summary
+# -------------------------------------------------------------------------------
+# Check                              Found
+# -------------------------------------------------------------------------------
+# PORT_UNDRIVEN                          14
+# -------------------------------------------------------------------------------
+# Total                                 14
+# -------------------------------------------------------------------------------
+# 
+# 
+# To see results in the GUI run:
+# qverify /homedir04/mmohamed25/DT3_2026/project/workdir/output/control_unit_connectcheck/propcheck.db
+# 
+# Final Process Statistics: Max memory 482MB, CPU time 0s, Total time 0s
+# 
+# End of log Wed Jan 21 14:36:16 2026
+# 
+# Command : connectcheck verify -exclude_cover
+# Reading design database from /homedir04/mmohamed25/DT3_2026/project/workdir/output/control_unit_connectcheck/propcheck.db/FORMAL/CACHE...completed (0.000651 (s)).
+# Command : find properties -assume
+# 
+# Compiling incremental directives ...
+# 
+# Questa Static Verification System
+# Version 2024.3_2 5905218 linux_x86_64 04-Dec-2024
+# log created Wed Jan 21 14:36:17 2026 by mmohamed25 on lehmus-cn7.oulu.fi
+# Command : find properties -assert -cover
+# INFO: Generating ConnectCheck property report...
+# Command : report output directory
+# Current Output Directory : output/control_unit_connectcheck
+# Command : find properties -group connectcheck -assume
+# Command : find properties -group connectcheck -assert -cover
+# Command : formal verify -exclude_cover -group connectcheck
+# 
+# Questa Static Verification System
+# Version 2024.3_2 5905218 linux_x86_64 04-Dec-2024
+# log created Wed Jan 21 14:36:19 2026 by mmohamed25 on lehmus-cn7.oulu.fi
+# 
+# Executing Command : formal verify -exclude_cover -group connectcheck  
+# File: /homedir04/mmohamed25/DT3_2026/project/workdir/scripts/connectcheck.tcl, Line: 72
+# 
+# Info    : Using initialization sequence file to initialize design state.  File '/homedir04/mmohamed25/DT3_2026/project/workdir/input/rst.questa_init'.  [formal-205]
+# Info	: Warning(line 4): no $default_clock declared, using \$global_clock 
+# Applying synthesis semantics to design: control_unit
+# [00:00:00] Engine Process Status: 0 running, 0 pending, 0 terminated, Mem=0GB
+# Info    : Established connection with engine process.  Hostname 'lehmus-cn7.oulu.fi', PID 1597810, Id 1, Time [00:00:00].  [formal-385]
+# Info    : Established connection with engine process.  Hostname 'lehmus-cn7.oulu.fi', PID 1597817, Id 2, Time [00:00:00].  [formal-385]
+# Info    : Established connection with engine process.  Hostname 'lehmus-cn7.oulu.fi', PID 1597822, Id 5, Time [00:00:00].  [formal-385]
+# Info    : Established connection with engine process.  Hostname 'lehmus-cn7.oulu.fi', PID 1597818, Id 4, Time [00:00:00].  [formal-385]
+# Info    : Established connection with engine process.  Hostname 'lehmus-cn7.oulu.fi', PID 1597821, Id 3, Time [00:00:00].  [formal-385]
+# Info    : Established connection with engine process.  Hostname 'lehmus-cn7.oulu.fi', PID 1597819, Id 6, Time [00:00:00].  [formal-385]
+# Info    : Established connection with engine process.  Hostname 'lehmus-cn7.oulu.fi', PID 1597852, Id 8, Time [00:00:00].  [formal-385]
+# Info    : Established connection with engine process.  Hostname 'lehmus-cn7.oulu.fi', PID 1597846, Id 7, Time [00:00:00].  [formal-385]
+# [00:00:00] Engine Process Status: 0 running, 0 pending, 8 terminated, Mem=0GB
+# 
+# 
+# --------- Process Statistics ----------
+# Elapsed Time                       0 s
+# Total CPU Time                     0 s
+# Total Peak Memory                0.4 GB
+# ---------- Engine Processes -----------
+# Average CPU Time                   0 s
+# Minimum CPU Utilization            0 %
+# Average Peak Memory              0.0 GB
+# Maximum Peak Memory              0.0 GB
+# Peak Cores                         8
+# Distinct Machines                  1
+# Launch Failures                    0
+# Unexpected Process Terminations    0
+# Successful Re-connections          0
+# ---------------------------------------
+# 
+# 
+# ========================================
+# Property Summary                   Count
+# ========================================
+# Assumes                                1
+# ========================================
+# Asserts                                0
+# ========================================
+# 
+# Message Summary
+# ---------------------------------------------------------------------------
+# Count  Type     Message ID         Summary
+# ---------------------------------------------------------------------------
+#     1  Info     formal-205         Using initialization sequence file to initialize design state.
+#     8  Info     formal-385         Established connection with engine process.
+# 
+# Final Process Statistics: Peak Memory 0.37GB, Cumulative CPU Time 0s, Elapsed Time 0s
+# 
+# To see results in the GUI run:
+# qverify /homedir04/mmohamed25/DT3_2026/project/workdir/output/control_unit_connectcheck/propcheck.db
+# 
+# 

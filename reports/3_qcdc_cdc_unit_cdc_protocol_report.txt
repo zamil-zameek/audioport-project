@@ -1,0 +1,130 @@
+-------------------------------------------------------------------------------
+Questa CDC Version 2024.3_2 5905218 linux_x86_64 04-Dec-2024
+CDC Protocol report
+Design : cdc_unit
+
+Created Thu Mar 19 05:42:19 2026
+-------------------------------------------------------------------------------
+
+=================================================================
+Section 1  : CDC SVA Protocol Summary
+Section 2  : CDC SVA Protocol List
+Section 3  : CDC SVA Protocol Details
+Section 4  : CDC SVA Protocol Setup
+=================================================================
+
+=================================================================
+Section 1  : CDC SVA Protocol Summary
+=================================================================
+
+Protocols Recognized   :   5
+-------------------------------------------------------------------------------
+Protocol Type                             Protocols               Checks
+-------------------------------------------------------------------------------
+cdc_handshake                                     2                    8
+cdc_sync                                          3                    3
+-------------------------------------------------------------------------------
+All                                               5                   11
+-------------------------------------------------------------------------------
+
+=================================================================
+Section 2  : CDC SVA Protocol List
+=================================================================
+
+cdc_handshake  cdc_protocol.handshake_58733
+cdc_handshake  cdc_protocol.handshake_92525
+cdc_sync  cdc_protocol.async_reset_92494
+cdc_sync  cdc_protocol.two_dff_33361
+cdc_sync  cdc_protocol.two_dff_96689
+
+=================================================================
+Section 3  : CDC SVA Protocol Details
+=================================================================
+
+Type/Scheme   :  cdc_handshake  cdc_protocol.handshake_58733
+----------------------------------------------------
+  Check tx_data_stable   : Off <Default Off>
+  Check rx_data_stable   : On <Default On>
+  Check req_stable       : On <Default On>
+  Check ack_stable       : Proven <Default On>
+  Check req_assert_until_ack_assert    : On <Default On>
+  Check req_deassert_until_ack_deassert: Off <Default Off>
+  Check ack_assert_until_req_deassert  : On <Default On>
+  Check ack_deassert_until_req_assert  : Off <Default Off>
+  TX SIGNAL              : audio1_tx_r
+  TX CLOCK               : clk
+  RX SIGNAL              : audio1_out
+  RX CLOCK               : mclk
+  REQ                    : tx_state_r[1]
+  REQ_CLOCK              : clk
+  REQ_MIN                : 5
+  ACK_TX                 : rx_state_r[1]
+  ACK_RX                 : hack_sff2_r
+  ACK_TX_CLOCK           : mclk
+  ACK_RX_CLOCK           : clk
+  ACK_MIN                : 1
+
+Type/Scheme   :  cdc_handshake  cdc_protocol.handshake_92525
+----------------------------------------------------
+  Check tx_data_stable   : Off <Default Off>
+  Check rx_data_stable   : On <Default On>
+  Check req_stable       : On <Default On>
+  Check ack_stable       : Proven <Default On>
+  Check req_assert_until_ack_assert    : On <Default On>
+  Check req_deassert_until_ack_deassert: Off <Default Off>
+  Check ack_assert_until_req_deassert  : On <Default On>
+  Check ack_deassert_until_req_assert  : Off <Default Off>
+  TX SIGNAL              : audio0_tx_r
+  TX CLOCK               : clk
+  RX SIGNAL              : audio0_out
+  RX CLOCK               : mclk
+  REQ                    : tx_state_r[1]
+  REQ_CLOCK              : clk
+  REQ_MIN                : 5
+  ACK_TX                 : rx_state_r[1]
+  ACK_RX                 : hack_sff2_r
+  ACK_TX_CLOCK           : mclk
+  ACK_RX_CLOCK           : clk
+  ACK_MIN                : 1
+
+Type/Scheme   :  cdc_sync  cdc_protocol.async_reset_92494
+----------------------------------------------------
+  Check tx_stable        : On <Default On>
+  TX SIGNAL              : rst_n
+  TX CLOCK               : clk
+  TX_MIN                 : 5
+
+Type/Scheme   :  cdc_sync  cdc_protocol.two_dff_33361
+----------------------------------------------------
+  Check tx_stable        : On <Default On>
+  TX SIGNAL              : play_in
+  TX CLOCK               : clk
+  TX_MIN                 : 5
+
+Type/Scheme   :  cdc_sync  cdc_protocol.two_dff_96689
+----------------------------------------------------
+  Check tx_stable        : On <Default On>
+  TX SIGNAL              : tx_state_r[1]
+  TX CLOCK               : clk
+  TX_MIN                 : 5
+
+
+=================================================================
+Section 4  : CDC SVA Protocol Setup
+=================================================================
+
+Questa Propcheck Makefile
+----------------------------------------------------
+   Makefile  : /homedir04/mmohamed25/DT3_2026/project/workdir/output/cdc_unit_qcdc_run_log/cdc_protocol/formal/Makefile
+
+Questa Sim argument files (2-step flow)
+----------------------------------------------------
+  vlog  : /homedir04/mmohamed25/DT3_2026/project/workdir/output/cdc_unit_qcdc_run_log/cdc_protocol/simulation/cdc_protocol_vlog.arg
+  vsim  : /homedir04/mmohamed25/DT3_2026/project/workdir/output/cdc_unit_qcdc_run_log/cdc_protocol/simulation/cdc_protocol_vsim_2step.arg
+
+Questa Sim vopt flow argument files (3-step flow)
+----------------------------------------------------
+  vlog  : /homedir04/mmohamed25/DT3_2026/project/workdir/output/cdc_unit_qcdc_run_log/cdc_protocol/simulation/cdc_protocol_vlog.arg
+  vopt  : /homedir04/mmohamed25/DT3_2026/project/workdir/output/cdc_unit_qcdc_run_log/cdc_protocol/simulation/cdc_protocol_vopt.arg
+  vsim  : /homedir04/mmohamed25/DT3_2026/project/workdir/output/cdc_unit_qcdc_run_log/cdc_protocol/simulation/cdc_protocol_vsim_3step.arg
+

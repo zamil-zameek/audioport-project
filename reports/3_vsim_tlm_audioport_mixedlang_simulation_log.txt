@@ -1,0 +1,52 @@
+# //  Questa Sim-64
+# //  Version 2024.3_2 linux_x86_64 Nov 25 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do scripts/vsim_mixedsim.tcl
+# 0
+# 1
+# 0
+# -all
+# QuestaSim
+# 0
+# 1
+# output/tlm_audioport_rtl.dbg
+# output/tlm_audioport_rtl.bin
+# output/tlm_audioport_rtl.db
+# tlm_audioport_rtl_vopt
+# output/tlm_audioport_questasim_work
+#  -g -I input -work output/tlm_audioport_questasim_work -verbose
+#  +define+design_top_is_tlm_audioport +define+DESIGN_NAME_MACRO=tlm_audioport +incdir+input -work work -sv
+#  -mixedsvvh -work work
+#  -assertdebug -msgmode both -classdebug -uvmcontrol=all -debugDB=output/tlm_audioport_rtl.dbg -sclib output/tlm_audioport_questasim_work -L output/tlm_audioport_questasim_work
+#  +acc -suppress 10587 -debugdb -noincr -sclib output/tlm_audioport_questasim_work -L output/tlm_audioport_questasim_work
+# -suppress 13314 -suppress 13233 +define+RTL_SIM +define+SYSTEMC_DUT +define+design_top_is_tlm_audioport +define+DESIGN_NAME_MACRO=tlm_audioport +incdir+input -work work -sv
+# -mixedsvvh -work work
+# -assertdebug -msgmode both -classdebug -uvmcontrol=all -debugDB=output/tlm_audioport_rtl.dbg -sclib output/tlm_audioport_questasim_work -L output/tlm_audioport_questasim_work
+# 1
+# sccom -reportprogress -g -I input -work output/tlm_audioport_questasim_work -verbose -link 
+# Start time: 14:39:53 on Jan 21,2026
+# 
+# QuestaSim-64 sccom 2024.3_2 compiler 2024.11 Nov 25 2024
+# ** Warning: (sccom-6197) No object files found for SystemC version 2.3.4 compiled with gcc-10.3.0 in 'output/tlm_audioport_questasim_work'. Skipping this library for "sccom -link".
+# ** Error: (sccom-6207) No object files found for SystemC version 2.3.4 with gcc-10.3.0 in any library. Make sure that compilation and linking is being done with correct options.
+# End time: 14:39:53 on Jan 21,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+# ** Error: /sw/rhel8/siemens/questa_sim-2024.3_2/questasim/linux_x86_64/sccom failed.
+# Error in macro ./scripts/vsim_mixedsim.tcl line 106
+# /sw/rhel8/siemens/questa_sim-2024.3_2/questasim/linux_x86_64/sccom failed.
+#     while executing
+# "sccom  -g -I input -work output/tlm_audioport_questasim_work -verbose -link"
+#     ("eval" body line 1)
+#     invoked from within
+# "eval "sccom ${SCCOM_SETTINGS} -link""

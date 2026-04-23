@@ -1,0 +1,68 @@
+ 
+****************************************
+Report : clock timing
+        -type summary
+Design : cdc_unit
+Version: T-2022.03-SP5-1
+Date   : Thu Mar 19 14:16:32 2026
+****************************************
+
+  Clock: clk
+----------------------------------------------------------------------------
+  Maximum setup launch latency:
+      hack_sff1_r_reg/CK                                     0.00      wr-+
+
+  Minimum setup capture latency:
+      hack_sff1_r_reg/CK                                     0.00      wr-+
+
+  Minimum hold launch latency:
+      hack_sff1_r_reg/CK                                     0.00      br-+
+
+  Maximum hold capture latency:
+      hack_sff1_r_reg/CK                                     0.00      br-+
+
+  Maximum active transition:
+      hack_sff1_r_reg/CK                                     0.00      wr-+
+
+  Minimum active transition:
+      hack_sff1_r_reg/CK                                     0.00      wr-+
+
+  Maximum setup skew:
+      audio0_tx_r_reg[0]/CK                                            wr-+
+      audio0_tx_r_reg[0]/CK                                  0.00      wr-+
+
+  Maximum hold skew:
+      audio0_tx_r_reg[0]/CK                                            br-+
+      audio0_tx_r_reg[0]/CK                                  0.00      br-+
+----------------------------------------------------------------------------
+
+  Clock: mclk
+----------------------------------------------------------------------------
+  Maximum setup launch latency:
+      rsync_ff1_r_reg/CK                                     0.00      wri-+
+
+  Minimum setup capture latency:
+      rsync_ff2_r_reg/CK                                     0.00      wri-+
+
+  Minimum hold launch latency:
+      rsync_ff1_r_reg/CK                                     0.00      bri-+
+
+  Maximum hold capture latency:
+      rsync_ff2_r_reg/CK                                     0.00      bri-+
+
+  Maximum active transition:
+      rsync_ff1_r_reg/CK                                     0.00      wri-+
+
+  Minimum active transition:
+      rsync_ff1_r_reg/CK                                     0.00      wri-+
+
+  Maximum setup skew:
+      audio0_out_reg[0]/CK                                             wr-+
+      audio0_out_reg[0]/CK                                   0.00      wr-+
+
+  Maximum hold skew:
+      audio0_out_reg[0]/CK                                             br-+
+      audio0_out_reg[0]/CK                                   0.00      br-+
+----------------------------------------------------------------------------
+
+1

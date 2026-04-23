@@ -1,0 +1,429 @@
+//  Catapult Ultra Synthesis 2024.2_1/1143609 (Production Release) Wed Nov 13 18:57:31 PST 2024
+//  
+//          Copyright (c) Siemens EDA, 1996-2024, All Rights Reserved.
+//                        UNPUBLISHED, LICENSED SOFTWARE.
+//             CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//                   PROPERTY OF SIEMENS EDA OR ITS LICENSORS.
+//  
+//  Running on Linux mmohamed25@lehmus-cn2.oulu.fi:2317328 4.18.0-553.80.1.el8_10.x86_64 x86_64 aol
+//  
+//  Package information: SIFLIBS v27.2_1.0, HLS_PKGS v27.2_1.0, 
+//                       SIF_TOOLKITS v27.2_1.0, SIF_XILINX v27.2_1.0, 
+//                       SIF_ALTERA v27.2_1.0, CCS_LIBS v27.2_1.0, 
+//                       CDS_PPRO v2024.1_3, CDS_DesignChecker v2024.2_1, 
+//                       CDS_OASYS v21.1_3.1, CDS_PSR v24.1_0.20, 
+//                       DesignPad v2.78_1.0, DesignAnalyzer 2024.2/1130210
+//  
+//  Start time Fri Apr 10 02:13:11 2026
+# -------------------------------------------------
+# Logging session transcript to file "/tmp/log2317328340ea5e0.0"
+dofile ./scripts/catapult_hls.tcl
+# > set CATAPULT_REMOVE_PROJECT           1
+# 1
+# > set CATAPULT_COMPILER_FLAGS           ""
+# > set CATAPULT_SUPPRESS_WARNINGS        {}
+# > set EDA_TOOL "Catapult"
+# Catapult
+# > source scripts/0_setup.tcl
+# > if { [file exists scripts/catapult_proc.tcl ] } {
+# >     source scripts/catapult_proc.tcl
+# > }
+# > logfile move ${LAUNCH_DIR}/${REPORTS_DIR}/2_catapult_${DESIGN_NAME}_hls.log
+# Moving session transcript to file "/homedir04/mmohamed25/DT3_2026/project/workdir/reports/2_catapult_dsp_unit_hls.log"
+# > logfile move -disable
+# > options set Flows/LowPower/SWITCHING_ACTIVITY_TYPE saif
+# saif
+# > options set Cache/UserCacheHome                    ${LAUNCH_DIR}/${OUTPUT_DIR}/${DESIGN_NAME}_catapult_cache
+# /homedir04/mmohamed25/DT3_2026/project/workdir/output/dsp_unit_catapult_cache
+# > options set Input/CompilerFlags                    [concat "-DCATAPULT_HLS" $CATAPULT_COMPILER_FLAGS]
+# -DCATAPULT_HLS
+# > options set Input/CppStandard                      c++14
+# c++14
+# > options set Input/TargetPlatform                   x86_64
+# x86_64
+# > foreach w $CATAPULT_SUPPRESS_WARNINGS {
+# >     options set Message/Hide $w -append
+# > }
+# > directive set -TRANSACTION_DONE_SIGNAL false
+# /TRANSACTION_DONE_SIGNAL false
+# > directive set /PRESERVE_UNUSED_PORTS   true
+# /PRESERVE_UNUSED_PORTS true
+# > if { [info exists CATAPULT_TRANSACTION_DONE_SIGNAL] } {
+# >     if { $CATAPULT_TRANSACTION_DONE_SIGNAL == 1 } {
+# > 	directive set -TRANSACTION_DONE_SIGNAL true
+# >     } else {
+# > 	directive set -TRANSACTION_DONE_SIGNAL false
+# >     }
+# > }
+# > if { ![info exists HLS_RTL_FILE ] } {
+# >     set HLS_RTL_FILE ${RESULTS_DIR}/${DESIGN_NAME}_hls_rtl.v
+# > }
+# results/dsp_unit_hls_rtl.v
+# > file delete -force $HLS_RTL_FILE
+# > if { [info exists CATAPULT_PROJECT_NAME] == 0} {
+# >     set CATAPULT_PROJECT_NAME ${DESIGN_NAME}_CATAPULT_PROJECT
+# > }
+# dsp_unit_CATAPULT_PROJECT
+# > if { [info exists CATAPULT_PROJECT_DIR] == 0} {
+# >     set CATAPULT_PROJECT_DIR ${OUTPUT_DIR}
+# > }
+# > if { $CATAPULT_REMOVE_PROJECT == 1 && [file exists "${CATAPULT_PROJECT_DIR}/${CATAPULT_PROJECT_NAME}" ] == 1 } {
+# >     puts "Deleting old project directory"
+# >     file delete -force "${CATAPULT_PROJECT_DIR}/${CATAPULT_PROJECT_NAME}"
+# > }
+# Deleting old project directory
+# > if { [file exists "${CATAPULT_PROJECT_DIR}/${CATAPULT_PROJECT_NAME}" ] == 1 } {
+# >     project load "${CATAPULT_PROJECT_DIR}/${CATAPULT_PROJECT_NAME}"
+# >     set_working_dir ${LAUNCH_DIR}
+# >     solution new -state initial
+# > } else {
+# >     
+# >     set old_search_path [ options get ProjectInit/ComponentLibs SearchPath ]
+# >     project new -name ${CATAPULT_PROJECT_NAME} -directory "${CATAPULT_PROJECT_DIR}/${CATAPULT_PROJECT_NAME}"
+# >     if { [info exists CATAPULT_SOLUTION_NAME] } {
+# > 	solution rename $CATAPULT_SOLUTION_NAME
+# >     }
+# > }
+# Creating project directory '/homedir04/mmohamed25/DT3_2026/project/workdir/results/dsp_unit_CATAPULT_PROJECT/'. (PRJ-1)
+# > foreach filename $SYSTEMC_HEADER_FILES {
+# >     solution file add ${LAUNCH_DIR}/$filename -preserve_path true	
+# > }
+# > foreach filename $SYSTEMC_SOURCE_FILES {
+# >     solution file add ${LAUNCH_DIR}/$filename -preserve_path true	
+# > }
+# > foreach filename $SYSTEMC_TESTBENCH_FILES {
+# >     solution file add ${LAUNCH_DIR}/$filename -exclude true  -preserve_path true	
+# > }
+# > go new
+# > go analyze
+# Info: Starting transformation 'analyze' on solution 'solution.v1' (SOL-8)
+# Front End called with arguments: -- /homedir04/mmohamed25/DT3_2026/project/workdir/input/dsp_unit.cpp /homedir04/mmohamed25/DT3_2026/project/workdir/input/dsp_unit_top.h /homedir04/mmohamed25/DT3_2026/project/workdir/input/dsp_unit_tb.h /homedir04/mmohamed25/DT3_2026/project/workdir/input/dsp_unit.h (CIN-69)
+# Edison Design Group C++/C Front End - Version 6.6 (CIN-1)
+# Source file analysis completed (CIN-68)
+# Info: Completed transformation 'analyze' on solution 'solution.v1': elapsed time 15.64 seconds, memory usage 2245132kB, peak memory usage 2245132kB (SOL-9)
+# > solution design set [list $DESIGN_NAME ] -top
+# solution design set dsp_unit -top (HC-8)
+# > create_clocks_and_resets ; # See catapult_proc.tcl
+# Clock Spec: clk {-CLOCK_PERIOD 13 -CLOCK_HIGH_TIME 6.5 -CLOCK_OFFSET 0.000000 -CLOCK_UNCERTAINTY 0 -RESET_KIND async  -RESET_ASYNC_NAME rst_n -RESET_ASYNC_ACTIVE low}
+# /CLOCKS {clk {-CLOCK_PERIOD 13 -CLOCK_HIGH_TIME 6.5 -CLOCK_OFFSET 0.000000 -CLOCK_UNCERTAINTY 0 -RESET_KIND async  -RESET_ASYNC_NAME rst_n -RESET_ASYNC_ACTIVE low}}
+# > go compile
+# Info: Starting transformation 'compile' on solution 'dsp_unit.v1' (SOL-8)
+# Generating synthesis internal form... (CIN-3)
+# $PROJECT_HOME/../input/dsp_unit.h(13): Found top design routine 'dsp_unit' specified by directive (CIN-52)
+# $PROJECT_HOME/../input/dsp_unit.h(37): Inlining member function 'dsp_unit::dsp_unit' on object '' (CIN-64)
+# $PROJECT_HOME/../input/dsp_unit.cpp(4): Inlining member function 'dsp_unit::dsp_proc' on object '' (CIN-64)
+# $PROJECT_HOME/../input/dsp_unit.cpp(34): Inlining member function 'sc_core::sc_inout<sc_dt::sc_int<24>>::write' on object 'audio0_out' (CIN-64)
+# $PROJECT_HOME/../input/dsp_unit.cpp(35): Inlining member function 'sc_core::sc_inout<sc_dt::sc_int<24>>::write' on object 'audio1_out' (CIN-64)
+# $PROJECT_HOME/../input/dsp_unit.cpp(36): Inlining member function 'sc_core::sc_inout<bool>::write' on object 'tick_out' (CIN-64)
+# $PROJECT_HOME/../input/dsp_unit.cpp(184): Synthesizing method 'dsp_unit::read_inputs' (CIN-13)
+# $PROJECT_HOME/../input/dsp_unit.cpp(184): Inlining member function 'dsp_unit::read_inputs' on object 'this' (CIN-64)
+# $PROJECT_HOME/../input/dsp_unit.cpp(184): Optimizing block '/dsp_unit::read_inputs' ... (CIN-4)
+# $PROJECT_HOME/../input/dsp_unit.h(50): INOUT port 'this.level0_r' is only used as an input. (OPT-10)
+# $PROJECT_HOME/../input/dsp_unit.h(51): INOUT port 'this.level1_r' is only used as an input. (OPT-10)
+# $PROJECT_HOME/../input/dsp_unit.h(52): INOUT port 'this.filter_r' is only used as an input. (OPT-10)
+# $PROJECT_HOME/../input/dsp_unit.cpp(184): INOUT port 'filter' is only used as an output. (OPT-11)
+# $PROJECT_HOME/../input/dsp_unit.cpp(185): INOUT port 'level0' is only used as an output. (OPT-11)
+# $PROJECT_HOME/../input/dsp_unit.cpp(185): INOUT port 'level1' is only used as an output. (OPT-11)
+# $PROJECT_HOME/../input/dsp_unit.cpp(186): INOUT port 'audio0' is only used as an output. (OPT-11)
+# $PROJECT_HOME/../input/dsp_unit.cpp(186): INOUT port 'audio1' is only used as an output. (OPT-11)
+# $PROJECT_HOME/../input/dsp_unit.cpp(204): Synthesizing method 'dsp_unit::write_outputs' (CIN-13)
+# $PROJECT_HOME/../input/dsp_unit.cpp(204): Inlining member function 'dsp_unit::write_outputs' on object 'this' (CIN-64)
+# $PROJECT_HOME/../input/dsp_unit.cpp(207): Inlining member function 'sc_core::sc_inout<bool>::write' on object 'this.tick_out' (CIN-64)
+# $PROJECT_HOME/../input/dsp_unit.cpp(208): Inlining member function 'sc_core::sc_inout<sc_dt::sc_int<24>>::write' on object 'this.audio0_out' (CIN-64)
+# $PROJECT_HOME/../input/dsp_unit.cpp(209): Inlining member function 'sc_core::sc_inout<sc_dt::sc_int<24>>::write' on object 'this.audio1_out' (CIN-64)
+# $PROJECT_HOME/../input/dsp_unit.cpp(211): Inlining member function 'sc_core::sc_inout<bool>::write' on object 'this.tick_out' (CIN-64)
+# $PROJECT_HOME/../input/dsp_unit.cpp(204): Optimizing block '/dsp_unit::write_outputs' ... (CIN-4)
+# $PROJECT_HOME/../input/dsp_unit.cpp(216): Inlining member function 'dsp_unit::regs_proc' on object '' (CIN-64)
+# $PROJECT_HOME/../input/dsp_unit.h(13): Optimizing block '/dsp_unit' ... (CIN-4)
+# $PROJECT_HOME/../input/dsp_unit.cpp(55): Creating instance '/read_inputs():inst' of ModularIO 'dsp_unit::read_inputs' (CIN-204)
+# $PROJECT_HOME/../input/dsp_unit.cpp(176): Creating instance '/write_outputs():inst' of ModularIO 'dsp_unit::write_outputs' (CIN-204)
+# Info: $PROJECT_HOME/../input/dsp_unit.h(37): Partition '/dsp_unit/SC_CTOR' is found empty and is optimized away. (OPT-12)
+# $PROJECT_HOME/../input/dsp_unit.cpp(63): Loop '/dsp_unit/dsp_proc/scheduled_region:if:for' iterated at most 51 times. (LOOP-2)
+# $PROJECT_HOME/../input/dsp_unit.cpp(75): Loop '/dsp_unit/dsp_proc/SHIFT_LOOP' iterated at most 50 times. (LOOP-2)
+# $PROJECT_HOME/../input/dsp_unit.cpp(100): Loop '/dsp_unit/dsp_proc/FIR_ACC_LOOP' iterated at most 51 times. (LOOP-2)
+# $PROJECT_HOME/../input/dsp_unit.cpp(65): Detected constant initialization of array 'data0_r', optimizing loop 'scheduled_region:if:for' (LOOP-12)
+# $PROJECT_HOME/../input/dsp_unit.cpp(66): Detected constant initialization of array 'data1_r', optimizing loop 'scheduled_region:if:for' (LOOP-12)
+# $PROJECT_HOME/../input/dsp_unit.cpp(223): Loop '/dsp_unit/regs_proc/COEFF_RESET_LOOP' iterated at most 102 times. (LOOP-2)
+# $PROJECT_HOME/../input/dsp_unit.cpp(239): Loop '/dsp_unit/regs_proc/COEFF_WRITE_LOOP' iterated at most 102 times. (LOOP-2)
+# $PROJECT_HOME/../input/dsp_unit.cpp(184): INOUT port 'tick' is only used as an output. (OPT-11)
+# $PROJECT_HOME/../input/dsp_unit.cpp(184): INOUT port 'clr' is only used as an output. (OPT-11)
+# Design 'dsp_unit' was read (SOL-1)
+# Makefile for Original Design + Testbench written to file '../../../workdir/results/dsp_unit_CATAPULT_PROJECT/dsp_unit.v1/scverify/Verify_orig_cxx_osci.mk'
+# Makefile for Original Design + Testbench written to file '../../../workdir/results/dsp_unit_CATAPULT_PROJECT/dsp_unit.v1/scverify/Verify_orig_cxx_msim.mk'
+# Info: CDesignChecker Shell script written to '/homedir04/mmohamed25/DT3_2026/project/workdir/results/dsp_unit_CATAPULT_PROJECT/dsp_unit.v1/CDesignChecker/design_checker.sh'
+# Info: Completed transformation 'compile' on solution 'dsp_unit.v1': elapsed time 11.45 seconds, memory usage 2245132kB, peak memory usage 2245132kB (SOL-9)
+# Info: Design complexity at end of 'compile': Total ops = 479, Real ops = 37, Vars = 182 (SOL-21)
+# > if { [info exists CATAPULT_LIBPATHS ] } {
+# >     foreach l $CATAPULT_LIBPATHS {
+# > 	solution options set ComponentLibs/SearchPath  [list $l] -append
+# >     }
+# > }
+# > if { [info exists CATAPULT_TECHLIBPATHS ] } {
+# >     foreach l $CATAPULT_TECHLIBPATHS {
+# > 	solution options set ComponentLibs/TechLibSearchPath  [list $l] -append
+# >     }
+# > }
+# > if { [info exists CATAPULT_TECHLIBS ] } {
+# >     foreach l $CATAPULT_TECHLIBS {
+# > 	puts "solution library add ${l}"	
+# > 	eval "solution library add ${l}"	
+# >     }
+# > } else {
+# >     solution library add mgc_sample-065nm-dw_beh_dc -- -rtlsyntool DesignCompiler -vendor Sample -technology 065nm -Designware Yes
+# > }
+# solution library add NangateOpenCellLibrary_dc
+# > go libraries
+# Info: Starting transformation 'libraries' on solution 'dsp_unit.v1' (SOL-8)
+# Info: Please set ComponentLibs/TechLibSearchPath to enable flows that use downstream synthesis tools (LIB-220)
+# Reading component library '$MGC_HOME/pkgs/siflibs/mgc_busdefs.lib' [mgc_busdefs]... (LIB-49)
+# Reading component library '$MGC_HOME/pkgs/siflibs/stdops.lib' [STDOPS]... (LIB-49)
+# Reading component library '$MGC_HOME/pkgs/siflibs/fpops.lib' [FPOPS]... (LIB-49)
+# Reading component library '$MGC_HOME/pkgs/siflibs/ccs_dw_ops.lib' [CCS_DW_OPS]... (LIB-49)
+# Reading component library '$MGC_HOME/pkgs/siflibs/ccs_ioport.lib' [ccs_ioport]... (LIB-49)
+# Reading component library '$MGC_HOME/pkgs/siflibs/mgc_ioport.lib' [mgc_ioport]... (LIB-49)
+# Reading component library '$MGC_HOME/pkgs/cds_assert/assert_ops.lib' [ASSERT_OPS]... (LIB-49)
+# Reading component library '$MGC_HOME/pkgs/cds_assert/assert_mods.lib' [assert_mods]... (LIB-49)
+# Reading component library '$MGC_HOME/pkgs/siflibs/ccs_connections.lib' [ccs_connections]... (LIB-49)
+# Reading component library '/research/cas/public/DT3_2026/lib/catapult/NangateOpenCelLibrary_dc.lib' [NangateOpenCellLibrary_dc]... (LIB-49)
+# Info: Completed transformation 'libraries' on solution 'dsp_unit.v1': elapsed time 0.35 seconds, memory usage 2245132kB, peak memory usage 2245132kB (SOL-9)
+# Info: Design complexity at end of 'libraries': Total ops = 479, Real ops = 37, Vars = 182 (SOL-21)
+# > go assembly
+# Info: Starting transformation 'assembly' on solution 'dsp_unit.v1' (SOL-8)
+# $PROJECT_HOME/../input/dsp_unit.cpp(204): Loop '/dsp_unit::write_outputs/core/main' is left rolled. (LOOP-4)
+# $PROJECT_HOME/../input/dsp_unit.cpp(184): Loop '/dsp_unit::read_inputs/core/main' is left rolled. (LOOP-4)
+# Info: Completed transformation 'assembly' on solution 'dsp_unit.v1': elapsed time 0.37 seconds, memory usage 2245132kB, peak memory usage 2245132kB (SOL-9)
+# Info: Design complexity at end of 'assembly': Total ops = 481, Real ops = 37, Vars = 176 (SOL-21)
+# > if { [info exists CATAPULT_DIRECTIVE_FILE ] } {
+# >     source $CATAPULT_DIRECTIVE_FILE
+# > }
+# Info: Branching solution 'solution.v1' at state 'initial' (PRJ-2)
+# Info: Starting transformation 'analyze' on solution 'solution.v1' (SOL-8)
+# Front End called with arguments: -- /homedir04/mmohamed25/DT3_2026/project/workdir/input/dsp_unit.cpp /homedir04/mmohamed25/DT3_2026/project/workdir/input/dsp_unit_top.h /homedir04/mmohamed25/DT3_2026/project/workdir/input/dsp_unit_tb.h /homedir04/mmohamed25/DT3_2026/project/workdir/input/dsp_unit.h (CIN-69)
+# Edison Design Group C++/C Front End - Version 6.6 (CIN-1)
+# Source file analysis completed (CIN-68)
+# Info: Completed transformation 'analyze' on solution 'solution.v1': elapsed time 17.22 seconds, memory usage 2310668kB, peak memory usage 2310668kB (SOL-9)
+# solution design set dsp_unit -top (HC-8)
+# Info: Starting transformation 'compile' on solution 'dsp_unit.v2' (SOL-8)
+# Generating synthesis internal form... (CIN-3)
+# $PROJECT_HOME/../input/dsp_unit.h(13): Found top design routine 'dsp_unit' specified by directive (CIN-52)
+# $PROJECT_HOME/../input/dsp_unit.h(37): Inlining member function 'dsp_unit::dsp_unit' on object '' (CIN-64)
+# Warning: $PROJECT_HOME/../input/dsp_unit.h(44): Method sc_module::dont_initialize is not supported for synthesis and will be ignored, this may cause a simulation mismatch (CIN-108)
+# $PROJECT_HOME/../input/dsp_unit.cpp(4): Inlining member function 'dsp_unit::dsp_proc' on object '' (CIN-64)
+# $PROJECT_HOME/../input/dsp_unit.cpp(34): Inlining member function 'sc_core::sc_inout<sc_dt::sc_int<24>>::write' on object 'audio0_out' (CIN-64)
+# $PROJECT_HOME/../input/dsp_unit.cpp(35): Inlining member function 'sc_core::sc_inout<sc_dt::sc_int<24>>::write' on object 'audio1_out' (CIN-64)
+# $PROJECT_HOME/../input/dsp_unit.cpp(36): Inlining member function 'sc_core::sc_inout<bool>::write' on object 'tick_out' (CIN-64)
+# $PROJECT_HOME/../input/dsp_unit.cpp(184): Synthesizing method 'dsp_unit::read_inputs' (CIN-13)
+# $PROJECT_HOME/../input/dsp_unit.cpp(184): Inlining member function 'dsp_unit::read_inputs' on object 'this' (CIN-64)
+# $PROJECT_HOME/../input/dsp_unit.cpp(184): Optimizing block '/dsp_unit::read_inputs' ... (CIN-4)
+# $PROJECT_HOME/../input/dsp_unit.h(50): INOUT port 'this.level0_r' is only used as an input. (OPT-10)
+# $PROJECT_HOME/../input/dsp_unit.h(51): INOUT port 'this.level1_r' is only used as an input. (OPT-10)
+# $PROJECT_HOME/../input/dsp_unit.h(52): INOUT port 'this.filter_r' is only used as an input. (OPT-10)
+# $PROJECT_HOME/../input/dsp_unit.cpp(184): INOUT port 'filter' is only used as an output. (OPT-11)
+# $PROJECT_HOME/../input/dsp_unit.cpp(185): INOUT port 'level0' is only used as an output. (OPT-11)
+# $PROJECT_HOME/../input/dsp_unit.cpp(185): INOUT port 'level1' is only used as an output. (OPT-11)
+# $PROJECT_HOME/../input/dsp_unit.cpp(186): INOUT port 'audio0' is only used as an output. (OPT-11)
+# $PROJECT_HOME/../input/dsp_unit.cpp(186): INOUT port 'audio1' is only used as an output. (OPT-11)
+# $PROJECT_HOME/../input/dsp_unit.cpp(204): Synthesizing method 'dsp_unit::write_outputs' (CIN-13)
+# $PROJECT_HOME/../input/dsp_unit.cpp(204): Inlining member function 'dsp_unit::write_outputs' on object 'this' (CIN-64)
+# $PROJECT_HOME/../input/dsp_unit.cpp(207): Inlining member function 'sc_core::sc_inout<bool>::write' on object 'this.tick_out' (CIN-64)
+# $PROJECT_HOME/../input/dsp_unit.cpp(208): Inlining member function 'sc_core::sc_inout<sc_dt::sc_int<24>>::write' on object 'this.audio0_out' (CIN-64)
+# $PROJECT_HOME/../input/dsp_unit.cpp(209): Inlining member function 'sc_core::sc_inout<sc_dt::sc_int<24>>::write' on object 'this.audio1_out' (CIN-64)
+# $PROJECT_HOME/../input/dsp_unit.cpp(211): Inlining member function 'sc_core::sc_inout<bool>::write' on object 'this.tick_out' (CIN-64)
+# $PROJECT_HOME/../input/dsp_unit.cpp(204): Optimizing block '/dsp_unit::write_outputs' ... (CIN-4)
+# $PROJECT_HOME/../input/dsp_unit.cpp(216): Inlining member function 'dsp_unit::regs_proc' on object '' (CIN-64)
+# $PROJECT_HOME/../input/dsp_unit.h(13): Optimizing block '/dsp_unit' ... (CIN-4)
+# $PROJECT_HOME/../input/dsp_unit.cpp(55): Creating instance '/read_inputs():inst' of ModularIO 'dsp_unit::read_inputs' (CIN-204)
+# $PROJECT_HOME/../input/dsp_unit.cpp(176): Creating instance '/write_outputs():inst' of ModularIO 'dsp_unit::write_outputs' (CIN-204)
+# Info: $PROJECT_HOME/../input/dsp_unit.h(37): Partition '/dsp_unit/SC_CTOR' is found empty and is optimized away. (OPT-12)
+# $PROJECT_HOME/../input/dsp_unit.cpp(63): Loop '/dsp_unit/dsp_proc/scheduled_region:if:for' iterated at most 51 times. (LOOP-2)
+# $PROJECT_HOME/../input/dsp_unit.cpp(75): Loop '/dsp_unit/dsp_proc/SHIFT_LOOP' iterated at most 50 times. (LOOP-2)
+# $PROJECT_HOME/../input/dsp_unit.cpp(100): Loop '/dsp_unit/dsp_proc/FIR_ACC_LOOP' iterated at most 51 times. (LOOP-2)
+# $PROJECT_HOME/../input/dsp_unit.cpp(65): Detected constant initialization of array 'data0_r', optimizing loop 'scheduled_region:if:for' (LOOP-12)
+# $PROJECT_HOME/../input/dsp_unit.cpp(66): Detected constant initialization of array 'data1_r', optimizing loop 'scheduled_region:if:for' (LOOP-12)
+# $PROJECT_HOME/../input/dsp_unit.cpp(223): Loop '/dsp_unit/regs_proc/COEFF_RESET_LOOP' iterated at most 102 times. (LOOP-2)
+# $PROJECT_HOME/../input/dsp_unit.cpp(239): Loop '/dsp_unit/regs_proc/COEFF_WRITE_LOOP' iterated at most 102 times. (LOOP-2)
+# $PROJECT_HOME/../input/dsp_unit.cpp(184): INOUT port 'tick' is only used as an output. (OPT-11)
+# $PROJECT_HOME/../input/dsp_unit.cpp(184): INOUT port 'clr' is only used as an output. (OPT-11)
+# Design 'dsp_unit' was read (SOL-1)
+# Makefile for Original Design + Testbench written to file '../../../workdir/results/dsp_unit_CATAPULT_PROJECT/dsp_unit.v2/scverify/Verify_orig_cxx_osci.mk'
+# Makefile for Original Design + Testbench written to file '../../../workdir/results/dsp_unit_CATAPULT_PROJECT/dsp_unit.v2/scverify/Verify_orig_cxx_msim.mk'
+# Info: CDesignChecker Shell script written to '/homedir04/mmohamed25/DT3_2026/project/workdir/results/dsp_unit_CATAPULT_PROJECT/dsp_unit.v2/CDesignChecker/design_checker.sh'
+# Info: Completed transformation 'compile' on solution 'dsp_unit.v2': elapsed time 13.29 seconds, memory usage 2310668kB, peak memory usage 2310668kB (SOL-9)
+# Info: Design complexity at end of 'compile': Total ops = 479, Real ops = 37, Vars = 182 (SOL-21)
+# Info: Starting transformation 'libraries' on solution 'dsp_unit.v2' (SOL-8)
+# Info: Please set ComponentLibs/TechLibSearchPath to enable flows that use downstream synthesis tools (LIB-220)
+# Info: Completed transformation 'libraries' on solution 'dsp_unit.v2': elapsed time 0.24 seconds, memory usage 2310668kB, peak memory usage 2310668kB (SOL-9)
+# Info: Design complexity at end of 'libraries': Total ops = 479, Real ops = 37, Vars = 182 (SOL-21)
+# Info: Starting transformation 'assembly' on solution 'dsp_unit.v2' (SOL-8)
+# $PROJECT_HOME/../input/dsp_unit.cpp(204): Loop '/dsp_unit::write_outputs/core/main' is left rolled. (LOOP-4)
+# $PROJECT_HOME/../input/dsp_unit.cpp(184): Loop '/dsp_unit::read_inputs/core/main' is left rolled. (LOOP-4)
+# Info: Completed transformation 'assembly' on solution 'dsp_unit.v2': elapsed time 0.44 seconds, memory usage 2310668kB, peak memory usage 2310668kB (SOL-9)
+# Info: Design complexity at end of 'assembly': Total ops = 481, Real ops = 37, Vars = 176 (SOL-21)
+# Info: Starting transformation 'loops' on solution 'dsp_unit.v2' (SOL-8)
+# $PROJECT_HOME/../input/dsp_unit.cpp(75): Loop '/dsp_unit/dsp_proc/SHIFT_LOOP' is being fully unrolled (50 times). (LOOP-7)
+# $PROJECT_HOME/../input/dsp_unit.cpp(100): Loop '/dsp_unit/dsp_proc/FIR_ACC_LOOP' is left rolled. (LOOP-4)
+# $PROJECT_HOME/../input/dsp_unit.cpp(49): Loop '/dsp_unit/dsp_proc/PROCESS_LOOP' is left rolled. (LOOP-4)
+# $PROJECT_HOME/../input/dsp_unit.cpp(239): Loop '/dsp_unit/regs_proc/COEFF_WRITE_LOOP' is being fully unrolled (102 times). (LOOP-7)
+# $PROJECT_HOME/../input/dsp_unit.h(42): Loop '/dsp_unit/regs_proc/main' is left rolled. (LOOP-4)
+# $PROJECT_HOME/../input/dsp_unit.cpp(204): Loop '/dsp_unit/dsp_unit::write_outputs/core/main' is left rolled. (LOOP-4)
+# $PROJECT_HOME/../input/dsp_unit.cpp(189): Loop '/dsp_unit/dsp_unit::read_inputs/core/INPUT_LOOP' is left rolled. (LOOP-4)
+# $PROJECT_HOME/../input/dsp_unit.cpp(184): Loop '/dsp_unit/dsp_unit::read_inputs/core/main' is left rolled. (LOOP-4)
+# Info: Completed transformation 'loops' on solution 'dsp_unit.v2': elapsed time 0.74 seconds, memory usage 2310668kB, peak memory usage 2310668kB (SOL-9)
+# Info: Design complexity at end of 'loops': Total ops = 663, Real ops = 30, Vars = 176 (SOL-21)
+# Info: Starting transformation 'memories' on solution 'dsp_unit.v2' (SOL-8)
+# $PROJECT_HOME/../input/dsp_unit.cpp(184): I/O-Port Resource '/dsp_unit/dsp_unit::read_inputs/tick:rsc' (from var: tick) mapped to 'mgc_ioport.mgc_out_dreg' (size: 1). (MEM-2)
+# $PROJECT_HOME/../input/dsp_unit.cpp(184): I/O-Port Resource '/dsp_unit/dsp_unit::read_inputs/clr:rsc' (from var: clr) mapped to 'mgc_ioport.mgc_out_dreg' (size: 1). (MEM-2)
+# $PROJECT_HOME/../input/dsp_unit.cpp(184): I/O-Port Resource '/dsp_unit/dsp_unit::read_inputs/filter:rsc' (from var: filter) mapped to 'mgc_ioport.mgc_out_dreg' (size: 1). (MEM-2)
+# $PROJECT_HOME/../input/dsp_unit.cpp(185): I/O-Port Resource '/dsp_unit/dsp_unit::read_inputs/level0:rsc' (from var: level0) mapped to 'mgc_ioport.mgc_out_dreg' (size: 16). (MEM-2)
+# $PROJECT_HOME/../input/dsp_unit.cpp(185): I/O-Port Resource '/dsp_unit/dsp_unit::read_inputs/level1:rsc' (from var: level1) mapped to 'mgc_ioport.mgc_out_dreg' (size: 16). (MEM-2)
+# $PROJECT_HOME/../input/dsp_unit.cpp(186): I/O-Port Resource '/dsp_unit/dsp_unit::read_inputs/audio0:rsc' (from var: audio0) mapped to 'mgc_ioport.mgc_out_dreg' (size: 24). (MEM-2)
+# $PROJECT_HOME/../input/dsp_unit.cpp(186): I/O-Port Resource '/dsp_unit/dsp_unit::read_inputs/audio1:rsc' (from var: audio1) mapped to 'mgc_ioport.mgc_out_dreg' (size: 24). (MEM-2)
+# $PROJECT_HOME/../input/dsp_unit.cpp(184): I/O-Port Resource '/dsp_unit/dsp_unit::read_inputs/ccs_ccore_start:rsc' (from var: ccs_ccore_start) mapped to 'ccs_ioport.ccs_in' (size: 1). (MEM-2)
+# $PROJECT_HOME/../input/dsp_unit.cpp(204): I/O-Port Resource '/dsp_unit/dsp_unit::write_outputs/dsp0:rsc' (from var: dsp0) mapped to 'ccs_ioport.ccs_in' (size: 24). (MEM-2)
+# $PROJECT_HOME/../input/dsp_unit.cpp(204): I/O-Port Resource '/dsp_unit/dsp_unit::write_outputs/dsp1:rsc' (from var: dsp1) mapped to 'ccs_ioport.ccs_in' (size: 24). (MEM-2)
+# $PROJECT_HOME/../input/dsp_unit.cpp(204): I/O-Port Resource '/dsp_unit/dsp_unit::write_outputs/ccs_ccore_start:rsc' (from var: ccs_ccore_start) mapped to 'ccs_ioport.ccs_in' (size: 1). (MEM-2)
+# Info: Completed transformation 'memories' on solution 'dsp_unit.v2': elapsed time 1.19 seconds, memory usage 2310668kB, peak memory usage 2310668kB (SOL-9)
+# Info: Design complexity at end of 'memories': Total ops = 763, Real ops = 30, Vars = 276 (SOL-21)
+# Info: Starting transformation 'cluster' on solution 'dsp_unit.v2' (SOL-8)
+# Warning: ROM clustering skipped Technology Library(ies) required for Prototyping not found (CLUSTER-24)
+# Module 'dsp_unit__write_outputs_8a71e3ff708023cd69857becb17061a07429_0' in the cache is valid & accepted for CCORE 'dsp_unit__write_outputs_8a71e3ff708023cd69857becb17061a07429' (TD-3)
+# Reading solution library '/homedir04/mmohamed25/DT3_2026/project/workdir/results/dsp_unit_CATAPULT_PROJECT/td_ccore_solutions/dsp_unit__write_outputs_8a71e3ff708023cd69857becb17061a07429_0/.sif/solIndex_2_3fcf9844-6d09-439c-abad-975d19a3348e.xml' ... (LIB-129)
+# Module for CCORE 'dsp_unit__write_outputs_8a71e3ff708023cd69857becb17061a07429' has been successfully synthesized (TD-4)
+# Module 'dsp_unit__write_outputs_8a71e3ff708023cd69857becb17061a07429_0' in the cache is valid & accepted for CCORE 'dsp_unit__write_outputs_8a71e3ff708023cd69857becb17061a07429' (TD-3)
+# Module for CCORE 'dsp_unit__write_outputs_8a71e3ff708023cd69857becb17061a07429' has been successfully synthesized (TD-4)
+# Module 'dsp_unit__write_outputs_8a71e3ff708023cd69857becb17061a07429_0' in the cache is valid & accepted for CCORE 'dsp_unit__write_outputs_8a71e3ff708023cd69857becb17061a07429' (TD-3)
+# Module for CCORE 'dsp_unit__write_outputs_8a71e3ff708023cd69857becb17061a07429' has been successfully synthesized (TD-4)
+# Module 'dsp_unit__write_outputs_8a71e3ff708023cd69857becb17061a07429_0' in the cache is valid & accepted for CCORE 'dsp_unit__write_outputs_8a71e3ff708023cd69857becb17061a07429' (TD-3)
+# Module for CCORE 'dsp_unit__write_outputs_8a71e3ff708023cd69857becb17061a07429' has been successfully synthesized (TD-4)
+# Module 'dsp_unit__read_inputs_50278992d9c5b8b7020a664c00d6112ea7f5_0' in the cache is valid & accepted for CCORE 'dsp_unit__read_inputs_50278992d9c5b8b7020a664c00d6112ea7f5' (TD-3)
+# Reading solution library '/homedir04/mmohamed25/DT3_2026/project/workdir/results/dsp_unit_CATAPULT_PROJECT/td_ccore_solutions/dsp_unit__read_inputs_50278992d9c5b8b7020a664c00d6112ea7f5_0/.sif/solIndex_2_f364860f-9a9f-4e8e-86ca-e4a49ce461ef.xml' ... (LIB-129)
+# Module for CCORE 'dsp_unit__read_inputs_50278992d9c5b8b7020a664c00d6112ea7f5' has been successfully synthesized (TD-4)
+# Module 'dsp_unit__read_inputs_50278992d9c5b8b7020a664c00d6112ea7f5_0' in the cache is valid & accepted for CCORE 'dsp_unit__read_inputs_50278992d9c5b8b7020a664c00d6112ea7f5' (TD-3)
+# Module for CCORE 'dsp_unit__read_inputs_50278992d9c5b8b7020a664c00d6112ea7f5' has been successfully synthesized (TD-4)
+# Module 'dsp_unit__read_inputs_50278992d9c5b8b7020a664c00d6112ea7f5_0' in the cache is valid & accepted for CCORE 'dsp_unit__read_inputs_50278992d9c5b8b7020a664c00d6112ea7f5' (TD-3)
+# Module for CCORE 'dsp_unit__read_inputs_50278992d9c5b8b7020a664c00d6112ea7f5' has been successfully synthesized (TD-4)
+# Module 'dsp_unit__read_inputs_50278992d9c5b8b7020a664c00d6112ea7f5_0' in the cache is valid & accepted for CCORE 'dsp_unit__read_inputs_50278992d9c5b8b7020a664c00d6112ea7f5' (TD-3)
+# Module for CCORE 'dsp_unit__read_inputs_50278992d9c5b8b7020a664c00d6112ea7f5' has been successfully synthesized (TD-4)
+# Info: Completed transformation 'cluster' on solution 'dsp_unit.v2': elapsed time 1.19 seconds, memory usage 2310668kB, peak memory usage 2310668kB (SOL-9)
+# Info: Design complexity at end of 'cluster': Total ops = 720, Real ops = 28, Vars = 243 (SOL-21)
+# Info: Starting transformation 'architect' on solution 'dsp_unit.v2' (SOL-8)
+# $PROJECT_HOME/../input/dsp_unit.h(42): Deleting operations after LOOP "main" dsp_unit.h(42,6,1) without exit (OPT-1)
+# Design 'dsp_unit' contains '563' real operations. (SOL-11)
+# Warning: Extrapolation detected. Script '/homedir04/mmohamed25/DT3_2026/project/workdir/results/dsp_unit_CATAPULT_PROJECT/dsp_unit.v2/adjust_char_library.tcl' generated. (LIB-142)
+# Info: Completed transformation 'architect' on solution 'dsp_unit.v2': elapsed time 1.82 seconds, memory usage 2310668kB, peak memory usage 2310668kB (SOL-9)
+# Info: Design complexity at end of 'architect': Total ops = 2730, Real ops = 563, Vars = 448 (SOL-21)
+# Info: Starting transformation 'allocate' on solution 'dsp_unit.v2' (SOL-8)
+# Performing concurrent resource allocation and scheduling on '/dsp_unit/dsp_proc' (CRAAS-1)
+# Info: Select qualified components for data operations ... (CRAAS-3)
+# Info: Apply resource constraints on data operations ... (CRAAS-4)
+# $PROJECT_HOME/../input/dsp_unit.cpp(100): Prescheduled LOOP '/dsp_unit/dsp_proc/FIR_ACC_LOOP' (1 c-steps) (SCHD-7)
+# $PROJECT_HOME/../input/dsp_unit.cpp(49): Prescheduled LOOP '/dsp_unit/dsp_proc/PROCESS_LOOP' (4 c-steps) (SCHD-7)
+# $PROJECT_HOME/../input/dsp_unit.cpp(4): Prescheduled LOOP '/dsp_unit/dsp_proc/dsp_proc:rlp' (1 c-steps) (SCHD-7)
+# $PROJECT_HOME/../input/dsp_unit.cpp(4): Prescheduled SEQUENTIAL '/dsp_unit/dsp_proc' (total length 56 c-steps) (SCHD-8)
+# Info: $PROJECT_HOME/../input/dsp_unit.cpp(4): Initial schedule of SEQUENTIAL '/dsp_unit/dsp_proc': Latency = 52, Area (Datapath, Register, Total) = 29605.72, 14236.32, 43842.04 (CRAAS-11)
+# At least one feasible schedule exists. (CRAAS-9)
+# Info: $PROJECT_HOME/../input/dsp_unit.cpp(4): Final schedule of SEQUENTIAL '/dsp_unit/dsp_proc': Latency = 52, Area (Datapath, Register, Total) = 29605.72, 14236.32, 43842.04 (CRAAS-12)
+# Resource allocation and scheduling done. (CRAAS-2)
+# Performing concurrent resource allocation and scheduling on '/dsp_unit/regs_proc' (CRAAS-1)
+# Info: Select qualified components for data operations ... (CRAAS-3)
+# Info: Apply resource constraints on data operations ... (CRAAS-4)
+# $PROJECT_HOME/../input/dsp_unit.h(42): Prescheduled LOOP '/dsp_unit/regs_proc/main' (1 c-steps) (SCHD-7)
+# $PROJECT_HOME/../input/dsp_unit.cpp(216): Prescheduled LOOP '/dsp_unit/regs_proc/regs_proc:rlp' (0 c-steps) (SCHD-7)
+# $PROJECT_HOME/../input/dsp_unit.cpp(216): Prescheduled SEQUENTIAL '/dsp_unit/regs_proc' (total length 1 c-steps) (SCHD-8)
+# Info: $PROJECT_HOME/../input/dsp_unit.cpp(216): Initial schedule of SEQUENTIAL '/dsp_unit/regs_proc': Latency = 1, Area (Datapath, Register, Total) = 0.00, 0.00, 0.00 (CRAAS-11)
+# At least one feasible schedule exists. (CRAAS-9)
+# Info: $PROJECT_HOME/../input/dsp_unit.cpp(216): Final schedule of SEQUENTIAL '/dsp_unit/regs_proc': Latency = 1, Area (Datapath, Register, Total) = 0.00, 0.00, 0.00 (CRAAS-12)
+# Resource allocation and scheduling done. (CRAAS-2)
+# Netlist written to file 'schedule.gnt' (NET-4)
+# Info: Completed transformation 'allocate' on solution 'dsp_unit.v2': elapsed time 1.42 seconds, memory usage 2310668kB, peak memory usage 2310668kB (SOL-9)
+# Info: Design complexity at end of 'allocate': Total ops = 2730, Real ops = 563, Vars = 448 (SOL-21)
+# Info: Starting transformation 'schedule' on solution 'dsp_unit.v2' (SOL-8)
+# Performing concurrent resource allocation and scheduling on '/dsp_unit/dsp_proc' (CRAAS-1)
+# Performing concurrent resource allocation and scheduling on '/dsp_unit/regs_proc' (CRAAS-1)
+# Info: $PROJECT_HOME/../input/dsp_unit.cpp(55): Not creating buffer for wait controller for component 'read_inputs():mio' (SCHD-46)
+# Info: $PROJECT_HOME/../input/dsp_unit.cpp(55): Not creating buffer for wait controller for component 'read_inputs():mio' (SCHD-46)
+# Info: $PROJECT_HOME/../input/dsp_unit.cpp(55): Not creating buffer for wait controller for component 'read_inputs():mio' (SCHD-46)
+# Info: $PROJECT_HOME/../input/dsp_unit.cpp(55): Not creating buffer for wait controller for component 'read_inputs():mio' (SCHD-46)
+# Info: $PROJECT_HOME/../input/dsp_unit.cpp(55): Not creating buffer for wait controller for component 'read_inputs():mio' (SCHD-46)
+# Info: $PROJECT_HOME/../input/dsp_unit.cpp(55): Not creating buffer for wait controller for component 'read_inputs():mio' (SCHD-46)
+# Info: $PROJECT_HOME/../input/dsp_unit.cpp(55): Not creating buffer for wait controller for component 'read_inputs():mio' (SCHD-46)
+# Info: $PROJECT_HOME/../input/dsp_unit.cpp(100): Loop '/dsp_unit/dsp_proc/FIR_ACC_LOOP' is pipelined with initiation interval 1 and no flushing (SCHD-43)
+# Info: Running transformation 'schedule' on solution 'dsp_unit.v2': elapsed time 29.90 seconds, memory usage 2310668kB, peak memory usage 2310668kB (SOL-15)
+# Info: Running transformation 'schedule' on solution 'dsp_unit.v2': elapsed time 55.66 seconds, memory usage 2310668kB, peak memory usage 2310668kB (SOL-15)
+# Report written to file 'cycle.rpt'
+# Info: Completed transformation 'schedule' on solution 'dsp_unit.v2': elapsed time 77.36 seconds, memory usage 2310668kB, peak memory usage 2310668kB (SOL-9)
+# Info: Design complexity at end of 'schedule': Total ops = 2361, Real ops = 471, Vars = 731 (SOL-21)
+# Info: Starting transformation 'dpfsm' on solution 'dsp_unit.v2' (SOL-8)
+# Performing FSM extraction... (FSM-1)
+# Info: Completed transformation 'dpfsm' on solution 'dsp_unit.v2': elapsed time 9.76 seconds, memory usage 2310668kB, peak memory usage 2310668kB (SOL-9)
+# Info: Design complexity at end of 'dpfsm': Total ops = 1624, Real ops = 706, Vars = 536 (SOL-21)
+# Info: Starting transformation 'instance' on solution 'dsp_unit.v2' (SOL-8)
+# Netlist written to file 'schematic.nlv' (NET-4)
+# Info: Completed transformation 'instance' on solution 'dsp_unit.v2': elapsed time 2.09 seconds, memory usage 2310668kB, peak memory usage 2310668kB (SOL-9)
+# Info: Design complexity at end of 'instance': Total ops = 1642, Real ops = 653, Vars = 1620 (SOL-21)
+# Info: Starting transformation 'extract' on solution 'dsp_unit.v2' (SOL-8)
+# Report written to file 'rtl.rpt'
+# Generating SCVerify ccs_wrapper_dsp_unit.vhdl
+# Netlist written to file 'rtl.vhdl' (NET-4)
+# generate concat
+# order file name is: rtl.vhdl_order.txt
+# Add dependent file: /sw/rhel7/siemens/catapult_2024.2_1/Mgc_home/pkgs/siflibs/mgc_out_dreg_v2.vhd
+# Add dependent file: /sw/rhel7/siemens/catapult_2024.2_1/Mgc_home/pkgs/siflibs/ccs_in_v1.vhd
+# Add dependent file: /sw/rhel7/siemens/catapult_2024.2_1/Mgc_home/pkgs/siflibs/ccs_sync_out_vld_v1.vhd
+# Add dependent file: ../../../workdir/results/dsp_unit_CATAPULT_PROJECT/td_ccore_solutions/dsp_unit__read_inputs_50278992d9c5b8b7020a664c00d6112ea7f5_0/rtl.vhdl
+# Add dependent file: ../../../workdir/results/dsp_unit_CATAPULT_PROJECT/td_ccore_solutions/dsp_unit__write_outputs_8a71e3ff708023cd69857becb17061a07429_0/rtl.vhdl
+# Add dependent file: ../../../workdir/results/dsp_unit_CATAPULT_PROJECT/dsp_unit.v2/rtl.vhdl
+# Finished writing concatenated file: /homedir04/mmohamed25/DT3_2026/project/workdir/results/dsp_unit_CATAPULT_PROJECT/dsp_unit.v2/concat_rtl.vhdl
+# order file name is: rtl.vhdl_order_sim.txt
+# Add dependent file: /sw/rhel7/siemens/catapult_2024.2_1/Mgc_home/pkgs/siflibs/mgc_out_dreg_v2.vhd
+# Add dependent file: /sw/rhel7/siemens/catapult_2024.2_1/Mgc_home/pkgs/siflibs/ccs_in_v1.vhd
+# Add dependent file: /sw/rhel7/siemens/catapult_2024.2_1/Mgc_home/pkgs/siflibs/ccs_sync_out_vld_v1.vhd
+# Add dependent file: ../../../workdir/results/dsp_unit_CATAPULT_PROJECT/td_ccore_solutions/dsp_unit__read_inputs_50278992d9c5b8b7020a664c00d6112ea7f5_0/rtl.vhdl
+# Add dependent file: ../../../workdir/results/dsp_unit_CATAPULT_PROJECT/td_ccore_solutions/dsp_unit__write_outputs_8a71e3ff708023cd69857becb17061a07429_0/rtl.vhdl
+# Add dependent file: ../../../workdir/results/dsp_unit_CATAPULT_PROJECT/dsp_unit.v2/rtl.vhdl
+# Finished writing concatenated simulation file: /homedir04/mmohamed25/DT3_2026/project/workdir/results/dsp_unit_CATAPULT_PROJECT/dsp_unit.v2/concat_sim_rtl.vhdl
+# Generating SCVerify SystemC wrapper
+# Info: Wrote wave database file to /homedir04/mmohamed25/DT3_2026/project/workdir/results/dsp_unit_CATAPULT_PROJECT/dsp_unit.v2/scverify/ccs_wave_signals.dat
+# Makefile for RTL VHDL written to file './scverify/Verify_rtl_vhdl_msim.mk'
+# Makefile for Concat concat_sim_rtl VHDL written to file './scverify/Verify_concat_sim_rtl_vhdl_msim.mk'
+# Generating SCVerify ccs_wrapper_dsp_unit.v
+# Netlist written to file 'rtl.v' (NET-4)
+# generate concat
+# order file name is: rtl.v_order.txt
+# Add dependent file: /sw/rhel7/siemens/catapult_2024.2_1/Mgc_home/pkgs/siflibs/mgc_out_dreg_v2.v
+# Add dependent file: /sw/rhel7/siemens/catapult_2024.2_1/Mgc_home/pkgs/siflibs/ccs_in_v1.v
+# Add dependent file: /sw/rhel7/siemens/catapult_2024.2_1/Mgc_home/pkgs/siflibs/ccs_sync_out_vld_v1.v
+# Add dependent file: ../../../workdir/results/dsp_unit_CATAPULT_PROJECT/td_ccore_solutions/dsp_unit__read_inputs_50278992d9c5b8b7020a664c00d6112ea7f5_0/rtl.v
+# Add dependent file: ../../../workdir/results/dsp_unit_CATAPULT_PROJECT/td_ccore_solutions/dsp_unit__write_outputs_8a71e3ff708023cd69857becb17061a07429_0/rtl.v
+# Add dependent file: ../../../workdir/results/dsp_unit_CATAPULT_PROJECT/dsp_unit.v2/rtl.v
+# Finished writing concatenated file: /homedir04/mmohamed25/DT3_2026/project/workdir/results/dsp_unit_CATAPULT_PROJECT/dsp_unit.v2/concat_rtl.v
+# order file name is: rtl.v_order_sim.txt
+# Add dependent file: /sw/rhel7/siemens/catapult_2024.2_1/Mgc_home/pkgs/siflibs/mgc_out_dreg_v2.v
+# Add dependent file: /sw/rhel7/siemens/catapult_2024.2_1/Mgc_home/pkgs/siflibs/ccs_in_v1.v
+# Add dependent file: /sw/rhel7/siemens/catapult_2024.2_1/Mgc_home/pkgs/siflibs/ccs_sync_out_vld_v1.v
+# Add dependent file: ../../../workdir/results/dsp_unit_CATAPULT_PROJECT/td_ccore_solutions/dsp_unit__read_inputs_50278992d9c5b8b7020a664c00d6112ea7f5_0/rtl.v
+# Add dependent file: ../../../workdir/results/dsp_unit_CATAPULT_PROJECT/td_ccore_solutions/dsp_unit__write_outputs_8a71e3ff708023cd69857becb17061a07429_0/rtl.v
+# Add dependent file: ../../../workdir/results/dsp_unit_CATAPULT_PROJECT/dsp_unit.v2/rtl.v
+# Finished writing concatenated simulation file: /homedir04/mmohamed25/DT3_2026/project/workdir/results/dsp_unit_CATAPULT_PROJECT/dsp_unit.v2/concat_sim_rtl.v
+# Makefile for RTL Verilog written to file './scverify/Verify_rtl_v_msim.mk'
+# Makefile for Concat concat_sim_rtl Verilog written to file './scverify/Verify_concat_sim_rtl_v_msim.mk'
+# Info: Completed transformation 'extract' on solution 'dsp_unit.v2': elapsed time 4.73 seconds, memory usage 2310668kB, peak memory usage 2310668kB (SOL-9)
+# Info: Design complexity at end of 'extract': Total ops = 1757, Real ops = 668, Vars = 585 (SOL-21)
+# > go extract
+# > set solution_dir [solution get /SOLUTION_DIR]
+# /homedir04/mmohamed25/DT3_2026/project/workdir/results/dsp_unit_CATAPULT_PROJECT/dsp_unit.v2
+# > exec cat ${solution_dir}/concat_rtl.v | sed  "s/module ${DESIGN_NAME}\ /module ${DESIGN_NAME}_rtl\ /" > ${LAUNCH_DIR}/${HLS_RTL_FILE}
+# > save_reports
+# Report written to file '/homedir04/mmohamed25/DT3_2026/project/workdir/reports/2_catapult_dsp_unit_dsp_unit.v2_solution_report.txt'
+# Report written to file '/homedir04/mmohamed25/DT3_2026/project/workdir/reports/2_catapult_dsp_unit_dsp_unit.v2_area.txt'
+# Report written to file '/homedir04/mmohamed25/DT3_2026/project/workdir/reports/2_catapult_dsp_unit_dsp_unit.v2_timing.txt'
+# Report written to file '/homedir04/mmohamed25/DT3_2026/project/workdir/reports/2_catapult_dsp_unit_dsp_unit.v2_performance.txt'
+# Report written to file '/homedir04/mmohamed25/DT3_2026/project/workdir/reports/2_catapult_dsp_unit_dsp_unit.v2_registers.txt'
+# Report written to file '/homedir04/mmohamed25/DT3_2026/project/workdir/reports/2_catapult_dsp_unit_dsp_unit.v2_ops.txt'
+# > if { [info exists CATAPULT_POST_SCRIPT ] } {
+# >     eval $CATAPULT_POST_SCRIPT
+# > }
+# > project save
+# > end dofile ./scripts/catapult_hls.tcl
+quit
+// Finish time Fri Apr 10 02:16:49 2026, time elapsed 3:38, peak memory 2.34GB, exit status 0

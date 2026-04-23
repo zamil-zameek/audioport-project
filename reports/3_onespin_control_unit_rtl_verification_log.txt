@@ -1,0 +1,1036 @@
+# 
+# OneSpin 360 Message Log
+#  version      = 2022.4
+#  build_date   = Oct 23 2022 08:52:49
+#  license_mode = mgls
+#  mgls         = 1.5.1
+#  tool         = onespin
+#  platform     = Linux_x86_64
+#  os           = Linux
+#  os_version   = 4.18.0-553.80.1.el8_10.x86_64
+# 
+-I- Logging messages into '/homedir04/mmohamed25/DT3_2026/project/reports/3_onespin_control_unit_rtl_verification_log.txt'.
+-I- FileParse - Analyzing source file "/homedir04/mmohamed25/DT3_2026/project/workdir/input/apb_pkg.sv" .... [1]
+-I- Analyzing included file "input/audioport.svh" .... [20]
+-I- Continuing with analysis of file "/homedir04/mmohamed25/DT3_2026/project/workdir/input/apb_pkg.sv" .... [21]
+-W- UnsuppVerilog - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport.svh:15: top-level timeunit declaration not supported (ignored).
+-W- UnsuppVerilog - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport.svh:16: top-level timeprecision declaration not supported (ignored).
+-I- FileParse - Analyzing source file "/homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_pkg.sv" .... [1]
+-I- Analyzing included file "input/audioport.svh" .... [20]
+-I- Continuing with analysis of file "/homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_pkg.sv" .... [21]
+-W- UnsuppVerilog - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport.svh:15: top-level timeunit declaration not supported (ignored).
+-W- UnsuppVerilog - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport.svh:16: top-level timeprecision declaration not supported (ignored).
+-I- FileParse - Analyzing source file "/homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_util_pkg.sv" .... [1]
+-I- Analyzing included file "input/audioport.svh" .... [20]
+-I- Continuing with analysis of file "/homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_util_pkg.sv" .... [21]
+-W- UnsuppVerilog - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport.svh:15: top-level timeunit declaration not supported (ignored).
+-W- UnsuppVerilog - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport.svh:16: top-level timeprecision declaration not supported (ignored).
+-I- FileParse - Analyzing source file "/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv" .... [1]
+-I- Analyzing included file "input/audioport.svh" .... [20]
+-I- Continuing with analysis of file "/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv" .... [21]
+-I- AnalyzeModule - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv:4: Analyzing module ( control_unit ). [4]
+-W- UnsuppVerilog - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport.svh:15: top-level timeunit declaration not supported (ignored).
+-W- UnsuppVerilog - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport.svh:16: top-level timeprecision declaration not supported (ignored).
+-W- UnsuppVerilog - /homedir04/mmohamed25/DT3_2026/project/workdir/input/apb_pkg.sv:25: Time literals not supported (ignored).
+-W- UnsuppVerilog - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_pkg.sv:11: package data declaration not supported (ignored).
+-W- UnsuppVerilog - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_pkg.sv:12: Time literals not supported (ignored).
+-W- UnsuppVerilog - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_pkg.sv:13: Time literals not supported (ignored).
+-W- UnsuppVerilog - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_util_pkg.sv:17: package data declaration not supported (ignored).
+-W- UnsuppVerilog - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_util_pkg.sv:18: package data declaration not supported (ignored).
+-W- UnsuppVerilog - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_util_pkg.sv:19: package data declaration not supported (ignored).
+-W- UnsuppVerilog - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_util_pkg.sv:21: package data declaration not supported (ignored).
+-W- UnsuppVerilog - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_util_pkg.sv:25: Time literals not supported (ignored).
+-W- UnsuppVerilog - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_util_pkg.sv:58: dynamic array and queue declaration not supported.
+-W- UnsuppVerilog - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_util_pkg.sv:60: Time literals not supported (ignored).
+-W- UnsuppVerilog - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_util_pkg.sv:126: string declaration not supported (ignored).
+-I- Elaborating verilog portion...
+-W- NeverUsed - Macro `DESIGN_NAME_MACRO' has a value defined via option `-define' but that value is never used.
+-W- NeverUsed - Macro `DESIGN_NAME_MACRO' has a value defined via option `-define' but that value is never used.
+-W- NeverUsed - Macro `DESIGN_NAME_MACRO' has a value defined via option `-define' but that value is never used.
+-W- NeverUsed - Macro `DESIGN_NAME_MACRO' has a value defined via option `-define' but that value is never used.
+-W- Div0 - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_pkg.sv:98: division by 0.
+-W- IllFloat - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_pkg.sv:98: illegal arguments in floating function: $ceil(((0.10000000000000000e10 / 0.48000000000000000e5) / audioport_pkg::CLK_PERIOD)) - must be floating constant expressions (replaced by X).
+-W- Div0 - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_pkg.sv:112: division by 0.
+-W- IllFloat - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_pkg.sv:112: illegal arguments in floating function: $ceil((audioport_pkg::MCLK_PERIOD / audioport_pkg::CLK_PERIOD)) - must be floating constant expressions (replaced by X).
+-W- Div0 - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_pkg.sv:113: division by 0.
+-W- IllFloat - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_pkg.sv:113: illegal arguments in floating function: $ceil((audioport_pkg::MCLK_PERIOD / audioport_pkg::CLK_PERIOD)) - must be floating constant expressions (replaced by X).
+-W- Div0 - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_pkg.sv:114: division by 0.
+-W- IllFloat - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_pkg.sv:114: illegal arguments in floating function: $ceil((audioport_pkg::MCLK_PERIOD / audioport_pkg::CLK_PERIOD)) - must be floating constant expressions (replaced by X).
+-W- Div0 - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_pkg.sv:117: division by 0.
+-W- IllFloat - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_pkg.sv:117: illegal arguments in floating function: $ceil((audioport_pkg::MCLK_PERIOD / audioport_pkg::CLK_PERIOD)) - must be floating constant expressions (replaced by X).
+-W- IllFloat - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_pkg.sv:125: illegal arguments in floating function: $ceil((real/* explicit */'(audioport_pkg::CLK_DIV_48000) / 0.16000000000000000e2)) - must be floating constant expressions (replaced by X).
+-W- NetWithoutSink - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv:11: net 'PADDR[1:0]', 'PADDR[31:9]' has no sink.
+
+Warning Statistics:
+-------------------
+    1   NetWithoutSink       net without sink (never read)
+    4   NeverUsed            specified item never used
+    5   Div0                 division by 0
+    6   IllFloat             illegal operands in floating function
+   12   UnsuppVerilog        unsupported Verilog feature
+-I- Elaboration of design golden succeeded.
+-I- Traversing modules of design 'control_unit' ...
+-I- Traversing modules of design 'control_unit' took 0.184 seconds.
+-I- Analyzing signal dependency in design 'control_unit' ...
+-I- Analyzing signal dependency in design 'control_unit' took 0.04 seconds.
+-I- Analyzing loops ...
+-I- Analyzing loops took 0.01 seconds.
+-I- Analyzing primary and generated clocks ...
+-I- Computing next states ...
+-I- Computing next states took 0.00 seconds.
+-I- Analyzing primary and generated clocks took 0.00 seconds.
+-I- Checking clock dependency assumption ...
+-I- Checking clock dependency assumption took 0.00 seconds.
+-I- Clock input 'clk (posedge)' found.
+-I- Reset input 'rst_n (neg_reset)' found.
+-I- Computing CSA result ...
+-I- Computing CSA result took 0.00 seconds.
+-I- Finishing CSA analysis ...
+-I- Compilation for design golden succeeded.
+-I- Formal model generated.
+-I- Model trimmed.
+-I- Generated default reset sequence consists of the activation of 'rst_n' (active low).
+-I- Current mode is 'mv'.
+-I- FileParse - Analyzing source file "/homedir04/mmohamed25/DT3_2026/project/workdir/input/apb_pkg.sv" .... [1]
+-I- Analyzing included file "input/audioport.svh" .... [20]
+-I- Continuing with analysis of file "/homedir04/mmohamed25/DT3_2026/project/workdir/input/apb_pkg.sv" .... [21]
+-W- UnsuppVerilog - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport.svh:15: top-level timeunit declaration not supported (ignored).
+-W- UnsuppVerilog - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport.svh:16: top-level timeprecision declaration not supported (ignored).
+-I- FileParse - Analyzing source file "/homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_pkg.sv" .... [1]
+-I- Analyzing included file "input/audioport.svh" .... [20]
+-I- Continuing with analysis of file "/homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_pkg.sv" .... [21]
+-W- UnsuppVerilog - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport.svh:15: top-level timeunit declaration not supported (ignored).
+-W- UnsuppVerilog - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport.svh:16: top-level timeprecision declaration not supported (ignored).
+-I- FileParse - Analyzing source file "/homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_util_pkg.sv" .... [1]
+-I- Analyzing included file "input/audioport.svh" .... [20]
+-I- Continuing with analysis of file "/homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_util_pkg.sv" .... [21]
+-W- UnsuppVerilog - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport.svh:15: top-level timeunit declaration not supported (ignored).
+-W- UnsuppVerilog - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport.svh:16: top-level timeprecision declaration not supported (ignored).
+-I- FileParse - Analyzing source file "/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_svamod.sv" .... [1]
+-I- Analyzing included file "input/audioport.svh" .... [20]
+-I- Continuing with analysis of file "/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_svamod.sv" .... [21]
+-I- AnalyzeModule - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_svamod.sv:18: Analyzing module ( control_unit_svamod ). [4]
+-I- Analyzing included file "input/apb_assumes.svh" .... [20]
+-I- Continuing with analysis of file "/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_svamod.sv" .... [21]
+-I- Analyzing included file "input/control_unit_wba.svh" .... [20]
+-I- Continuing with analysis of file "/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_svamod.sv" .... [21]
+-W- UnsuppVerilog - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport.svh:15: top-level timeunit declaration not supported (ignored).
+-W- UnsuppVerilog - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport.svh:16: top-level timeprecision declaration not supported (ignored).
+-I- FileParse - Analyzing source file "/homedir04/mmohamed25/DT3_2026/project/workdir/input/sva_bindings.svh" .... [1]
+-W- UnsuppVerilog - /homedir04/mmohamed25/DT3_2026/project/workdir/input/apb_pkg.sv:25: Time literals not supported (ignored).
+-W- UnsuppVerilog - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_pkg.sv:11: package data declaration not supported (ignored).
+-W- UnsuppVerilog - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_pkg.sv:12: Time literals not supported (ignored).
+-W- UnsuppVerilog - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_pkg.sv:13: Time literals not supported (ignored).
+-W- UnsuppVerilog - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_util_pkg.sv:17: package data declaration not supported (ignored).
+-W- UnsuppVerilog - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_util_pkg.sv:18: package data declaration not supported (ignored).
+-W- UnsuppVerilog - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_util_pkg.sv:19: package data declaration not supported (ignored).
+-W- UnsuppVerilog - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_util_pkg.sv:21: package data declaration not supported (ignored).
+-W- UnsuppVerilog - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_util_pkg.sv:25: Time literals not supported (ignored).
+-W- UnsuppVerilog - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_util_pkg.sv:58: dynamic array and queue declaration not supported.
+-W- UnsuppVerilog - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_util_pkg.sv:60: Time literals not supported (ignored).
+-W- UnsuppVerilog - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_util_pkg.sv:126: string declaration not supported (ignored).
+-W- UnsuppVerilog - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_svamod.sv:447: covergroup declaration not supported (ignored).
+-W- UnsuppVerilog - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_svamod.sv:456: covergroup object declaration not supported (ignored).
+-W- UnsuppVerilog - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_svamod.sv:464: covergroup declaration not supported (ignored).
+-W- UnsuppVerilog - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_svamod.sv:485: covergroup object declaration not supported (ignored).
+-W- NeverUsed - Macro `DESIGN_NAME_MACRO' has a value defined via option `-define' but that value is never used.
+-W- NeverUsed - Macro `DESIGN_NAME_MACRO' has a value defined via option `-define' but that value is never used.
+-W- NeverUsed - Macro `DESIGN_NAME_MACRO' has a value defined via option `-define' but that value is never used.
+-W- NeverUsed - Macro `DESIGN_NAME_MACRO' has a value defined via option `-define' but that value is never used.
+-W- NeverUsed - Macro `DESIGN_NAME_MACRO' has a value defined via option `-define' but that value is never used.
+-W- Div0 - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_pkg.sv:98: division by 0.
+-W- IllFloat - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_pkg.sv:98: illegal arguments in floating function: $ceil(((0.10000000000000000e10 / 0.48000000000000000e5) / audioport_pkg::CLK_PERIOD)) - must be floating constant expressions (replaced by X).
+-W- Div0 - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_pkg.sv:112: division by 0.
+-W- IllFloat - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_pkg.sv:112: illegal arguments in floating function: $ceil((audioport_pkg::MCLK_PERIOD / audioport_pkg::CLK_PERIOD)) - must be floating constant expressions (replaced by X).
+-W- Div0 - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_pkg.sv:113: division by 0.
+-W- IllFloat - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_pkg.sv:113: illegal arguments in floating function: $ceil((audioport_pkg::MCLK_PERIOD / audioport_pkg::CLK_PERIOD)) - must be floating constant expressions (replaced by X).
+-W- Div0 - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_pkg.sv:114: division by 0.
+-W- IllFloat - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_pkg.sv:114: illegal arguments in floating function: $ceil((audioport_pkg::MCLK_PERIOD / audioport_pkg::CLK_PERIOD)) - must be floating constant expressions (replaced by X).
+-W- Div0 - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_pkg.sv:117: division by 0.
+-W- IllFloat - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_pkg.sv:117: illegal arguments in floating function: $ceil((audioport_pkg::MCLK_PERIOD / audioport_pkg::CLK_PERIOD)) - must be floating constant expressions (replaced by X).
+-W- IllFloat - /homedir04/mmohamed25/DT3_2026/project/workdir/input/audioport_pkg.sv:125: illegal arguments in floating function: $ceil((real/* explicit */'(audioport_pkg::CLK_DIV_48000) / 0.16000000000000000e2)) - must be floating constant expressions (replaced by X).
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_svamod.sv:144: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_svamod.sv:156: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_svamod.sv:166: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_svamod.sv:176: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_svamod.sv:186: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_svamod.sv:196: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_svamod.sv:206: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_svamod.sv:216: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_svamod.sv:231: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_svamod.sv:241: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_svamod.sv:251: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_svamod.sv:261: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_svamod.sv:271: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_svamod.sv:281: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_svamod.sv:291: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_svamod.sv:301: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_svamod.sv:311: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_svamod.sv:321: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_svamod.sv:368: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_svamod.sv:378: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_svamod.sv:388: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_svamod.sv:398: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_svamod.sv:408: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_svamod.sv:419: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:8: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:18: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:28: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:38: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:48: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:58: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:68: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:78: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:88: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:98: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:108: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:118: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:128: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:138: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:148: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:158: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:169: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:179: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:189: unsupported action block -- ignored!
+-W- ExprExtend - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:196: Extending expression size from 6 to 32 due to unsized integer literal usage can result in unexpected comparison results.
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:199: unsupported action block -- ignored!
+-W- ExprExtend - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:196: Extending expression size from 6 to 32 due to unsized integer literal usage can result in unexpected comparison results.
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:209: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:219: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:229: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:239: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:249: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:259: unsupported action block -- ignored!
+-W- ExprExtend - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:266: Extending expression size from 6 to 32 due to unsized integer literal usage can result in unexpected comparison results.
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:269: unsupported action block -- ignored!
+-W- ExprExtend - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:266: Extending expression size from 6 to 32 due to unsized integer literal usage can result in unexpected comparison results.
+-W- ExprExtend - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:276: Extending expression size from 6 to 32 due to unsized integer literal usage can result in unexpected comparison results.
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:279: unsupported action block -- ignored!
+-W- ExprExtend - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:276: Extending expression size from 6 to 32 due to unsized integer literal usage can result in unexpected comparison results.
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:289: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:299: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:310: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:320: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:330: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:340: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:350: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:360: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:370: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:382: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:392: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:402: unsupported action block -- ignored!
+-W- ExprExtend - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:409: Extending expression size from 6 to 32 due to unsized integer literal usage can result in unexpected comparison results.
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:412: unsupported action block -- ignored!
+-W- ExprExtend - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:409: Extending expression size from 6 to 32 due to unsized integer literal usage can result in unexpected comparison results.
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:422: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:432: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:442: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:452: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:462: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:472: unsupported action block -- ignored!
+-W- ExprExtend - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:479: Extending expression size from 6 to 32 due to unsized integer literal usage can result in unexpected comparison results.
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:482: unsupported action block -- ignored!
+-W- ExprExtend - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:479: Extending expression size from 6 to 32 due to unsized integer literal usage can result in unexpected comparison results.
+-W- ExprExtend - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:489: Extending expression size from 6 to 32 due to unsized integer literal usage can result in unexpected comparison results.
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:492: unsupported action block -- ignored!
+-W- ExprExtend - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:489: Extending expression size from 6 to 32 due to unsized integer literal usage can result in unexpected comparison results.
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:502: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:512: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:523: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:533: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:543: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:553: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:563: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:573: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:583: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:596: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:606: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:616: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:626: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:636: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:646: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:656: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:666: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:676: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:686: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:696: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:706: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:716: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:726: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:736: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:746: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:756: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:766: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:776: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:786: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:796: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:806: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:816: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:826: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:836: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:846: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:856: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:866: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:876: unsupported action block -- ignored!
+-W- UnsuppFeature - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:886: unsupported action block -- ignored!
+-W- ExprExtend - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:196: Extending expression size from 6 to 32 due to unsized integer literal usage can result in unexpected comparison results.
+-W- ExprExtend - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:266: Extending expression size from 6 to 32 due to unsized integer literal usage can result in unexpected comparison results.
+-W- ExprExtend - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:276: Extending expression size from 6 to 32 due to unsized integer literal usage can result in unexpected comparison results.
+-W- ExprExtend - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:409: Extending expression size from 6 to 32 due to unsized integer literal usage can result in unexpected comparison results.
+-W- ExprExtend - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:479: Extending expression size from 6 to 32 due to unsized integer literal usage can result in unexpected comparison results.
+-W- ExprExtend - /homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit_wba.svh:489: Extending expression size from 6 to 32 due to unsized integer literal usage can result in unexpected comparison results.
+-I- read_sva succeeded.
+-I- Preparing assertion 'sva/CHECKER_MODULE/X_PADDR'
+-I- Examination window for 'sva/CHECKER_MODULE/X_PADDR': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/X_PENABLE'
+-I- Examination window for 'sva/CHECKER_MODULE/X_PENABLE': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/X_PRDATA'
+-I- Examination window for 'sva/CHECKER_MODULE/X_PRDATA': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/X_PREADY'
+-I- Examination window for 'sva/CHECKER_MODULE/X_PREADY': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/X_PSEL'
+-I- Examination window for 'sva/CHECKER_MODULE/X_PSEL': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/X_PSLVERR'
+-I- Examination window for 'sva/CHECKER_MODULE/X_PSLVERR': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/X_PWDATA'
+-I- Examination window for 'sva/CHECKER_MODULE/X_PWDATA': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/X_PWRITE'
+-I- Examination window for 'sva/CHECKER_MODULE/X_PWRITE': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/X_apbread'
+-I- Examination window for 'sva/CHECKER_MODULE/X_apbread': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/X_apbwrite'
+-I- Examination window for 'sva/CHECKER_MODULE/X_apbwrite': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/X_audio0_out'
+-I- Examination window for 'sva/CHECKER_MODULE/X_audio0_out': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/X_audio1_out'
+-I- Examination window for 'sva/CHECKER_MODULE/X_audio1_out': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/X_cfg_out'
+-I- Examination window for 'sva/CHECKER_MODULE/X_cfg_out': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/X_cfg_reg_out'
+-I- Examination window for 'sva/CHECKER_MODULE/X_cfg_reg_out': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/X_clr'
+-I- Examination window for 'sva/CHECKER_MODULE/X_clr': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/X_clr_out'
+-I- Examination window for 'sva/CHECKER_MODULE/X_clr_out': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/X_dsp_regs_out'
+-I- Examination window for 'sva/CHECKER_MODULE/X_dsp_regs_out': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/X_irq_out'
+-I- Examination window for 'sva/CHECKER_MODULE/X_irq_out': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/X_irq_r'
+-I- Examination window for 'sva/CHECKER_MODULE/X_irq_r': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/X_irqack'
+-I- Examination window for 'sva/CHECKER_MODULE/X_irqack': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/X_ldata_r'
+-I- Examination window for 'sva/CHECKER_MODULE/X_ldata_r': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/X_lempty'
+-I- Examination window for 'sva/CHECKER_MODULE/X_lempty': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/X_level_out'
+-I- Examination window for 'sva/CHECKER_MODULE/X_level_out': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/X_level_reg_out'
+-I- Examination window for 'sva/CHECKER_MODULE/X_level_reg_out': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/X_lfifo'
+-I- Examination window for 'sva/CHECKER_MODULE/X_lfifo': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/X_lfull'
+-I- Examination window for 'sva/CHECKER_MODULE/X_lfull': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/X_lhead_r'
+-I- Examination window for 'sva/CHECKER_MODULE/X_lhead_r': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/X_llooped_r'
+-I- Examination window for 'sva/CHECKER_MODULE/X_llooped_r': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/X_ltail_r'
+-I- Examination window for 'sva/CHECKER_MODULE/X_ltail_r': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/X_play_out'
+-I- Examination window for 'sva/CHECKER_MODULE/X_play_out': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/X_play_r'
+-I- Examination window for 'sva/CHECKER_MODULE/X_play_r': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/X_rbank_r'
+-I- Examination window for 'sva/CHECKER_MODULE/X_rbank_r': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/X_rdata_r'
+-I- Examination window for 'sva/CHECKER_MODULE/X_rdata_r': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/X_rempty'
+-I- Examination window for 'sva/CHECKER_MODULE/X_rempty': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/X_req_in'
+-I- Examination window for 'sva/CHECKER_MODULE/X_req_in': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/X_req_r'
+-I- Examination window for 'sva/CHECKER_MODULE/X_req_r': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/X_rfifo'
+-I- Examination window for 'sva/CHECKER_MODULE/X_rfifo': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/X_rfull'
+-I- Examination window for 'sva/CHECKER_MODULE/X_rfull': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/X_rhead_r'
+-I- Examination window for 'sva/CHECKER_MODULE/X_rhead_r': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/X_rindex'
+-I- Examination window for 'sva/CHECKER_MODULE/X_rindex': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/X_rlooped_r'
+-I- Examination window for 'sva/CHECKER_MODULE/X_rlooped_r': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/X_rtail_r'
+-I- Examination window for 'sva/CHECKER_MODULE/X_rtail_r': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/X_start'
+-I- Examination window for 'sva/CHECKER_MODULE/X_start': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/X_stop'
+-I- Examination window for 'sva/CHECKER_MODULE/X_stop': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/X_tick_out'
+-I- Examination window for 'sva/CHECKER_MODULE/X_tick_out': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/af_cfg_out_pulse'
+-I- Examination window for 'sva/CHECKER_MODULE/af_cfg_out_pulse': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/af_cfg_out_valid_high'
+-I- Examination window for 'sva/CHECKER_MODULE/af_cfg_out_valid_high': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/af_cfg_reg_drv'
+-I- Examination window for 'sva/CHECKER_MODULE/af_cfg_reg_drv': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/af_clr_out_pulse'
+-I- Examination window for 'sva/CHECKER_MODULE/af_clr_out_pulse': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/af_clr_out_valid_high'
+-I- Examination window for 'sva/CHECKER_MODULE/af_clr_out_valid_high': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/af_dsp_regs_drv'
+-I- Examination window for 'sva/CHECKER_MODULE/af_dsp_regs_drv': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/af_irq_out_down'
+-I- Examination window for 'sva/CHECKER_MODULE/af_irq_out_down': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/af_irq_out_high'
+-I- Examination window for 'sva/CHECKER_MODULE/af_irq_out_high': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/af_irq_out_standby'
+-I- Examination window for 'sva/CHECKER_MODULE/af_irq_out_standby': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/af_level_out_pulse'
+-I- Examination window for 'sva/CHECKER_MODULE/af_level_out_pulse': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/af_level_out_valid_high'
+-I- Examination window for 'sva/CHECKER_MODULE/af_level_out_valid_high': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/af_level_reg_drv'
+-I- Examination window for 'sva/CHECKER_MODULE/af_level_reg_drv': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/af_prdata_off'
+-I- Examination window for 'sva/CHECKER_MODULE/af_prdata_off': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/af_pready_on'
+-I- Examination window for 'sva/CHECKER_MODULE/af_pready_on': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/af_pslverr_off'
+-I- Examination window for 'sva/CHECKER_MODULE/af_pslverr_off': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/af_start_play'
+-I- Examination window for 'sva/CHECKER_MODULE/af_start_play': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/af_stop_play'
+-I- Examination window for 'sva/CHECKER_MODULE/af_stop_play': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/af_tick_out_high'
+-I- Examination window for 'sva/CHECKER_MODULE/af_tick_out_high': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/af_tick_out_low'
+-I- Examination window for 'sva/CHECKER_MODULE/af_tick_out_low': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/af_tick_standby'
+-I- Examination window for 'sva/CHECKER_MODULE/af_tick_standby': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/af_valid_start_play'
+-I- Examination window for 'sva/CHECKER_MODULE/af_valid_start_play': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/af_valid_stop_play'
+-I- Examination window for 'sva/CHECKER_MODULE/af_valid_stop_play': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_apbread_off'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_apbread_off': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_apbread_on'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_apbread_on': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_apbwrite_off'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_apbwrite_off': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_apbwrite_on'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_apbwrite_on': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_cfg_out_off'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_cfg_out_off': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_cfg_out_on'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_cfg_out_on': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_cfg_reg_out'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_cfg_reg_out': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_clr_off'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_clr_off': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_clr_on'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_clr_on': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_clr_out'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_clr_out': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_dsp_regs_out'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_dsp_regs_out': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_index_range'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_index_range': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_irq_out'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_irq_out': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_irq_r_fall_irqack'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_irq_r_fall_irqack': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_irq_r_fall_stop'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_irq_r_fall_stop': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_irq_r_rise'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_irq_r_rise': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_irq_r_stable'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_irq_r_stable': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_irqack_off'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_irqack_off': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_irqack_on'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_irqack_on': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_ldata_r_failed_write'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_ldata_r_failed_write': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_ldata_r_stable'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_ldata_r_stable': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_ldata_r_write'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_ldata_r_write': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_lempty_of'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_lempty_of': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_lempty_on'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_lempty_on': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_level_out_off'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_level_out_off': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_level_out_on'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_level_out_on': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_level_reg_out'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_level_reg_out': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_lfifo_output_off'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_lfifo_output_off': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_lfifo_output_on'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_lfifo_output_on': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_lfull_off'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_lfull_off': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_lfull_on'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_lfull_on': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_lhead_r_inc'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_lhead_r_inc': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_lhead_r_loop'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_lhead_r_loop': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_lhead_r_stable'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_lhead_r_stable': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_llooped_r_off_1'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_llooped_r_off_1': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_llooped_r_off_2'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_llooped_r_off_2': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_llooped_r_on'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_llooped_r_on': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_llooped_r_stable'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_llooped_r_stable': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_ltail_r_inc_1'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_ltail_r_inc_1': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_ltail_r_inc_2'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_ltail_r_inc_2': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_ltail_r_loop_1'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_ltail_r_loop_1': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_ltail_r_loop_2'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_ltail_r_loop_2': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_ltail_r_stable'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_ltail_r_stable': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_play_out_state'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_play_out_state': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_play_r_fall'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_play_r_fall': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_play_r_rise'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_play_r_rise': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_play_r_stable'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_play_r_stable': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_prdata_lfifo'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_prdata_lfifo': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_prdata_off'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_prdata_off': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_prdata_rbank'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_prdata_rbank': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_prdata_rfifo'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_prdata_rfifo': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_pready'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_pready': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_pslverr'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_pslverr': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_rbank_r_stable'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_rbank_r_stable': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_rbank_r_write'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_rbank_r_write': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_rdata_r_failed_write'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_rdata_r_failed_write': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_rdata_r_stable'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_rdata_r_stable': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_rdata_r_write'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_rdata_r_write': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_rempty_of'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_rempty_of': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_rempty_on'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_rempty_on': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_req_r_off'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_req_r_off': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_req_r_on'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_req_r_on': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_rfifo_output_off'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_rfifo_output_off': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_rfifo_output_on'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_rfifo_output_on': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_rfull_off'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_rfull_off': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_rfull_on'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_rfull_on': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_rhead_r_inc'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_rhead_r_inc': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_rhead_r_loop'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_rhead_r_loop': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_rhead_r_stable'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_rhead_r_stable': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_rindex_off'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_rindex_off': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_rindex_on'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_rindex_on': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_rlooped_r_off_1'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_rlooped_r_off_1': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_rlooped_r_off_2'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_rlooped_r_off_2': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_rlooped_r_on'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_rlooped_r_on': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_rlooped_r_stable'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_rlooped_r_stable': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_rtail_r_inc_1'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_rtail_r_inc_1': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_rtail_r_inc_2'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_rtail_r_inc_2': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_rtail_r_loop_1'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_rtail_r_loop_1': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_rtail_r_loop_2'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_rtail_r_loop_2': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_rtail_r_stable'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_rtail_r_stable': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_start_off'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_start_off': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_start_on'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_start_on': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_status_reg_play'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_status_reg_play': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_status_reg_standby'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_status_reg_standby': [t-1,t+35]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_stop_off'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_stop_off': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_stop_on'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_stop_on': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_tick_out_of'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_tick_out_of': [t-1,t+34]
+-I- Preparing assertion 'sva/CHECKER_MODULE/ar_tick_out_on'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_tick_out_on': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cf_cfg_out_pulse'
+-I- Examination window for 'sva/CHECKER_MODULE/cf_cfg_out_pulse': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cf_cfg_out_valid_high'
+-I- Examination window for 'sva/CHECKER_MODULE/cf_cfg_out_valid_high': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cf_cfg_reg_drv'
+-I- Examination window for 'sva/CHECKER_MODULE/cf_cfg_reg_drv': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cf_clr_out_pulse'
+-I- Examination window for 'sva/CHECKER_MODULE/cf_clr_out_pulse': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cf_clr_out_valid_high'
+-I- Examination window for 'sva/CHECKER_MODULE/cf_clr_out_valid_high': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cf_dsp_regs_drv'
+-I- Examination window for 'sva/CHECKER_MODULE/cf_dsp_regs_drv': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cf_irq_out_down'
+-I- Examination window for 'sva/CHECKER_MODULE/cf_irq_out_down': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cf_irq_out_high'
+-I- Examination window for 'sva/CHECKER_MODULE/cf_irq_out_high': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cf_irq_out_standby'
+-I- Examination window for 'sva/CHECKER_MODULE/cf_irq_out_standby': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cf_level_out_pulse'
+-I- Examination window for 'sva/CHECKER_MODULE/cf_level_out_pulse': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cf_level_out_valid_high'
+-I- Examination window for 'sva/CHECKER_MODULE/cf_level_out_valid_high': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cf_level_reg_drv'
+-I- Examination window for 'sva/CHECKER_MODULE/cf_level_reg_drv': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cf_prdata_off'
+-I- Examination window for 'sva/CHECKER_MODULE/cf_prdata_off': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cf_pready_on'
+-I- Examination window for 'sva/CHECKER_MODULE/cf_pready_on': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cf_pslverr_off'
+-I- Examination window for 'sva/CHECKER_MODULE/cf_pslverr_off': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cf_start_play'
+-I- Examination window for 'sva/CHECKER_MODULE/cf_start_play': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cf_stop_play'
+-I- Examination window for 'sva/CHECKER_MODULE/cf_stop_play': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cf_tick_out_high'
+-I- Examination window for 'sva/CHECKER_MODULE/cf_tick_out_high': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cf_tick_out_low'
+-I- Examination window for 'sva/CHECKER_MODULE/cf_tick_out_low': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cf_tick_standby'
+-I- Examination window for 'sva/CHECKER_MODULE/cf_tick_standby': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cf_valid_start_play'
+-I- Examination window for 'sva/CHECKER_MODULE/cf_valid_start_play': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cf_valid_stop_play'
+-I- Examination window for 'sva/CHECKER_MODULE/cf_valid_stop_play': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_apbread_off'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_apbread_off': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_apbread_on'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_apbread_on': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_apbwrite_off'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_apbwrite_off': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_apbwrite_on'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_apbwrite_on': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_cfg_out_off'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_cfg_out_off': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_cfg_out_on'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_cfg_out_on': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_cfg_reg_out'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_cfg_reg_out': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_clr_off'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_clr_off': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_clr_on'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_clr_on': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_clr_out'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_clr_out': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_dsp_regs_out'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_dsp_regs_out': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_index_range'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_index_range': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_irq_out'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_irq_out': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_irq_r_fall_irqack'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_irq_r_fall_irqack': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_irq_r_fall_stop'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_irq_r_fall_stop': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_irq_r_rise'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_irq_r_rise': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_irq_r_stable'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_irq_r_stable': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_irqack_off'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_irqack_off': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_irqack_on'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_irqack_on': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_ldata_r_failed_write'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_ldata_r_failed_write': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_ldata_r_stable'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_ldata_r_stable': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_ldata_r_write'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_ldata_r_write': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_lempty_of'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_lempty_of': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_lempty_on'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_lempty_on': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_level_out_off'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_level_out_off': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_level_out_on'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_level_out_on': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_level_reg_out'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_level_reg_out': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_lfifo_output_off'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_lfifo_output_off': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_lfifo_output_on'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_lfifo_output_on': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_lfull_off'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_lfull_off': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_lfull_on'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_lfull_on': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_lhead_r_inc'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_lhead_r_inc': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_lhead_r_loop'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_lhead_r_loop': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_lhead_r_stable'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_lhead_r_stable': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_llooped_r_off_1'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_llooped_r_off_1': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_llooped_r_off_2'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_llooped_r_off_2': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_llooped_r_on'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_llooped_r_on': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_llooped_r_stable'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_llooped_r_stable': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_ltail_r_inc_1'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_ltail_r_inc_1': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_ltail_r_inc_2'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_ltail_r_inc_2': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_ltail_r_loop_1'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_ltail_r_loop_1': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_ltail_r_loop_2'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_ltail_r_loop_2': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_ltail_r_stable'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_ltail_r_stable': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_play_out_state'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_play_out_state': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_play_r_fall'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_play_r_fall': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_play_r_rise'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_play_r_rise': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_play_r_stable'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_play_r_stable': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_prdata_lfifo'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_prdata_lfifo': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_prdata_off'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_prdata_off': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_prdata_rbank'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_prdata_rbank': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_prdata_rfifo'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_prdata_rfifo': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_pready'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_pready': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_pslverr'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_pslverr': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_rbank_r_stable'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_rbank_r_stable': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_rbank_r_write'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_rbank_r_write': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_rdata_r_failed_write'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_rdata_r_failed_write': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_rdata_r_stable'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_rdata_r_stable': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_rdata_r_write'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_rdata_r_write': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_rempty_of'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_rempty_of': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_rempty_on'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_rempty_on': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_req_r_off'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_req_r_off': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_req_r_on'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_req_r_on': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_rfifo_output_off'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_rfifo_output_off': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_rfifo_output_on'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_rfifo_output_on': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_rfull_off'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_rfull_off': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_rfull_on'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_rfull_on': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_rhead_r_inc'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_rhead_r_inc': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_rhead_r_loop'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_rhead_r_loop': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_rhead_r_stable'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_rhead_r_stable': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_rindex_off'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_rindex_off': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_rindex_on'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_rindex_on': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_rlooped_r_off_1'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_rlooped_r_off_1': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_rlooped_r_off_2'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_rlooped_r_off_2': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_rlooped_r_on'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_rlooped_r_on': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_rlooped_r_stable'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_rlooped_r_stable': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_rtail_r_inc_1'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_rtail_r_inc_1': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_rtail_r_inc_2'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_rtail_r_inc_2': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_rtail_r_loop_1'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_rtail_r_loop_1': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_rtail_r_loop_2'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_rtail_r_loop_2': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_rtail_r_stable'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_rtail_r_stable': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_start_off'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_start_off': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_start_on'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_start_on': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_status_reg_play'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_status_reg_play': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_status_reg_standby'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_status_reg_standby': [t-1,t+35]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_stop_off'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_stop_off': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_stop_on'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_stop_on': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_tick_out_of'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_tick_out_of': [t-1,t+34]
+-I- Preparing Cover statement 'sva/CHECKER_MODULE/cr_tick_out_on'
+-I- Examination window for 'sva/CHECKER_MODULE/cr_tick_out_on': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/X_PADDR'
+-I- Examination window for 'sva/CHECKER_MODULE/X_PADDR': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/X_PENABLE'
+-I- Examination window for 'sva/CHECKER_MODULE/X_PENABLE': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/X_PRDATA'
+-I- Examination window for 'sva/CHECKER_MODULE/X_PRDATA': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/X_PREADY'
+-I- Examination window for 'sva/CHECKER_MODULE/X_PREADY': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/X_PSEL'
+-I- Examination window for 'sva/CHECKER_MODULE/X_PSEL': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/X_PSLVERR'
+-I- Examination window for 'sva/CHECKER_MODULE/X_PSLVERR': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/X_PWDATA'
+-I- Examination window for 'sva/CHECKER_MODULE/X_PWDATA': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/X_PWRITE'
+-I- Examination window for 'sva/CHECKER_MODULE/X_PWRITE': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/X_apbread'
+-I- Examination window for 'sva/CHECKER_MODULE/X_apbread': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/X_apbwrite'
+-I- Examination window for 'sva/CHECKER_MODULE/X_apbwrite': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/X_audio0_out'
+-I- Examination window for 'sva/CHECKER_MODULE/X_audio0_out': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/X_audio1_out'
+-I- Examination window for 'sva/CHECKER_MODULE/X_audio1_out': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/X_cfg_out'
+-I- Examination window for 'sva/CHECKER_MODULE/X_cfg_out': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/X_cfg_reg_out'
+-I- Examination window for 'sva/CHECKER_MODULE/X_cfg_reg_out': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/X_clr'
+-I- Examination window for 'sva/CHECKER_MODULE/X_clr': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/X_clr_out'
+-I- Examination window for 'sva/CHECKER_MODULE/X_clr_out': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/X_dsp_regs_out'
+-I- Examination window for 'sva/CHECKER_MODULE/X_dsp_regs_out': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/X_irq_out'
+-I- Examination window for 'sva/CHECKER_MODULE/X_irq_out': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/X_irq_r'
+-I- Examination window for 'sva/CHECKER_MODULE/X_irq_r': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/X_irqack'
+-I- Examination window for 'sva/CHECKER_MODULE/X_irqack': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/X_ldata_r'
+-I- Examination window for 'sva/CHECKER_MODULE/X_ldata_r': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/X_lempty'
+-I- Examination window for 'sva/CHECKER_MODULE/X_lempty': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/X_level_out'
+-I- Examination window for 'sva/CHECKER_MODULE/X_level_out': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/X_level_reg_out'
+-I- Examination window for 'sva/CHECKER_MODULE/X_level_reg_out': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/X_lfifo'
+-I- Examination window for 'sva/CHECKER_MODULE/X_lfifo': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/X_lfull'
+-I- Examination window for 'sva/CHECKER_MODULE/X_lfull': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/X_lhead_r'
+-I- Examination window for 'sva/CHECKER_MODULE/X_lhead_r': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/X_llooped_r'
+-I- Examination window for 'sva/CHECKER_MODULE/X_llooped_r': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/X_ltail_r'
+-I- Examination window for 'sva/CHECKER_MODULE/X_ltail_r': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/X_play_out'
+-I- Examination window for 'sva/CHECKER_MODULE/X_play_out': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/X_play_r'
+-I- Examination window for 'sva/CHECKER_MODULE/X_play_r': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/X_rbank_r'
+-I- Examination window for 'sva/CHECKER_MODULE/X_rbank_r': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/X_rdata_r'
+-I- Examination window for 'sva/CHECKER_MODULE/X_rdata_r': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/X_rempty'
+-I- Examination window for 'sva/CHECKER_MODULE/X_rempty': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/X_req_in'
+-I- Examination window for 'sva/CHECKER_MODULE/X_req_in': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/X_req_r'
+-I- Examination window for 'sva/CHECKER_MODULE/X_req_r': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/X_rfifo'
+-I- Examination window for 'sva/CHECKER_MODULE/X_rfifo': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/X_rfull'
+-I- Examination window for 'sva/CHECKER_MODULE/X_rfull': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/X_rhead_r'
+-I- Examination window for 'sva/CHECKER_MODULE/X_rhead_r': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/X_rindex'
+-I- Examination window for 'sva/CHECKER_MODULE/X_rindex': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/X_rlooped_r'
+-I- Examination window for 'sva/CHECKER_MODULE/X_rlooped_r': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/X_rtail_r'
+-I- Examination window for 'sva/CHECKER_MODULE/X_rtail_r': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/X_start'
+-I- Examination window for 'sva/CHECKER_MODULE/X_start': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/X_stop'
+-I- Examination window for 'sva/CHECKER_MODULE/X_stop': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/X_tick_out'
+-I- Examination window for 'sva/CHECKER_MODULE/X_tick_out': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/af_cfg_out_pulse'
+-I- Examination window for 'sva/CHECKER_MODULE/af_cfg_out_pulse': [t-1,t+35]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/af_cfg_out_valid_high'
+-I- Examination window for 'sva/CHECKER_MODULE/af_cfg_out_valid_high': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/af_cfg_reg_drv'
+-I- Examination window for 'sva/CHECKER_MODULE/af_cfg_reg_drv': [t-1,t+35]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/af_clr_out_pulse'
+-I- Examination window for 'sva/CHECKER_MODULE/af_clr_out_pulse': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/af_clr_out_valid_high'
+-I- Examination window for 'sva/CHECKER_MODULE/af_clr_out_valid_high': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/af_dsp_regs_drv'
+-I- Examination window for 'sva/CHECKER_MODULE/af_dsp_regs_drv': [t-1,t+35]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/af_irq_out_down'
+-I- Examination window for 'sva/CHECKER_MODULE/af_irq_out_down': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/af_irq_out_high'
+-I- Examination window for 'sva/CHECKER_MODULE/af_irq_out_high': [t-1,t+35]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/af_irq_out_standby'
+-I- Examination window for 'sva/CHECKER_MODULE/af_irq_out_standby': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/af_level_out_pulse'
+-I- Examination window for 'sva/CHECKER_MODULE/af_level_out_pulse': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/af_level_out_valid_high'
+-I- Examination window for 'sva/CHECKER_MODULE/af_level_out_valid_high': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/af_level_reg_drv'
+-I- Examination window for 'sva/CHECKER_MODULE/af_level_reg_drv': [t-1,t+35]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/af_prdata_off'
+-I- Examination window for 'sva/CHECKER_MODULE/af_prdata_off': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/af_pready_on'
+-I- Examination window for 'sva/CHECKER_MODULE/af_pready_on': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/af_pslverr_off'
+-I- Examination window for 'sva/CHECKER_MODULE/af_pslverr_off': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/af_start_play'
+-I- Examination window for 'sva/CHECKER_MODULE/af_start_play': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/af_stop_play'
+-I- Examination window for 'sva/CHECKER_MODULE/af_stop_play': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/af_tick_out_high'
+-I- Examination window for 'sva/CHECKER_MODULE/af_tick_out_high': [t-1,t+35]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/af_tick_out_low'
+-I- Examination window for 'sva/CHECKER_MODULE/af_tick_out_low': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/af_tick_standby'
+-I- Examination window for 'sva/CHECKER_MODULE/af_tick_standby': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/af_valid_start_play'
+-I- Examination window for 'sva/CHECKER_MODULE/af_valid_start_play': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/af_valid_stop_play'
+-I- Examination window for 'sva/CHECKER_MODULE/af_valid_stop_play': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/ar_apbread_off'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_apbread_off': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/ar_apbread_on'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_apbread_on': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/ar_apbwrite_off'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_apbwrite_off': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/ar_apbwrite_on'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_apbwrite_on': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/ar_cfg_out_off'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_cfg_out_off': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/ar_cfg_out_on'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_cfg_out_on': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/ar_cfg_reg_out'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_cfg_reg_out': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/ar_clr_off'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_clr_off': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/ar_clr_on'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_clr_on': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/ar_clr_out'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_clr_out': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/ar_dsp_regs_out'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_dsp_regs_out': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/ar_index_range'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_index_range': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/ar_irq_out'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_irq_out': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/ar_irq_r_fall_irqack'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_irq_r_fall_irqack': [t-1,t+35]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/ar_irq_r_fall_stop'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_irq_r_fall_stop': [t-1,t+35]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/ar_irq_r_rise'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_irq_r_rise': [t-1,t+35]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/ar_irq_r_stable'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_irq_r_stable': [t-1,t+35]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/ar_irqack_off'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_irqack_off': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/ar_irqack_on'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_irqack_on': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/ar_ldata_r_failed_write'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_ldata_r_failed_write': [t-1,t+35]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/ar_ldata_r_stable'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_ldata_r_stable': [t-1,t+35]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/ar_ldata_r_write'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_ldata_r_write': [t-1,t+35]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/ar_lempty_of'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_lempty_of': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/ar_lempty_on'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_lempty_on': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/ar_level_out_off'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_level_out_off': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/ar_level_out_on'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_level_out_on': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/ar_level_reg_out'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_level_reg_out': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/ar_lfifo_output_off'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_lfifo_output_off': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/ar_lfifo_output_on'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_lfifo_output_on': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/ar_lfull_off'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_lfull_off': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/ar_lfull_on'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_lfull_on': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/ar_lhead_r_inc'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_lhead_r_inc': [t-1,t+35]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/ar_lhead_r_loop'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_lhead_r_loop': [t-1,t+35]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/ar_lhead_r_stable'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_lhead_r_stable': [t-1,t+35]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/ar_llooped_r_off_1'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_llooped_r_off_1': [t-1,t+35]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/ar_llooped_r_off_2'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_llooped_r_off_2': [t-1,t+35]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/ar_llooped_r_on'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_llooped_r_on': [t-1,t+35]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/ar_llooped_r_stable'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_llooped_r_stable': [t-1,t+35]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/ar_ltail_r_inc_1'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_ltail_r_inc_1': [t-1,t+35]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/ar_ltail_r_inc_2'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_ltail_r_inc_2': [t-1,t+35]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/ar_ltail_r_loop_1'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_ltail_r_loop_1': [t-1,t+35]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/ar_ltail_r_loop_2'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_ltail_r_loop_2': [t-1,t+35]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/ar_ltail_r_stable'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_ltail_r_stable': [t-1,t+35]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/ar_play_out_state'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_play_out_state': [t-1,t+34]
+-I- Preparing Assertion 'sva/CHECKER_MODULE/ar_play_r_fall'
+-I- Examination window for 'sva/CHECKER_MODULE/ar_play_r_fall': [t-1,t+35]

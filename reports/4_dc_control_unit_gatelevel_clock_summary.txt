@@ -1,0 +1,39 @@
+ 
+****************************************
+Report : clock timing
+        -type summary
+Design : control_unit
+Version: T-2022.03-SP5-1
+Date   : Fri Feb 13 15:08:43 2026
+****************************************
+
+  Clock: clk
+----------------------------------------------------------------------------
+  Maximum setup launch latency:
+      play_r_reg/CK                                          0.00      wr-+
+
+  Minimum setup capture latency:
+      play_r_reg/CK                                          0.00      wr-+
+
+  Minimum hold launch latency:
+      play_r_reg/CK                                          0.00      br-+
+
+  Maximum hold capture latency:
+      play_r_reg/CK                                          0.00      br-+
+
+  Maximum active transition:
+      play_r_reg/CK                                          0.00      wr-+
+
+  Minimum active transition:
+      play_r_reg/CK                                          0.00      wr-+
+
+  Maximum setup skew:
+      irq_r_reg/CK                                                     wr-+
+      irq_r_reg/CK                                           0.00      wr-+
+
+  Maximum hold skew:
+      irq_r_reg/CK                                                     br-+
+      irq_r_reg/CK                                           0.00      br-+
+----------------------------------------------------------------------------
+
+1

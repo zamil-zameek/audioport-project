@@ -1,0 +1,140 @@
+# 
+# OneSpin 360 Message Log
+#  version      = 2022.4
+#  build_date   = Oct 23 2022 08:52:49
+#  license_mode = mgls
+#  mgls         = 1.5.1
+#  tool         = onespin
+#  platform     = Linux_x86_64
+#  os           = Linux
+#  os_version   = 4.18.0-553.80.1.el8_10.x86_64
+# 
+-I- Logging messages into '/homedir04/mmohamed25/DT3_2026/project/reports/3_onespin_control_unit_rtl_check_report.txt'.
+=== =========================================================================================================================================================================
+-I- 112 consistency check results:
+=== =========================================================================================================================================================================
+-I- 8 checks open:
+--- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-I- dead_code_check_44: open, dead code check for lines 260 - 263 of instance 'left_fifo_next/blk2/blk1/blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-I- dead_code_check_48: open, dead code check for lines 271 - 274 of instance 'left_fifo_next/blk2/blk2/blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-I- dead_code_check_51: open, dead code check for lines 280 - 283 of instance 'left_fifo_next/blk2/if_blk2/blk1/blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-I- dead_code_check_61: open, dead code check for lines 330 - 333 of instance 'right_fifo_next/blk2/blk1/blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-I- dead_code_check_65: open, dead code check for lines 341 - 344 of instance 'right_fifo_next/blk2/blk2/blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-I- dead_code_check_68: open, dead code check for lines 350 - 353 of instance 'right_fifo_next/blk2/if_blk2/blk1/blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-I- integer_check_2: not yet checked, integer check for "ltail_r"
+-I- integer_check_4: not yet checked, integer check for "rtail_r"
+--- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-C- 104 checks hold:
+--- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-C- array_index_check_1: certain hold, array access within index bounds check for "nxt" in line 70 of instance 'register_bank/blk2/rbank_next/blk1/blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- array_index_check_2: certain hold, array access within index bounds check for "ldata_r" in line 225 of instance 'left_fifo_flags/if_blk2' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- array_index_check_3: certain hold, array access within index bounds check for "rdata_r" in line 234 of instance 'right_fifo_flags/if_blk2' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- array_index_check_4: certain hold, array access within index bounds check for "ldata_ns" in line 258 of instance 'left_fifo_next/blk2/blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- array_index_check_5: certain hold, array access within index bounds check for "rdata_ns" in line 328 of instance 'right_fifo_next/blk2/blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- array_index_check_6: certain hold, array access within index bounds check for "rbank_r" in line 400 of instance 'prdata_mux/blk1/blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- truncation_check_1: certain hold, truncation check for "" in line 264 of toplevel instance of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- truncation_check_2: certain hold, truncation check for "" in line 275 of toplevel instance of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- truncation_check_3: certain hold, truncation check for "" in line 284 of toplevel instance of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- truncation_check_4: certain hold, truncation check for "" in line 334 of toplevel instance of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- truncation_check_5: certain hold, truncation check for "" in line 345 of toplevel instance of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- truncation_check_6: certain hold, truncation check for "" in line 354 of toplevel instance of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- no_return_check_1: always hold, function without return for function rbank_next in line 57 of instance 'register_bank/blk2/rbank_next/blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- parallel_case_check_1: certain hold, Synopsys parallel-case pragma check for line 168 of instance 'cmd_decoder/blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- init_check_1: certain hold, init check for "irq_r"
+-C- init_check_2: certain hold, init check for "lhead_r"
+-C- init_check_3: certain hold, init check for "llooped_r"
+-C- init_check_4: certain hold, init check for "ltail_r"
+-C- init_check_5: certain hold, init check for "play_r"
+-C- init_check_6: certain hold, init check for "req_r"
+-C- init_check_7: certain hold, init check for "rhead_r"
+-C- init_check_8: certain hold, init check for "rlooped_r"
+-C- init_check_9: certain hold, init check for "rtail_r"
+-C- dead_code_check_1: hold, dead code check for lines 143 - 154 of instance 'apb_decoder' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_2: hold, dead code check for lines 148 - 153 of instance 'apb_decoder/blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_3: hold, dead code check for line 153 of instance 'apb_decoder/if_blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_4: hold, dead code check for lines 159 - 178 of instance 'cmd_decoder' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_5: hold, dead code check for lines 167 - 177 of instance 'cmd_decoder/blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_6: hold, dead code check for line 169 of instance 'cmd_decoder/blk1/case_blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_7: hold, dead code check for line 170 of instance 'cmd_decoder/blk1/case_blk2' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_8: hold, dead code check for line 171 of instance 'cmd_decoder/blk1/case_blk3' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_9: hold, dead code check for line 172 of instance 'cmd_decoder/blk1/case_blk4' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_10: hold, dead code check for line 173 of instance 'cmd_decoder/blk1/case_blk5' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_11: hold, dead code check for line 174 of instance 'cmd_decoder/blk1/case_blk6' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_12: hold, dead code check for line 175 of instance 'cmd_decoder/blk1/case_blk7' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_13: hold, dead code check for line 177 of instance 'cmd_decoder/if_blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_14: hold, dead code check for lines 183 - 191 of instance 'mode_reg' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_15: hold, dead code check for lines 184 - 186 of instance 'mode_reg/blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_16: hold, dead code check for lines 186 - 188 of instance 'mode_reg/if_blk1/blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_17: hold, dead code check for lines 188 - 190 of instance 'mode_reg/if_blk1/if_blk1/blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_18: hold, dead code check for line 190 of instance 'mode_reg/if_blk1/if_blk1/if_blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_19: hold, dead code check for lines 196 - 204 of instance 'req_reg' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_20: hold, dead code check for lines 197 - 199 of instance 'req_reg/blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_21: hold, dead code check for lines 199 - 201 of instance 'req_reg/if_blk1/blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_22: hold, dead code check for lines 201 - 203 of instance 'req_reg/if_blk1/blk2' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_23: hold, dead code check for lines 210 - 216 of instance 'register_bank' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_24: hold, dead code check for lines 211 - 213 of instance 'register_bank/blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_25: hold, dead code check for lines 213 - 215 of instance 'register_bank/blk2' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_26: hold, dead code check for lines 69 - 71 of instance 'register_bank/blk2/rbank_next/blk1/blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_27: hold, dead code check for line 71 of instance 'register_bank/blk2/rbank_next/blk1/if_blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_28: hold, dead code check for lines 74 - 77 of instance 'register_bank/blk2/rbank_next/blk1/blk2' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_29: hold, dead code check for line 75 of instance 'register_bank/blk2/rbank_next/blk1/blk2/if_blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_30: hold, dead code check for line 75 of instance 'register_bank/blk2/rbank_next/blk1/blk2/if_blk2' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_31: hold, dead code check for line 76 of instance 'register_bank/blk2/rbank_next/blk1/blk2/if_blk3' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_32: hold, dead code check for line 76 of instance 'register_bank/blk2/rbank_next/blk1/blk2/if_blk4' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_33: hold, dead code check for line 77 of instance 'register_bank/blk2/rbank_next/blk1/if_blk2' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_34: hold, dead code check for lines 222 - 226 of instance 'left_fifo_flags' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_35: hold, dead code check for line 225 of instance 'left_fifo_flags/if_blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_36: hold, dead code check for line 225 of instance 'left_fifo_flags/if_blk2' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_37: hold, dead code check for lines 231 - 235 of instance 'right_fifo_flags' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_38: hold, dead code check for line 234 of instance 'right_fifo_flags/if_blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_39: hold, dead code check for line 234 of instance 'right_fifo_flags/if_blk2' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_40: hold, dead code check for lines 243 - 288 of instance 'left_fifo_next' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_41: hold, dead code check for lines 250 - 255 of instance 'left_fifo_next/blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_42: hold, dead code check for lines 255 - 287 of instance 'left_fifo_next/blk2' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_43: hold, dead code check for lines 257 - 266 of instance 'left_fifo_next/blk2/blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_45: hold, dead code check for lines 263 - 265 of instance 'left_fifo_next/blk2/blk1/blk2' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_46: hold, dead code check for line 266 of instance 'left_fifo_next/blk2/if_blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_47: hold, dead code check for lines 270 - 277 of instance 'left_fifo_next/blk2/blk2' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_49: hold, dead code check for lines 274 - 276 of instance 'left_fifo_next/blk2/blk2/blk2' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_50: hold, dead code check for lines 279 - 286 of instance 'left_fifo_next/blk2/if_blk2/blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_52: hold, dead code check for lines 283 - 285 of instance 'left_fifo_next/blk2/if_blk2/blk1/blk2' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_53: hold, dead code check for line 286 of instance 'left_fifo_next/blk2/if_blk2/if_blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_54: hold, dead code check for lines 293 - 305 of instance 'left_fifo_regs' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_55: hold, dead code check for lines 294 - 299 of instance 'left_fifo_regs/blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_56: hold, dead code check for lines 299 - 304 of instance 'left_fifo_regs/blk2' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_57: hold, dead code check for lines 313 - 358 of instance 'right_fifo_next' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_58: hold, dead code check for lines 320 - 325 of instance 'right_fifo_next/blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_59: hold, dead code check for lines 325 - 357 of instance 'right_fifo_next/blk2' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_60: hold, dead code check for lines 327 - 336 of instance 'right_fifo_next/blk2/blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_62: hold, dead code check for lines 333 - 335 of instance 'right_fifo_next/blk2/blk1/blk2' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_63: hold, dead code check for line 336 of instance 'right_fifo_next/blk2/if_blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_64: hold, dead code check for lines 340 - 347 of instance 'right_fifo_next/blk2/blk2' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_66: hold, dead code check for lines 344 - 346 of instance 'right_fifo_next/blk2/blk2/blk2' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_67: hold, dead code check for lines 349 - 356 of instance 'right_fifo_next/blk2/if_blk2/blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_69: hold, dead code check for lines 353 - 355 of instance 'right_fifo_next/blk2/if_blk2/blk1/blk2' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_70: hold, dead code check for line 356 of instance 'right_fifo_next/blk2/if_blk2/if_blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_71: hold, dead code check for lines 363 - 375 of instance 'right_fifo_regs' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_72: hold, dead code check for lines 364 - 369 of instance 'right_fifo_regs/blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_73: hold, dead code check for lines 369 - 374 of instance 'right_fifo_regs/blk2' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_74: hold, dead code check for lines 382 - 390 of instance 'irq_reg' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_75: hold, dead code check for lines 383 - 385 of instance 'irq_reg/blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_76: hold, dead code check for lines 385 - 387 of instance 'irq_reg/if_blk1/blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_77: hold, dead code check for lines 387 - 389 of instance 'irq_reg/if_blk1/if_blk1/blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_78: hold, dead code check for line 389 of instance 'irq_reg/if_blk1/if_blk1/if_blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_79: hold, dead code check for lines 395 - 409 of instance 'prdata_mux' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_80: hold, dead code check for lines 398 - 408 of instance 'prdata_mux/blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_81: hold, dead code check for lines 399 - 401 of instance 'prdata_mux/blk1/blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_82: hold, dead code check for lines 401 - 403 of instance 'prdata_mux/blk1/if_blk1/blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_83: hold, dead code check for lines 403 - 405 of instance 'prdata_mux/blk1/if_blk1/if_blk1/blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_84: hold, dead code check for lines 405 - 407 of instance 'prdata_mux/blk1/if_blk1/if_blk1/blk2' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- dead_code_check_85: hold, dead code check for line 408 of instance 'prdata_mux/if_blk1' of file '/homedir04/mmohamed25/DT3_2026/project/workdir/input/control_unit.sv'
+-C- integer_check_1: hold, integer check for "lhead_r"
+-C- integer_check_3: hold, integer check for "rhead_r"
+--- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-C- No checks fail.
+--- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-I- 6 array_index checks, 6 truncation checks, 1 no_return check, 1 parallel_case check, 9 init checks, 85 dead_code checks and 4 integer checks.
+-I- 112 consistency checks in total (including 8 model building assertions).
+--- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-I- Validity: up_to_date
+=== =========================================================================================================================================================================

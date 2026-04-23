@@ -1,0 +1,24 @@
+# 
+# Questa Static Verification System
+# Version 2024.3_2 5905218 linux_x86_64 04-Dec-2024
+# 
+# This material contains trade secrets or otherwise
+# confidential information owned by
+# Siemens Industry Software Inc. or its affiliates
+# (collectively, "SISW"), or its licensors. Access
+# to and use of this information is strictly limited
+# as set forth in the customer's applicable
+# agreements with SISW.
+# 
+# Unpublished work. Copyright 2024 Siemens
+# 
+# do scripts/qcdc_dynamic.tcl
+# Command : cdc load db /homedir04/mmohamed25/DT3_2026/project/workdir/output/cdc_unit_qcdc_run_log/cdc.db
+# Command : cdc load db /homedir04/mmohamed25/DT3_2026/project/workdir/output/cdc_unit_qcdc_run_log/cdc_merged_sim.db
+# Command : cdc generate report -protocol -fx
+# Identified prefix : cdc_unit_tb.DUT_INSTANCE 
+# Reading design database from /homedir04/mmohamed25/DT3_2026/project/workdir/output/cdc_unit_qcdc_run_log/qcache/CDC/CACHE...completed (0.0007 (s)).
+# Performance stats (CDC report generation::started) : cpu : 0(0) sec  memory : 0(248) mb  elapsed : 0(0) sec
+# Performance stats (CDC report generation::ended) : cpu : 0(0) sec  memory : 0(248) mb  elapsed : 0(0) sec
+# See 'output/cdc_unit_qcdc_run_log/cdc_detail.rpt' for detailed CDC report.
+# 

@@ -1,0 +1,109 @@
+ 
+****************************************
+Report : qor
+Design : i2s_unit
+Version: T-2022.03-SP5-1
+Date   : Fri Mar  6 11:30:30 2026
+****************************************
+
+
+  Timing Path Group 'clk_in2reg'
+  -----------------------------------
+  Levels of Logic:               3.00
+  Critical Path Length:          0.41
+  Critical Path Slack:          10.92
+  Critical Path Clk Period:     13.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'clk_reg2out'
+  -----------------------------------
+  Levels of Logic:               4.00
+  Critical Path Length:          0.33
+  Critical Path Slack:          11.04
+  Critical Path Clk Period:     13.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'clk_reg2reg'
+  -----------------------------------
+  Levels of Logic:               7.00
+  Critical Path Length:          0.85
+  Critical Path Slack:          12.12
+  Critical Path Clk Period:     13.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          0
+  Hierarchical Port Count:          0
+  Leaf Cell Count:                341
+  Buf/Inv Cell Count:              58
+  Buf Cell Count:                   2
+  Inv Cell Count:                  56
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:       235
+  Sequential Cell Count:          106
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:      247.114005
+  Noncombinational Area:   563.920018
+  Buf/Inv Area:             31.920000
+  Total Buffer Area:             1.86
+  Total Inverter Area:          30.06
+  Macro/Black Box Area:      0.000000
+  Net Area:                  0.000000
+  -----------------------------------
+  Cell Area:               811.034023
+  Design Area:             811.034023
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:           399
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: lehmus-cn8.oulu.fi
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    0.00
+  Logic Optimization:                  0.00
+  Mapping Optimization:                0.00
+  -----------------------------------------
+  Overall Compile Time:                1.02
+  Overall Compile Wall Clock Time:     1.26
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1

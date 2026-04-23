@@ -1,0 +1,474 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /audioport_tb/DUT_INSTANCE/control_unit_1/CHECKER_MODULE
+=== Design Unit: work.control_unit_svamod
+=================================================================================
+
+Covergroup Coverage:
+    Covergroups                      2        na        na     0.47%
+        Coverpoints/Crosses          4        na        na        na
+            Covergroup Bins        129         1       128     0.77%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /audioport_tb/DUT_INSTANCE/control_unit_1/CHECKER_MODULE/cg_rbreads 
+                                                        0.94%        100          -    Uncovered            
+    covered/total bins:                                     1        106          -                      
+    missing/total bins:                                   105        106          -                      
+    % Hit:                                              0.94%        100          -                      
+    Coverpoint addresses                                0.94%        100          -    Uncovered            
+        covered/total bins:                                 1        106          -                      
+        missing/total bins:                               105        106          -                      
+        % Hit:                                          0.94%        100          -                      
+ Covergroup instance \/audioport_tb/DUT_INSTANCE/control_unit_1/CHECKER_MODULE/cg_rbreads_inst  
+                                                        0.94%        100          -    Uncovered            
+    covered/total bins:                                     1        106          -                      
+    missing/total bins:                                   105        106          -                      
+    % Hit:                                              0.94%        100          -                      
+    Coverpoint addresses                                0.94%        100          -    Uncovered            
+        covered/total bins:                                 1        106          -                      
+        missing/total bins:                               105        106          -                      
+        % Hit:                                          0.94%        100          -                      
+        bin addr[587202560]                                 0          1          -    ZERO                 
+        bin addr[587202561]                                 0          1          -    ZERO                 
+        bin addr[587202562]                                 0          1          -    ZERO                 
+        bin addr[587202563]                                 1          1          -    Covered              
+        bin addr[587202564]                                 0          1          -    ZERO                 
+        bin addr[587202565]                                 0          1          -    ZERO                 
+        bin addr[587202566]                                 0          1          -    ZERO                 
+        bin addr[587202567]                                 0          1          -    ZERO                 
+        bin addr[587202568]                                 0          1          -    ZERO                 
+        bin addr[587202569]                                 0          1          -    ZERO                 
+        bin addr[587202570]                                 0          1          -    ZERO                 
+        bin addr[587202571]                                 0          1          -    ZERO                 
+        bin addr[587202572]                                 0          1          -    ZERO                 
+        bin addr[587202573]                                 0          1          -    ZERO                 
+        bin addr[587202574]                                 0          1          -    ZERO                 
+        bin addr[587202575]                                 0          1          -    ZERO                 
+        bin addr[587202576]                                 0          1          -    ZERO                 
+        bin addr[587202577]                                 0          1          -    ZERO                 
+        bin addr[587202578]                                 0          1          -    ZERO                 
+        bin addr[587202579]                                 0          1          -    ZERO                 
+        bin addr[587202580]                                 0          1          -    ZERO                 
+        bin addr[587202581]                                 0          1          -    ZERO                 
+        bin addr[587202582]                                 0          1          -    ZERO                 
+        bin addr[587202583]                                 0          1          -    ZERO                 
+        bin addr[587202584]                                 0          1          -    ZERO                 
+        bin addr[587202585]                                 0          1          -    ZERO                 
+        bin addr[587202586]                                 0          1          -    ZERO                 
+        bin addr[587202587]                                 0          1          -    ZERO                 
+        bin addr[587202588]                                 0          1          -    ZERO                 
+        bin addr[587202589]                                 0          1          -    ZERO                 
+        bin addr[587202590]                                 0          1          -    ZERO                 
+        bin addr[587202591]                                 0          1          -    ZERO                 
+        bin addr[587202592]                                 0          1          -    ZERO                 
+        bin addr[587202593]                                 0          1          -    ZERO                 
+        bin addr[587202594]                                 0          1          -    ZERO                 
+        bin addr[587202595]                                 0          1          -    ZERO                 
+        bin addr[587202596]                                 0          1          -    ZERO                 
+        bin addr[587202597]                                 0          1          -    ZERO                 
+        bin addr[587202598]                                 0          1          -    ZERO                 
+        bin addr[587202599]                                 0          1          -    ZERO                 
+        bin addr[587202600]                                 0          1          -    ZERO                 
+        bin addr[587202601]                                 0          1          -    ZERO                 
+        bin addr[587202602]                                 0          1          -    ZERO                 
+        bin addr[587202603]                                 0          1          -    ZERO                 
+        bin addr[587202604]                                 0          1          -    ZERO                 
+        bin addr[587202605]                                 0          1          -    ZERO                 
+        bin addr[587202606]                                 0          1          -    ZERO                 
+        bin addr[587202607]                                 0          1          -    ZERO                 
+        bin addr[587202608]                                 0          1          -    ZERO                 
+        bin addr[587202609]                                 0          1          -    ZERO                 
+        bin addr[587202610]                                 0          1          -    ZERO                 
+        bin addr[587202611]                                 0          1          -    ZERO                 
+        bin addr[587202612]                                 0          1          -    ZERO                 
+        bin addr[587202613]                                 0          1          -    ZERO                 
+        bin addr[587202614]                                 0          1          -    ZERO                 
+        bin addr[587202615]                                 0          1          -    ZERO                 
+        bin addr[587202616]                                 0          1          -    ZERO                 
+        bin addr[587202617]                                 0          1          -    ZERO                 
+        bin addr[587202618]                                 0          1          -    ZERO                 
+        bin addr[587202619]                                 0          1          -    ZERO                 
+        bin addr[587202620]                                 0          1          -    ZERO                 
+        bin addr[587202621]                                 0          1          -    ZERO                 
+        bin addr[587202622]                                 0          1          -    ZERO                 
+        bin addr[587202623]                                 0          1          -    ZERO                 
+        bin addr[587202624]                                 0          1          -    ZERO                 
+        bin addr[587202625]                                 0          1          -    ZERO                 
+        bin addr[587202626]                                 0          1          -    ZERO                 
+        bin addr[587202627]                                 0          1          -    ZERO                 
+        bin addr[587202628]                                 0          1          -    ZERO                 
+        bin addr[587202629]                                 0          1          -    ZERO                 
+        bin addr[587202630]                                 0          1          -    ZERO                 
+        bin addr[587202631]                                 0          1          -    ZERO                 
+        bin addr[587202632]                                 0          1          -    ZERO                 
+        bin addr[587202633]                                 0          1          -    ZERO                 
+        bin addr[587202634]                                 0          1          -    ZERO                 
+        bin addr[587202635]                                 0          1          -    ZERO                 
+        bin addr[587202636]                                 0          1          -    ZERO                 
+        bin addr[587202637]                                 0          1          -    ZERO                 
+        bin addr[587202638]                                 0          1          -    ZERO                 
+        bin addr[587202639]                                 0          1          -    ZERO                 
+        bin addr[587202640]                                 0          1          -    ZERO                 
+        bin addr[587202641]                                 0          1          -    ZERO                 
+        bin addr[587202642]                                 0          1          -    ZERO                 
+        bin addr[587202643]                                 0          1          -    ZERO                 
+        bin addr[587202644]                                 0          1          -    ZERO                 
+        bin addr[587202645]                                 0          1          -    ZERO                 
+        bin addr[587202646]                                 0          1          -    ZERO                 
+        bin addr[587202647]                                 0          1          -    ZERO                 
+        bin addr[587202648]                                 0          1          -    ZERO                 
+        bin addr[587202649]                                 0          1          -    ZERO                 
+        bin addr[587202650]                                 0          1          -    ZERO                 
+        bin addr[587202651]                                 0          1          -    ZERO                 
+        bin addr[587202652]                                 0          1          -    ZERO                 
+        bin addr[587202653]                                 0          1          -    ZERO                 
+        bin addr[587202654]                                 0          1          -    ZERO                 
+        bin addr[587202655]                                 0          1          -    ZERO                 
+        bin addr[587202656]                                 0          1          -    ZERO                 
+        bin addr[587202657]                                 0          1          -    ZERO                 
+        bin addr[587202658]                                 0          1          -    ZERO                 
+        bin addr[587202659]                                 0          1          -    ZERO                 
+        bin addr[587202660]                                 0          1          -    ZERO                 
+        bin addr[587202661]                                 0          1          -    ZERO                 
+        bin addr[587202662]                                 0          1          -    ZERO                 
+        bin addr[587202663]                                 0          1          -    ZERO                 
+        bin addr[587202664]                                 0          1          -    ZERO                 
+        bin addr[587202665]                                 0          1          -    ZERO                 
+ TYPE /audioport_tb/DUT_INSTANCE/control_unit_1/CHECKER_MODULE/cg_commands 
+                                                        0.00%        100          -    ZERO                 
+    covered/total bins:                                     0         23          -                      
+    missing/total bins:                                    23         23          -                      
+    % Hit:                                              0.00%        100          -                      
+    Coverpoint commands                                 0.00%        100          -    ZERO                 
+        covered/total bins:                                 0          7          -                      
+        missing/total bins:                                 7          7          -                      
+        % Hit:                                          0.00%        100          -                      
+    Coverpoint modes                                    0.00%        100          -    ZERO                 
+        covered/total bins:                                 0          2          -                      
+        missing/total bins:                                 2          2          -                      
+        % Hit:                                          0.00%        100          -                      
+    Cross command_modes                                 0.00%        100          -    ZERO                 
+        covered/total bins:                                 0         14          -                      
+        missing/total bins:                                14         14          -                      
+        % Hit:                                          0.00%        100          -                      
+ Covergroup instance \/audioport_tb/DUT_INSTANCE/control_unit_1/CHECKER_MODULE/cg_commands_inst  
+                                                        0.00%        100          -    ZERO                 
+    covered/total bins:                                     0         23          -                      
+    missing/total bins:                                    23         23          -                      
+    % Hit:                                              0.00%        100          -                      
+    Coverpoint commands                                 0.00%        100          -    ZERO                 
+        covered/total bins:                                 0          7          -                      
+        missing/total bins:                                 7          7          -                      
+        % Hit:                                          0.00%        100          -                      
+        bin cmd_nop                                         0          1          -    ZERO                 
+        bin cmd_clr                                         0          1          -    ZERO                 
+        bin cmd_cfg                                         0          1          -    ZERO                 
+        bin cmd_start                                       0          1          -    ZERO                 
+        bin cmd_stop                                        0          1          -    ZERO                 
+        bin cmd_level                                       0          1          -    ZERO                 
+        bin cmd_irqack                                      0          1          -    ZERO                 
+        default bin cmd_illegal                             0                     -    ZERO                 
+    Coverpoint modes                                    0.00%        100          -    ZERO                 
+        covered/total bins:                                 0          2          -                      
+        missing/total bins:                                 2          2          -                      
+        % Hit:                                          0.00%        100          -                      
+        bin standby                                         0          1          -    ZERO                 
+        bin play                                            0          1          -    ZERO                 
+    Cross command_modes                                 0.00%        100          -    ZERO                 
+        covered/total bins:                                 0         14          -                      
+        missing/total bins:                                14         14          -                      
+        % Hit:                                          0.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <*,*>                                       0          1         14    ZERO                 
+
+=================================================================================
+=== Instance: /audioport_tb/DUT_INSTANCE/dsp_unit_1/CHECKER_MODULE
+=== Design Unit: work.dsp_unit_svamod
+=================================================================================
+
+Covergroup Coverage:
+    Covergroups                      1        na        na     0.00%
+        Coverpoints/Crosses          1        na        na        na
+            Covergroup Bins          2         0         2     0.00%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /audioport_tb/DUT_INSTANCE/dsp_unit_1/CHECKER_MODULE/cg_dsp_modes 
+                                                        0.00%        100          -    ZERO                 
+    covered/total bins:                                     0          2          -                      
+    missing/total bins:                                     2          2          -                      
+    % Hit:                                              0.00%        100          -                      
+    Coverpoint cfgbit                                   0.00%        100          -    ZERO                 
+        covered/total bins:                                 0          2          -                      
+        missing/total bins:                                 2          2          -                      
+        % Hit:                                          0.00%        100          -                      
+ Covergroup instance \/audioport_tb/DUT_INSTANCE/dsp_unit_1/CHECKER_MODULE/cg_dsp_modes_inst  
+                                                        0.00%        100          -    ZERO                 
+    covered/total bins:                                     0          2          -                      
+    missing/total bins:                                     2          2          -                      
+    % Hit:                                              0.00%        100          -                      
+    Coverpoint cfgbit                                   0.00%        100          -    ZERO                 
+        covered/total bins:                                 0          2          -                      
+        missing/total bins:                                 2          2          -                      
+        % Hit:                                          0.00%        100          -                      
+        bin modes[0]                                        0          1          -    ZERO                 
+        bin modes[1]                                        0          1          -    ZERO                 
+
+=================================================================================
+=== Instance: /audioport_tb/DUT_INSTANCE/CHECKER_MODULE
+=== Design Unit: work.audioport_svamod
+=================================================================================
+
+Covergroup Coverage:
+    Covergroups                      1        na        na     0.00%
+        Coverpoints/Crosses          1        na        na        na
+            Covergroup Bins          2         0         2     0.00%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /audioport_tb/DUT_INSTANCE/CHECKER_MODULE/cg_active_config 
+                                                        0.00%        100          -    ZERO                 
+    covered/total bins:                                     0          2          -                      
+    missing/total bins:                                     2          2          -                      
+    % Hit:                                              0.00%        100          -                      
+    Coverpoint configs                                  0.00%        100          -    ZERO                 
+        covered/total bins:                                 0          2          -                      
+        missing/total bins:                                 2          2          -                      
+        % Hit:                                          0.00%        100          -                      
+ Covergroup instance \/audioport_tb/DUT_INSTANCE/CHECKER_MODULE/cg_active_config_inst  
+                                                        0.00%        100          -    ZERO                 
+    covered/total bins:                                     0          2          -                      
+    missing/total bins:                                     2          2          -                      
+    % Hit:                                              0.00%        100          -                      
+    Coverpoint configs                                  0.00%        100          -    ZERO                 
+        covered/total bins:                                 0          2          -                      
+        missing/total bins:                                 2          2          -                      
+        % Hit:                                          0.00%        100          -                      
+        bin cfgmodes[0]                                     0          1          -    ZERO                 
+        bin cfgmodes[1]                                     0          1          -    ZERO                 
+
+COVERGROUP COVERAGE:
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /audioport_tb/DUT_INSTANCE/control_unit_1/CHECKER_MODULE/cg_rbreads 
+                                                        0.94%        100          -    Uncovered            
+    covered/total bins:                                     1        106          -                      
+    missing/total bins:                                   105        106          -                      
+    % Hit:                                              0.94%        100          -                      
+    Coverpoint addresses                                0.94%        100          -    Uncovered            
+        covered/total bins:                                 1        106          -                      
+        missing/total bins:                               105        106          -                      
+        % Hit:                                          0.94%        100          -                      
+ Covergroup instance \/audioport_tb/DUT_INSTANCE/control_unit_1/CHECKER_MODULE/cg_rbreads_inst  
+                                                        0.94%        100          -    Uncovered            
+    covered/total bins:                                     1        106          -                      
+    missing/total bins:                                   105        106          -                      
+    % Hit:                                              0.94%        100          -                      
+    Coverpoint addresses                                0.94%        100          -    Uncovered            
+        covered/total bins:                                 1        106          -                      
+        missing/total bins:                               105        106          -                      
+        % Hit:                                          0.94%        100          -                      
+        bin addr[587202560]                                 0          1          -    ZERO                 
+        bin addr[587202561]                                 0          1          -    ZERO                 
+        bin addr[587202562]                                 0          1          -    ZERO                 
+        bin addr[587202563]                                 1          1          -    Covered              
+        bin addr[587202564]                                 0          1          -    ZERO                 
+        bin addr[587202565]                                 0          1          -    ZERO                 
+        bin addr[587202566]                                 0          1          -    ZERO                 
+        bin addr[587202567]                                 0          1          -    ZERO                 
+        bin addr[587202568]                                 0          1          -    ZERO                 
+        bin addr[587202569]                                 0          1          -    ZERO                 
+        bin addr[587202570]                                 0          1          -    ZERO                 
+        bin addr[587202571]                                 0          1          -    ZERO                 
+        bin addr[587202572]                                 0          1          -    ZERO                 
+        bin addr[587202573]                                 0          1          -    ZERO                 
+        bin addr[587202574]                                 0          1          -    ZERO                 
+        bin addr[587202575]                                 0          1          -    ZERO                 
+        bin addr[587202576]                                 0          1          -    ZERO                 
+        bin addr[587202577]                                 0          1          -    ZERO                 
+        bin addr[587202578]                                 0          1          -    ZERO                 
+        bin addr[587202579]                                 0          1          -    ZERO                 
+        bin addr[587202580]                                 0          1          -    ZERO                 
+        bin addr[587202581]                                 0          1          -    ZERO                 
+        bin addr[587202582]                                 0          1          -    ZERO                 
+        bin addr[587202583]                                 0          1          -    ZERO                 
+        bin addr[587202584]                                 0          1          -    ZERO                 
+        bin addr[587202585]                                 0          1          -    ZERO                 
+        bin addr[587202586]                                 0          1          -    ZERO                 
+        bin addr[587202587]                                 0          1          -    ZERO                 
+        bin addr[587202588]                                 0          1          -    ZERO                 
+        bin addr[587202589]                                 0          1          -    ZERO                 
+        bin addr[587202590]                                 0          1          -    ZERO                 
+        bin addr[587202591]                                 0          1          -    ZERO                 
+        bin addr[587202592]                                 0          1          -    ZERO                 
+        bin addr[587202593]                                 0          1          -    ZERO                 
+        bin addr[587202594]                                 0          1          -    ZERO                 
+        bin addr[587202595]                                 0          1          -    ZERO                 
+        bin addr[587202596]                                 0          1          -    ZERO                 
+        bin addr[587202597]                                 0          1          -    ZERO                 
+        bin addr[587202598]                                 0          1          -    ZERO                 
+        bin addr[587202599]                                 0          1          -    ZERO                 
+        bin addr[587202600]                                 0          1          -    ZERO                 
+        bin addr[587202601]                                 0          1          -    ZERO                 
+        bin addr[587202602]                                 0          1          -    ZERO                 
+        bin addr[587202603]                                 0          1          -    ZERO                 
+        bin addr[587202604]                                 0          1          -    ZERO                 
+        bin addr[587202605]                                 0          1          -    ZERO                 
+        bin addr[587202606]                                 0          1          -    ZERO                 
+        bin addr[587202607]                                 0          1          -    ZERO                 
+        bin addr[587202608]                                 0          1          -    ZERO                 
+        bin addr[587202609]                                 0          1          -    ZERO                 
+        bin addr[587202610]                                 0          1          -    ZERO                 
+        bin addr[587202611]                                 0          1          -    ZERO                 
+        bin addr[587202612]                                 0          1          -    ZERO                 
+        bin addr[587202613]                                 0          1          -    ZERO                 
+        bin addr[587202614]                                 0          1          -    ZERO                 
+        bin addr[587202615]                                 0          1          -    ZERO                 
+        bin addr[587202616]                                 0          1          -    ZERO                 
+        bin addr[587202617]                                 0          1          -    ZERO                 
+        bin addr[587202618]                                 0          1          -    ZERO                 
+        bin addr[587202619]                                 0          1          -    ZERO                 
+        bin addr[587202620]                                 0          1          -    ZERO                 
+        bin addr[587202621]                                 0          1          -    ZERO                 
+        bin addr[587202622]                                 0          1          -    ZERO                 
+        bin addr[587202623]                                 0          1          -    ZERO                 
+        bin addr[587202624]                                 0          1          -    ZERO                 
+        bin addr[587202625]                                 0          1          -    ZERO                 
+        bin addr[587202626]                                 0          1          -    ZERO                 
+        bin addr[587202627]                                 0          1          -    ZERO                 
+        bin addr[587202628]                                 0          1          -    ZERO                 
+        bin addr[587202629]                                 0          1          -    ZERO                 
+        bin addr[587202630]                                 0          1          -    ZERO                 
+        bin addr[587202631]                                 0          1          -    ZERO                 
+        bin addr[587202632]                                 0          1          -    ZERO                 
+        bin addr[587202633]                                 0          1          -    ZERO                 
+        bin addr[587202634]                                 0          1          -    ZERO                 
+        bin addr[587202635]                                 0          1          -    ZERO                 
+        bin addr[587202636]                                 0          1          -    ZERO                 
+        bin addr[587202637]                                 0          1          -    ZERO                 
+        bin addr[587202638]                                 0          1          -    ZERO                 
+        bin addr[587202639]                                 0          1          -    ZERO                 
+        bin addr[587202640]                                 0          1          -    ZERO                 
+        bin addr[587202641]                                 0          1          -    ZERO                 
+        bin addr[587202642]                                 0          1          -    ZERO                 
+        bin addr[587202643]                                 0          1          -    ZERO                 
+        bin addr[587202644]                                 0          1          -    ZERO                 
+        bin addr[587202645]                                 0          1          -    ZERO                 
+        bin addr[587202646]                                 0          1          -    ZERO                 
+        bin addr[587202647]                                 0          1          -    ZERO                 
+        bin addr[587202648]                                 0          1          -    ZERO                 
+        bin addr[587202649]                                 0          1          -    ZERO                 
+        bin addr[587202650]                                 0          1          -    ZERO                 
+        bin addr[587202651]                                 0          1          -    ZERO                 
+        bin addr[587202652]                                 0          1          -    ZERO                 
+        bin addr[587202653]                                 0          1          -    ZERO                 
+        bin addr[587202654]                                 0          1          -    ZERO                 
+        bin addr[587202655]                                 0          1          -    ZERO                 
+        bin addr[587202656]                                 0          1          -    ZERO                 
+        bin addr[587202657]                                 0          1          -    ZERO                 
+        bin addr[587202658]                                 0          1          -    ZERO                 
+        bin addr[587202659]                                 0          1          -    ZERO                 
+        bin addr[587202660]                                 0          1          -    ZERO                 
+        bin addr[587202661]                                 0          1          -    ZERO                 
+        bin addr[587202662]                                 0          1          -    ZERO                 
+        bin addr[587202663]                                 0          1          -    ZERO                 
+        bin addr[587202664]                                 0          1          -    ZERO                 
+        bin addr[587202665]                                 0          1          -    ZERO                 
+ TYPE /audioport_tb/DUT_INSTANCE/control_unit_1/CHECKER_MODULE/cg_commands 
+                                                        0.00%        100          -    ZERO                 
+    covered/total bins:                                     0         23          -                      
+    missing/total bins:                                    23         23          -                      
+    % Hit:                                              0.00%        100          -                      
+    Coverpoint commands                                 0.00%        100          -    ZERO                 
+        covered/total bins:                                 0          7          -                      
+        missing/total bins:                                 7          7          -                      
+        % Hit:                                          0.00%        100          -                      
+    Coverpoint modes                                    0.00%        100          -    ZERO                 
+        covered/total bins:                                 0          2          -                      
+        missing/total bins:                                 2          2          -                      
+        % Hit:                                          0.00%        100          -                      
+    Cross command_modes                                 0.00%        100          -    ZERO                 
+        covered/total bins:                                 0         14          -                      
+        missing/total bins:                                14         14          -                      
+        % Hit:                                          0.00%        100          -                      
+ Covergroup instance \/audioport_tb/DUT_INSTANCE/control_unit_1/CHECKER_MODULE/cg_commands_inst  
+                                                        0.00%        100          -    ZERO                 
+    covered/total bins:                                     0         23          -                      
+    missing/total bins:                                    23         23          -                      
+    % Hit:                                              0.00%        100          -                      
+    Coverpoint commands                                 0.00%        100          -    ZERO                 
+        covered/total bins:                                 0          7          -                      
+        missing/total bins:                                 7          7          -                      
+        % Hit:                                          0.00%        100          -                      
+        bin cmd_nop                                         0          1          -    ZERO                 
+        bin cmd_clr                                         0          1          -    ZERO                 
+        bin cmd_cfg                                         0          1          -    ZERO                 
+        bin cmd_start                                       0          1          -    ZERO                 
+        bin cmd_stop                                        0          1          -    ZERO                 
+        bin cmd_level                                       0          1          -    ZERO                 
+        bin cmd_irqack                                      0          1          -    ZERO                 
+        default bin cmd_illegal                             0                     -    ZERO                 
+    Coverpoint modes                                    0.00%        100          -    ZERO                 
+        covered/total bins:                                 0          2          -                      
+        missing/total bins:                                 2          2          -                      
+        % Hit:                                          0.00%        100          -                      
+        bin standby                                         0          1          -    ZERO                 
+        bin play                                            0          1          -    ZERO                 
+    Cross command_modes                                 0.00%        100          -    ZERO                 
+        covered/total bins:                                 0         14          -                      
+        missing/total bins:                                14         14          -                      
+        % Hit:                                          0.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <*,*>                                       0          1         14    ZERO                 
+ TYPE /audioport_tb/DUT_INSTANCE/dsp_unit_1/CHECKER_MODULE/cg_dsp_modes 
+                                                        0.00%        100          -    ZERO                 
+    covered/total bins:                                     0          2          -                      
+    missing/total bins:                                     2          2          -                      
+    % Hit:                                              0.00%        100          -                      
+    Coverpoint cfgbit                                   0.00%        100          -    ZERO                 
+        covered/total bins:                                 0          2          -                      
+        missing/total bins:                                 2          2          -                      
+        % Hit:                                          0.00%        100          -                      
+ Covergroup instance \/audioport_tb/DUT_INSTANCE/dsp_unit_1/CHECKER_MODULE/cg_dsp_modes_inst  
+                                                        0.00%        100          -    ZERO                 
+    covered/total bins:                                     0          2          -                      
+    missing/total bins:                                     2          2          -                      
+    % Hit:                                              0.00%        100          -                      
+    Coverpoint cfgbit                                   0.00%        100          -    ZERO                 
+        covered/total bins:                                 0          2          -                      
+        missing/total bins:                                 2          2          -                      
+        % Hit:                                          0.00%        100          -                      
+        bin modes[0]                                        0          1          -    ZERO                 
+        bin modes[1]                                        0          1          -    ZERO                 
+ TYPE /audioport_tb/DUT_INSTANCE/CHECKER_MODULE/cg_active_config 
+                                                        0.00%        100          -    ZERO                 
+    covered/total bins:                                     0          2          -                      
+    missing/total bins:                                     2          2          -                      
+    % Hit:                                              0.00%        100          -                      
+    Coverpoint configs                                  0.00%        100          -    ZERO                 
+        covered/total bins:                                 0          2          -                      
+        missing/total bins:                                 2          2          -                      
+        % Hit:                                          0.00%        100          -                      
+ Covergroup instance \/audioport_tb/DUT_INSTANCE/CHECKER_MODULE/cg_active_config_inst  
+                                                        0.00%        100          -    ZERO                 
+    covered/total bins:                                     0          2          -                      
+    missing/total bins:                                     2          2          -                      
+    % Hit:                                              0.00%        100          -                      
+    Coverpoint configs                                  0.00%        100          -    ZERO                 
+        covered/total bins:                                 0          2          -                      
+        missing/total bins:                                 2          2          -                      
+        % Hit:                                          0.00%        100          -                      
+        bin cfgmodes[0]                                     0          1          -    ZERO                 
+        bin cfgmodes[1]                                     0          1          -    ZERO                 
+
+TOTAL COVERGROUP COVERAGE: 0.23%  COVERGROUP TYPES: 4
+
+Total Coverage By Instance (filtered view): 0.23%
+
