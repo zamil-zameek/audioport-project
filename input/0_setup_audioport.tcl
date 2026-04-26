@@ -3,8 +3,8 @@
 ####################################################################################
 
 #set UVM_TESTNAME             "apb_test"
-set UVM_TESTNAME             "control_unit_uvm_test"
-#set UVM_TESTNAME             "audioport_uvm_test"
+#set UVM_TESTNAME             "control_unit_uvm_test"
+set UVM_TESTNAME             "audioport_uvm_test"
 #set UVM_TESTNAME             "my_uvm_test"
 
 ####################################################################################
@@ -298,9 +298,9 @@ set FORMALITY_PLEC_SETUP_FILE "input/audioport.glec_setup.tcl"
 # Disable all timing checks
 #set VSIM_POSTLAYOUT_OPTIONS      "+notimingchecks"
 
-set VCD_SNAPSHOT_START_TIME     0us  ; # VCD dump start time
-set VCD_SNAPSHOT_LENGTH         10us ; # VCD dump length
-set POSTLAYOUT_SIMULATION_TIME  10us ; # PL simulation time (should be at least START+LENGTH)
+set VCD_SNAPSHOT_START_TIME     3490us  ; # VCD dump start time
+set VCD_SNAPSHOT_LENGTH         15us ; # VCD dump length
+set POSTLAYOUT_SIMULATION_TIME  3510us ; # PL simulation time (should be at least START+LENGTH)
 
 #####################################################################################
 # Power Estimation Settings
